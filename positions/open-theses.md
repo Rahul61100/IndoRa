@@ -147,6 +147,50 @@ leg is an approval, not a cash flow.**
 **Method lesson, promoted:** **always ask whether something is approved, awarded, or paid.** Three
 different things, routinely reported as one. [[announced-is-not-disbursed]]
 
+### 2026-08-26 (fifth pass) — positioning data partly reverses this morning's HDFC Bank cut
+
+*Confidence: DEGRADED — post-cap research. Acting on sizing, not on conviction.*
+
+**HDFC Bank: FIIs cut their stake 360bps in the March quarter — roughly ₹35,000 crore sold**, the
+largest single-stock FII sale found anywhere in the sweep. That is a **mechanical explanation for
+the −26%**, and it changes the character of the thesis: I had been treating the fall as the market
+disagreeing about NIM. A forced seller of that size **finishes**; a structural problem does not.
+
+And **as of 22 August, financials are staging an FII comeback** — banks had been sold at ~₹1,100
+crore a day through H1 and that has partially turned.
+
+**Action: HDFC Bank stays at half in MEDIUM — no re-add yet — but the reason for the cut is now
+narrower than when I made it.** The FY27 downgrade is real and still stands
+([[CORRECTION-india-earnings-growth-was-4-5-percent]]). But "cheap on book while estimates fall"
+and "sold ₹35,000 crore in one quarter by a foreign seller who has now started coming back" are
+different situations, and the second is more favourable. **Re-add trigger: two consecutive months
+of positive FII financials flow AND a Q2 NIM that does not make a new low.**
+
+**Reliance — the decades thesis is corroborated by the insider.** The **promoter group bought
+~₹8,500-9,000 crore in July 2026, lifting its stake to 50.48%** — the largest insider purchase
+found in the sweep, into their own weakness, with the stock near a 52-week low. That is the
+sum-of-parts argument being made with the promoter's own money. **No sizing change; conviction
+raised.**
+
+**Infosys — positioning is now emptied out.** ₹17,000 crore of FII selling in Indian IT in
+February alone, **holdings at a four-year low**, a $9bn three-year exodus. That is the contrarian
+half of the setup. **The other half — revisions turning — has still not happened, so it stays
+benched.** But the entry condition is now two-sided: guidance raise *plus* a flow turn.
+
+**SBI and ICICI Bank — corroborated.** Mutual funds are at a **three-year-high overweight in PSU
+banks**, and overweight capital goods (17-month high) and healthcare, underweight IT.
+
+**A new risk I had not counted.** Supply is materially larger than the IPO pipeline alone: block
+deals are approaching **₹4 lakh crore in 2026**, **~$32bn of listed PE holdings still await
+monetisation**, and government OFS is running hard (LIC alone 6.5% for ₹31,552 crore). Domestic
+funds are absorbing it — but that is the *same* pool the SIP bid fills.
+
+**And the sharpest warning in the data:** **large-cap fund inflows turned negative in July 2026 for
+the first time since December 2023**, while small-cap inflows rose 39% and SIP totals hit a
+five-month high. **Domestic retail is rotating down the cap curve into the two-sigma-expensive
+segment.** That is where the next drawdown concentrates, and it is the 2017-18 analog setting up
+exactly as described ([[regime-analog-is-a-splice-not-one-year]]).
+
 ---
 
 ## SHORT horizon (months)
@@ -288,3 +332,6 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-26 | **HAL** | **cut to half, stop tightened** | Tejas Mk1A 2+ yrs late; MoD reportedly weighing penalties |
 | 2026-08-26 | **L&T** | **thesis restated** | Headline wins are European, not Indian NIP; NHAI awards at 7-year low |
 | 2026-08-26 | Dixon | second risk logged | Mobile PLI 2.0 cleared 15 Jul, nothing disbursed |
+| 2026-08-26 | HDFC Bank | **cut reason narrowed** | −26% was ₹35,000cr of FII selling in one quarter; FIIs returning to financials since 22 Aug |
+| 2026-08-26 | Reliance | **conviction raised** | Promoter bought ~₹9,000cr in July, stake to 50.48% |
+| 2026-08-26 | Infosys | half the setup in place | FII IT holdings at a 4-year low; revisions still negative |
