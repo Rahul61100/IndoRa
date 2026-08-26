@@ -23,3 +23,16 @@ verified — treat anything older than a quarter as a hypothesis until re-checke
 - [HDFC Bank's NIM is structural](hdfc-bank-nim-is-structural.md) — post-merger mortgage mix, not the rate cycle; recovery is mechanical but multi-quarter
 - [Nifty IT de-rated on AI disruption](nifty-it-derated-on-ai-disruption.md) — down 50% from highs and guidance still being cut
 - [The generic pharma tariff bomb](generic-pharma-tariff-bomb.md) — US generics face 100% in 2028 and 200% in 2029; CDMO does not
+
+## Cross-market
+- [Cross-market lead-lag is the edge](cross-market-lead-lag-is-the-edge.md) — why we run three markets, and it is not diversification
+- [US SaaS already bottomed, Indian IT has not](us-saas-already-bottomed-india-it-has-not.md) — the same fear, four to six months apart
+
+## United States — August 2026
+- [The Fed may hike next](fed-may-hike-next.md) — five holds, three dissents for a hike, 30-year at 5.2%
+- [AI capex is now a credit story](ai-capex-is-now-a-credit-story.md) — chips work, the debt-funded buildout does not
+- [US leadership rotated to value, healthcare and small caps](us-leadership-rotated-to-value-health-smallcap.md) — a broadening, not a top
+
+## Crypto — August 2026
+- [Crypto is an ETF-flow and liquidity asset](crypto-is-an-etf-flow-and-liquidity-asset.md) — majors-and-ETF rally, not alt season; not a diversifier
+- [US crypto regulation timeline](crypto-regulation-timeline-2026.md) — laws passed 2025, rules land late 2026 into 2027

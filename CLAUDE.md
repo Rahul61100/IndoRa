@@ -1,8 +1,12 @@
 # CLAUDE.md — market-intel workspace entry point
 
-Research workspace for a **daily equity research loop**. Started with India; built to extend
-to other markets later. This file loads on every turn — keep it lean, push depth into the
-directories below and retrieve on demand.
+Research workspace for a **daily multi-market research loop**. Three markets live: **India, US,
+crypto.** This file loads on every turn — keep it lean, push depth into the directories below
+and retrieve on demand.
+
+**The end goal and the staged path to it are in [`playbooks/roadmap.md`](playbooks/roadmap.md).
+Read that before proposing to build anything.** The governing principle is *scorecard before
+automation*: the process must prove it produces calibrated theses before it gets industrialised.
 
 > If this file conflicts with the data in `data/daily/latest.json`, **the data wins.** Update
 > this file. Every claim here was true when written and decays.
@@ -20,7 +24,13 @@ is an orchestrated harness. Right now it is a manual loop with scripted data col
 
 ## First move on any research turn
 
-1. **Refresh the data.** `uv run scripts/fetch_daily.py && uv run scripts/report_daily.py --write`
+1. **Refresh the data**, per market:
+   ```bash
+   for m in india us crypto; do
+     uv run scripts/fetch_daily.py --universe $m
+     uv run scripts/report_daily.py --market $m --write
+   done
+   ```
    Never reason about prices from memory — see [`verify-prices-from-the-snapshot`](knowledge/verify-prices-from-the-snapshot.md).
 2. **Read the flags.** The fetcher marks stale prints, history gaps and implausible one-day
    moves. Anything flagged is unusable until a second source confirms it.
@@ -37,14 +47,15 @@ is an orchestrated harness. Right now it is a manual loop with scripted data col
 | Path | Holds |
 |---|---|
 | `scripts/` | `fetch_daily.py` (OHLC + technicals + quality flags), `report_daily.py` (markdown brief) |
-| `universe/india.json` | every ticker fetched, grouped by role |
-| `universe/sectors.json` | synthetic sector baskets built from constituents |
-| `data/daily/` | one JSON snapshot per day, plus `latest.json` |
+| `universe/<market>.json` | every ticker fetched, grouped by role — `india`, `us`, `crypto` |
+| `universe/<market>-sectors.json` | synthetic sector baskets built from constituents (India's is `sectors.json`) |
+| `data/daily/<market>/` | one JSON snapshot per market per day, plus `latest.json` |
 | `data/fundamentals/` | valuation and financial snapshots, dated |
 | `knowledge/` | one durable fact per file — the load-bearing lessons |
 | `playbooks/` | the repeatable procedures |
 | `positions/open-theses.md` | live theses, entry logic, invalidation, running scorecard |
-| `journal/` | dated notes; `-data.md` is generated, the bare date is written |
+| `journal/` | dated notes; `<date>-<market>-data.md` is generated, `<date>.md` is written |
+| `playbooks/roadmap.md` | the end goal and the phase gates to reach it |
 
 ## Load-bearing facts (full list in `knowledge/INDEX.md`)
 
@@ -60,9 +71,18 @@ is an orchestrated harness. Right now it is a manual loop with scripted data col
 - **The rate-cut cycle is over** — repo has been held four straight meetings and inflation is
   climbing toward a forecast peak. Nothing may be bought on a "cuts are coming" thesis.
   [`rate-cut-cycle-is-over`](knowledge/rate-cut-cycle-is-over.md)
-- **Breadth is split down the middle** — roughly half of tracked names above their 200 DMA, an
-  even three-way split of uptrend/downtrend/choppy. Index calls are near worthless here; this is
-  a selection market. [`breadth-is-split-not-trending`](knowledge/breadth-is-split-not-trending.md)
+- **Breadth is split down the middle in India** — roughly half of tracked names above their 200
+  DMA, an even three-way split of uptrend/downtrend/choppy. Index calls are near worthless there.
+  The US at 64% and broadening is the opposite. [`breadth-is-split-not-trending`](knowledge/breadth-is-split-not-trending.md)
+- **Cross-market lead-lag is the edge, not diversification** — the same narrative hits different
+  markets months apart, and the first market is a preview of the second.
+  [`cross-market-lead-lag-is-the-edge`](knowledge/cross-market-lead-lag-is-the-edge.md)
+- **US SaaS already bottomed on the AI fear; Indian IT has not** — the clearest live example of
+  the above. [`us-saas-already-bottomed-india-it-has-not`](knowledge/us-saas-already-bottomed-india-it-has-not.md)
+- **The rate cycle turned globally** — the Fed has held five meetings with three dissents wanting
+  a *hike*, and the 30-year is at 5.2%. [`fed-may-hike-next`](knowledge/fed-may-hike-next.md)
+- **"AI exposure" is two opposite trades now** — supply-constrained chips still work; the
+  debt-funded buildout is priced as credit. [`ai-capex-is-now-a-credit-story`](knowledge/ai-capex-is-now-a-credit-story.md)
 
 ## Working agreements
 
