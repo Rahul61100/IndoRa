@@ -1,3 +1,12 @@
+---
+title: "India's flow competitor is the Korea-Taiwan semiconductor cycle, not China"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # India's flow competitor is the Korea-Taiwan semiconductor cycle, not China
 
 Verified 2026-08-26. I framed the EM question as India versus China. **That framing is wrong, and

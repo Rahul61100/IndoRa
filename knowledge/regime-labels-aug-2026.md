@@ -1,3 +1,12 @@
+---
+title: "Regime labels: India SPLIT, US BROADENING, crypto SPLIT"
+market: india
+type: regime
+confidence: verified
+tags: [india, regime, verified]
+updated: 2026-08-26
+---
+
 # Regime labels: India SPLIT, US BROADENING, crypto SPLIT
 
 Produced by `scripts/regime.py`, 2026-08-26. The point of labelling is that **the correct

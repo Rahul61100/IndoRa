@@ -1,3 +1,12 @@
+---
+title: "US earnings estimates are being revised UP sharply while India's are cut — the cleanest contrast"
+market: us
+type: flows
+confidence: verified
+tags: [us, flows, verified]
+updated: 2026-08-26
+---
+
 # US earnings estimates are being revised UP sharply while India's are cut — the cleanest contrast
 
 Verified 2026-08-26 (FactSet). **This is the single clearest reason capital sits where it sits**,

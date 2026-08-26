@@ -1,3 +1,12 @@
+---
+title: "A backtest of names you already picked measures hindsight, not process"
+market: general
+type: method
+confidence: verified
+tags: [general, method, verified]
+updated: 2026-08-26
+---
+
 # A backtest of names you already picked measures hindsight, not process
 
 Method rule, written 2026-08-26 the moment the stress test produced a flattering number.

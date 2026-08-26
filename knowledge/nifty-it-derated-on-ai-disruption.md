@@ -1,3 +1,12 @@
+---
+title: "Indian IT de-rated on AI disruption, and the guidance is still being cut"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # Indian IT de-rated on AI disruption, and the guidance is still being cut
 
 The four largest Indian IT names are down at least 50% from their all-time highs; roughly

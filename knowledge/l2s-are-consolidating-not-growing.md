@@ -1,3 +1,12 @@
+---
+title: "Ethereum's L2s are consolidating to three winners; the rest are being wound down"
+market: crypto
+type: finding
+confidence: verified
+tags: [crypto, finding, verified]
+updated: 2026-08-26
+---
+
 # Ethereum's L2s are consolidating to three winners; the rest are being wound down
 
 Verified 2026-08-26. Explains the starkest reading in the crypto snapshot: the **L2 basket is

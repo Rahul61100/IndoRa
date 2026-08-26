@@ -1,3 +1,12 @@
+---
+title: "Nobody is cutting AI capex — and they are extending depreciation schedules to absorb it"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # Nobody is cutting AI capex — and they are extending depreciation schedules to absorb it
 
 Verified 2026-08-26. **The historical work flagged depreciation games as the classic 1999-2001

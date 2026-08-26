@@ -1,3 +1,12 @@
+---
+title: "India is de-rating while earnings accelerate — a flows problem, not an earnings problem"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # India is de-rating while earnings accelerate — a flows problem, not an earnings problem
 
 As of 2026-08-26. Nifty 50 at 24,207.8, **-2.7% over one year** and 8.1% below its 52-week high,

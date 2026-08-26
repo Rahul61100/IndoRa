@@ -1,3 +1,12 @@
+---
+title: "The Fed is not 'on hold' — it is actively weighing a hike, and 15 September is the date"
+market: us
+type: regime
+confidence: verified
+tags: [us, regime, verified]
+updated: 2026-08-26
+---
+
 # The Fed is not "on hold" — it is actively weighing a hike, and 15 September is the date
 
 Verified 2026-08-26. I had this as "held five meetings, three dissents". **It is more live than

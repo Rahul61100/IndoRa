@@ -1,3 +1,12 @@
+---
+title: "This regime is a splice of three, and the breadth signature is what says 'not yet a top'"
+market: general
+type: regime
+confidence: verified
+tags: [general, regime, verified]
+updated: 2026-08-26
+---
+
 # This regime is a splice of three, and the breadth signature is what says "not yet a top"
 
 Research completed 2026-08-26. **The most useful strategic frame the workspace has produced.**

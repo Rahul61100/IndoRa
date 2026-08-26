@@ -1,3 +1,12 @@
+---
+title: "Stablecoin issuers are now a top-20 foreign holder of US Treasuries"
+market: crypto
+type: finding
+confidence: verified
+tags: [crypto, finding, verified]
+updated: 2026-08-26
+---
+
 # Stablecoin issuers are now a top-20 foreign holder of US Treasuries
 
 Verified 2026-08-26. The most important structural fact in crypto, and it is a *rates* fact.

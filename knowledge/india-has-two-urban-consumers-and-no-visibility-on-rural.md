@@ -1,3 +1,12 @@
+---
+title: "India has two different urban consumers, and the rural one is invisible"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # India has two different urban consumers, and the rural one is invisible
 
 Verified 2026-08-26 from high-frequency indicators.

@@ -1,3 +1,12 @@
+---
+title: "Demergers make long-window returns meaningless, and Yahoo does not adjust them"
+market: general
+type: method
+confidence: verified
+tags: [general, method, verified]
+updated: 2026-08-26
+---
+
 # Demergers make long-window returns meaningless, and Yahoo does not adjust them
 
 Verified 2026-08-26. `TMPV.NS` (Tata Motors Passenger Vehicles) shows roughly **-54% over one

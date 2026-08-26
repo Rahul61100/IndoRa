@@ -1,3 +1,12 @@
+---
+title: "Indian large caps are cheap and small/mid caps are expensive — the reverse of the usual advice"
+market: general
+type: finding
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-26
+---
+
 # Indian large caps are cheap and small/mid caps are expensive — the reverse of the usual advice
 
 Valuations as of August 2026, from index aggregators (trailing, source-dependent — name the

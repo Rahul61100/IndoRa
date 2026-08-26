@@ -1,3 +1,12 @@
+---
+title: "The AI trade has split — chips still work, the debt-funded buildout does not"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # The AI trade has split — chips still work, the debt-funded buildout does not
 
 Verified 2026-08-26. The single label "AI trade" now hides two groups moving in opposite

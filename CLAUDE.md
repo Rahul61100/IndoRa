@@ -22,6 +22,23 @@ is an orchestrated harness. Right now it is a manual loop with scripted data col
 - **Medium** — two to three years. Held through an earnings cycle. Staggered entry, no stops.
 - **Long** — decades. Structural demand. Entry price still matters; trend does not.
 
+## Resuming after a context reset
+
+**Read [`SESSION-STATE.md`](SESSION-STATE.md) first.** It is generated mechanically by
+`tools/session_state.py` from what is on disk — open theses, the scorecard, data freshness,
+carried-forward questions, recent commits — so nothing in it depends on the previous session
+having remembered to summarise itself. **Regenerate it at the end of every session** and after
+any material change to the book.
+
+**Live market sessions run 09:00-14:00 IST** while the Indian market is open — see
+[`playbooks/market-hours.md`](playbooks/market-hours.md). That is a different rhythm from the
+end-of-day loop: watch volume pace and gaps, which the daily bar destroys.
+
+**This directory is also an Obsidian vault.** Open `~/market-intel` as the vault root. Notes in
+`knowledge/` carry frontmatter (`market`, `type`, `confidence`) that colours the graph, and the
+`MOC-*` hub notes are the entry points. Run `uv run tools/kb.py all` after adding notes — it
+stamps frontmatter, regenerates the hubs and reports broken links and orphans.
+
 ## First move on any research turn
 
 1. **Refresh the data**, per market:

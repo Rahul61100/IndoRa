@@ -1,3 +1,12 @@
+---
+title: "Ten positions, 5.4 effective bets — and I never checked before opening them"
+market: general
+type: position
+confidence: verified
+tags: [general, position, verified]
+updated: 2026-08-26
+---
+
 # Ten positions, 5.4 effective bets — and I never checked before opening them
 
 **Computed 2026-08-26** by `scripts/portfolio_risk.py`, from two years of daily returns.

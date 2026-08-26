@@ -1,3 +1,12 @@
+---
+title: "The yen carry trade was squeezed in August and has already re-loaded"
+market: general
+type: finding
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-26
+---
+
 # The yen carry trade was squeezed in August and has already re-loaded
 
 Verified 2026-08-26. **Assessed as the highest-conviction hedgeable risk in the current map**, and

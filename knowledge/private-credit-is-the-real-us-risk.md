@@ -1,3 +1,12 @@
+---
+title: "Investment-grade spreads say nothing is wrong; the low-quality tail says otherwise"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # Investment-grade spreads say nothing is wrong; the low-quality tail says otherwise
 
 Verified 2026-08-26. Credit is bifurcated, and only one half is visible in the headline indices.

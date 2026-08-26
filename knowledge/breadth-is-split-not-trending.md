@@ -1,3 +1,12 @@
+---
+title: "Breadth is split almost exactly down the middle — this is a selection market"
+market: general
+type: regime
+confidence: verified
+tags: [general, regime, verified]
+updated: 2026-08-26
+---
+
 # Breadth is split almost exactly down the middle — this is a selection market
 
 From the 2026-08-26 snapshot across ~90 tracked Indian stocks:

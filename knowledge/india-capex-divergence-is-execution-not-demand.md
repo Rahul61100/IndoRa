@@ -1,3 +1,12 @@
+---
+title: "India's capital-goods vs infrastructure gap is an execution story, not a demand story"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # India's capital-goods vs infrastructure gap is an execution story, not a demand story
 
 Verified 2026-08-26 — answers the open question from the 2026-08-26 India note.

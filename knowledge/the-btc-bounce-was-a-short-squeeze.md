@@ -1,3 +1,12 @@
+---
+title: "The August bitcoin bounce was a $3bn short squeeze, not fresh demand"
+market: crypto
+type: finding
+confidence: verified
+tags: [crypto, finding, verified]
+updated: 2026-08-26
+---
+
 # The August bitcoin bounce was a $3bn short squeeze, not fresh demand
 
 Verified 2026-08-26. **This changes the character of the move I described as "ETF-driven".**

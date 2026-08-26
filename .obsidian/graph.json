@@ -1,0 +1,31 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {"query": "tag:#correction", "color": {"a": 1, "rgb": 14701138}},
+    {"query": "tag:#india", "color": {"a": 1, "rgb": 16419852}},
+    {"query": "tag:#us", "color": {"a": 1, "rgb": 4285585}},
+    {"query": "tag:#crypto", "color": {"a": 1, "rgb": 10730918}},
+    {"query": "tag:#cross", "color": {"a": 1, "rgb": 16750848}},
+    {"query": "tag:#method", "color": {"a": 1, "rgb": 8355711}},
+    {"query": "tag:#degraded", "color": {"a": 1, "rgb": 16744192}},
+    {"query": "tag:#moc", "color": {"a": 1, "rgb": 16777215}}
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.6,
+  "nodeSizeMultiplier": 1.4,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.5,
+  "repelStrength": 11,
+  "linkStrength": 1,
+  "linkDistance": 260,
+  "scale": 0.7,
+  "close": false
+}

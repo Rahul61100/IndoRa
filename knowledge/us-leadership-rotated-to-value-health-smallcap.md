@@ -1,3 +1,12 @@
+---
+title: "US leadership has rotated out of megacap AI into healthcare, financials and small caps"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # US leadership has rotated out of megacap AI into healthcare, financials and small caps
 
 Verified 2026-08-26. This is a broadening, not a top — breadth is *improving* while the leaders

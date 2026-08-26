@@ -1,3 +1,12 @@
+---
+title: "CORRECTION: India's equity risk premium is NEGATIVE — the G-sec beats the earnings yield"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # CORRECTION: India's equity risk premium is NEGATIVE — the G-sec beats the earnings yield
 
 **This is the most important correction in the workspace and it undermines the central claim I

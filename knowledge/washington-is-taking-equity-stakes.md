@@ -1,3 +1,12 @@
+---
+title: "Washington is taking equity stakes in companies — this is state capitalism, and it is a factor"
+market: us
+type: finding
+confidence: degraded
+tags: [us, finding, degraded]
+updated: 2026-08-26
+---
+
 # Washington is taking equity stakes in companies — this is state capitalism, and it is a factor
 
 Verified 2026-08-26. **Confidence: DEGRADED** — several deal terms rest on secondary aggregation

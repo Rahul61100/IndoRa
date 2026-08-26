@@ -1,3 +1,12 @@
+---
+title: "HDFC Bank's margin problem is post-merger structure, not the rate cycle"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # HDFC Bank's margin problem is post-merger structure, not the rate cycle
 
 Q1 FY27 NIM printed **3.26%**, a record low, down 12 bps sequentially. CASA ratio 32%. Historic

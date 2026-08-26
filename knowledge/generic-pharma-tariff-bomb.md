@@ -1,3 +1,12 @@
+---
+title: "US generics face 100% tariffs in 2028 and 200% in 2029 — CDMO does not"
+market: general
+type: finding
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-26
+---
+
 # US generics face 100% tariffs in 2028 and 200% in 2029 — CDMO does not
 
 Under the India-US trade deal announced 2 Feb 2026, headline tariffs on Indian goods fell from

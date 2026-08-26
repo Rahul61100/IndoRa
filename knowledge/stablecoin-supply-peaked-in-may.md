@@ -1,3 +1,12 @@
+---
+title: "Stablecoin supply peaked in May 2026 and is shrinking while BTC rallies"
+market: crypto
+type: flows
+confidence: verified
+tags: [crypto, flows, verified]
+updated: 2026-08-26
+---
+
 # Stablecoin supply peaked in May 2026 and is shrinking while BTC rallies
 
 **Derived from our own collected series, not from reporting** — `data/flows/stablecoin_supply.json`,

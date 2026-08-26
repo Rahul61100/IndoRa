@@ -1,3 +1,12 @@
+---
+title: "CORRECTION: India's FY26 earnings grew 4.5%, not 18% — and 60% of Q1 came from five stocks"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # CORRECTION: India's FY26 earnings grew 4.5%, not 18% — and 60% of Q1 came from five stocks
 
 **This corrects the framing I built the entire India case on.** I repeatedly wrote "earnings +18%

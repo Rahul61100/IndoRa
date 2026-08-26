@@ -1,3 +1,12 @@
+---
+title: "Sector leadership as of August 2026 — capital goods broadest, FMCG and oil/gas worst"
+market: general
+type: finding
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-26
+---
+
 # Sector leadership as of August 2026 — capital goods broadest, FMCG and oil/gas worst
 
 From constituent baskets (median member return, 2026-08-26). Percentage is share of members

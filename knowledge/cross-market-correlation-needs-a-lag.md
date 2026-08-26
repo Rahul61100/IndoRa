@@ -1,3 +1,12 @@
+---
+title: "Same-day correlation across timezones is a measurement artifact"
+market: cross
+type: method
+confidence: verified
+tags: [cross, method, verified]
+updated: 2026-08-26
+---
+
 # Same-day correlation across timezones is a measurement artifact
 
 Method rule, established 2026-08-26 after I computed a nonsense number and caught it.

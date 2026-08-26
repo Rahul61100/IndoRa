@@ -1,3 +1,12 @@
+---
+title: "India's rate-cut cycle is over — nothing may be bought on a 'cuts are coming' thesis"
+market: general
+type: regime
+confidence: verified
+tags: [general, regime, verified]
+updated: 2026-08-26
+---
+
 # India's rate-cut cycle is over — nothing may be bought on a "cuts are coming" thesis
 
 As of the August 2026 RBI policy: **repo held at 5.25%**, the fourth consecutive hold since

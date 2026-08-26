@@ -1,3 +1,12 @@
+---
+title: "The reason to run multiple markets is lead-lag, not diversification"
+market: cross
+type: finding
+confidence: verified
+tags: [cross, finding, verified]
+updated: 2026-08-26
+---
+
 # The reason to run multiple markets is lead-lag, not diversification
 
 Design principle for this workspace, adopted 2026-08-26 when the first US pull immediately

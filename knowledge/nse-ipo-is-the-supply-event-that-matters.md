@@ -1,3 +1,12 @@
+---
+title: "The NSE IPO is India's largest ever and it prices in September — bigger than Jio"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # The NSE IPO is India's largest ever and it prices in September — bigger than Jio
 
 Verified 2026-08-26. I had been tracking the Jio listing as the big supply event. **NSE's is

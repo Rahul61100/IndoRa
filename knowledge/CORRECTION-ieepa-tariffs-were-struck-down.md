@@ -1,3 +1,12 @@
+---
+title: "CORRECTION: the Supreme Court struck down the IEEPA tariffs in February 2026"
+market: general
+type: finding
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-26
+---
+
 # CORRECTION: the Supreme Court struck down the IEEPA tariffs in February 2026
 
 **This materially qualifies the tariff framing I used on 2026-08-25.** I described the

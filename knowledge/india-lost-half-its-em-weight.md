@@ -1,3 +1,12 @@
+---
+title: "India's MSCI EM weight has roughly halved, and it now trails EM by 42 points in a year"
+market: india
+type: flows
+confidence: verified
+tags: [india, flows, verified]
+updated: 2026-08-26
+---
+
 # India's MSCI EM weight has roughly halved, and it now trails EM by 42 points in a year
 
 Verified 2026-08-26. The flow evidence behind [[india-in-usd-is-the-return-that-matters]], and it

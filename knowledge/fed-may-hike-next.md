@@ -1,3 +1,12 @@
+---
+title: "The Fed's next move may be up, and the long end is already there"
+market: us
+type: regime
+confidence: verified
+tags: [us, regime, verified]
+updated: 2026-08-26
+---
+
 # The Fed's next move may be up, and the long end is already there
 
 Verified 2026-08-26. Chair is **Kevin Warsh**.

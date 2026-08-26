@@ -1,3 +1,12 @@
+---
+title: "Moody's has downgraded the US, and the term premium is up 108bp this year"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # Moody's has downgraded the US, and the term premium is up 108bp this year
 
 Verified 2026-08-26. Context I was missing behind the "30-year at 5.2%" observation.

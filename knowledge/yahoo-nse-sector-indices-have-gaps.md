@@ -1,3 +1,12 @@
+---
+title: "Yahoo's NSE sector indices have multi-week history gaps"
+market: india
+type: method
+confidence: verified
+tags: [india, method, verified]
+updated: 2026-08-26
+---
+
 # Yahoo's NSE sector indices have multi-week history gaps
 
 Verified 2026-08-26. Every `^CNX*` sector index pulled from Yahoo carried a **40-day hole** in

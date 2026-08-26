@@ -1,3 +1,12 @@
+---
+title: "Announced is not disbursed — and in India the gap is most of the story"
+market: india
+type: finding
+confidence: degraded
+tags: [india, finding, degraded]
+updated: 2026-08-26
+---
+
 # Announced is not disbursed — and in India the gap is most of the story
 
 Verified 2026-08-26. **Confidence: DEGRADED** — this agent ran after the session search cap, via

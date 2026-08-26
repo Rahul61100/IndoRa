@@ -1,3 +1,12 @@
+---
+title: "Gold has beaten the Nifty over 1, 3 AND 5 years — in rupees"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # Gold has beaten the Nifty over 1, 3 AND 5 years — in rupees
 
 **This is the answer to the question I froze the India book on**: at a negative equity risk premium

@@ -1,3 +1,12 @@
+---
+title: "Who is actually buying India — and the HDFC Bank de-rating was one quarter of FII selling"
+market: india
+type: flows
+confidence: degraded
+tags: [india, flows, degraded]
+updated: 2026-08-26
+---
+
 # Who is actually buying India — and the HDFC Bank de-rating was one quarter of FII selling
 
 Verified 2026-08-26. **Confidence: DEGRADED** — ran after the session search cap, via Google News

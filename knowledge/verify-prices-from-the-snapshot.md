@@ -1,3 +1,12 @@
+---
+title: "Never state a price, multiple or return without pulling it that session"
+market: general
+type: method
+confidence: verified
+tags: [general, method, verified]
+updated: 2026-08-26
+---
+
 # Never state a price, multiple or return without pulling it that session
 
 Standing rule for this workspace, mirroring the gamerun rule "verify against code, not memory".

@@ -1,3 +1,12 @@
+---
+title: "US crypto regulation: the laws passed in 2025, the rules land late 2026 into 2027"
+market: crypto
+type: finding
+confidence: verified
+tags: [crypto, finding, verified]
+updated: 2026-08-26
+---
+
 # US crypto regulation: the laws passed in 2025, the rules land late 2026 into 2027
 
 Verified 2026-08-26. Useful because the *gap* between statute and rulemaking is where the

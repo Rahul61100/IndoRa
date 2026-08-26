@@ -1,3 +1,12 @@
+---
+title: "CORRECTION: India did not halt Russian crude — it was outbid and disrupted"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # CORRECTION: India did not halt Russian crude — it was outbid and disrupted
 
 **This corrects a claim I made on 2026-08-25 and repeated since.** I wrote that India "halted

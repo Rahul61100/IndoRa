@@ -1,3 +1,12 @@
+---
+title: "US valuation offers almost no cushion, and the crowding is institutional not retail"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # US valuation offers almost no cushion, and the crowding is institutional not retail
 
 Verified 2026-08-26.

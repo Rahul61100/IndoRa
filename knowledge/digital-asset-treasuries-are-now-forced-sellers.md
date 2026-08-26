@@ -1,3 +1,12 @@
+---
+title: "The digital-asset treasury companies have flipped from marginal buyer to latent forced seller"
+market: crypto
+type: finding
+confidence: verified
+tags: [crypto, finding, verified]
+updated: 2026-08-26
+---
+
 # The digital-asset treasury companies have flipped from marginal buyer to latent forced seller
 
 Verified 2026-08-26. **A structural risk I had entirely missed**, and it is the most important

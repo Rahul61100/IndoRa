@@ -1,3 +1,12 @@
+---
+title: "India's capex cycle is Delhi's, not private industry's — and it is front-loaded"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # India's capex cycle is Delhi's, not private industry's — and it is front-loaded
 
 Verified 2026-08-26. **This materially qualifies the L&T and capital-goods theses**, which I had

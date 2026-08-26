@@ -1,3 +1,12 @@
+---
+title: "India policy: the windfall tax is back, the 2026 state elections are already over"
+market: india
+type: finding
+confidence: degraded
+tags: [india, finding, degraded]
+updated: 2026-08-26
+---
+
 # India policy: the windfall tax is back, the 2026 state elections are already over
 
 Verified 2026-08-26. **Confidence: DEGRADED** — three of four research passes hit the exhausted

@@ -1,3 +1,12 @@
+---
+title: "The memory supercycle has a victim side — and it lands on Indian phone assembly"
+market: us
+type: finding
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-26
+---
+
 # The memory supercycle has a victim side — and it lands on Indian phone assembly
 
 Verified 2026-08-26. **This is the second-order the semis story hides, and it reaches the open

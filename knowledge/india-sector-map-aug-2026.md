@@ -1,3 +1,12 @@
+---
+title: "India sector map — the eight sectors I had never looked at"
+market: india
+type: finding
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-26
+---
+
 # India sector map — the eight sectors I had never looked at
 
 Verified 2026-08-26. Coverage fill-in. Prices as at that date.

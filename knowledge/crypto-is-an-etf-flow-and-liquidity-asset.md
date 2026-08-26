@@ -1,3 +1,12 @@
+---
+title: "Crypto now trades as an ETF-flow and liquidity asset, not an independent one"
+market: crypto
+type: flows
+confidence: verified
+tags: [crypto, flows, verified]
+updated: 2026-08-26
+---
+
 # Crypto now trades as an ETF-flow and liquidity asset, not an independent one
 
 Verified 2026-08-26. BTC **$78,199.8** — **-9.2% over a year and 19.3% below its high** near
