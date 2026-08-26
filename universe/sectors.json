@@ -1,0 +1,19 @@
+{
+  "_comment": "Synthetic sector baskets built from constituents. Yahoo's own ^CNX* sector indices carry multi-week history gaps (see playbooks/data-quality-rules.md) so sector rotation is computed here from stocks we already fetch. Equal-weighted median, not cap-weighted -- this measures breadth of the move, not the megacap's move.",
+  "Banks-Private": ["HDFCBANK.NS", "ICICIBANK.NS", "AXISBANK.NS", "KOTAKBANK.NS"],
+  "Banks-PSU": ["SBIN.NS"],
+  "NBFC": ["BAJFINANCE.NS", "SHRIRAMFIN.NS", "JIOFIN.NS", "IRFC.NS"],
+  "IT": ["TCS.NS", "INFY.NS", "HCLTECH.NS", "WIPRO.NS", "TECHM.NS", "PERSISTENT.NS", "COFORGE.NS"],
+  "Auto": ["MARUTI.NS", "M&M.NS", "TMPV.NS", "BAJAJ-AUTO.NS", "EICHERMOT.NS", "HEROMOTOCO.NS", "TVSMOTOR.NS"],
+  "Pharma-Healthcare": ["SUNPHARMA.NS", "CIPLA.NS", "DRREDDY.NS", "DIVISLAB.NS", "APOLLOHOSP.NS", "MAXHEALTH.NS"],
+  "FMCG-Consumer": ["HINDUNILVR.NS", "ITC.NS", "NESTLEIND.NS", "DMART.NS"],
+  "Discretionary-Retail": ["TITAN.NS", "TRENT.NS", "ETERNAL.NS", "ASIANPAINT.NS"],
+  "Metals-Materials": ["TATASTEEL.NS", "HINDALCO.NS", "JSWSTEEL.NS", "COALINDIA.NS", "SRF.NS", "PIIND.NS"],
+  "Power-Utilities": ["NTPC.NS", "POWERGRID.NS", "TATAPOWER.NS", "JSWENERGY.NS", "NHPC.NS"],
+  "OilGas": ["RELIANCE.NS", "ONGC.NS", "IOC.NS", "BPCL.NS"],
+  "CapitalGoods": ["LT.NS", "SIEMENS.NS", "ABB.NS", "CUMMINSIND.NS", "POLYCAB.NS", "BHEL.NS"],
+  "Defence": ["HAL.NS", "BEL.NS", "MAZDOCK.NS", "SOLARINDS.NS"],
+  "EMS-Electronics": ["DIXON.NS", "KAYNES.NS", "AMBER.NS"],
+  "Telecom": ["BHARTIARTL.NS"],
+  "Infra-Realty-Cement": ["ADANIPORTS.NS", "ULTRACEMCO.NS", "GRASIM.NS", "LODHA.NS", "INDIGO.NS"]
+}
