@@ -106,6 +106,47 @@ And India remains the most expensive major EM at 20-22x forward against Taiwan 1
   anything a de-rating.**
 - A multiple is only meaningful against the risk-free rate, never against its own history alone.
 
+### 2026-08-26 (fourth pass) — the political-economy layer hits three positions at once
+
+Added the political economy layer after correctly being told the analysis was running a Western
+textbook on a market where proximity to power is a pricing factor. **It immediately found
+problems in three open positions that no price series or financial statement contained.**
+
+*Confidence: DEGRADED — this research ran after the session search cap, via news aggregation
+rather than primary sources. Directionally strong; each item below needs primary re-verification
+before it drives a trade.*
+
+**1. HAL — the flagship programme is late and penalties are reportedly being considered.**
+**Tejas Mk1A delivery is running 2+ years behind schedule** on GE F404-IN20 engine acceptance
+failures, and the **MoD is reportedly planning financial penalties on HAL.** I bought HAL on trend
+plus a rising defence budget, and explicitly logged the 7% revenue CAGR as the known weakness —
+but I did not know the delay had reached the penalty stage. That is the *mechanism* by which a
+7% CAGR persists despite a ₹94,000 crore order book.
+**Action: HAL cut to half position and the stop tightened to its 50 DMA.** The trend thesis is
+intact; the fundamental floor under it is weaker than I thought.
+
+**2. L&T — its headline wins are European, not Indian.** The ~₹30,000 crore and ~₹15,000 crore
+(TenneT offshore-wind transmission) awards in this window are **European export contracts, not
+Indian NIP capex.** I have been holding L&T as *the* India-capex proxy. Partly wrong — a
+meaningful slice of the order momentum is European offshore wind.
+Compounding it: **NHAI awards are at a seven-year low** with debt down 43% from the FY22 peak and
+no rebound expected in FY27, and **no NIP or Gati-Shakti-labelled awards were found at all.**
+**Action: the L&T thesis is restated, not closed.** It stays on the bench. If the thesis is
+"India capex", the vehicle should be electrification and equipment
+([[india-capex-divergence-is-execution-not-demand]]); if the thesis is L&T, it must be underwritten
+as a global E&C business with European exposure — a different analysis I have not done.
+
+**3. Dixon — Mobile PLI 2.0 has not disbursed a rupee.** The ₹62,500 crore scheme was **cleared on
+15 July 2026**; disbursement has not begun. Dixon and peers rallied on the *clearance*. And auto
+PLI has disbursed **under 10%** of outlay while pharma API has disbursed **1.3%** — the base rate
+for Indian scheme disbursement is poor. Dixon is already capped for the memory-BOM reason
+([[memory-shortage-is-a-tax-on-device-makers]]); this is a second, independent reason.
+**Action: no change to sizing — already capped — but the thesis note now records that the policy
+leg is an approval, not a cash flow.**
+
+**Method lesson, promoted:** **always ask whether something is approved, awarded, or paid.** Three
+different things, routinely reported as one. [[announced-is-not-disbursed]]
+
 ---
 
 ## SHORT horizon (months)
@@ -244,3 +285,6 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-26 | **Whole India book** | **premise overturned** | ERP negative ~200bp; FY26 EPS grew 4.5% not 18%; EM weight halved |
 | 2026-08-26 | HDFC Bank (MEDIUM) | **cut to half, no adds** | Among the largest FY27 downgrades |
 | 2026-08-26 | India equities | **new positions frozen** | Until the "why not G-secs at 6.85%" question is answered |
+| 2026-08-26 | **HAL** | **cut to half, stop tightened** | Tejas Mk1A 2+ yrs late; MoD reportedly weighing penalties |
+| 2026-08-26 | **L&T** | **thesis restated** | Headline wins are European, not Indian NIP; NHAI awards at 7-year low |
+| 2026-08-26 | Dixon | second risk logged | Mobile PLI 2.0 cleared 15 Jul, nothing disbursed |
