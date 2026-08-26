@@ -59,6 +59,53 @@ equipment, not tonnage. [[india-capex-divergence-is-execution-not-demand]]
 downstream and whether we own them. The multi-market universe is what surfaced this — an
 India-only view would not have seen it.
 
+### 2026-08-26 (third pass) — the core India valuation claim does not survive
+
+Deep research overturned the premise the whole India book was built on. Recording it in full
+because this is the largest single error the workspace has produced.
+
+**1. The equity risk premium is NEGATIVE.** India's 10-year G-sec yields **6.85%**; the Nifty's
+earnings yield is **4.89%**. ERP is **−1.93% to −2.09%**, robust to every forward-P/E proxy. I
+called Indian large caps cheap on the basis of a P/E 12.6% below its own 10-year average. That is
+a comparison to India's past, not to the risk-free alternative available today, and on the
+rate-adjusted test India is expensive. [[CORRECTION-india-erp-is-negative]]
+
+**2. "Earnings +18%" was a quarter, not a year, and it was five stocks.** FY26 full-year growth
+was **4.5%**, against 12-15% expected. FY25 was **3.4%** against ~15%. Two consecutive years of
+delivering about a third of what was promised, and nine straight years of missing start-of-year
+consensus. Of Q1 FY27's incremental profit, **60% came from ONGC, Hindalco, Reliance, JSW Steel
+and Bharti Airtel** — a commodity base effect plus telecom tariffs. Meanwhile FY27 consensus EPS
+was **cut ~9% over twelve months**. [[CORRECTION-india-earnings-growth-was-4-5-percent]]
+
+**3. The flow evidence is worse than the currency data alone showed.** MSCI India is **−5.34%** in
+USD over one year against MSCI EM **+37.06%** — a 42-point gap. India's MSCI EM weight has roughly
+**halved from ~19-21% to ~12%**, dropping from second to fourth behind China, Taiwan and Korea.
+And India remains the most expensive major EM at 20-22x forward against Taiwan 14-16x, China
+10-13x, Korea 10-12x. [[india-lost-half-its-em-weight]]
+
+**4. Two names in the book are among the biggest FY27 downgrades: HDFC Bank and Infosys.**
+
+**Actions taken:**
+- **HDFC Bank — MEDIUM position reduced from core to half, and no adds.** The NIM mechanics still
+  hold, but I was buying a name whose forward estimates are being cut while calling it cheap on a
+  book multiple. Both cannot be true without an explicit view on which wins, and I did not have
+  one. The LONG tranche stands — a decades thesis on the deposit franchise survives an estimate
+  cut; a two-year thesis does not.
+- **Infosys — stays benched, now with confirmation.** It is on the downgrade list. The entry
+  signal remains a guidance raise.
+- **Whole-book framing changed.** The India case is no longer "cheap large caps re-rate". It is
+  "a negative-ERP market held up by a domestic bid, where the return has to come from stock
+  selection, not from the index". That is what the regime label already said
+  ([[regime-labels-aug-2026]]) — the valuation work now agrees with the breadth work.
+- **Open question that must be answered before adding any India equity risk:** at 6.85% risk-free
+  and a negative ERP, *why own Indian equities at all rather than G-secs?* Research commissioned;
+  unresolved. Until answered, **no new India equity positions.**
+
+**Method lessons, both promoted to knowledge:**
+- Trailing beats and forward cuts routinely coexist. **Check revision direction before calling
+  anything a de-rating.**
+- A multiple is only meaningful against the risk-free rate, never against its own history alone.
+
 ---
 
 ## SHORT horizon (months)
@@ -194,3 +241,6 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-26 | ICICI Bank, HAL | opened | Replacements, trend-confirmed |
 | 2026-08-26 | Dixon | **risk added, capped** | Memory BOM shock + shipment contraction; found via the US universe |
 | 2026-08-26 | L&T | thesis sharpened | Capex divergence is execution, not demand — equipment over EPC |
+| 2026-08-26 | **Whole India book** | **premise overturned** | ERP negative ~200bp; FY26 EPS grew 4.5% not 18%; EM weight halved |
+| 2026-08-26 | HDFC Bank (MEDIUM) | **cut to half, no adds** | Among the largest FY27 downgrades |
+| 2026-08-26 | India equities | **new positions frozen** | Until the "why not G-secs at 6.85%" question is answered |
