@@ -1,0 +1,11 @@
+{
+  "_comment": "Crypto baskets. Note tickers can go stale silently on rebrands/migrations (MATIC to POL) -- the fetcher flags stale last bars.",
+  "Majors": ["BTC-USD", "ETH-USD", "SOL-USD", "BNB-USD", "XRP-USD"],
+  "L1-Alt": ["ADA-USD", "AVAX-USD", "TRX-USD", "DOT-USD", "TON-USD", "APT-USD", "NEAR-USD", "SEI-USD", "ICP-USD"],
+  "L2": ["ARB-USD", "OP-USD"],
+  "DeFi": ["UNI-USD", "AAVE-USD", "MKR-USD", "LDO-USD", "CRV-USD", "INJ-USD", "ENA-USD", "PENDLE-USD"],
+  "Memes": ["DOGE-USD"],
+  "Oracles": ["LINK-USD"],
+  "Equity-Proxies": ["COIN", "HOOD", "MSTR", "MARA", "RIOT", "CLSK", "CRCL", "GLXY", "BMNR"],
+  "ETF-Vehicles": ["IBIT", "ETHA"]
+}

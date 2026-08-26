@@ -1,6 +1,6 @@
-# India data brief — 2026-08-26
+# INDIA data brief — 2026-08-26
 
-_Generated from `data/daily/2026-08-26.json`. Every number is a close-to-close derivation from Yahoo OHLC. Read `playbooks/data-quality-rules.md` before quoting any single-day move._
+_Generated from `data/daily/india/2026-08-26.json`. Every number is a close-to-close derivation from Yahoo OHLC. Read `playbooks/data-quality-rules.md` before quoting any single-day move._
 
 ## Benchmarks and macro
 ```
@@ -12,14 +12,14 @@ symbol              price    1d%    1m%    3m%    6m%    1y%   RSI  v200%  frHi%
 ^NSEMDCP50       18,380.6   -0.2    2.3    3.5    9.1   15.4    61    7.0   -0.2   17.1  uptrend  
 ^INDIAVIX            10.6   -4.7  -15.9  -29.5  -21.5  -14.5    36  -27.4  -62.1  -12.8  downtrend !
 USDINR=X             95.4   -0.3   -0.4   -0.7    4.2    8.3    46    2.5   -1.5   10.8  above-200dma-choppy  
-BZ=F                 86.5   -2.4    2.8   -8.3   22.0   25.6    47    4.4  -26.9   29.6  uptrend  
-CL=F                 81.4   -1.1    2.8   -8.2   24.5   25.7    48    4.7  -27.9   26.8  uptrend  
-GC=F              4,679.9    0.9   15.9    5.2  -10.1   38.7    76    3.8  -12.0   40.2  above-200dma-choppy  
-SI=F                 68.3   -0.5   19.2   -8.5  -24.9   76.6    63   -4.3  -40.7   83.0  below-200dma-choppy  
-^GSPC             7,681.2    0.1    3.4    2.1   10.6   19.3    54    8.0   -1.5   23.7  uptrend  
-^IXIC            26,119.2   -0.1    5.0   -2.1   12.8   21.8    50    7.6   -3.6   26.7  uptrend  
-^TNX                  4.7    0.5    1.3    4.1   15.2    9.1    51    7.5   -1.7   12.9  uptrend  
-DX-Y.NYB             99.2    0.2   -2.2   -0.1    1.5    0.7    39   -0.0   -2.4    2.2  below-200dma-choppy  
+BZ=F                 86.4   -2.5    2.8   -8.4   22.0   25.6    47    4.3  -27.0   29.5  uptrend  
+CL=F                 81.5   -1.0    2.8   -8.1   24.6   25.8    48    4.7  -27.8   26.9  uptrend  
+GC=F              4,673.7    0.8   15.8    5.1  -10.2   38.5    76    3.7  -12.1   40.0  above-200dma-choppy  
+SI=F                 68.2   -0.6   19.0   -8.6  -25.0   76.3    63   -4.4  -40.7   82.8  below-200dma-choppy  
+^GSPC             7,674.4   -0.0    3.3    2.0   10.5   19.2    54    8.0   -1.6   23.6  uptrend  
+^IXIC            26,082.1   -0.3    4.8   -2.2   12.7   21.6    49    7.4   -3.7   26.5  uptrend  
+^TNX                  4.7    0.6    1.4    4.2   15.3    9.2    51    7.6   -1.6   13.0  uptrend  
+DX-Y.NYB             99.2    0.3   -2.1    0.0    1.6    0.8    40    0.0   -2.4    2.2  above-200dma-choppy  
 ```
 
 ## Sector rotation (median member return, equal weighted)
@@ -101,7 +101,7 @@ TMPV.NS             313.1   -0.4   -3.5  -20.5  -17.1  -54.0    30  -11.2  -56.5
 - Within 3% of 52w low: HDFCBANK.NS, ONGC.NS, HINDUNILVR.NS, ITC.NS, PIIND.NS, IRFC.NS
 
 ## Breadth
-- 56% of tracked stocks above their 200 DMA
+- 57% of tracked stocks above their 200 DMA
 - 49% above their 50 DMA
 - uptrend: 24 / downtrend: 23 / choppy: 25
 

@@ -1,0 +1,10 @@
+{
+  "benchmarks": ["^GSPC", "^IXIC", "^DJI", "^RUT", "^NDX", "^VIX", "^MID"],
+  "sectors": ["XLK", "XLF", "XLE", "XLV", "XLI", "XLY", "XLP", "XLU", "XLB", "XLRE", "XLC", "SMH", "IBB", "XBI", "ITA", "KRE", "IWM", "MTUM", "QUAL", "VLUE"],
+  "macro": ["^TNX", "^FVX", "^TYX", "DX-Y.NYB", "BZ=F", "GC=F", "SI=F", "HG=F", "NG=F", "^IRX", "EURUSD=X", "USDJPY=X", "TLT", "HYG", "LQD"],
+  "megacap": ["NVDA", "MSFT", "AAPL", "GOOGL", "AMZN", "META", "AVGO", "TSLA", "LLY", "JPM", "BRK-B", "V", "UNH", "XOM", "WMT"],
+  "ai_infra": ["AMD", "MU", "TSM", "ASML", "ARM", "MRVL", "VRT", "SMCI", "CRWV", "ANET", "DELL", "COHR", "CEG", "VST", "TLN", "NBIS", "ORCL", "PLTR"],
+  "software_ai_risk": ["CRM", "NOW", "ADBE", "SNOW", "MDB", "DDOG", "TEAM", "WDAY", "INTU", "HUBS", "ZM", "TWLO"],
+  "midsmall": ["APP", "HOOD", "COIN", "RBLX", "DKNG", "TOST", "AXON", "CELH", "DUOL", "SOFI", "AFRM", "SHOP", "NET", "ONON", "RKLB", "LUNR", "IONQ", "RGTI", "OKLO", "SMR"],
+  "defensive": ["KO", "PG", "COST", "MCD", "PEP", "JNJ", "ABBV", "MRK", "CVS", "NEE", "DUK", "SO"]
+}

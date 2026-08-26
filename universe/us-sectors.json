@@ -1,0 +1,15 @@
+{
+  "_comment": "US sector baskets. Unlike India, the SPDR sector ETFs are clean data -- but they are cap-weighted, so a megacap can carry a sector that is otherwise broken. These constituent baskets measure BREADTH: is the median member participating. Compare the two.",
+  "Megacap": ["NVDA", "MSFT", "AAPL", "GOOGL", "AMZN", "META", "AVGO", "TSLA"],
+  "AI-Semis": ["NVDA", "AMD", "MU", "TSM", "ASML", "ARM", "MRVL", "AVGO"],
+  "AI-Datacenter-Power": ["VRT", "ANET", "DELL", "COHR", "CEG", "VST", "TLN", "OKLO", "SMR"],
+  "AI-Neocloud": ["CRWV", "NBIS", "ORCL", "PLTR", "SMCI"],
+  "Software-AI-Exposed": ["CRM", "NOW", "ADBE", "SNOW", "MDB", "DDOG", "TEAM", "WDAY", "INTU", "HUBS", "ZM", "TWLO"],
+  "Financials": ["JPM", "V", "HOOD", "COIN", "SOFI", "AFRM"],
+  "Healthcare": ["LLY", "UNH", "JNJ", "ABBV", "MRK", "CVS"],
+  "Staples-Defensive": ["KO", "PG", "COST", "MCD", "PEP"],
+  "Utilities": ["NEE", "DUK", "SO", "CEG", "VST"],
+  "Energy": ["XOM", "BZ=F"],
+  "HighBeta-Retail": ["APP", "RBLX", "DKNG", "TOST", "AXON", "CELH", "DUOL", "SHOP", "NET", "ONON"],
+  "SpaceQuantum-Speculative": ["RKLB", "LUNR", "IONQ", "RGTI"]
+}

@@ -212,13 +212,14 @@ def main() -> int:
     snapshot["retried_individually"] = retried
     snapshot["quality_flags"] = flagged
 
-    OUTDIR.mkdir(parents=True, exist_ok=True)
+    outdir = OUTDIR / args.universe
+    outdir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     payload = json.dumps(snapshot, indent=1)
-    (OUTDIR / f"{stamp}.json").write_text(payload)
-    (OUTDIR / "latest.json").write_text(payload)
+    (outdir / f"{stamp}.json").write_text(payload)
+    (outdir / "latest.json").write_text(payload)
 
-    print(f"wrote {OUTDIR / f'{stamp}.json'}")
+    print(f"wrote {outdir / f'{stamp}.json'}")
     print(f"  ok={len(frames)}/{len(tickers)}  retried={len(retried)}  missing={len(missing)}  flagged={len(flagged)}")
     if missing:
         print("  missing:", ", ".join(missing))

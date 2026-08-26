@@ -25,8 +25,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def load(date: str | None) -> dict:
-    p = ROOT / "data" / "daily" / (f"{date}.json" if date else "latest.json")
+def load(market: str, date: str | None) -> dict:
+    p = ROOT / "data" / "daily" / market / (f"{date}.json" if date else "latest.json")
     return json.loads(p.read_text())
 
 
@@ -63,20 +63,22 @@ HEAD = (f"{'symbol':<15}{'price':>10}{'1d%':>7}{'1m%':>7}{'3m%':>7}{'6m%':>7}"
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date")
+    ap.add_argument("--market", default="india")
     ap.add_argument("--write", action="store_true")
     args = ap.parse_args()
 
-    snap = load(args.date)
+    snap = load(args.market, args.date)
     rows = flat(snap)
-    sectors = json.loads((ROOT / "universe" / "sectors.json").read_text())
+    sec_file = "sectors.json" if args.market == "india" else f"{args.market}-sectors.json"
+    sectors = json.loads((ROOT / "universe" / sec_file).read_text())
     stamp = snap["generated_at"][:10]
 
     L: list[str] = []
     add = L.append
 
-    add(f"# India data brief — {stamp}")
+    add(f"# {args.market.upper()} data brief — {stamp}")
     add("")
-    add(f"_Generated from `data/daily/{stamp}.json`. Every number is a close-to-close "
+    add(f"_Generated from `data/daily/{args.market}/{stamp}.json`. Every number is a close-to-close "
         f"derivation from Yahoo OHLC. Read `playbooks/data-quality-rules.md` before "
         f"quoting any single-day move._")
     add("")
@@ -124,6 +126,8 @@ def main() -> int:
     add("")
 
     stocks = {s: r for s, r in rows.items() if not s.startswith("^") and "=" not in s}
+    if not stocks:
+        stocks = dict(rows)
     by1y = sorted(stocks.items(), key=lambda kv: -(kv[1]["returns_pct"]["1y"] or -999))
 
     add("## Leaders (top 12 by 1y)")
@@ -172,7 +176,7 @@ def main() -> int:
 
     text = "\n".join(L)
     if args.write:
-        out = ROOT / "journal" / f"{stamp}-data.md"
+        out = ROOT / "journal" / f"{stamp}-{args.market}-data.md"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(text)
         print(f"wrote {out}")
