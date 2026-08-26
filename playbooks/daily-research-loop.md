@@ -8,11 +8,19 @@ new ideas.
 
 ```bash
 cd ~/market-intel
-uv run scripts/fetch_daily.py --period 3y
-uv run scripts/report_daily.py --write
+for m in india us crypto; do
+  uv run scripts/fetch_daily.py --universe $m --period 3y
+  uv run scripts/report_daily.py --market $m --write
+done
+uv run scripts/fetch_flows.py
 ```
 
-Writes `data/daily/YYYY-MM-DD.json` and `journal/YYYY-MM-DD-data.md`.
+Writes `data/daily/<market>/YYYY-MM-DD.json`, `journal/YYYY-MM-DD-<market>-data.md`, and appends
+to the ledgers in `data/flows/`.
+
+**Run `fetch_flows.py` every single day without exception.** NSE serves only the latest session,
+so a skipped day is a permanently missing row — the history cannot be backfilled. The stablecoin
+and TVL series backfill themselves; the India FII/DII series does not.
 
 Read the quality-flag block at the bottom of the brief first. Anything flagged is unusable
 until confirmed elsewhere — see `data-quality-rules.md`.
@@ -34,12 +42,15 @@ Write the answer in the scorecard even when nothing changed. Especially when not
 
 In this order, because each frames the next:
 
-1. **Macro** — crude, USDINR, US 10-year, gold and silver, dollar index. These set the regime.
-2. **Breadth** — % above 200 DMA and the uptrend/downtrend/choppy split. This decides whether
+1. **Flows** — India FII/DII net, stablecoin supply, DeFi TVL. Read these *first*. Flows have
+   explained more of what happened in all three markets than any valuation metric.
+2. **Macro** — crude, USDINR, US 10-year and 30-year, gold and silver, dollar index. These set
+   the regime.
+3. **Breadth** — % above 200 DMA and the uptrend/downtrend/choppy split. This decides whether
    an index view is worth having at all.
-3. **Sector rotation** — the median-member table. Look for a sector where the *median* member
+4. **Sector rotation** — the median-member table. Look for a sector where the *median* member
    is moving, not one where a single megacap is dragging the average.
-4. **Extremes** — new highs, new lows, RSI below 35 and above 70. These are where the questions
+5. **Extremes** — new highs, new lows, RSI below 35 and above 70. These are where the questions
    are, not where the answers are.
 
 ## 4. Explain the anomalies

@@ -59,8 +59,13 @@ not a data error.
   *cut*. Revision direction has done more work in this loop than any valuation metric.
 - **Corporate-action handling.** Demergers, bonuses and renames silently corrupt long-window
   returns. Needs a per-ticker action log so the fetcher can flag or splice.
-- **Flows.** FII/DII for India, ETF creations for crypto, fund flows for the US. The single most
-  explanatory variable so far and currently not collected at all.
+- **Flows.** ✅ *partially done 2026-08-26* — `fetch_flows.py` collects India FII/DII (NSE),
+  stablecoin supply and DeFi TVL (DefiLlama), all public and unauthenticated, into append-only
+  ledgers. It immediately produced a finding no search had: stablecoin supply peaked at $320.9bn
+  in May 2026 and is **down 3.2% over 90 days** while BTC rallied 28% on ETF creations
+  ([[stablecoin-supply-peaked-in-may]]).
+  **Still missing: US fund flows and crypto ETF creations** — no free daily source found yet.
+  Do not let a missing series read as zero flow.
 - **Scheduled runs**, so the snapshot exists before the session starts rather than during it.
 - **More universes:** Japan, Europe, commodities, FX, India small/mid as its own file.
 

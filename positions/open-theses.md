@@ -29,6 +29,36 @@ Added in their place: ICICI Bank and HAL for SHORT, Dixon promoted to MEDIUM cor
 **Lesson promoted to knowledge:** [[value-and-momentum-are-split]] — screening on valuation alone
 in this tape produces a book of confirmed downtrends.
 
+### 2026-08-26 (second pass) — a US supply-chain fact lands on an Indian thesis
+
+No positions changed, but one **material risk was added to Dixon that was not in the thesis when
+it was opened**, and it came from the US universe rather than the Indian one.
+
+Gartner: DRAM and SSD prices up **130% by end-2026**, pushing smartphone prices +13% and PCs +17%,
+driving **smartphone shipments -8.4% and PC shipments -10.4%** — the steepest device contraction
+in over a decade. The pain is concentrated in **entry and mid-tier Android**, where memory is the
+largest BOM swing and demand is most price-elastic. That is precisely Dixon's segment.
+
+A ~3%-margin contract assembler paid per unit has neither the margin to absorb a BOM shock nor the
+pricing power to pass one on, and a shipment contraction hits volume and margin together. The
+policy tailwind (₹1.9 lakh crore across Semicon 2.0 and Mobile PLI 2.0) is unchanged and still
+real; it now has to be weighed against a component-cost headwind.
+
+**Action:** Dixon stays core at half position but is **capped — no adds** until BOM pass-through
+terms are checked and monthly smartphone shipment data is being tracked as a thesis input.
+Full note: [[memory-shortage-is-a-tax-on-device-makers]].
+
+**Also sharpened, no action:** the standing L&T bench note. The India capex divergence resolved —
+it is **execution quality, not demand**. Aggregate capital-goods order inflow excluding L&T was
+₹32,400 crore in Q3 FY26, *down* year on year; the strength is concentrated in electrification and
+automation (Siemens +32.6%, ABB +25%), while infrastructure EPC inflow barely moved (₹565bn in
+Q4 FY26 against ₹548bn in Q3) with huge dispersion between contractors. Buy the capex theme through
+equipment, not tonnage. [[india-capex-divergence-is-execution-not-demand]]
+
+**Lesson promoted:** when a shortage makes an upstream supplier a star, ask who pays for it
+downstream and whether we own them. The multi-market universe is what surfaced this — an
+India-only view would not have seen it.
+
 ---
 
 ## SHORT horizon (months)
@@ -162,3 +192,5 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-26 | Infosys | **demoted** | Revisions still negative |
 | 2026-08-26 | SBI, Dixon | **confirmed** | Trend and breadth agree with the fundamentals |
 | 2026-08-26 | ICICI Bank, HAL | opened | Replacements, trend-confirmed |
+| 2026-08-26 | Dixon | **risk added, capped** | Memory BOM shock + shipment contraction; found via the US universe |
+| 2026-08-26 | L&T | thesis sharpened | Capex divergence is execution, not demand — equipment over EPC |
