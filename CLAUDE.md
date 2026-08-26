@@ -36,9 +36,14 @@ is an orchestrated harness. Right now it is a manual loop with scripted data col
    moves. Anything flagged is unusable until a second source confirms it.
 3. **Score the open theses** in [`positions/open-theses.md`](positions/open-theses.md) before
    forming a new opinion. A thesis that has been wrong for three weeks is information.
-4. **Read [`knowledge/INDEX.md`](knowledge/INDEX.md)** — one durable fact per file, the same
+4. **Run the political economy layer** — [`playbooks/political-economy-layer.md`](playbooks/political-economy-layer.md).
+   Who is positioned where, who holds the levers, who benefits from what the state is doing, and
+   what is next on the political calendar. **This is not optional and it is not colour.** Two of
+   the largest findings in this workspace are political-economy facts that no price series or
+   financial statement contained.
+5. **Read [`knowledge/INDEX.md`](knowledge/INDEX.md)** — one durable fact per file, the same
    pattern as the gamerun agentic repo. Skim the index, open what is relevant.
-5. **Write the day's note** to `journal/YYYY-MM-DD.md`. The data brief is generated beside it
+6. **Write the day's note** to `journal/YYYY-MM-DD.md`. The data brief is generated beside it
    as `YYYY-MM-DD-data.md`; the narrative note is yours to write and should say what *changed*,
    not restate the table.
 
@@ -68,6 +73,13 @@ is an orchestrated harness. Right now it is a manual loop with scripted data col
   valuation alone has been losing. [`value-and-momentum-are-split`](knowledge/value-and-momentum-are-split.md)
 - **India is de-rating while earnings accelerate** — Nifty down on the year with profits up 18%.
   That is a flows and multiple problem, not an earnings problem. [`india-is-derating-not-missing-earnings`](knowledge/india-is-derating-not-missing-earnings.md)
+- **Proximity to power is a pricing factor, especially in India** — who wins the licence, order,
+  subsidy or forbearance is knowable from the public record and is absent from every financial
+  statement. [`political-economy-layer`](playbooks/political-economy-layer.md)
+- **India's ERP is NEGATIVE** — the 6.85% G-sec beats the 4.89% earnings yield. "Cheap versus its
+  own history" is not the same as cheap. [`CORRECTION-india-erp-is-negative`](knowledge/CORRECTION-india-erp-is-negative.md)
+- **Gold beat the Nifty over 1, 3 and 5 years in rupees** — the honest comparison set for any India
+  equity thesis. [`gold-has-beaten-indian-equities-on-every-horizon`](knowledge/gold-has-beaten-indian-equities-on-every-horizon.md)
 - **The rate-cut cycle is over** — repo has been held four straight meetings and inflation is
   climbing toward a forecast peak. Nothing may be bought on a "cuts are coming" thesis.
   [`rate-cut-cycle-is-over`](knowledge/rate-cut-cycle-is-over.md)

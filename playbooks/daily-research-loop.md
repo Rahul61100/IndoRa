@@ -44,13 +44,17 @@ In this order, because each frames the next:
 
 1. **Flows** — India FII/DII net, stablecoin supply, DeFi TVL. Read these *first*. Flows have
    explained more of what happened in all three markets than any valuation metric.
-2. **Macro** — crude, USDINR, US 10-year and 30-year, gold and silver, dollar index. These set
-   the regime.
-3. **Breadth** — % above 200 DMA and the uptrend/downtrend/choppy split. This decides whether
+2. **The political economy layer** — promoter pledging and stake changes, bulk and block deals,
+   regulatory or judicial actions on held names, policy and appointment news, and the next dated
+   political catalyst. See `political-economy-layer.md`. In India this moves stocks harder and
+   faster than earnings, and it is invisible in every price series and every financial statement.
+3. **Macro** — crude (**curve shape and crack spreads, not just flat price**), USDINR, **USDJPY
+   and BOJ policy**, US 10-year and 30-year, gold and silver, dollar index. These set the regime.
+4. **Breadth** — % above 200 DMA and the uptrend/downtrend/choppy split. This decides whether
    an index view is worth having at all.
-4. **Sector rotation** — the median-member table. Look for a sector where the *median* member
+5. **Sector rotation** — the median-member table. Look for a sector where the *median* member
    is moving, not one where a single megacap is dragging the average.
-5. **Extremes** — new highs, new lows, RSI below 35 and above 70. These are where the questions
+6. **Extremes** — new highs, new lows, RSI below 35 and above 70. These are where the questions
    are, not where the answers are.
 
 ## 4. Explain the anomalies
