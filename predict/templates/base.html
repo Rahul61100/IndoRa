@@ -8,40 +8,57 @@
 <style>
 /* ══ INDORA ══════════════════════════════════════════════════════════════
    The market is cold. You are warm.
-   Market prices render cyan; human judgement renders gold. Nothing else on
-   this page may use either hue, so the only saturated colour on screen is
+   Market prices render BLUE, human judgement renders ORANGE — the one accent
+   pair that survives both deuteranopia and protanopia, sat 172° apart in
+   OKLCH at identical lightness and chroma so neither dominates. Nothing else
+   on the page may use either hue, so the only saturated colour on screen is
    always the thing you have to decide about.
    ═══════════════════════════════════════════════════════════════════════ */
 
 :root{
-  --bg:#F7F5F1; --bg-2:#EFEBE4; --panel:#FFFDFA; --panel-2:#FFFFFF;
-  --line:#E6E0D6; --line-2:#D0C7B9;
-  --ink:#141009; --ink-2:#5B5348; --ink-3:#8E8578;
-  --cold:#00767F; --cold-2:#D0EBED; --cold-glow:rgba(0,118,127,.18);
-  --warm:#A96200; --warm-2:#FCE9CD; --warm-glow:rgba(169,98,0,.22);
-  --hot:#AF2318;
-  --sh:0 1px 2px rgba(20,16,9,.05),0 10px 30px -14px rgba(20,16,9,.20);
-  --sh-2:0 2px 6px rgba(20,16,9,.07),0 28px 56px -22px rgba(20,16,9,.32);
+  /* Measured, not chosen. Neutrals and both accents share OKLCH hue math:
+     accents sit 172° apart (near-complement) at IDENTICAL lightness and
+     chroma, so neither dominates; the neutral ramp is hue-matched to the
+     cold accent so light and dark share one temperament. Every ink step is
+     fitted to a real contrast target, not eyeballed. */
+  --bg:#F8FAFD; --bg-2:#EEF1F5; --panel:#FEFFFF; --panel-2:#FFFFFF;
+  --line:#DBE0E6; --line-2:#C1CAD3;
+  --ink:#252F38;   /* 13.02:1 */
+  --ink-2:#4D5762; /*  7.03:1 */
+  --ink-3:#69737F; /*  4.61:1 — was 3.34:1 and failing AA */
+  --cold:#2878C0; --cold-2:#D2EBFF; --cold-glow:rgba(40,120,192,.20);
+  --warm:#A96000; --warm-2:#FFE6C7; --warm-glow:rgba(169,96,0,.22);
+  --hot:#B6322D;
+  --sh:0 1px 2px rgba(15,23,31,.05),0 10px 30px -14px rgba(15,23,31,.20);
+  --sh-2:0 2px 6px rgba(15,23,31,.07),0 28px 56px -22px rgba(15,23,31,.30);
   --ring:0 0 0 1px var(--warm),0 0 0 5px var(--warm-glow);
 }
 :root:not([data-theme="light"]){ @media (prefers-color-scheme:dark){
-  --bg:#08070D; --bg-2:#050409; --panel:#131120; --panel-2:#191627;
-  --line:#241F3A; --line-2:#3A3358;
-  --ink:#F4F1FB; --ink-2:#A49DBD; --ink-3:#6C6489;
-  --cold:#33E1EC; --cold-2:#0B2E34; --cold-glow:rgba(51,225,236,.26);
-  --warm:#FFBB57; --warm-2:#2E2011; --warm-glow:rgba(255,187,87,.28);
-  --hot:#FF7C6C;
+  --bg:#070C11; --bg-2:#030509; --panel:#0F171F; --panel-2:#17212B;
+  --line:#222C37; --line-2:#364452;
+  --ink:#C8D4E1;   /* 13.05:1 */
+  --ink-2:#919CA8; /*  7.03:1 */
+  --ink-3:#717C87; /*  4.61:1 — was 3.65:1 and failing AA */
+  /* Chroma is CAPPED at 0.105 here. Bright + saturated on a near-black
+     ground halates and vibrates; the previous 0.133–0.139 did exactly that. */
+  --cold:#86C0FC; --cold-2:#112438; --cold-glow:rgba(134,192,252,.24);
+  --warm:#E9AC70; --warm-2:#331D05; --warm-glow:rgba(233,172,112,.26);
+  --hot:#EA7A6F;
   --sh:0 1px 2px rgba(0,0,0,.55),0 14px 38px -16px rgba(0,0,0,.85);
   --sh-2:0 2px 8px rgba(0,0,0,.6),0 34px 68px -24px rgba(0,0,0,.95);
   --ring:0 0 0 1px var(--warm),0 0 0 5px var(--warm-glow);
 }}
 :root[data-theme="dark"]{
-  --bg:#08070D; --bg-2:#050409; --panel:#131120; --panel-2:#191627;
-  --line:#241F3A; --line-2:#3A3358;
-  --ink:#F4F1FB; --ink-2:#A49DBD; --ink-3:#6C6489;
-  --cold:#33E1EC; --cold-2:#0B2E34; --cold-glow:rgba(51,225,236,.26);
-  --warm:#FFBB57; --warm-2:#2E2011; --warm-glow:rgba(255,187,87,.28);
-  --hot:#FF7C6C;
+  --bg:#070C11; --bg-2:#030509; --panel:#0F171F; --panel-2:#17212B;
+  --line:#222C37; --line-2:#364452;
+  --ink:#C8D4E1;   /* 13.05:1 */
+  --ink-2:#919CA8; /*  7.03:1 */
+  --ink-3:#717C87; /*  4.61:1 — was 3.65:1 and failing AA */
+  /* Chroma is CAPPED at 0.105 here. Bright + saturated on a near-black
+     ground halates and vibrates; the previous 0.133–0.139 did exactly that. */
+  --cold:#86C0FC; --cold-2:#112438; --cold-glow:rgba(134,192,252,.24);
+  --warm:#E9AC70; --warm-2:#331D05; --warm-glow:rgba(233,172,112,.26);
+  --hot:#EA7A6F;
   --sh:0 1px 2px rgba(0,0,0,.55),0 14px 38px -16px rgba(0,0,0,.85);
   --sh-2:0 2px 8px rgba(0,0,0,.6),0 34px 68px -24px rgba(0,0,0,.95);
   --ring:0 0 0 1px var(--warm),0 0 0 5px var(--warm-glow);
