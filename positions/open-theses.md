@@ -390,5 +390,9 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-27 | **Bharti Airtel** | **downgraded to watch — exit on strength** | Jio IPO stalled at SEBI; no observation letter, no price band; stock below 50 DMA |
 | 2026-08-27 | **HDFC Bank** | **MEDIUM CLOSED; LONG suspended** | Governance: MSRDC ₹45cr payment, RBI query into the board's own penalty, US class action |
 | 2026-08-27 | **Process** | **failure recorded** | The governance agent never launched — and that is exactly where the loss was |
+| 2026-08-27 | Infosys | bench confirmed with data | 4 up / 30 down, FY+1 EPS −2.51% over 90d |
+| 2026-08-27 | HDFC Bank | close confirmed independently | 7 up / 23 down, EPS −4.35%, target 41.9% above price — value-trap signature |
+| 2026-08-27 | ICICI Bank | corroborated | 28 up / 4 down, target +20% — estimates and price agree |
+| 2026-08-27 | **Reliance** | **tension flagged** | Promoter bought ~₹9,000cr in July; FY+1 EPS cut 5.23% in 30 days |
 | 2026-08-27 | SBI | supply fact logged | Largest selling shareholder in the NSE IPO |
 | 2026-08-26 | ONGC (closed) | **invalidation had already fired** | Windfall levy was reintroduced in March 2026 — I wrote the condition against a false premise |

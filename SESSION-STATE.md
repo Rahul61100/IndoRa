@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 09:15 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 09:22 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 73 notes
+## Knowledge base: 74 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -72,16 +72,16 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 
 | Date | Thesis | Status | Note |
 |---|---|---|---|
-| 2026-08-26 | India equities | **new positions frozen** | Until the "why not G-secs at 6.85%" question is answered |
-| 2026-08-26 | **HAL** | **cut to half, stop tightened** | Tejas Mk1A 2+ yrs late; MoD reportedly weighing penalties |
-| 2026-08-26 | **L&T** | **thesis restated** | Headline wins are European, not Indian NIP; NHAI awards at 7-year low |
-| 2026-08-26 | Dixon | second risk logged | Mobile PLI 2.0 cleared 15 Jul, nothing disbursed |
 | 2026-08-26 | HDFC Bank | **cut reason narrowed** | −26% was ₹35,000cr of FII selling in one quarter; FIIs returning to financials since 22 Aug |
 | 2026-08-26 | Reliance | **conviction raised** | Promoter bought ~₹9,000cr in July, stake to 50.48% |
 | 2026-08-26 | Infosys | half the setup in place | FII IT holdings at a 4-year low; revisions still negative |
 | 2026-08-27 | **Bharti Airtel** | **downgraded to watch — exit on strength** | Jio IPO stalled at SEBI; no observation letter, no price band; stock below 50 DMA |
 | 2026-08-27 | **HDFC Bank** | **MEDIUM CLOSED; LONG suspended** | Governance: MSRDC ₹45cr payment, RBI query into the board's own penalty, US class action |
 | 2026-08-27 | **Process** | **failure recorded** | The governance agent never launched — and that is exactly where the loss was |
+| 2026-08-27 | Infosys | bench confirmed with data | 4 up / 30 down, FY+1 EPS −2.51% over 90d |
+| 2026-08-27 | HDFC Bank | close confirmed independently | 7 up / 23 down, EPS −4.35%, target 41.9% above price — value-trap signature |
+| 2026-08-27 | ICICI Bank | corroborated | 28 up / 4 down, target +20% — estimates and price agree |
+| 2026-08-27 | **Reliance** | **tension flagged** | Promoter bought ~₹9,000cr in July; FY+1 EPS cut 5.23% in 30 days |
 | 2026-08-27 | SBI | supply fact logged | Largest selling shareholder in the NSE IPO |
 | 2026-08-26 | ONGC (closed) | **invalidation had already fired** | Windfall levy was reintroduced in March 2026 — I wrote the condition against a false premise |
 
@@ -94,6 +94,7 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+2882f30 Close HDFC Bank: the driver was governance, not NIM
 94babf9 Q1 FY27 GDP preview, and flag a figure I have been quoting wrong
 03bde90 Add vault Home note and one-command refresh
 066f6a1 Fix a fabricated 2% rupee move in the intraday monitor
@@ -105,7 +106,6 @@ be68ccc Positioning data partly reverses this morning's HDFC Bank cut
 c32d522 US fundamentals: estimates rising 15% while India's were cut 9%
 8f804a9 Record the session-wide web search cap and its effect on confidence
 89c4348 Add the political economy layer to the daily loop
-c998beb Add eight-sector India coverage and the NSE IPO supply event
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
