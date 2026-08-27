@@ -191,6 +191,58 @@ five-month high. **Domestic retail is rotating down the cap curve into the two-s
 segment.** That is where the next drawdown concentrates, and it is the 2017-18 analog setting up
 exactly as described ([[regime-analog-is-a-splice-not-one-year]]).
 
+### 2026-08-27 — first live market session; two theses degrade
+
+**HDFC Bank — CLOSED in MEDIUM. The driver was never NIM.**
+
+*(Revised later the same day, once the cause was identified.)* The fall is a **governance
+overhang**: an alleged ~₹45 crore above-market "differential interest" payment to MSRDC to win
+state deposits, the bank's own board calling it "business overreach" and fining the MD/CEO, CFO and
+a Group Head **₹1 lakh each** on 27 July, the **RBI seeking a formal explanation on 31 July as to
+why**, and a **US securities class action escalating 25-27 August**. Three consecutive 52-week
+lows. [[hdfc-bank-msrdc-governance-overhang]]
+
+**I cannot hold a position on NIM mechanics while the regulator is questioning whether the board's
+own sanction on its CEO was adequate.** That is a different category of risk from a margin cycle,
+and it was developing publicly since May while I built a NIM thesis, a flow thesis, a correlation
+matrix and a risk table on top of it.
+
+**Action: MEDIUM tranche closed entirely.** The LONG (decades) tranche is **suspended — no adds**
+— pending the outcome of the RBI query and the US suit. A multi-decade thesis on a deposit
+franchise can survive a margin cycle; it cannot be added to while management conduct is the open
+question.
+
+**Note the sell side has not moved:** consensus target **₹1,018.76**, 40 Buy / 1 Hold / 0 Sell
+across 41 analysts, against ₹714. Only JM Financial (to ₹800, 25 Aug) and Investec (to Hold,
+20 Jul) have revised. Treat that as inertia, not support.
+
+**Superseded reasoning, kept for the record —** New 52-week low at ₹710.00 intraday,
+−1.78% on **1.68x volume pace**, while **ICICI Bank was +1.38%** and Bank Nifty only −0.26%. My
+re-add trigger required positive FII financials flow *and* a Q2 NIM that does not make a new low;
+the stock is instead making a new **price** low. And the within-sector divergence argues the
+problem is stock-specific, not the sector flow story I leaned on yesterday. **Stays at half.**
+No disclosed cause — no block deal, pledge change, insider filing or rating action in seven days,
+which points to an undisclosed seller working an order rather than news.
+
+**Bharti Airtel — the catalyst is slipping. Downgrade to watch, exit on the next bounce.**
+The entire thesis was the Jio listing inside an August-October window. As of 27 August: DRHP filed
+19 June, **SEBI sought clarifications 25 June, and there is still no observation letter, no price
+band and no listing date.** The stock closed **below its 50 DMA** on 26 August and is −0.79% today,
+3.0% below its 20 DMA. I wrote at entry that if the event passes without a re-rating this gets
+closed rather than converted to a hold. **The event has not passed — it has stalled — which is the
+same thing for a position bought purely for it.** Action: **no adds, and exit into any strength
+rather than waiting for the stop.** [[session-2026-08-27-india]]
+
+**SBI — a supply fact, not a thesis change.** SBI is the **largest selling shareholder in the NSE
+IPO** (~₹30,000-31,500 crore, offer-for-sale only, 4-4.5%). That is a cash inflow to SBI rather
+than a claim on it, so the credit-cycle thesis is unaffected — but it is worth knowing that a name
+I hold is monetising an asset into the heaviest supply window India has faced. SEBI's observation
+letter was still pending on 23 August. **No change.**
+
+**A note on what worked.** Steel rallied hard today — INOX India +6%, HCC +7%, NMDC Steel +5%,
+Tata Steel a top gainer — on the Commerce Minister backing the safeguard duty on 24 August. Not
+earnings. **The political-economy layer paid off within one session of being added to the loop.**
+
 ---
 
 ## SHORT horizon (months)
@@ -335,4 +387,8 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-26 | HDFC Bank | **cut reason narrowed** | −26% was ₹35,000cr of FII selling in one quarter; FIIs returning to financials since 22 Aug |
 | 2026-08-26 | Reliance | **conviction raised** | Promoter bought ~₹9,000cr in July, stake to 50.48% |
 | 2026-08-26 | Infosys | half the setup in place | FII IT holdings at a 4-year low; revisions still negative |
+| 2026-08-27 | **Bharti Airtel** | **downgraded to watch — exit on strength** | Jio IPO stalled at SEBI; no observation letter, no price band; stock below 50 DMA |
+| 2026-08-27 | **HDFC Bank** | **MEDIUM CLOSED; LONG suspended** | Governance: MSRDC ₹45cr payment, RBI query into the board's own penalty, US class action |
+| 2026-08-27 | **Process** | **failure recorded** | The governance agent never launched — and that is exactly where the loss was |
+| 2026-08-27 | SBI | supply fact logged | Largest selling shareholder in the NSE IPO |
 | 2026-08-26 | ONGC (closed) | **invalidation had already fired** | Windfall levy was reintroduced in March 2026 — I wrote the condition against a false premise |
