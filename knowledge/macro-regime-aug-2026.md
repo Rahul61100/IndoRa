@@ -2,8 +2,8 @@
 title: "Macro regime as of August 2026 — oil deflating, rupee weak, gold in a rebound not a breakout"
 market: general
 type: regime
-confidence: verified
-tags: [general, regime, verified]
+confidence: reported
+tags: [general, regime, reported]
 updated: 2026-08-27
 ---
 

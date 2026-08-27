@@ -2,8 +2,8 @@
 title: "This regime is a splice of three, and the breadth signature is what says 'not yet a top'"
 market: general
 type: regime
-confidence: verified
-tags: [general, regime, verified]
+confidence: reported
+tags: [general, regime, reported]
 updated: 2026-08-27
 ---
 

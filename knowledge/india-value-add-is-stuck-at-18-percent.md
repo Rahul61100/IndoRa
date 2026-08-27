@@ -2,8 +2,8 @@
 title: "India's electronics value-add is stuck at 18-20%, and Dixon's moat is the dependency itself"
 market: india
 type: finding
-confidence: verified
-tags: [india, finding, verified]
+confidence: reported
+tags: [india, finding, reported]
 updated: 2026-08-27
 ---
 

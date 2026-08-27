@@ -2,8 +2,8 @@
 title: "In dollars, India has lost money for two years — and that is what the FII sees"
 market: india
 type: finding
-confidence: verified
-tags: [india, finding, verified]
+confidence: reported
+tags: [india, finding, reported]
 updated: 2026-08-27
 ---
 

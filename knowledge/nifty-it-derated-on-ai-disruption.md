@@ -2,8 +2,8 @@
 title: "Indian IT de-rated on AI disruption, and the guidance is still being cut"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

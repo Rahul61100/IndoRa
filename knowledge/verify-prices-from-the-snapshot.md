@@ -2,8 +2,8 @@
 title: "Never state a price, multiple or return without pulling it that session"
 market: general
 type: method
-confidence: verified
-tags: [general, method, verified]
+confidence: reported
+tags: [general, method, reported]
 updated: 2026-08-27
 ---
 

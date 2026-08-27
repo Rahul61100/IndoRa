@@ -2,8 +2,8 @@
 title: "Hormuz is an active war with two failed ceasefires, not a risk premium"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

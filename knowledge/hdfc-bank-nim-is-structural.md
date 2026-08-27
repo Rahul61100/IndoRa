@@ -2,8 +2,8 @@
 title: "HDFC Bank's margin problem is post-merger structure, not the rate cycle"
 market: india
 type: finding
-confidence: verified
-tags: [india, finding, verified]
+confidence: reported
+tags: [india, finding, reported]
 updated: 2026-08-27
 ---
 

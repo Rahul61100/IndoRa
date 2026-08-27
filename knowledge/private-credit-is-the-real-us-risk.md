@@ -2,8 +2,8 @@
 title: "Investment-grade spreads say nothing is wrong; the low-quality tail says otherwise"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

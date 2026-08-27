@@ -89,4 +89,6 @@ strong evidence about the last two decades and weak evidence about the next one.
    external position that stops the rupee bleeding ~3.5%/yr, or an earnings acceleration that
    survives contact with the nine-year miss record. **Both are testable, neither is yet true.**
 
+**Source:** own computation, `scripts/us_exceptionalism_test.py`, 222 months from March 2008. The window limitation described above is the dominant caveat on every number in this note.
+
 Related: [[the-india-premise-fails-its-own-base-rate]] · [[the-rupee-is-held-up-not-holding-up]] · [[india-vs-north-asia-the-trade-already-happened]]

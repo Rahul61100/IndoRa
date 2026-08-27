@@ -2,8 +2,8 @@
 title: "The memory supercycle has a victim side — and it lands on Indian phone assembly"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

@@ -2,8 +2,8 @@
 title: "Governance screen: 8 of 9 AMBER, 1 CLEAN, 0 RED — and HAL is the one to act on"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

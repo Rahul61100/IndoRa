@@ -2,8 +2,8 @@
 title: "Shriram Finance: the MUFG capital is real, the re-rating case is not yet proven"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

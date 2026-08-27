@@ -2,8 +2,8 @@
 title: "Breadth is split almost exactly down the middle — this is a selection market"
 market: general
 type: regime
-confidence: verified
-tags: [general, regime, verified]
+confidence: reported
+tags: [general, regime, reported]
 updated: 2026-08-27
 ---
 

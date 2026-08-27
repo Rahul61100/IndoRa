@@ -2,8 +2,8 @@
 title: "India's flow competitor is the Korea-Taiwan semiconductor cycle, not China"
 market: india
 type: finding
-confidence: verified
-tags: [india, finding, verified]
+confidence: reported
+tags: [india, finding, reported]
 updated: 2026-08-27
 ---
 

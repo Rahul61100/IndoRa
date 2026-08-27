@@ -2,8 +2,8 @@
 title: "Why Indian consensus misses every year — three causes, and one is a measurement artifact"
 market: india
 type: finding
-confidence: verified
-tags: [india, finding, verified]
+confidence: reported
+tags: [india, finding, reported]
 updated: 2026-08-27
 ---
 

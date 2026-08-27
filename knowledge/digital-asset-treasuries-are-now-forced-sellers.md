@@ -2,8 +2,8 @@
 title: "The digital-asset treasury companies have flipped from marginal buyer to latent forced seller"
 market: crypto
 type: finding
-confidence: verified
-tags: [crypto, finding, verified]
+confidence: reported
+tags: [crypto, finding, reported]
 updated: 2026-08-27
 ---
 

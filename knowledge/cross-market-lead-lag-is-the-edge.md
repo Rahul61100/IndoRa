@@ -2,8 +2,8 @@
 title: "The reason to run multiple markets is lead-lag, not diversification"
 market: cross
 type: finding
-confidence: verified
-tags: [cross, finding, verified]
+confidence: reported
+tags: [cross, finding, reported]
 updated: 2026-08-27
 ---
 

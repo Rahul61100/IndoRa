@@ -2,8 +2,8 @@
 title: "A backtest of names you already picked measures hindsight, not process"
 market: general
 type: method
-confidence: verified
-tags: [general, method, verified]
+confidence: reported
+tags: [general, method, reported]
 updated: 2026-08-27
 ---
 

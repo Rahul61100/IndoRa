@@ -136,4 +136,6 @@ The Nifty out-earning the S&P in rupees over a full 5-year rolling window would 
 evidence in 168 windows that something structural shifted. It last happened in windows ending
 around May 2025. Watch that series, not any single year.
 
-Related: [[india-vs-north-asia-the-trade-already-happened]] · [[india-aggregate-earnings-are-three-companies]] · [[dixon-profit-is-not-operating]]
+**Source:** own computation, `scripts/base_rate_india_vs_world.py` and `scripts/base_rate_challenge.py`, over 228 months of monthly closes from September 2007. Reproducible from this repo; no secondary source involved.
+
+Related: [[the-mean-reversion-steelman-fails-but-cannot-settle-it]] · [[india-vs-north-asia-the-trade-already-happened]] · [[india-aggregate-earnings-are-three-companies]] · [[dixon-profit-is-not-operating]]

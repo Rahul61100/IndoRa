@@ -2,8 +2,8 @@
 title: "India's rate-cut cycle is over — nothing may be bought on a 'cuts are coming' thesis"
 market: general
 type: regime
-confidence: verified
-tags: [general, regime, verified]
+confidence: reported
+tags: [general, regime, reported]
 updated: 2026-08-27
 ---
 

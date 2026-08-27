@@ -2,8 +2,8 @@
 title: "Every India 'diversification' win has rotated exposure onto one counterparty: Washington"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

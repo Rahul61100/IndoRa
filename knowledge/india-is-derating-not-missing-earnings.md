@@ -2,8 +2,8 @@
 title: "India is de-rating while earnings accelerate — a flows problem, not an earnings problem"
 market: india
 type: finding
-confidence: verified
-tags: [india, finding, verified]
+confidence: reported
+tags: [india, finding, reported]
 updated: 2026-08-27
 ---
 

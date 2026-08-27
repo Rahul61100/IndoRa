@@ -2,8 +2,8 @@
 title: "FIIs are short the index and long single stocks — the cash flow number was misleading me"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

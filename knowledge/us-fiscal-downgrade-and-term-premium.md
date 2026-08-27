@@ -2,8 +2,8 @@
 title: "Moody's has downgraded the US, and the term premium is up 108bp this year"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

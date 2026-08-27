@@ -2,8 +2,8 @@
 title: "Nobody is cutting AI capex — and they are extending depreciation schedules to absorb it"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

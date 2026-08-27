@@ -75,4 +75,6 @@ If the OMC losses are inventory-driven, they **reverse** when crude stabilises, 
 aggregate margin recovers without anything improving in the real economy. Anyone reading the next
 quarter's aggregate as a recovery signal will be making the mirror error again.
 
+**Source:** own computation across 62 names, `scripts/fetch_fundamentals.py`. Aggregate, median and breadth all computed here from the same pull.
+
 Related: [[dixon-profit-is-not-operating]] · [[india-diversification-concentrated-on-washington]]

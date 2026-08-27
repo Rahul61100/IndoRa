@@ -2,8 +2,8 @@
 title: "Crypto now trades as an ETF-flow and liquidity asset, not an independent one"
 market: crypto
 type: flows
-confidence: verified
-tags: [crypto, flows, verified]
+confidence: reported
+tags: [crypto, flows, reported]
 updated: 2026-08-27
 ---
 

@@ -2,8 +2,8 @@
 title: "China's rare-earth suspension expires 10 November 2026 — a week after the US midterms"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

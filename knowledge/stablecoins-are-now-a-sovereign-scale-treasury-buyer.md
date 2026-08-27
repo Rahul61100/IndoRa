@@ -2,8 +2,8 @@
 title: "Stablecoin issuers are now a top-20 foreign holder of US Treasuries"
 market: crypto
 type: finding
-confidence: verified
-tags: [crypto, finding, verified]
+confidence: reported
+tags: [crypto, finding, reported]
 updated: 2026-08-27
 ---
 

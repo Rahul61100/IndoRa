@@ -2,8 +2,8 @@
 title: "Estimate revisions are now collected — and they settle three open calls"
 market: general
 type: regime
-confidence: verified
-tags: [general, regime, verified]
+confidence: reported
+tags: [general, regime, reported]
 updated: 2026-08-27
 ---
 

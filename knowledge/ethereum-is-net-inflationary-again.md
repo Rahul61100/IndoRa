@@ -2,8 +2,8 @@
 title: "Ethereum has flipped back to net inflationary — the L2s took the fees"
 market: crypto
 type: finding
-confidence: verified
-tags: [crypto, finding, verified]
+confidence: reported
+tags: [crypto, finding, reported]
 updated: 2026-08-27
 ---
 

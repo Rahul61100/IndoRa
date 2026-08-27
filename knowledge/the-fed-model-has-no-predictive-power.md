@@ -2,8 +2,8 @@
 title: "The ERP frame I built two days of analysis on has essentially no predictive power"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

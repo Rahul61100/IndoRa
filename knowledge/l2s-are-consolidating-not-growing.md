@@ -2,8 +2,8 @@
 title: "Ethereum's L2s are consolidating to three winners; the rest are being wound down"
 market: crypto
 type: finding
-confidence: verified
-tags: [crypto, finding, verified]
+confidence: reported
+tags: [crypto, finding, reported]
 updated: 2026-08-27
 ---
 

@@ -2,8 +2,8 @@
 title: "Regime labels: India SPLIT, US BROADENING, crypto SPLIT"
 market: india
 type: regime
-confidence: verified
-tags: [india, regime, verified]
+confidence: reported
+tags: [india, regime, reported]
 updated: 2026-08-27
 ---
 

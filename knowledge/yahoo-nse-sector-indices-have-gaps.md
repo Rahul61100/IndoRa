@@ -2,8 +2,8 @@
 title: "Yahoo's NSE sector indices have multi-week history gaps"
 market: india
 type: method
-confidence: verified
-tags: [india, method, verified]
+confidence: reported
+tags: [india, method, reported]
 updated: 2026-08-27
 ---
 

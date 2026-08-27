@@ -2,8 +2,8 @@
 title: "The SaaSpocalypse already reversed in the US; Indian IT is still trading the fear"
 market: cross
 type: finding
-confidence: verified
-tags: [cross, finding, verified]
+confidence: reported
+tags: [cross, finding, reported]
 updated: 2026-08-27
 ---
 

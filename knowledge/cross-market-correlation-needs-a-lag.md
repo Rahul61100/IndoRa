@@ -2,8 +2,8 @@
 title: "Same-day correlation across timezones is a measurement artifact"
 market: cross
 type: method
-confidence: verified
-tags: [cross, method, verified]
+confidence: reported
+tags: [cross, method, reported]
 updated: 2026-08-27
 ---
 

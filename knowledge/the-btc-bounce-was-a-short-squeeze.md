@@ -2,8 +2,8 @@
 title: "The August bitcoin bounce was a $3bn short squeeze, not fresh demand"
 market: crypto
 type: finding
-confidence: verified
-tags: [crypto, finding, verified]
+confidence: reported
+tags: [crypto, finding, reported]
 updated: 2026-08-27
 ---
 

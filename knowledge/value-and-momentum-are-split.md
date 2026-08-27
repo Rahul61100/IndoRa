@@ -2,8 +2,8 @@
 title: "In India right now, nearly every cheap large cap is in a downtrend"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

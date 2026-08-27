@@ -2,8 +2,8 @@
 title: "The bear case on India that survives — and it has nothing to do with the ERP"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

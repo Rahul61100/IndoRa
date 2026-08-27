@@ -62,8 +62,40 @@ def classify(stem: str, body: str) -> tuple[str, str, str]:
     elif "not found" in low and "verified" not in low[:400]:
         conf = "reported"
     else:
-        conf = "verified"
+        # Default to `reported`, NOT `verified`.
+        #
+        # This was inverted until 2026-08-27 and it stamped 85 of 92 notes `verified`,
+        # which the source ledger flatly contradicts -- data/sources.json marks only a
+        # handful of load-bearing claims as actually verified against a primary source.
+        # A vault that colours every note as verified is not a knowledge base, it is a
+        # confidence-laundering machine: it converts "an agent reported this" into
+        # "this is established" with no human step in between.
+        #
+        # A note earns `verified` by SAYING so -- by carrying a primary citation, or an
+        # explicit `confidence: high` of its own (see preserve_conf below).
+        conf = "verified" if PRIMARY_SOURCE.search(body) else "reported"
     return market, kind, conf
+
+
+# A note is `verified` only if it points at something a reader could open and check.
+PRIMARY_SOURCE = re.compile(
+    r"\b\d+\s?FR\s?\d+"                 # Federal Register, e.g. 91 FR 47318
+    r"|doc#\s?\d{4}-\d+"                  # FR document numbers
+    r"|https?://"                          # any retrievable URL
+    r"|own computation|computed here|own pull"   # things this repo derived itself
+    r"|Weekly Statistical Supplement|Bulletin Table",
+    re.I,
+)
+
+
+def written_conf(path) -> str | None:
+    """Honour a confidence the author set deliberately, rather than overwriting it."""
+    try:
+        head = path.read_text()[:400]
+    except OSError:
+        return None
+    m = re.search(r"^confidence:\s*(high|medium|low)\s*$", head, re.M)
+    return m.group(1) if m else None
 
 
 def strip_fm(text: str) -> str:
@@ -79,8 +111,11 @@ def cmd_frontmatter() -> None:
     for p in sorted(KD.glob("*.md")):
         if p.stem == "INDEX":
             continue
+        deliberate = written_conf(p)
         body = strip_fm(p.read_text())
         market, kind, conf = classify(p.stem, body)
+        if deliberate:
+            conf = deliberate
         title = ""
         m = re.search(r"^#\s+(.+)$", body, re.M)
         if m:

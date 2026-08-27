@@ -2,8 +2,8 @@
 title: "The yen carry trade was squeezed in August and has already re-loaded"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

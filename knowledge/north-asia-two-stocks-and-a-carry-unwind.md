@@ -98,4 +98,6 @@ Neither market is a buy here. Both are watchlist entries with conditions:
 - KOSPI's 52-week high shows as 9,385 on one source against 9,114 on another; the higher figure
   looks anomalous against the news flow and is unresolved.
 
+**Source:** agent research against secondary outlets, with the SK Hynix margin series cross-checked against an own pull of the income statement. Concentration and multiple figures are **reported**, not independently verified.
+
 Related: [[india-vs-north-asia-the-trade-already-happened]] · [[the-rupee-is-held-up-not-holding-up]] · [[dixon-profit-is-not-operating]]

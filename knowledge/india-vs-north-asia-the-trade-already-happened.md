@@ -109,4 +109,6 @@ If SK Hynix's next quarter holds above 70% operating margin *and* the forward mu
 above ~8×, the market has changed its mind about sustainability and the cyclical-top read is wrong.
 Watch the multiple, not the margin — the margin is the thing everyone already sees.
 
+**Source:** own computation for the return and currency tables; SK Hynix margins from an own pull of the quarterly income statement.
+
 Related: [[north-asia-two-stocks-and-a-carry-unwind]] · [[the-bear-case-that-survives-scrutiny]] · [[india-aggregate-earnings-are-three-companies]] · [[yahoo-fx-daily-bars-are-unreliable]] · [[dixon-profit-is-not-operating]]

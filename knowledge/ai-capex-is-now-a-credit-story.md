@@ -2,8 +2,8 @@
 title: "The AI trade has split — chips still work, the debt-funded buildout does not"
 market: us
 type: finding
-confidence: verified
-tags: [us, finding, verified]
+confidence: reported
+tags: [us, finding, reported]
 updated: 2026-08-27
 ---
 

@@ -2,8 +2,8 @@
 title: "The Fed's next move may be up, and the long end is already there"
 market: us
 type: regime
-confidence: verified
-tags: [us, regime, verified]
+confidence: reported
+tags: [us, regime, reported]
 updated: 2026-08-27
 ---
 

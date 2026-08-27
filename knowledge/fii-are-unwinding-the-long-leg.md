@@ -2,8 +2,8 @@
 title: "FIIs are unwinding the long leg of the dispersion trade — visible only in the time series"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

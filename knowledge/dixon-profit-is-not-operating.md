@@ -69,4 +69,6 @@ not affect any comparison above (Jun 2026 and Jun 2025 are both present). The op
 is EBIT. This has **not** been checked against a company filing and should be before the number is
 repeated externally.
 
+**Source:** own pull of quarterly financials, decomposed in this repo. **Not** checked against a company filing — see the caveat above before repeating any figure externally.
+
 Related: [[india-diversification-concentrated-on-washington]] · [[india-vs-north-asia-the-trade-already-happened]]

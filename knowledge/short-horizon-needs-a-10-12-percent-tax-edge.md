@@ -2,8 +2,8 @@
 title: "A short-horizon trade must beat a long hold by 10-12% gross, before it earns its place"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

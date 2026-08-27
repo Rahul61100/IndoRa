@@ -2,8 +2,8 @@
 title: "Ten positions, 5.4 effective bets — and I never checked before opening them"
 market: general
 type: position
-confidence: verified
-tags: [general, position, verified]
+confidence: reported
+tags: [general, position, reported]
 updated: 2026-08-27
 ---
 

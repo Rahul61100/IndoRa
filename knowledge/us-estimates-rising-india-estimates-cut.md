@@ -2,8 +2,8 @@
 title: "US earnings estimates are being revised UP sharply while India's are cut — the cleanest contrast"
 market: us
 type: flows
-confidence: verified
-tags: [us, flows, verified]
+confidence: reported
+tags: [us, flows, reported]
 updated: 2026-08-27
 ---
 

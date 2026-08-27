@@ -2,8 +2,8 @@
 title: "The governance agent never launched, and that is exactly where the loss was"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

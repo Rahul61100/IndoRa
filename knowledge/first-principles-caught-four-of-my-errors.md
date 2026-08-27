@@ -2,8 +2,8 @@
 title: "The first-principles agent caught four errors I made — and it never searched once"
 market: general
 type: finding
-confidence: verified
-tags: [general, finding, verified]
+confidence: reported
+tags: [general, finding, reported]
 updated: 2026-08-27
 ---
 

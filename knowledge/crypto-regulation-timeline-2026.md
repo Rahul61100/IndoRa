@@ -2,8 +2,8 @@
 title: "US crypto regulation: the laws passed in 2025, the rules land late 2026 into 2027"
 market: crypto
 type: finding
-confidence: verified
-tags: [crypto, finding, verified]
+confidence: reported
+tags: [crypto, finding, reported]
 updated: 2026-08-27
 ---
 

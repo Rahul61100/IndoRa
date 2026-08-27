@@ -2,8 +2,8 @@
 title: "India's domestic bid is enormous, and so is the supply arriving to meet it"
 market: us
 type: flows
-confidence: verified
-tags: [us, flows, verified]
+confidence: reported
+tags: [us, flows, reported]
 updated: 2026-08-27
 ---
 

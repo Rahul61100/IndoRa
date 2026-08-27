@@ -52,4 +52,6 @@ now appeared in two separate data families from the same vendor. Treat any *deri
 (daily bars, weekly bars, adjusted closes, returns) as the vendor's opinion, and the underlying
 prints as the fact.
 
+**Source:** own computation, `scripts/fx.py`, comparing Yahoo daily bars against the intraday series for the same sessions.
+
 Related: [[india-aggregate-earnings-are-three-companies]]
