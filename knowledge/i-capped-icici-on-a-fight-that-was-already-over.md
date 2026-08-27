@@ -75,4 +75,4 @@ at all — but it surfaced the *wrong text* every day until something checked th
 reappointment approval is **reported** across five outlets concordantly, not confirmed against an
 RBI primary release. The 24 August letter is **unresolved** and that is the load-bearing gap.
 
-Related: [[what-the-spreads-say-about-my-own-emphasis]] · [[dixon-profit-is-not-operating]] · [[the-monsoon-is-the-trade-i-missed]]
+Related: [[the-equity-proxy-for-a-commodity-keeps-failing]] · [[what-the-spreads-say-about-my-own-emphasis]] · [[dixon-profit-is-not-operating]] · [[the-monsoon-is-the-trade-i-missed]]
