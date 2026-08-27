@@ -1,0 +1,118 @@
+{
+ "_comment": "Dated catalysts. Every entry needs a date, a source, and a 'so_what' naming what it changes in the book. An event with no so_what is news, not a catalyst, and does not belong here. Types: policy, trade, legal, earnings, monetary, political, corporate.",
+ "events": [
+  {
+   "date": "2026-11-10",
+   "type": "trade",
+   "title": "US-China rare-earth truce expiry",
+   "so_what": "The single largest dated risk in the book. Dixon, auto, and every magnet-dependent manufacturer reprice on the outcome. India is a price-taker here with no seat at the table.",
+   "affects": [
+    "DIXON.NS",
+    "auto",
+    "EMS"
+   ],
+   "confidence": "confirmed",
+   "source": "needs_url"
+  },
+  {
+   "date": "2026-11-03",
+   "type": "trade",
+   "title": "Cluster of US trade-policy deadlines",
+   "so_what": "Identified as the concentration point of the Washington-exposure finding. Multiple India-relevant instruments land within a week of each other.",
+   "affects": [
+    "IT",
+    "pharma",
+    "textiles"
+   ],
+   "confidence": "confirmed",
+   "source": "needs_url"
+  },
+  {
+   "date": "2026-12-31",
+   "type": "corporate",
+   "title": "Jio IPO listing deadline (self-imposed by the thesis)",
+   "so_what": "Written invalidation for BOTH reliance-2026-08-25 and bharti-2026-08-26. As of 27 Aug: no SEBI observation letter, no price band, no date. The deadline is mine, not the company's.",
+   "affects": [
+    "RELIANCE.NS",
+    "BHARTIARTL.NS"
+   ],
+   "confidence": "thesis_deadline",
+   "source": "SEBI filings"
+  },
+  {
+   "date": "2026-12-31",
+   "type": "trade",
+   "title": "India-EU FTA signing (legal scrub complete 27 Aug 2026)",
+   "so_what": "Does NOT exempt India from CBAM. Steel takes a 15-22% price hit, aluminium exports already down 41%. An FTA headline will be read as bullish for metals and it is not.",
+   "affects": [
+    "metals",
+    "steel",
+    "aluminium"
+   ],
+   "confidence": "announced",
+   "source": "needs_url"
+  },
+  {
+   "date": "2027-01-31",
+   "type": "corporate",
+   "title": "NTPC CMD vacancy \u2014 written invalidation if unfilled",
+   "so_what": "Manual condition on the NTPC decades thesis. A regulated utility running without a confirmed CMD past a full quarter is a governance signal, not an administrative delay.",
+   "affects": [
+    "NTPC.NS"
+   ],
+   "confidence": "thesis_deadline",
+   "source": "company disclosures"
+  },
+  {
+   "date": "2026-09-30",
+   "type": "earnings",
+   "title": "Q2 FY27 results season begins",
+   "so_what": "The test of the 4.5% FY26 growth number against 12-15% expected. Nine straight years of misses is the base rate; the question each quarter is whether this is the tenth.",
+   "affects": [
+    "all"
+   ],
+   "confidence": "confirmed",
+   "source": "exchange calendars"
+  },
+  {
+   "date": "2027-02-01",
+   "type": "policy",
+   "title": "Union Budget FY28",
+   "so_what": "Budget-day risk for every position. NOTE: the Feb 2026 STT hike is ALREADY IN FORCE as of today -- it was dated as a future event in an earlier draft of this file and it is not. Hedge costs quoted in this workspace are post-hike costs. Do not discount them again for a change that has already happened.",
+   "affects": [
+    "hedging",
+    "F&O"
+   ],
+   "confidence": "legislated",
+   "source": "Finance Act"
+  }
+ ],
+ "watching_undated": [
+  {
+   "type": "legal",
+   "title": "Senate Russia sanctions bill \u2014 100% tariff threat on India, passed Senate 86-11, House pending",
+   "so_what": "Russia is now >50% of India's crude imports. This is the largest single undated tail risk to the entire index, not to one sector.",
+   "confidence": "passed_one_chamber"
+  },
+  {
+   "type": "trade",
+   "title": "White House Tier-1 transshipment designation for India \u2014 designated, no action yet",
+   "so_what": "The designation is the precondition for action, not the action. Watch for the instrument, not the label."
+  },
+  {
+   "type": "policy",
+   "title": "H-1B rule finalisation / HIRE Act revival",
+   "so_what": "Written invalidation-adjacent condition on the Infosys bench. I had framed IT risk as AI disruption; it is at least as much US trade policy."
+  },
+  {
+   "type": "legal",
+   "title": "ICICI Bank CEO reappointment contested to RBI, escalated 24 Aug",
+   "so_what": "Manual review condition on the largest short-horizon position."
+  },
+  {
+   "type": "legal",
+   "title": "CBI Ramagundam FIR \u2014 whether NTPC personnel are formally named",
+   "so_what": "Manual review condition on the decades thesis."
+  }
+ ]
+}
