@@ -1,0 +1,16 @@
+{
+  "id": 2063134,
+  "question": "Will Adanech Abiebie be the next Prime Minister of Ethiopia?",
+  "description": "General elections are scheduled to be held in Ethiopia on June 1, 2026.",
+  "outcomes": "[\"Yes\", \"No\"]",
+  "outcomePrices": "[\"0.0065\", \"0.9935\"]",
+  "bestBid": 0.006,
+  "bestAsk": 0.007,
+  "lastTradePrice": 0.005,
+  "liquidityNum": 20502.15364,
+  "volumeNum": 51234.5,
+  "endDateIso": "2026-06-01",
+  "closed": false,
+  "resolutionSource": "",
+  "negRisk": true
+}
