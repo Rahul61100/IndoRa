@@ -4,6 +4,9 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
+echo "=== FX (intraday-derived; Yahoo daily FX bars are known-bad) ==="
+uv run --quiet scripts/fx.py
+
 echo "=== flows: cash (MUST run daily -- NSE serves only the latest session) ==="
 uv run --quiet scripts/fetch_flows.py
 
