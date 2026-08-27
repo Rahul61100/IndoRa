@@ -1146,7 +1146,7 @@ measure the reviewer, and free text cannot be aggregated."
 
 **Interfaces:**
 - Consumes: everything above
-- Produces: `predict.queries.queue_rows(conn) -> list[dict]`, `predict.queries.drift(entry_prob, live_prob) -> float | None`, `predict.app.create_app(db_path=None) -> FastAPI`
+- Produces: `predict.queries.queue_rows(conn) -> list[dict]`, `predict.queries.drift(entry_prob, live_prob) -> float | None`, `predict.queries.gate_line(conn) -> str`, `predict.app.create_app(db_path=None) -> FastAPI`
 
 - [ ] **Step 1: Write the failing test**
 
@@ -1196,6 +1196,15 @@ def test_queue_row_carries_live_odds_edge_and_claims(tmp_path):
     assert round(r["edge_yes"], 3) == 0.14
     assert r["claim_ids"] == ["fed-may-hike-next"]
     assert round(r["drift"], 3) == 0.010
+
+
+def test_gate_line_states_the_gate_while_unproven(tmp_path):
+    from predict.queries import gate_line
+    c = connect(tmp_path / "t.db")
+    init_schema(c)
+    line = gate_line(c)
+    assert "0 resolved" in line and "50 needed" in line
+    assert "measures nothing" in line
 
 
 def test_reviewed_views_leave_the_queue(tmp_path):
@@ -1287,6 +1296,22 @@ def drift(entry_prob: float | None, live_prob: float | None) -> float | None:
     return live_prob - entry_prob
 
 
+def gate_line(conn: sqlite3.Connection) -> str:
+    """The honest headline, permanently in the header.
+
+    Until enough calls have RESOLVED, this system measures nothing -- and the
+    surest way to forget that is to leave it off the screen.
+    """
+    resolved = conn.execute(
+        "SELECT COUNT(*) FROM resolutions WHERE scored = 1").fetchone()[0]
+    open_pos = conn.execute("SELECT COUNT(*) FROM positions").fetchone()[0]
+    if resolved < 50:
+        return (f"Calibration gate: {resolved} resolved, 50 needed for a directional "
+                f"read (200 for a confident one). {open_pos} open. "
+                f"Until then this measures nothing.")
+    return f"{resolved} resolved, {open_pos} open."
+
+
 def queue_rows(conn: sqlite3.Connection) -> list[dict]:
     """Views awaiting review, with the LATEST odds and the move since the
     view was formed. Drift is computed at render, never stored -- a price
@@ -1340,7 +1365,7 @@ from fastapi.templating import Jinja2Templates
 
 from .book import accept_view, reject_view
 from .db import connect, init_schema
-from .queries import queue_rows
+from .queries import gate_line, queue_rows
 
 TEMPLATES = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 
@@ -1358,7 +1383,8 @@ def create_app(db_path=None) -> FastAPI:
         conn = db()
         try:
             return TEMPLATES.TemplateResponse(
-                request, "queue.html", {"rows": queue_rows(conn)})
+                request, "queue.html",
+                {"rows": queue_rows(conn), "gate": gate_line(conn)})
         finally:
             conn.close()
 
@@ -1390,23 +1416,72 @@ def create_app(db_path=None) -> FastAPI:
 ```html
 <!-- predict/templates/base.html -->
 <!doctype html>
-<html><head><meta charset="utf-8"><title>proposition engine</title>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>review queue</title>
 <style>
- body{font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;max-width:900px;
-      margin:2rem auto;padding:0 1rem;background:#fbfbfa;color:#1a1a1a}
- .card{border:1px solid #ddd;border-radius:6px;padding:1rem;margin:1rem 0;background:#fff}
- .stmt{font-size:16px;font-weight:600;margin-bottom:.5rem}
- .venue{display:flex;gap:1rem;padding:.35rem 0;border-bottom:1px solid #f0f0f0}
- .edge{font-weight:600}.pos{color:#0a7}.neg{color:#c33}
- .claim{font-size:12px;padding:.15rem .4rem;border-radius:3px;margin-right:.4rem}
- .reported{background:#fff4d6;border:1px solid #e8c86a}
- .verified{background:#e3f6e8;border:1px solid #7bc48a}
- .warn{background:#fff0f0;border:1px solid #e5a0a0;padding:.5rem;border-radius:4px;margin:.5rem 0}
- .muted{color:#888;font-size:12px}
- button{font:inherit;padding:.3rem .8rem;margin-right:.4rem;cursor:pointer}
-</style></head><body>
-<h1>review queue</h1>
+/* Light is the base. Dark overrides only tokens -- never a colour's only home. */
+:root{
+  --paper:#EFF2F1; --card:#FFFFFF; --ink:#161D1A; --muted:#6B7671;
+  --rule:#D9DEDB; --signal:#A96B1F; --caution:#8C4A3F;
+  --verified:#2F6B52; --reported:#8A6A1F; --band:#C7D0CC;
+}
+:root:not([data-theme="light"]){ @media (prefers-color-scheme:dark){
+  --paper:#111513; --card:#191E1B; --ink:#E3E8E5; --muted:#869089;
+  --rule:#2A322D; --signal:#D9A05B; --caution:#C97B6A;
+  --verified:#6FB08D; --reported:#C9A24D; --band:#39433D;
+}}
+:root[data-theme="dark"]{
+  --paper:#111513; --card:#191E1B; --ink:#E3E8E5; --muted:#869089;
+  --rule:#2A322D; --signal:#D9A05B; --caution:#C97B6A;
+  --verified:#6FB08D; --reported:#C9A24D; --band:#39433D;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:2.5rem 1.25rem 5rem; background:var(--paper); color:var(--ink);
+  font:15px/1.6 ui-sans-serif,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+}
+.wrap{max-width:780px;margin:0 auto}
+/* Numbers are measurements: monospace, tabular, always aligned. */
+.num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+header{display:flex;align-items:baseline;gap:1rem;margin-bottom:.5rem}
+h1{font:600 1.05rem/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;margin:0}
+.gate{
+  /* Permanently visible: this measures nothing yet, and the header says so. */
+  margin:0 0 2.5rem; padding:.6rem .8rem; border:1px solid var(--rule);
+  border-left:3px solid var(--signal); border-radius:0 4px 4px 0;
+  color:var(--muted); font-size:12.5px; background:var(--card);
+}
+#theme{
+  margin-left:auto; background:none; border:1px solid var(--rule); color:var(--muted);
+  border-radius:4px; padding:.25rem .6rem; font:inherit; font-size:12px; cursor:pointer;
+}
+#theme:hover{color:var(--ink);border-color:var(--muted)}
+:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body><div class="wrap">
+<header>
+  <h1>review queue</h1>
+  <button id="theme" type="button">theme</button>
+</header>
+<p class="gate">{{ gate }}</p>
 {% block content %}{% endblock %}
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme');
+  try{ var t=localStorage.getItem('theme'); if(t)document.documentElement.dataset.theme=t; }catch(e){}
+  b.addEventListener('click',function(){
+    var cur=document.documentElement.dataset.theme;
+    if(!cur){ cur = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light'; }
+    var next = cur==='dark' ? 'light':'dark';
+    document.documentElement.dataset.theme=next;
+    try{ localStorage.setItem('theme',next); }catch(e){}
+  });
+})();
+</script>
 </body></html>
 ```
 
@@ -1414,48 +1489,132 @@ def create_app(db_path=None) -> FastAPI:
 <!-- predict/templates/queue.html -->
 {% extends "base.html" %}
 {% block content %}
-{% if not rows %}<p class="muted">Nothing awaiting review.</p>{% endif %}
-{% for r in rows %}
-<div class="card">
-  <div class="stmt">{{ r.statement }}</div>
-  <div class="muted">{{ r.topic }}{% if r.resolves_by %} · resolves by {{ r.resolves_by }}{% endif %}</div>
 
-  <div class="venue">
-    <span>{{ r.venue }}</span>
-    <span>bid {{ '%.3f'|format(r.best_bid) }} / ask {{ '%.3f'|format(r.best_ask) }}</span>
-    <span>${{ '{:,.0f}'.format(r.liquidity) }}</span>
-    <span class="edge {{ 'pos' if r.edge_yes > 0 else 'neg' }}">
-      YES {{ '%+.1f'|format(r.edge_yes * 100) }}pts</span>
-    <span class="edge {{ 'pos' if r.edge_no > 0 else 'neg' }}">
-      NO {{ '%+.1f'|format(r.edge_no * 100) }}pts</span>
-    {% if r.untradeable %}<span class="neg">UNTRADEABLE (wide spread)</span>{% endif %}
+{% if not rows %}
+  <!-- An empty screen is an invitation to act, not a shrug. -->
+  <p class="empty">Nothing waiting. Pull fresh markets with
+    <code class="num">uv run scripts/predict_ingest.py</code>,
+    then map one to a proposition.</p>
+{% endif %}
+
+{% for r in rows %}
+<article class="card">
+
+  <!-- 1. What am I judging? Prose about the world, so: serif. -->
+  <h2 class="stmt">{{ r.statement }}</h2>
+  <p class="meta num">{{ r.venue }}{% if r.topic %} · {{ r.topic }}{% endif %}
+     {%- if r.resolves_by %} · resolves {{ r.resolves_by }}{% endif %}
+     · ${{ '{:,.0f}'.format(r.liquidity) }} liquidity</p>
+
+  <!-- 2. THE RAIL. Bid-ask is a band because a spread is a range, never a point.
+          Our view is a marker. The distance between them is the edge you can
+          actually trade -- which is why the mid is nowhere on this page. -->
+  <div class="rail" role="img"
+       aria-label="Market {{ '%.3f'|format(r.best_bid) }} to {{ '%.3f'|format(r.best_ask) }}, our view {{ '%.2f'|format(r.our_prob) }}">
+    <div class="band" style="left:{{ (r.best_bid*100)|round(2) }}%;
+                             width:{{ ((r.best_ask-r.best_bid)*100)|round(2) }}%"></div>
+    <div class="ours{{ ' good' if r.edge_yes > 0 else '' }}"
+         style="left:{{ (r.our_prob*100)|round(2) }}%"></div>
+    <span class="tick" style="left:0">0</span>
+    <span class="tick" style="left:50%">·5</span>
+    <span class="tick" style="left:100%">1</span>
   </div>
 
-  <p>our view <b>{{ '%.2f'|format(r.our_prob) }}</b> · confidence {{ r.confidence }}</p>
-  {% if r.rationale %}<p class="muted">{{ r.rationale }}</p>{% endif %}
+  <p class="reads num">
+    <span>market <b>{{ '%.3f'|format(r.best_bid) }}–{{ '%.3f'|format(r.best_ask) }}</b></span>
+    <span>ours <b>{{ '%.2f'|format(r.our_prob) }}</b> ({{ r.confidence }})</span>
+    <span class="{{ 'good' if r.edge_yes > 0 else 'dull' }}">yes {{ '%+.1f'|format(r.edge_yes*100) }}</span>
+    <span class="{{ 'good' if r.edge_no > 0 else 'dull' }}">no {{ '%+.1f'|format(r.edge_no*100) }}</span>
+    {% if r.untradeable %}<span class="flag">spread too wide to price</span>{% endif %}
+  </p>
 
-  <p>{% for c in r.claim_ids %}<span class="claim reported">{{ c }}</span>{% endfor %}
-     {% if not r.claim_ids %}<span class="muted">no claims attached</span>{% endif %}</p>
+  <!-- 3. Why do I think that? Tier is visible, because hiding it launders it. -->
+  {% if r.rationale %}<p class="why">{{ r.rationale }}</p>{% endif %}
+  <p class="claims">
+    {% for c in r.claim_ids %}<span class="chip reported">{{ c }}</span>{% endfor %}
+    {% if not r.claim_ids %}<span class="chip none">no claim attached</span>{% endif %}
+  </p>
 
   {% if r.drift is not none and r.drift|abs > 0.005 %}
-  <div class="warn">odds moved {{ '%+.3f'|format(r.drift) }} since this view was formed.</div>
+  <p class="drift num">Odds moved {{ '%+.3f'|format(r.drift) }} since this view was formed.
+     The edge above is the current one.</p>
   {% endif %}
 
-  <form method="post" action="/views/{{ r.view_id }}/accept" style="display:inline">
-    <input type="hidden" name="market_id" value="{{ r.market_id }}">
-    <input type="hidden" name="direction" value="yes">
-    <button type="submit">accept YES</button>
-  </form>
-  <form method="post" action="/views/{{ r.view_id }}/reject" style="display:inline">
-    <select name="reason">
-      <option>market is right</option><option>claim too weak</option>
-      <option>horizon too long</option><option>illiquid</option>
-      <option>don't understand it</option><option>other</option>
-    </select>
-    <button type="submit">reject</button>
-  </form>
-</div>
+  <!-- 4. Decide. -->
+  <div class="acts">
+    <form method="post" action="/views/{{ r.view_id }}/accept">
+      <input type="hidden" name="market_id" value="{{ r.market_id }}">
+      <input type="hidden" name="direction" value="yes">
+      <button class="go" type="submit">Accept yes</button>
+    </form>
+    <form method="post" action="/views/{{ r.view_id }}/reject">
+      <label class="sr">Reason</label>
+      <select name="reason">
+        <option>market is right</option><option>claim too weak</option>
+        <option>horizon too long</option><option>illiquid</option>
+        <option>don&#39;t understand it</option><option>other</option>
+      </select>
+      <button type="submit">Reject</button>
+    </form>
+  </div>
+</article>
 {% endfor %}
+
+<style>
+.empty{color:var(--muted);border:1px dashed var(--rule);padding:1.5rem;border-radius:6px;text-align:center}
+.empty code{background:var(--card);padding:.15rem .4rem;border-radius:3px;font-size:13px}
+
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;
+      padding:1.4rem 1.5rem;margin-bottom:1.1rem}
+/* Prose about the world gets the serif; every number stays monospace. */
+.stmt{font:400 1.32rem/1.35 ui-serif,"New York",Georgia,serif;margin:0 0 .35rem;
+      letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:12px;margin:0 0 1.4rem}
+
+.rail{position:relative;height:30px;margin:0 0 .7rem;
+      border-bottom:1px solid var(--rule)}
+.band{position:absolute;top:6px;height:12px;min-width:2px;background:var(--band);
+      border-radius:2px}
+.ours{position:absolute;top:1px;width:2px;height:22px;background:var(--muted)}
+.ours.good{background:var(--signal);width:3px}
+.ours::after{content:"";position:absolute;top:-4px;left:50%;translate:-50% 0;
+             width:7px;height:7px;rotate:45deg;background:inherit}
+.tick{position:absolute;top:20px;translate:-50% 0;font-size:10px;color:var(--muted);
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.tick:first-of-type{translate:0 0}
+
+.reads{display:flex;flex-wrap:wrap;gap:1.1rem;font-size:13px;margin:0 0 1rem}
+.reads b{font-weight:600}
+/* Positive edge is quietly marked. Negative simply recedes -- a tool built on
+   skepticism should not celebrate. */
+.good{color:var(--signal)} .dull{color:var(--muted)}
+.flag{color:var(--caution)}
+
+.why{color:var(--muted);font-size:13.5px;margin:0 0 .7rem}
+.claims{margin:0 0 1rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{font-size:11.5px;padding:.2rem .5rem;border-radius:3px;
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.chip.verified{color:var(--verified);border:1px solid var(--verified)}
+.chip.reported{color:var(--reported);border:1px solid var(--reported)}
+/* No evidence gets no colour. */
+.chip.none{color:var(--muted);border:1px dashed var(--rule)}
+
+.drift{color:var(--caution);font-size:12.5px;margin:0 0 1rem;
+       padding-left:.7rem;border-left:2px solid var(--caution)}
+
+.acts{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;
+      border-top:1px solid var(--rule);padding-top:1rem}
+.acts form{display:flex;gap:.4rem}
+button,select{font:inherit;font-size:13px;padding:.4rem .8rem;border-radius:5px;
+              border:1px solid var(--rule);background:var(--card);color:var(--ink);
+              cursor:pointer;transition:border-color .12s,color .12s}
+button:hover,select:hover{border-color:var(--muted)}
+.go{border-color:var(--signal);color:var(--signal);font-weight:600}
+.go:hover{background:var(--signal);color:var(--card);border-color:var(--signal)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:520px){ .acts{flex-direction:column;align-items:stretch}
+                          .acts form{width:100%} .acts button{flex:1} }
+</style>
 {% endblock %}
 ```
 
