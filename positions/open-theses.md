@@ -103,8 +103,12 @@ And India remains the most expensive major EM at 20-22x forward against Taiwan 1
   selection, not from the index". That is what the regime label already said
   ([[regime-labels-aug-2026]]) — the valuation work now agrees with the breadth work.
 - **Open question that must be answered before adding any India equity risk:** at 6.85% risk-free
-  and a negative ERP, *why own Indian equities at all rather than G-secs?* Research commissioned;
-  unresolved. Until answered, **no new India equity positions.**
+  and a negative ERP, *why own Indian equities at all rather than G-secs?*
+  **ANSWERED 2026-08-27 by four adversarial archetypes — and the question was malformed.** The ERP
+  metric has an R² of 0.5%, was quoted pre-tax and duration-mismatched, and a negative naive reading
+  is *expected* in an economy compounding nominal GDP at 10%. **Freeze lifted for the MEDIUM and
+  LONG horizons on stock-specific evidence only.** The SHORT bucket stays frozen — it needs a
+  10-12% after-tax edge it has never been held to. Full verdict: [[india-the-adversarial-verdict]].
 
 **Method lessons, both promoted to knowledge:**
 - Trailing beats and forward cuts routinely coexist. **Check revision direction before calling

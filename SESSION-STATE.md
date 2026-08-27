@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 10:35 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 10:37 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 82 notes
+## Knowledge base: 83 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,7 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+2a88681 The bear case that survives: capex, not the risk premium
 88c9421 Retract the ERP frame: the metric has an R-squared of 0.5%
 64c19f3 First-principles agent catches four of my errors, using zero tools
 9cea303 The negative ERP is a pre-tax artifact -- after tax it is roughly zero
@@ -105,7 +106,6 @@ feddddc Governance screen lands: HAL closes, ICICI capped, 8 of 9 AMBER
 90679fa Build the estimate-revisions collector -- the gap that cost the Infosys call
 2882f30 Close HDFC Bank: the driver was governance, not NIM
 94babf9 Q1 FY27 GDP preview, and flag a figure I have been quoting wrong
-03bde90 Add vault Home note and one-command refresh
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
