@@ -22,6 +22,12 @@ uv run --quiet scripts/fetch_revisions.py --universe india --top 10 | tail -30
 echo "=== regime ==="
 uv run --quiet scripts/regime.py | sed -n '/REGIME/,/BOOK STRESS/p'
 
+echo "=== catalyst calendar (a past date here is a bug, not an entry) ==="
+uv run --quiet tools/calendar.py --horizon 120
+
+echo "=== BOOK SCORECARD -- every written invalidation, checked, every day ==="
+uv run --quiet tools/score.py
+
 echo "=== vault (frontmatter, hubs, link check) ==="
 uv run --quiet tools/kb.py all
 
