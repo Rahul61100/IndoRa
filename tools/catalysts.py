@@ -5,8 +5,8 @@
 """
 The catalyst calendar — Phase A4 of BUILD.md.
 
-    uv run tools/calendar.py              # what is coming, and what it changes
-    uv run tools/calendar.py --horizon 90
+    uv run tools/catalysts.py              # what is coming, and what it changes
+    uv run tools/catalysts.py --horizon 90
 
 The user's instruction that produced this: "think about news, mogels, people at the top,
 politicians... where are they positioned". A calendar is how that stops being a thing I

@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.11"
-# dependencies = []
+# dependencies = ["yfinance", "pandas"]
 # ///
 """
 Score the open book against its own written invalidation conditions.
@@ -32,6 +32,33 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def load_json(p: Path, default=None):
     return json.loads(p.read_text()) if p.exists() else default
+
+
+def benchmarks() -> dict:
+    """Nifty and the alternative, so a position is scored against what else the money could do.
+
+    Added 2026-08-27 after establishing that S&P-in-INR beat the Nifty in 97% of rolling
+    ten-year windows. Absolute P&L on an India book is the wrong yardstick when the passive
+    alternative compounds ~4.5pp a year faster in the same currency."""
+    import yfinance as yf
+    out = {}
+    try:
+        px = yf.download(["^NSEI", "^GSPC", "INR=X"], period="6mo", interval="1d",
+                         progress=False, auto_adjust=True)["Close"].ffill().dropna()
+        out["nifty"] = px["^NSEI"]
+        out["spx_inr"] = px["^GSPC"] * px["INR=X"]
+    except Exception:
+        pass
+    return out
+
+
+def bench_return(series, since: str) -> float | None:
+    if series is None or len(series) == 0:
+        return None
+    s = series[series.index >= since]
+    if len(s) < 2:
+        return None
+    return (float(s.iloc[-1]) / float(s.iloc[0]) - 1) * 100
 
 
 def market_state() -> tuple[dict, dict]:
@@ -84,6 +111,8 @@ def main() -> None:
     fund = load_json(ROOT / "data" / "fundamentals" / "india.json", {}) or {}
     today = f"{date.today():%Y-%m-%d}"
 
+    bm = benchmarks()
+
     print("=" * 88)
     print(f"BOOK SCORECARD — {today}")
     print("=" * 88)
@@ -98,8 +127,15 @@ def main() -> None:
         trig = [c for c in conds if c["result"] == "TRIGGERED"]
         man = [c for c in conds if c["result"] == "REVIEW"]
         flag = "  *** INVALIDATION TRIGGERED ***" if trig else ""
+        nb = bench_return(bm.get("nifty"), th["opened"])
+        sb = bench_return(bm.get("spx_inr"), th["opened"])
+        alpha = ""
+        if pnl is not None and nb is not None and sb is not None:
+            alpha = (f"   vs Nifty {pnl-nb:+.1f}pp   vs S&P-in-INR {pnl-sb:+.1f}pp")
         print(f"\n{th['id']:<24}{th['horizon']:<8}{th['status']:<18}"
               f"{(f'{pnl:+.1f}%' if pnl is not None else '—'):>9} since entry{flag}")
+        if alpha:
+            print(f"{'':24}{alpha}")
         for c in conds:
             mark = {"TRIGGERED": "!!", "REVIEW": "??", "ok": "  ", "no_data": " ?"}[c["result"]]
             print(f"    {mark} {c['result']:<10}{c['detail']:<28}{c['note'][:44]}")
@@ -136,6 +172,15 @@ def main() -> None:
     print("Until that gate is passed this workspace has NO EVIDENCE OF SKILL.")
     print("Every close so far was a research correction, not a market outcome — which measures")
     print("the research process, not the investment process. Those are different things.")
+    if bm.get("nifty") is not None and bm.get("spx_inr") is not None:
+        opened = min((t["opened"] for t in reg["theses"]), default=None)
+        if opened:
+            nb, sb = bench_return(bm["nifty"], opened), bench_return(bm["spx_inr"], opened)
+            if nb is not None and sb is not None:
+                print(f"\nSince the book opened ({opened}): Nifty {nb:+.2f}%, "
+                      f"S&P-in-INR {sb:+.2f}%.")
+                print("The second number is the hurdle. Beating the Nifty is not the job —")
+                print("the passive alternative beat it in 97% of rolling ten-year windows.")
 
     ledger_p = ROOT / "data" / "scorecard.json"
     ledger = load_json(ledger_p, []) or []
