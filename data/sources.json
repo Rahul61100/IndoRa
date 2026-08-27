@@ -168,6 +168,15 @@
    "why_load_bearing": "Overturns a bearish economy-wide margin-collapse read that the aggregate alone supports. Establishes the standing rule that an Indian aggregate is never reported without its median and breadth.",
    "source": "own computation",
    "note": "Three loss-makers are 26.6% of sample revenue with a combined operating loss of Rs7,776cr. Not comparable to the FY26 4.5% net figure -- different period, different measure, different universe."
+  },
+  {
+   "id": "india-base-rate",
+   "claim": "S&P 500 translated to INR beat the Nifty in 97% of 108 rolling 10-year windows, 92% of 5-year and 72% of 3-year, mean gap ~4.5-4.8pp/yr; every calendar sub-period 2008-2026 favours the S&P in rupees",
+   "status": "verified",
+   "obtained": "own computation, 228 months of monthly data from 2007-09",
+   "why_load_bearing": "Undercuts the framing premise of this entire workspace. An India-specific book must clear a ~4.5pp/yr structural headwind versus a passive foreign alternative, and with 4 of 30 theses scored there is no evidence yet that it does.",
+   "source": "own computation",
+   "note": "Not tested against an equal-weight or ex-mega-cap S&P, which is the obvious first challenge. 2023-2026 gap of +15.23pp is driven by US mega-cap concentration."
   }
  ],
  "unresolved_conflicts": [
