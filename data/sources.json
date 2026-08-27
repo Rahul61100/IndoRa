@@ -45,12 +45,12 @@
   },
   {
    "id": "tariff-basis",
-   "claim": "The 18% tariff was quoted daily for four days; IEEPA was struck down 13 days after announcement; ~10% applies today under Section 301; no evidence 18% was ever collected",
+   "claim": "India tariff in force is 10% under Section 301(b)/304(a), effective ~2026-07-24, from a 60-country forced-labour investigation initiated 2026-03-12 -- NOT India-specific. ~45% of India's US-bound exports (~$87bn) exempt via Annex I/II. Section 122 Proclamation 11012 bridged from 2026-02-20 (the day IEEPA fell) for its 150-day cap. The 18% came from a bilateral deal under the IEEPA framework struck down nine days later.",
    "status": "verified",
    "obtained": "agent research + SCOTUS decision Learning Resources v. Trump, 6-3, 20 Feb 2026",
    "why_load_bearing": "I told the user 18% repeatedly. It was wrong. This is the correction and it changes the export-sector maths.",
-   "source": "SCOTUS; Section 301 investigation",
-   "note": "~$100bn total IEEPA refunds paid, ~$1bn to Indian exporters."
+   "source": "91 FR 47318 doc# 2026-15181 (Sec 301 notice, pub 2026-07-28); 91 FR 47717 doc# 2026-15274 (Presidential Memorandum); 91 FR 9339 doc# 2026-03824 (Proclamation 11012, Sec 122 bridge); 91 FR 18183 doc# 2026-06956 (Proclamation 11020, Sec 232 pharma)",
+   "note": "Generic pharma is separate: Section 232, 0% from 2026-08-01, 100% Aug 2028, 200% Aug 2029, legally untouched by the IEEPA ruling."
   },
   {
    "id": "russia-crude-share",
@@ -177,6 +177,24 @@
    "why_load_bearing": "Undercuts the framing premise of this entire workspace. An India-specific book must clear a ~4.5pp/yr structural headwind versus a passive foreign alternative, and with 4 of 30 theses scored there is no evidence yet that it does.",
    "source": "own computation",
    "note": "Not tested against an equal-weight or ex-mega-cap S&P, which is the obvious first challenge. 2023-2026 gap of +15.23pp is driven by US mega-cap concentration."
+  },
+  {
+   "id": "oil-cad-sensitivity",
+   "claim": "Every $10/bbl on crude widens India's CAD by ~$16.7bn (India Ratings) and adds ~60bp to inflation (CareEdge); crude sustained at $80 adds ~0.4pp CPI and 0.3-0.5% of GDP to the CAD (Moneycontrol)",
+   "status": "reported",
+   "obtained": "agent research, cross-checked against own computation",
+   "why_load_bearing": "Sizes every oil scenario for India. Independently confirms the $16-20bn/yr figure computed here from assumed 4.5-5.5 mb/d imports -- two methods, same answer.",
+   "source": "India Ratings via BW Businessworld 2026-03-31; CareEdge via ET 2026-03-30",
+   "note": "Own bottom-up estimate was $16-20bn per $10. India Ratings says $16.7bn. Agreement across independent methods."
+  },
+  {
+   "id": "russian-discount-inverted",
+   "claim": "The Russian crude discount fully eroded and inverted to a PREMIUM during 2026: Urals topped Brent in the Indian market for the first time (Reuters 2026-03-06), delivered Urals neared $100 (Mar), 'strong demand flips Russian Urals to premium' (2026-08-21)",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "India is carrying the Senate-sanctions tail risk -- a 100% tariff threat that passed the Senate 86-11 -- for a discount that no longer exists. The strategic cost is being paid and the economic benefit is gone.",
+   "source": "Reuters 2026-03-06; Marine News 2026-08-21",
+   "note": "No source gives a current $/bbl premium figure. Unresolved."
   }
  ],
  "unresolved_conflicts": [
@@ -203,6 +221,12 @@
    "conflict": "7.6% vs 7.7%",
    "why_it_matters": "Immaterial to any decision. Logged so it stops being re-litigated.",
    "status": "OPEN, low priority"
+  },
+  {
+   "id": "spr-reconciled",
+   "conflict": "RESOLVED (reasoned, not verified): 9.5 days = ISPRL strategic caverns only; ~60 days = refiner/OMC mandated rolling commercial stock; 74 days = the combined buffer the government cites. Not contradictory -- three different pools.",
+   "why_it_matters": "Sizes the oil-shock buffer. Caverns were 64% full in March 2026 ('one-third empty').",
+   "status": "CLOSED, reasoned -- no primary PIB or ISPRL document confirms the arithmetic"
   }
  ]
 }
