@@ -1,0 +1,190 @@
+{
+ "_comment": "Load-bearing claims only. The audit found 1,197 numeric claims across the base; retrofitting all of them is busywork. These are the ones a live position or a stated conclusion actually rests on -- if one of these is wrong, a decision changes. Every entry carries how it was obtained and how confident I am that it is right, which is NOT the same question. status: verified (I pulled it from the primary source myself) | reported (a secondary source asserts it, I did not verify) | contested (sources disagree and I have not settled it) | unresolved (I flagged it and never closed it).",
+ "claims": [
+  {
+   "id": "fy26-earnings-growth",
+   "claim": "Nifty FY26 earnings grew 4.5% against 12-15% expected",
+   "status": "reported",
+   "obtained": "multi-agent research, secondary sources",
+   "why_load_bearing": "This is the single number that overturned my 'earnings +18%' framing and therefore the entire medium-horizon case. Everything downstream of it changes if it is wrong.",
+   "source": "needs_primary",
+   "note": "The 18% figure was ONE quarter with 60% of the growth from five stocks. The 4.5% is the full-year number."
+  },
+  {
+   "id": "reconstitution-bias",
+   "claim": "4.5% actual versus 6.9% on a reconstituted index",
+   "status": "reported",
+   "obtained": "multi-agent research",
+   "why_load_bearing": "Explains WHY Indian consensus misses every year -- survivorship in the index itself. It is the mechanism, not just the observation.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "erp-r2",
+   "claim": "Fed-model ERP has R-squared of 0.5% versus 56.3% for plain P/E",
+   "status": "reported",
+   "obtained": "Ned Davis Research, via agent",
+   "why_load_bearing": "Demolished my own ERP chain after I had already given the user three successive ERP numbers. The correction only holds if this holds.",
+   "source": "needs_primary",
+   "note": "Damodaran's rigorous series shows no negative ERP years since 1960, which is a separate and independent check that pointed the same way."
+  },
+  {
+   "id": "stcg-hurdle",
+   "claim": "A sub-12-month trade needs ~9.85% more gross return than a 12-month-plus one; 11.8% at high income",
+   "status": "verified",
+   "obtained": "computed in scripts/required_return.py from statutory rates",
+   "why_load_bearing": "It is the reason the short-horizon sleeve has a higher bar than the medium one. Arithmetic, not opinion.",
+   "source": "STCG 20% vs LTCG 12.5% + Rs1.25L exemption, Income Tax Act"
+  },
+  {
+   "id": "india-usd-return",
+   "claim": "India -9.9% over 1y and -15.0% over 2y in USD, versus S&P +19.2%",
+   "status": "verified",
+   "obtained": "computed from our own OHLC pulls",
+   "why_load_bearing": "The rupee is why the local-currency chart flatters the market. Any allocation argument that ignores it is wrong for a global comparison.",
+   "source": "yfinance OHLC, own computation"
+  },
+  {
+   "id": "tariff-basis",
+   "claim": "The 18% tariff was quoted daily for four days; IEEPA was struck down 13 days after announcement; ~10% applies today under Section 301; no evidence 18% was ever collected",
+   "status": "verified",
+   "obtained": "agent research + SCOTUS decision Learning Resources v. Trump, 6-3, 20 Feb 2026",
+   "why_load_bearing": "I told the user 18% repeatedly. It was wrong. This is the correction and it changes the export-sector maths.",
+   "source": "SCOTUS; Section 301 investigation",
+   "note": "~$100bn total IEEPA refunds paid, ~$1bn to Indian exporters."
+  },
+  {
+   "id": "russia-crude-share",
+   "claim": "Russia is now >50% of India's crude imports and the discount has narrowed to near-premium",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Sets the size of the Senate-sanctions tail risk. At >50% it is an index-level risk, not a sector one.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "senate-russia-bill",
+   "claim": "Senate Russia sanctions bill with a 100% tariff threat on India passed 86-11; House pending",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Largest undated tail risk in the book. The 86-11 margin is the part that matters -- it is veto-proof in that chamber.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "sip-dii-doublecount",
+   "claim": "SIP and DII flows were double-counted, understating the supply problem by 40%; absorption is 2.15 years at the DII run-rate",
+   "status": "verified",
+   "obtained": "own correction after catching the double-count",
+   "why_load_bearing": "The supply-absorption argument was the main structural bull case. It is 40% weaker than I said.",
+   "source": "own computation",
+   "note": "The underlying SIP series is still CONTESTED: Rs31,961cr vs Rs22,908cr, unresolved."
+  },
+  {
+   "id": "capex-conversion",
+   "claim": "Conversion of announced capex into actual fixed assets fell from ~40% pre-2011 to 10-15%",
+   "status": "reported",
+   "obtained": "agent research, resolved a three-series contradiction",
+   "why_load_bearing": "Resolves why announced-capex headlines and actual-investment data disagree. It is the reason L&T-type exposure is a contract-mix question, not a headline question.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "spr-days",
+   "claim": "India's SPR covers 9.5 days (RTI, March 2026), against an IEA 90-day standard; one-third of facilities empty",
+   "status": "contested",
+   "obtained": "RTI reply via agent research",
+   "why_load_bearing": "Determines how much an oil shock actually hurts. The 9.5 vs 60 vs 74 spread is a definitional gap: caverns-only versus mandated refiner stock.",
+   "source": "RTI March 2026",
+   "note": "Partially resolved -- methodology explains the gap. Not fully closed."
+  },
+  {
+   "id": "rbi-reserves",
+   "claim": "RBI FX reserves are rising, not depleting",
+   "status": "contested",
+   "obtained": "agent research against the WSS series",
+   "why_load_bearing": "I had assumed depletion. Reserves rising removes one leg of the currency-crisis framing.",
+   "source": "RBI Weekly Statistical Supplement",
+   "note": "News figures and the WSS series disagree on the SAME date. Use WSS."
+  },
+  {
+   "id": "us-remittance-share",
+   "claim": "The US is now India's largest remittance source at 27.7%",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "A core strand of the Washington-concentration finding. Remittances were the channel I had assumed was diversified away from the US.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "fpi-outflow",
+   "claim": "FPI outflows Rs2.87 lakh crore YTD 2026 as of 25 June; net FDI near a record low of $7.65bn against record gross FDI of $95bn",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Net versus gross FDI is the whole story -- record gross with near-record-low net means repatriation, which reads as an exit, not an entry.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "trade-deficit",
+   "claim": "Goods trade deficit $30.43bn in June 2026 (+59.3% YoY), $31.98bn in July, a 6-month high; current account back to a $6.2bn deficit in June",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "The external position is deteriorating while the equity market treats India as a domestic story.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "cbam",
+   "claim": "EU CBAM: 15-22% price hit on steel, 41% drop in aluminium exports, $116/tonne by 2034; the India-EU FTA does NOT exempt India",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "An India-EU FTA headline will be read as bullish for metals. It is not, and this is why.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "hal-tejas",
+   "claim": "199 forged Tejas supplier test certificates found by HAL's own audit; 18 fighters with 10 engineless by April 2026; only 7 GE engines delivered against a $1bn deal",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Closed the HAL position. If the certificate count is wrong the close was still right on the engine number alone, so the decision is robust to this one being off.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "hdfc-governance",
+   "claim": "MSRDC Rs45cr differential-interest payment; RBI query into the board's own Rs1 lakh penalty on its CEO; US securities class action",
+   "status": "reported",
+   "obtained": "governance screen (late)",
+   "why_load_bearing": "Closed the MEDIUM and suspended the LONG. Three independent items pointing the same way is what made it decisive rather than any one of them.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "dixon-margin",
+   "claim": "Dixon Q1 FY27 operating margin 2.29%, down from 3.04% YoY; revenue +21.1%, operating income -8.6%, net income +194.8% at 1.86x operating income",
+   "status": "verified",
+   "obtained": "own pull of yfinance quarterly financials, computed here",
+   "why_load_bearing": "Closed the position. Settles the dixon-pat conflict: neither the -36% screen figure nor our +119% TTM figure described what was happening.",
+   "source": "yfinance quarterly financials",
+   "note": "Sep 2025 quarter missing from the series; does not affect the like-for-like comparison. NOT checked against a company filing."
+  }
+ ],
+ "unresolved_conflicts": [
+  {
+   "id": "sip-series",
+   "conflict": "Rs31,961cr vs Rs22,908cr monthly SIP",
+   "why_it_matters": "The absorption maths uses this directly.",
+   "status": "OPEN"
+  },
+  {
+   "id": "remittance-total",
+   "conflict": "The $145bn total does not reconcile with the World Bank series ($83bn to $129bn, 2019-2023)",
+   "why_it_matters": "Sizes the largest single stabilising inflow India has.",
+   "status": "OPEN"
+  },
+  {
+   "id": "fii-ownership",
+   "conflict": "14.7% vs 15.88% vs 'a 17-year low'",
+   "why_it_matters": "Three different numbers for the same quantity means at least two are wrong.",
+   "status": "OPEN"
+  },
+  {
+   "id": "gdp-fy26",
+   "conflict": "7.6% vs 7.7%",
+   "why_it_matters": "Immaterial to any decision. Logged so it stops being re-litigated.",
+   "status": "OPEN, low priority"
+  }
+ ]
+}

@@ -43,7 +43,7 @@ def market_state() -> tuple[dict, dict]:
     return px, revs
 
 
-def evaluate(th: dict, px: dict, revs: dict) -> list[dict]:
+def evaluate(th: dict, px: dict, revs: dict, fund: dict) -> list[dict]:
     sym = th["symbol"]
     p, rv = px.get(sym), revs.get(sym)
     out = []
@@ -64,6 +64,10 @@ def evaluate(th: dict, px: dict, revs: dict) -> list[dict]:
         elif c == "date_passed":
             hit = f"{date.today():%Y-%m-%d}" > cond["date"]
             res, detail = ("TRIGGERED" if hit else "ok"), f"deadline {cond['date']}"
+        elif c == "margin_below" and (fd := fund.get(sym)):
+            m = fd.get("operating_margin_pct")
+            if m is not None:
+                res, detail = ("TRIGGERED" if m < cond["level"] else "ok"), f"op margin {m:.2f}% vs {cond['level']:.2f}%"
         elif c == "manual":
             res, detail = "REVIEW", "needs judgement"
         out.append({"check": c, "result": res, "detail": detail, "note": cond.get("note", "")})
@@ -77,6 +81,7 @@ def main() -> None:
 
     reg = load_json(ROOT / "positions" / "theses.json")
     px, revs = market_state()
+    fund = load_json(ROOT / "data" / "fundamentals" / "india.json", {}) or {}
     today = f"{date.today():%Y-%m-%d}"
 
     print("=" * 88)
@@ -89,7 +94,7 @@ def main() -> None:
     for th in reg["theses"]:
         sym, p = th["symbol"], px.get(th["symbol"])
         pnl = ((p["price"] / th["entry_price"] - 1) * 100) if p and th.get("entry_price") else None
-        conds = evaluate(th, px, revs)
+        conds = evaluate(th, px, revs, fund)
         trig = [c for c in conds if c["result"] == "TRIGGERED"]
         man = [c for c in conds if c["result"] == "REVIEW"]
         flag = "  *** INVALIDATION TRIGGERED ***" if trig else ""

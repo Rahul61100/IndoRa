@@ -15,12 +15,6 @@
     "triggered": []
    },
    {
-    "id": "dixon-2026-08-26",
-    "pnl_pct": 0.2,
-    "status": "open_capped",
-    "triggered": []
-   },
-   {
     "id": "ntpc-2026-08-25",
     "pnl_pct": -3.37,
     "status": "open",
