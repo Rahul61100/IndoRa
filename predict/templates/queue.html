@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if not rows %}
+  <!-- An empty screen is an invitation to act, not a shrug. -->
+  <p class="empty">Nothing waiting. Pull fresh markets with
+    <code class="num">uv run scripts/predict_ingest.py</code>,
+    then map one to a proposition.</p>
+{% endif %}
+
+{% for r in rows %}
+<article class="card">
+
+  <!-- 1. What am I judging? Prose about the world, so: serif. -->
+  <h2 class="stmt">{{ r.statement }}</h2>
+  <p class="meta num">{{ r.venue }}{% if r.topic %} · {{ r.topic }}{% endif %}
+     {%- if r.resolves_by %} · resolves {{ r.resolves_by }}{% endif %}
+     · ${{ '{:,.0f}'.format(r.liquidity) }} liquidity</p>
+
+  <!-- 2. THE RAIL. Bid-ask is a band because a spread is a range, never a point.
+          Our view is a marker. The distance between them is the edge you can
+          actually trade -- which is why the mid is nowhere on this page. -->
+  <div class="rail" role="img"
+       aria-label="Market {{ '%.3f'|format(r.best_bid) }} to {{ '%.3f'|format(r.best_ask) }}, our view {{ '%.2f'|format(r.our_prob) }}">
+    <div class="band" style="left:{{ (r.best_bid*100)|round(2) }}%;
+                             width:{{ ((r.best_ask-r.best_bid)*100)|round(2) }}%"></div>
+    <div class="ours{{ ' good' if r.edge_yes > 0 else '' }}"
+         style="left:{{ (r.our_prob*100)|round(2) }}%"></div>
+    <span class="tick" style="left:0">0</span>
+    <span class="tick" style="left:50%">·5</span>
+    <span class="tick" style="left:100%">1</span>
+  </div>
+
+  <p class="reads num">
+    <span>market <b>{{ '%.3f'|format(r.best_bid) }}–{{ '%.3f'|format(r.best_ask) }}</b></span>
+    <span>ours <b>{{ '%.2f'|format(r.our_prob) }}</b> ({{ r.confidence }})</span>
+    <span class="{{ 'good' if r.edge_yes > 0 else 'dull' }}">yes {{ '%+.1f'|format(r.edge_yes*100) }}</span>
+    <span class="{{ 'good' if r.edge_no > 0 else 'dull' }}">no {{ '%+.1f'|format(r.edge_no*100) }}</span>
+    {% if r.untradeable %}<span class="flag">spread too wide to price</span>{% endif %}
+  </p>
+
+  <!-- 3. Why do I think that? Tier is visible, because hiding it launders it. -->
+  {% if r.rationale %}<p class="why">{{ r.rationale }}</p>{% endif %}
+  <p class="claims">
+    {% for c in r.claim_ids %}<span class="chip reported">{{ c }}</span>{% endfor %}
+    {% if not r.claim_ids %}<span class="chip none">no claim attached</span>{% endif %}
+  </p>
+
+  {% if r.drift is not none and r.drift|abs > 0.005 %}
+  <p class="drift num">Odds moved {{ '%+.3f'|format(r.drift) }} since this view was formed.
+     The edge above is the current one.</p>
+  {% endif %}
+
+  <!-- 4. Decide. -->
+  <div class="acts">
+    <form method="post" action="/views/{{ r.view_id }}/accept">
+      <input type="hidden" name="market_id" value="{{ r.market_id }}">
+      <input type="hidden" name="direction" value="yes">
+      <button class="go" type="submit">Accept yes</button>
+    </form>
+    <form method="post" action="/views/{{ r.view_id }}/reject">
+      <label class="sr">Reason</label>
+      <select name="reason">
+        <option>market is right</option><option>claim too weak</option>
+        <option>horizon too long</option><option>illiquid</option>
+        <option>don&#39;t understand it</option><option>other</option>
+      </select>
+      <button type="submit">Reject</button>
+    </form>
+  </div>
+</article>
+{% endfor %}
+
+<style>
+.empty{color:var(--muted);border:1px dashed var(--rule);padding:1.5rem;border-radius:6px;text-align:center}
+.empty code{background:var(--card);padding:.15rem .4rem;border-radius:3px;font-size:13px}
+
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;
+      padding:1.4rem 1.5rem;margin-bottom:1.1rem}
+/* Prose about the world gets the serif; every number stays monospace. */
+.stmt{font:400 1.32rem/1.35 ui-serif,"New York",Georgia,serif;margin:0 0 .35rem;
+      letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:12px;margin:0 0 1.4rem}
+
+.rail{position:relative;height:30px;margin:0 0 .7rem;
+      border-bottom:1px solid var(--rule)}
+.band{position:absolute;top:6px;height:12px;min-width:2px;background:var(--band);
+      border-radius:2px}
+.ours{position:absolute;top:1px;width:2px;height:22px;background:var(--muted)}
+.ours.good{background:var(--signal);width:3px}
+.ours::after{content:"";position:absolute;top:-4px;left:50%;translate:-50% 0;
+             width:7px;height:7px;rotate:45deg;background:inherit}
+.tick{position:absolute;top:20px;translate:-50% 0;font-size:10px;color:var(--muted);
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.tick:first-of-type{translate:0 0}
+
+.reads{display:flex;flex-wrap:wrap;gap:1.1rem;font-size:13px;margin:0 0 1rem}
+.reads b{font-weight:600}
+/* Positive edge is quietly marked. Negative simply recedes -- a tool built on
+   skepticism should not celebrate. */
+.good{color:var(--signal)} .dull{color:var(--muted)}
+.flag{color:var(--caution)}
+
+.why{color:var(--muted);font-size:13.5px;margin:0 0 .7rem}
+.claims{margin:0 0 1rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{font-size:11.5px;padding:.2rem .5rem;border-radius:3px;
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.chip.verified{color:var(--verified);border:1px solid var(--verified)}
+.chip.reported{color:var(--reported);border:1px solid var(--reported)}
+/* No evidence gets no colour. */
+.chip.none{color:var(--muted);border:1px dashed var(--rule)}
+
+.drift{color:var(--caution);font-size:12.5px;margin:0 0 1rem;
+       padding-left:.7rem;border-left:2px solid var(--caution)}
+
+.acts{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;
+      border-top:1px solid var(--rule);padding-top:1rem}
+.acts form{display:flex;gap:.4rem}
+button,select{font:inherit;font-size:13px;padding:.4rem .8rem;border-radius:5px;
+              border:1px solid var(--rule);background:var(--card);color:var(--ink);
+              cursor:pointer;transition:border-color .12s,color .12s}
+button:hover,select:hover{border-color:var(--muted)}
+.go{border-color:var(--signal);color:var(--signal);font-weight:600}
+.go:hover{background:var(--signal);color:var(--card);border-color:var(--signal)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:520px){ .acts{flex-direction:column;align-items:stretch}
+                          .acts form{width:100%} .acts button{flex:1} }
+</style>
+{% endblock %}

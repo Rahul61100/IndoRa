@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>review queue</title>
+<style>
+/* Light is the base. Dark overrides only tokens -- never a colour's only home. */
+:root{
+  --paper:#EFF2F1; --card:#FFFFFF; --ink:#161D1A; --muted:#6B7671;
+  --rule:#D9DEDB; --signal:#A96B1F; --caution:#8C4A3F;
+  --verified:#2F6B52; --reported:#8A6A1F; --band:#C7D0CC;
+}
+:root:not([data-theme="light"]){ @media (prefers-color-scheme:dark){
+  --paper:#111513; --card:#191E1B; --ink:#E3E8E5; --muted:#869089;
+  --rule:#2A322D; --signal:#D9A05B; --caution:#C97B6A;
+  --verified:#6FB08D; --reported:#C9A24D; --band:#39433D;
+}}
+:root[data-theme="dark"]{
+  --paper:#111513; --card:#191E1B; --ink:#E3E8E5; --muted:#869089;
+  --rule:#2A322D; --signal:#D9A05B; --caution:#C97B6A;
+  --verified:#6FB08D; --reported:#C9A24D; --band:#39433D;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:2.5rem 1.25rem 5rem; background:var(--paper); color:var(--ink);
+  font:15px/1.6 ui-sans-serif,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+}
+.wrap{max-width:780px;margin:0 auto}
+/* Numbers are measurements: monospace, tabular, always aligned. */
+.num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+header{display:flex;align-items:baseline;gap:1rem;margin-bottom:.5rem}
+h1{font:600 1.05rem/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;margin:0}
+.gate{
+  /* Permanently visible: this measures nothing yet, and the header says so. */
+  margin:0 0 2.5rem; padding:.6rem .8rem; border:1px solid var(--rule);
+  border-left:3px solid var(--signal); border-radius:0 4px 4px 0;
+  color:var(--muted); font-size:12.5px; background:var(--card);
+}
+#theme{
+  margin-left:auto; background:none; border:1px solid var(--rule); color:var(--muted);
+  border-radius:4px; padding:.25rem .6rem; font:inherit; font-size:12px; cursor:pointer;
+}
+#theme:hover{color:var(--ink);border-color:var(--muted)}
+:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body><div class="wrap">
+<header>
+  <h1>review queue</h1>
+  <button id="theme" type="button">theme</button>
+</header>
+<p class="gate">{{ gate }}</p>
+{% block content %}{% endblock %}
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme');
+  try{ var t=localStorage.getItem('theme'); if(t)document.documentElement.dataset.theme=t; }catch(e){}
+  b.addEventListener('click',function(){
+    var cur=document.documentElement.dataset.theme;
+    if(!cur){ cur = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light'; }
+    var next = cur==='dark' ? 'light':'dark';
+    document.documentElement.dataset.theme=next;
+    try{ localStorage.setItem('theme',next); }catch(e){}
+  });
+})();
+</script>
+</body></html>
