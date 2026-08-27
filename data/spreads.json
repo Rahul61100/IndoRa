@@ -1,0 +1,29 @@
+{
+ "2026-08-27": {
+  "monsoon / rural vs urban": {
+   "1m": 5.12,
+   "3m": 21.23,
+   "6m": 20.03
+  },
+  "exporters vs domestic": {
+   "1m": 0.18,
+   "3m": -5.69,
+   "6m": -0.68
+  },
+  "value vs momentum": {
+   "1m": 0.98,
+   "3m": 12.93,
+   "6m": 22.53
+  },
+  "private vs PSU banks": {
+   "1m": -1.38,
+   "3m": -0.36,
+   "6m": 9.54
+  },
+  "capex vs consumption": {
+   "1m": 7.97,
+   "3m": 5.87,
+   "6m": 19.85
+  }
+ }
+}

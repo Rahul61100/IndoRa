@@ -22,6 +22,9 @@ done
 echo "=== estimate revisions (Yahoo serves only a snapshot -- history exists only if this runs) ==="
 uv run --quiet scripts/fetch_revisions.py --universe india --top 10 | tail -30
 
+echo "=== cross-sectional spreads (group vs group -- invisible to a name-level screen) ==="
+uv run --quiet scripts/spreads.py
+
 echo "=== regime ==="
 uv run --quiet scripts/regime.py | sed -n '/REGIME/,/BOOK STRESS/p'
 
