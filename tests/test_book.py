@@ -7,11 +7,12 @@ from predict.ingest import append_odds, upsert_markets
 from predict.venues.base import RawMarket
 
 
-def setup(tmp_path, bid=0.29, ask=0.31):
+def setup(tmp_path, bid=0.29, ask=0.31, untradeable=False):
     c = connect(tmp_path / "t.db")
     init_schema(c)
     m = RawMarket(venue="polymarket", venue_market_id="1", question="q",
-                  prob_yes=0.30, best_bid=bid, best_ask=ask, liquidity=5000.0)
+                  prob_yes=0.30, best_bid=bid, best_ask=ask, liquidity=5000.0,
+                  untradeable=untradeable)
     upsert_markets(c, [m])
     append_odds(c, [m], "2026-08-27T00:00:00")
     pid = create_proposition(c, "Fed raises in September")
@@ -78,6 +79,31 @@ def test_accept_refuses_a_null_bid_or_ask_instead_of_using_a_stale_row(tmp_path)
     vid = create_view(c, pid, 0.45, "medium")
     with pytest.raises(ValueError, match="no tradeable price"):
         accept_view(c, vid, 1, "yes")
+
+
+def test_accept_refuses_an_untradeable_row(tmp_path):
+    # 720 of 2,100 real rows carry untradeable=True (spread > 25%). A card
+    # can print "spread too wide to price" and still let Accept through if
+    # only NULL bid/ask is guarded -- this closes that gap.
+    c, pid = setup(tmp_path, bid=0.006, ask=0.007, untradeable=True)
+    vid = create_view(c, pid, 0.45, "medium")
+    with pytest.raises(ValueError, match="not tradeable"):
+        accept_view(c, vid, 1, "yes")
+
+
+def test_accept_refuses_when_the_odds_moved_since_render(tmp_path):
+    # The accept POST used to carry only market_id/direction; accept_view
+    # re-read whatever the latest odds row was NOW. An ingest landing
+    # between page render and button click entered the position at a price
+    # the reviewer never approved.
+    c, pid = setup(tmp_path)  # odds row written at ts "2026-08-27T00:00:00"
+    vid = create_view(c, pid, 0.45, "medium")
+    rendered_ts = "2026-08-27T00:00:00"
+    later = RawMarket(venue="polymarket", venue_market_id="1", question="q",
+                      prob_yes=0.35, best_bid=0.34, best_ask=0.36, liquidity=5000.0)
+    append_odds(c, [later], "2026-08-27T01:00:00")   # ingest lands after render
+    with pytest.raises(ValueError, match="odds moved"):
+        accept_view(c, vid, 1, "yes", expected_odds_ts=rendered_ts)
 
 
 def test_accepting_a_market_not_mapped_to_the_view_is_refused(tmp_path):

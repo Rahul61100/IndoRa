@@ -62,7 +62,7 @@ def create_view(conn, proposition_id: int, our_prob: float, confidence: str,
 
 
 def accept_view(conn, view_id: int, market_id: int, direction: str,
-                stake_units: int = 1) -> int:
+                stake_units: int = 1, expected_odds_ts: str | None = None) -> int:
     v = conn.execute("SELECT * FROM views WHERE id=?", (view_id,)).fetchone()
     if v is None:
         raise ValueError(f"no view {view_id}")
@@ -81,6 +81,15 @@ def accept_view(conn, view_id: int, market_id: int, direction: str,
         # prices -- a position's entry price must be the price actually
         # available at accept time, not a stale one.
         raise ValueError("no tradeable price for this market's latest odds")
+    if o["untradeable"]:
+        # A spread this wide (>25%) is not a price you could actually cross.
+        # Refuse the entry rather than printing a position at a quote the
+        # engine itself flagged as not tradeable.
+        raise ValueError("this market's latest odds are not tradeable (spread too wide)")
+    if expected_odds_ts is not None and expected_odds_ts != o["ts"]:
+        # An ingest landed between page render and button click. The
+        # reviewer approved the price they SAW, not whatever is now latest.
+        raise ValueError("odds moved since this was rendered -- refresh and re-review")
 
     e = edge(v["our_prob"], o["best_bid"], o["best_ask"], direction)
     cur = conn.execute(

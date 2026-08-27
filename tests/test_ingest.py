@@ -1,4 +1,7 @@
+import gzip
 import json
+
+import pytest
 
 from predict.db import connect, init_schema
 from predict.ingest import append_jsonl, append_odds, run, upsert_markets
@@ -59,20 +62,53 @@ def test_untradeable_flag_is_persisted(tmp_path):
 def test_jsonl_is_written_before_interpretation(tmp_path):
     # Raw values must reach disk even for rows a gate would reject, so a bad
     # gate can be re-run against history instead of having discarded it.
+    # Only identity + raw is written now -- every normalised field is
+    # re-derivable from raw via parse_market, so writing both was pure
+    # duplication.
     p = append_jsonl([mk("1"), mk("2")], "2026-08-27T00:00:00", tmp_path)
-    lines = p.read_text().strip().split("\n")
+    with gzip.open(p, "rt") as fh:
+        lines = fh.read().strip().split("\n")
     assert len(lines) == 2
-    assert json.loads(lines[0])["raw"]["id"] == "1"
-    assert p.name == "2026-08.jsonl"
+    row = json.loads(lines[0])
+    assert row["raw"]["id"] == "1"
+    assert row["venue"] == "polymarket" and row["venue_market_id"] == "1"
+    assert row["ts"] == "2026-08-27T00:00:00"
+    assert set(row) == {"ts", "venue", "venue_market_id", "raw"}
+    assert p.name == "2026-08.jsonl.gz"
 
 
 def test_jsonl_appends_across_runs(tmp_path):
+    # gzip.open("at") appends as a new gzip member -- a stream of
+    # concatenated members must still decompress as one stream.
     append_jsonl([mk("1")], "2026-08-27T00:00:00", tmp_path)
     p = append_jsonl([mk("2")], "2026-08-28T00:00:00", tmp_path)
-    assert len(p.read_text().strip().split("\n")) == 2
+    with gzip.open(p, "rt") as fh:
+        lines = fh.read().strip().split("\n")
+    assert len(lines) == 2
+    assert [json.loads(l)["raw"]["id"] for l in lines] == ["1", "2"]
 
 
 def test_run_reports_a_summary(tmp_path):
     c = db(tmp_path)
     s = run(c, [mk("1"), mk("2")], tmp_path, ts="2026-08-27T00:00:00")
     assert s["markets"] == 2 and s["odds_rows"] == 2 and s["inserted"] == 2
+
+
+def test_jsonl_survives_a_database_failure(tmp_path):
+    # Tests the actual guarantee -- "raw values reach disk before
+    # interpretation" -- rather than the call order. A reorder of
+    # append_jsonl/upsert_markets inside run() would not be caught by a
+    # test that only checks the order they were invoked in; this one
+    # proves the JSONL still holds every row even when the DB write dies.
+    class FailingConn:
+        def execute(self, *a, **kw):
+            raise RuntimeError("db is down")
+
+    with pytest.raises(RuntimeError, match="db is down"):
+        run(FailingConn(), [mk("1"), mk("2")], tmp_path, ts="2026-08-27T00:00:00")
+
+    p = tmp_path / "2026-08.jsonl.gz"
+    with gzip.open(p, "rt") as fh:
+        lines = fh.read().strip().split("\n")
+    assert len(lines) == 2
+    assert [json.loads(l)["raw"]["id"] for l in lines] == ["1", "2"]

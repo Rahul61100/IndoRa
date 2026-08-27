@@ -1,13 +1,14 @@
 from predict.book import create_proposition, create_view, map_market
 from predict.db import connect, init_schema
 from predict.ingest import append_odds, upsert_markets
-from predict.queries import drift, queue_rows
+from predict.queries import claim_tiers, drift, queue_rows
 from predict.venues.base import RawMarket
 
 
-def mkt(bid, ask, prob):
+def mkt(bid, ask, prob, untradeable=False):
     return RawMarket(venue="polymarket", venue_market_id="1", question="Fed raises?",
-                     prob_yes=prob, best_bid=bid, best_ask=ask, liquidity=368000.0)
+                     prob_yes=prob, best_bid=bid, best_ask=ask, liquidity=368000.0,
+                     untradeable=untradeable)
 
 
 def test_drift_is_none_without_a_prior_price():
@@ -40,7 +41,9 @@ def test_queue_row_carries_live_odds_edge_and_claims(tmp_path):
     assert r["statement"] == "Fed raises in September"
     assert r["best_ask"] == 0.31 and r["best_bid"] == 0.29
     assert round(r["edge_yes"], 3) == 0.14
-    assert r["claim_ids"] == ["fed-may-hike-next"]
+    # "fed-may-hike-next" is not in the real data/sources.json -- an
+    # unlooked-up claim must resolve to "unknown", never a fixed tier.
+    assert r["claim_ids"] == [{"id": "fed-may-hike-next", "tier": "unknown"}]
     assert round(r["drift"], 3) == 0.010
 
 
@@ -76,3 +79,45 @@ def test_rows_without_a_tradeable_price_are_skipped(tmp_path):
     map_market(c, 1, pid)
     create_view(c, pid, 0.45, "low")
     assert queue_rows(c) == []
+
+
+def test_untradeable_rows_are_shown_but_not_acceptable(tmp_path):
+    # A card must not print "spread too wide to price" directly above a
+    # working Accept button. Keep the row (it is still information -- the
+    # history matters) but flag it as not acceptable.
+    c = connect(tmp_path / "t.db")
+    init_schema(c)
+    upsert_markets(c, [mkt(0.006, 0.007, 0.30, untradeable=True)])
+    append_odds(c, [mkt(0.006, 0.007, 0.30, untradeable=True)], "2026-08-27T00:00:00")
+    pid = create_proposition(c, "Untradeable but shown")
+    map_market(c, 1, pid)
+    create_view(c, pid, 0.45, "low")
+
+    rows = queue_rows(c)
+    assert len(rows) == 1
+    assert rows[0]["untradeable"] is True
+    assert rows[0]["acceptable"] is False
+
+
+def test_claim_tier_is_looked_up_not_assumed(tmp_path):
+    # The screen must assert a tier it actually looked up, not one it
+    # hardcoded. Cite one real claim id from data/sources.json (whatever its
+    # true status is) alongside a fabricated one, and prove they diverge.
+    tiers = claim_tiers()
+    assert tiers, "data/sources.json must have at least one claim for this test to mean anything"
+    real_id, real_status = next(iter(tiers.items()))
+    fake_id = "definitely-not-a-real-claim-id"
+    assert fake_id not in tiers
+
+    c = connect(tmp_path / "t.db")
+    init_schema(c)
+    upsert_markets(c, [mkt(0.29, 0.31, 0.30)])
+    append_odds(c, [mkt(0.29, 0.31, 0.30)], "2026-08-27T00:00:00")
+    pid = create_proposition(c, "p")
+    map_market(c, 1, pid)
+    create_view(c, pid, 0.45, "low", claim_ids=[real_id, fake_id])
+
+    rows = queue_rows(c)
+    by_id = {claim["id"]: claim["tier"] for claim in rows[0]["claim_ids"]}
+    assert by_id[real_id] == real_status
+    assert by_id[fake_id] == "unknown"

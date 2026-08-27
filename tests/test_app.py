@@ -31,16 +31,27 @@ def test_queue_page_renders_the_view(tmp_path):
 
 def test_queue_page_shows_claim_provenance(tmp_path):
     # A review screen that hides claim tiers is a confidence-laundering
-    # machine with better CSS. The claim id must be on the page.
+    # machine with better CSS. The claim id must be on the page, and its
+    # tier must be looked up -- "fed-may-hike-next" is not in the real
+    # data/sources.json, so it must render as "unknown", never "reported".
     client = TestClient(create_app(seeded(tmp_path)))
-    assert "fed-may-hike-next" in client.get("/").text
+    text = client.get("/").text
+    assert "fed-may-hike-next" in text
+    assert 'class="chip unknown"' in text
 
 
 def test_accept_creates_a_position_and_clears_the_queue(tmp_path):
-    client = TestClient(create_app(seeded(tmp_path)))
+    db_path = seeded(tmp_path)
+    client = TestClient(create_app(db_path))
     r = client.post("/views/1/accept", data={"market_id": "1", "direction": "yes"})
     assert r.status_code == 200
     assert "Fed raises in September" not in client.get("/").text
+    # The queue clears on the status flip alone -- it would also empty if
+    # the position INSERT silently vanished. Prove the position was
+    # actually written, not just that the view left 'proposed' status.
+    c = connect(db_path)
+    assert c.execute("SELECT COUNT(*) FROM positions").fetchone()[0] == 1
+    c.close()
 
 
 def test_reject_requires_a_known_reason(tmp_path):

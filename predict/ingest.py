@@ -1,7 +1,7 @@
 """Fetch -> disk. Deterministic; no model ever runs in this path."""
 from __future__ import annotations
 
-import dataclasses
+import gzip
 import json
 import sqlite3
 from datetime import datetime, timezone
@@ -65,14 +65,21 @@ def append_jsonl(markets: list[RawMarket], ts: str, odds_dir: Path) -> Path:
     exactly how a corrupt USDINR daily bar got through elsewhere in this repo.
     Keeping the raw line means a bad gate can be re-run against history rather
     than having silently discarded it.
+
+    Only the identity (venue, venue_market_id) and the raw API payload are
+    written -- every normalised field is re-derivable by re-running
+    parse_market on raw, so writing both was pure duplication: 19MB/run for
+    2,100 markets, ~570MB/month nightly. Gzipped, appending as a new gzip
+    member -- gzip.open("at") appends bytes as a separate member, and a
+    stream of concatenated members decompresses correctly as one stream.
     """
     odds_dir = Path(odds_dir)
     odds_dir.mkdir(parents=True, exist_ok=True)
-    path = odds_dir / f"{ts[:7]}.jsonl"
-    with path.open("a") as fh:
+    path = odds_dir / f"{ts[:7]}.jsonl.gz"
+    with gzip.open(path, "at") as fh:
         for m in markets:
-            d = dataclasses.asdict(m)
-            d["ts"] = ts
+            d = {"ts": ts, "venue": m.venue, "venue_market_id": m.venue_market_id,
+                 "raw": m.raw}
             fh.write(json.dumps(d, default=str) + "\n")
     return path
 

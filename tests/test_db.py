@@ -47,3 +47,18 @@ def test_foreign_keys_are_enforced(tmp_path):
     except sqlite3.IntegrityError:
         raised = True
     assert raised, "FK enforcement must be ON, not SQLite's default OFF"
+
+
+def test_default_timestamps_are_iso_with_t(tmp_path):
+    # book.py and ingest.py both stamp "YYYY-MM-DDTHH:MM:SS". A DDL default
+    # of datetime('now') instead writes a space, and queue_rows compares
+    # odds.ts <= views.created_at LEXICOGRAPHICALLY -- a space sorts before
+    # every 'T', so a space-separated baseline silently resolves to nothing.
+    conn = connect(tmp_path / "t.db")
+    init_schema(conn)
+    conn.execute("INSERT INTO propositions (statement) VALUES ('p')")
+    conn.commit()
+    created_at = conn.execute(
+        "SELECT created_at FROM propositions").fetchone()[0]
+    assert "T" in created_at
+    assert " " not in created_at

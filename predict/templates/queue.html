@@ -42,7 +42,7 @@
   <!-- 3. Why do I think that? Tier is visible, because hiding it launders it. -->
   {% if r.rationale %}<p class="why">{{ r.rationale }}</p>{% endif %}
   <p class="claims">
-    {% for c in r.claim_ids %}<span class="chip reported">{{ c }}</span>{% endfor %}
+    {% for c in r.claim_ids %}<span class="chip {{ c.tier }}">{{ c.id }}</span>{% endfor %}
     {% if not r.claim_ids %}<span class="chip none">no claim attached</span>{% endif %}
   </p>
 
@@ -56,7 +56,8 @@
     <form method="post" action="/views/{{ r.view_id }}/accept">
       <input type="hidden" name="market_id" value="{{ r.market_id }}">
       <input type="hidden" name="direction" value="yes">
-      <button class="go" type="submit">Accept yes</button>
+      <input type="hidden" name="odds_ts" value="{{ r.odds_ts }}">
+      <button class="go" type="submit"{% if not r.acceptable %} disabled{% endif %}>Accept yes</button>
     </form>
     <form method="post" action="/views/{{ r.view_id }}/reject">
       <label class="sr">Reason</label>
@@ -107,8 +108,10 @@
       font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 .chip.verified{color:var(--verified);border:1px solid var(--verified)}
 .chip.reported{color:var(--reported);border:1px solid var(--reported)}
-/* No evidence gets no colour. */
-.chip.none{color:var(--muted);border:1px dashed var(--rule)}
+.chip.contested{color:var(--caution);border:1px solid var(--caution)}
+/* No evidence gets no colour -- same dashed-outline treatment as .chip.none,
+   because an unlooked-up claim has no evidence behind it either. */
+.chip.none,.chip.unknown{color:var(--muted);border:1px dashed var(--rule)}
 
 .drift{color:var(--caution);font-size:12.5px;margin:0 0 1rem;
        padding-left:.7rem;border-left:2px solid var(--caution)}

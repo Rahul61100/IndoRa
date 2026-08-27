@@ -33,10 +33,11 @@ def create_app(db_path=None) -> FastAPI:
             conn.close()
 
     @app.post("/views/{view_id}/accept")
-    def accept(view_id: int, market_id: int = Form(...), direction: str = Form(...)):
+    def accept(view_id: int, market_id: int = Form(...), direction: str = Form(...),
+              odds_ts: str | None = Form(None)):
         conn = db()
         try:
-            accept_view(conn, view_id, market_id, direction)
+            accept_view(conn, view_id, market_id, direction, expected_odds_ts=odds_ts)
         except ValueError as e:
             return HTMLResponse(str(e), status_code=400)
         finally:
