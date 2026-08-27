@@ -1,0 +1,2818 @@
+{
+ "BHARTIARTL.NS": {
+  "symbol": "BHARTIARTL.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   58539.1,
+   55383.2,
+   53981.6,
+   49462.6,
+   47876.2
+  ],
+  "operating_income_cr": [
+   19067.8,
+   17848.1,
+   17362.7,
+   15373.6,
+   14682.8
+  ],
+  "net_income_cr": [
+   8167.4,
+   7325.1,
+   6630.5,
+   5947.9,
+   11021.8
+  ],
+  "operating_margin_pct_series": [
+   32.57,
+   32.23,
+   32.16,
+   31.08,
+   30.67
+  ],
+  "operating_margin_pct": 32.57,
+  "trailing_pe": 39.1884,
+  "forward_pe": 23.011469,
+  "flags": [],
+  "net_to_operating": 0.43,
+  "revenue_yoy_pct": 22.3,
+  "operating_income_yoy_pct": 29.9
+ },
+ "INFY.NS": {
+  "symbol": "INFY.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   508.2,
+   504.0,
+   509.9,
+   507.6,
+   494.1
+  ],
+  "operating_income_cr": [
+   107.2,
+   105.5,
+   94.3,
+   106.5,
+   102.8
+  ],
+  "net_income_cr": [
+   81.9,
+   91.9,
+   74.7,
+   83.9,
+   80.9
+  ],
+  "operating_margin_pct_series": [
+   21.09,
+   20.93,
+   18.49,
+   20.98,
+   20.81
+  ],
+  "operating_margin_pct": 21.09,
+  "trailing_pe": 14.332904,
+  "forward_pe": 13.899605,
+  "flags": [],
+  "net_to_operating": 0.76,
+  "revenue_yoy_pct": 2.9,
+  "operating_income_yoy_pct": 4.3
+ },
+ "LT.NS": {
+  "symbol": "LT.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   67941.7,
+   82762.2,
+   71449.7,
+   63678.9,
+   74392.3
+  ],
+  "operating_income_cr": [
+   5084.2,
+   7442.3,
+   6345.1,
+   5284.4,
+   7150.1
+  ],
+  "net_income_cr": [
+   4122.9,
+   5325.6,
+   3215.1,
+   3617.2,
+   5497.3
+  ],
+  "operating_margin_pct_series": [
+   7.48,
+   8.99,
+   8.88,
+   8.3,
+   9.61
+  ],
+  "operating_margin_pct": 7.48,
+  "trailing_pe": 33.352657,
+  "forward_pe": 22.341848,
+  "flags": [],
+  "net_to_operating": 0.81,
+  "revenue_yoy_pct": -8.7,
+  "operating_income_yoy_pct": -28.9
+ },
+ "NTPC.NS": {
+  "symbol": "NTPC.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   50741.0,
+   49687.8,
+   45845.7,
+   47065.4,
+   49833.7
+  ],
+  "operating_income_cr": [
+   10996.9,
+   10186.7,
+   9476.5,
+   7992.9,
+   10091.0
+  ],
+  "net_income_cr": [
+   6721.1,
+   10486.5,
+   5488.7,
+   6010.6,
+   7611.2
+  ],
+  "operating_margin_pct_series": [
+   21.67,
+   20.5,
+   20.67,
+   16.98,
+   20.25
+  ],
+  "operating_margin_pct": 21.67,
+  "trailing_pe": 10.122362,
+  "forward_pe": 11.69799,
+  "flags": [
+   "CONSENSUS_DECLINE forward PE 11.7 > trailing 10.1, implies EPS -13%"
+  ],
+  "net_to_operating": 0.61,
+  "revenue_yoy_pct": 1.8,
+  "operating_income_yoy_pct": 9.0
+ },
+ "RELIANCE.NS": {
+  "symbol": "RELIANCE.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   309468.0,
+   294059.0,
+   264905.0,
+   243632.0,
+   261388.0
+  ],
+  "operating_income_cr": [
+   32417.0,
+   29333.0,
+   31396.0,
+   29063.0,
+   30353.0
+  ],
+  "net_income_cr": [
+   20946.0,
+   16971.0,
+   18645.0,
+   26994.0,
+   19407.0
+  ],
+  "operating_margin_pct_series": [
+   10.48,
+   9.98,
+   11.85,
+   11.93,
+   11.61
+  ],
+  "operating_margin_pct": 10.48,
+  "trailing_pe": 23.240892,
+  "forward_pe": 17.902102,
+  "flags": [],
+  "net_to_operating": 0.65,
+  "revenue_yoy_pct": 18.4,
+  "operating_income_yoy_pct": 6.8
+ },
+ "_updated": "2026-08-27",
+ "ABB.NS": {
+  "symbol": "ABB.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   3521.0,
+   3162.4,
+   3495.8,
+   2909.6,
+   2990.2
+  ],
+  "operating_income_cr": [
+   407.8,
+   366.0,
+   506.6,
+   365.8,
+   526.0
+  ],
+  "net_income_cr": [
+   362.3,
+   1783.7,
+   432.9,
+   351.7,
+   474.6
+  ],
+  "operating_margin_pct_series": [
+   11.58,
+   11.57,
+   14.49,
+   12.57,
+   17.59
+  ],
+  "operating_margin_pct": 11.58,
+  "trailing_pe": 100.442535,
+  "forward_pe": 71.414566,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +17.8% but operating income -22.5%"
+  ],
+  "net_to_operating": 0.89,
+  "revenue_yoy_pct": 17.8,
+  "operating_income_yoy_pct": -22.5
+ },
+ "ADANIPORTS.NS": {
+  "symbol": "ADANIPORTS.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   10820.8,
+   10737.6,
+   9704.6,
+   9126.1,
+   8488.4
+  ],
+  "operating_income_cr": [
+   4829.3,
+   4405.1,
+   4401.7,
+   4240.4,
+   3821.2
+  ],
+  "net_income_cr": [
+   3620.4,
+   3329.0,
+   3053.6,
+   3314.6,
+   3014.2
+  ],
+  "operating_margin_pct_series": [
+   44.63,
+   41.03,
+   45.36,
+   46.46,
+   45.02
+  ],
+  "operating_margin_pct": 44.63,
+  "trailing_pe": 29.284128,
+  "forward_pe": 21.92964,
+  "flags": [],
+  "net_to_operating": 0.75,
+  "revenue_yoy_pct": 27.5,
+  "operating_income_yoy_pct": 26.4
+ },
+ "AMBER.NS": {
+  "symbol": "AMBER.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31",
+   "2024-12-31"
+  ],
+  "revenue_cr": [
+   4147.5,
+   2942.8,
+   3449.1,
+   3753.7,
+   2133.3
+  ],
+  "operating_income_cr": [
+   258.9,
+   154.9,
+   194.9,
+   236.8,
+   100.0
+  ],
+  "net_income_cr": [
+   133.9,
+   -27.2,
+   103.9,
+   116.1,
+   35.9
+  ],
+  "operating_margin_pct_series": [
+   6.24,
+   5.26,
+   5.65,
+   6.31,
+   4.69
+  ],
+  "operating_margin_pct": 6.24,
+  "trailing_pe": 294.71872,
+  "forward_pe": 40.525276,
+  "flags": [],
+  "net_to_operating": 0.52,
+  "revenue_yoy_pct": 94.4,
+  "operating_income_yoy_pct": 159.0
+ },
+ "APOLLOHOSP.NS": {
+  "symbol": "APOLLOHOSP.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31",
+   "2024-12-31"
+  ],
+  "revenue_cr": [
+   6605.5,
+   6477.4,
+   5842.1,
+   5592.2,
+   5526.9
+  ],
+  "operating_income_cr": [
+   786.6,
+   746.1,
+   637.2,
+   558.7,
+   576.9
+  ],
+  "net_income_cr": [
+   529.3,
+   502.3,
+   432.8,
+   389.6,
+   372.3
+  ],
+  "operating_margin_pct_series": [
+   11.91,
+   11.52,
+   10.91,
+   9.99,
+   10.44
+  ],
+  "operating_margin_pct": 11.91,
+  "trailing_pe": 60.472786,
+  "forward_pe": 40.38789,
+  "flags": [],
+  "net_to_operating": 0.67,
+  "revenue_yoy_pct": 19.5,
+  "operating_income_yoy_pct": 36.3
+ },
+ "ASIANPAINT.NS": {
+  "symbol": "ASIANPAINT.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   10521.4,
+   9228.5,
+   8849.7,
+   8513.7,
+   8924.5
+  ],
+  "operating_income_cr": [
+   1864.6,
+   1476.6,
+   1467.9,
+   1198.5,
+   1324.1
+  ],
+  "net_income_cr": [
+   1539.2,
+   1172.1,
+   1059.9,
+   993.6,
+   1099.8
+  ],
+  "operating_margin_pct_series": [
+   17.72,
+   16.0,
+   16.59,
+   14.08,
+   14.84
+  ],
+  "operating_margin_pct": 17.72,
+  "trailing_pe": 53.280678,
+  "forward_pe": 43.425285,
+  "flags": [],
+  "net_to_operating": 0.83,
+  "revenue_yoy_pct": 17.9,
+  "operating_income_yoy_pct": 40.8
+ },
+ "BAJAJ-AUTO.NS": {
+  "symbol": "BAJAJ-AUTO.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   20870.2,
+   17108.0,
+   15378.2,
+   15253.6,
+   12646.6
+  ],
+  "operating_income_cr": [
+   4126.3,
+   2786.3,
+   3610.5,
+   3344.2,
+   2675.4
+  ],
+  "net_income_cr": [
+   3225.6,
+   3661.9,
+   2749.8,
+   2122.0,
+   2210.4
+  ],
+  "operating_margin_pct_series": [
+   19.77,
+   16.29,
+   23.48,
+   21.92,
+   21.16
+  ],
+  "operating_margin_pct": 19.77,
+  "trailing_pe": 27.845755,
+  "forward_pe": 24.808771,
+  "flags": [],
+  "net_to_operating": 0.78,
+  "revenue_yoy_pct": 65.0,
+  "operating_income_yoy_pct": 54.2
+ },
+ "BEL.NS": {
+  "symbol": "BEL.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   5547.0,
+   10224.4,
+   7153.9,
+   4439.7,
+   9149.6
+  ],
+  "operating_income_cr": [
+   1227.8,
+   2808.7,
+   1991.8,
+   1117.5,
+   2678.5
+  ],
+  "net_income_cr": [
+   1054.3,
+   2225.2,
+   1579.1,
+   969.9,
+   2127.0
+  ],
+  "operating_margin_pct_series": [
+   22.14,
+   27.47,
+   27.84,
+   25.17,
+   29.27
+  ],
+  "operating_margin_pct": 22.14,
+  "trailing_pe": 49.75787,
+  "forward_pe": 36.42006,
+  "flags": [],
+  "net_to_operating": 0.86,
+  "revenue_yoy_pct": -39.4,
+  "operating_income_yoy_pct": -54.2
+ },
+ "BHEL.NS": {
+  "symbol": "BHEL.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   7697.7,
+   12310.4,
+   8473.1,
+   5486.9,
+   8993.4
+  ],
+  "operating_income_cr": [
+   422.0,
+   1665.2,
+   467.3,
+   -611.7,
+   746.7
+  ],
+  "net_income_cr": [
+   376.7,
+   1290.5,
+   390.4,
+   -455.5,
+   504.4
+  ],
+  "operating_margin_pct_series": [
+   5.48,
+   13.53,
+   5.52,
+   -11.15,
+   8.3
+  ],
+  "operating_margin_pct": 5.48,
+  "trailing_pe": 62.17049,
+  "forward_pe": 31.483685,
+  "flags": [],
+  "net_to_operating": 0.89,
+  "revenue_yoy_pct": -14.4,
+  "operating_income_yoy_pct": -43.5
+ },
+ "BPCL.NS": {
+  "symbol": "BPCL.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   151277.0,
+   118700.9,
+   119029.4,
+   112551.4,
+   111230.2
+  ],
+  "operating_income_cr": [
+   -6123.8,
+   8045.8,
+   9708.0,
+   7789.0,
+   5754.4
+  ],
+  "net_income_cr": [
+   -1872.7,
+   5624.5,
+   7188.4,
+   6839.0,
+   4391.8
+  ],
+  "operating_margin_pct_series": [
+   -4.05,
+   6.78,
+   8.16,
+   6.92,
+   5.17
+  ],
+  "operating_margin_pct": -4.05,
+  "trailing_pe": 7.930175,
+  "forward_pe": 7.9665947,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +36.0% but operating income -206.4%"
+  ],
+  "revenue_yoy_pct": 36.0,
+  "operating_income_yoy_pct": -206.4
+ },
+ "CIPLA.NS": {
+  "symbol": "CIPLA.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   7077.0,
+   6464.3,
+   6963.0,
+   6837.0,
+   6597.7
+  ],
+  "operating_income_cr": [
+   888.1,
+   614.0,
+   976.7,
+   1525.4,
+   1228.9
+  ],
+  "net_income_cr": [
+   789.0,
+   554.6,
+   675.8,
+   1297.6,
+   1221.8
+  ],
+  "operating_margin_pct_series": [
+   12.55,
+   9.5,
+   14.03,
+   22.31,
+   18.63
+  ],
+  "operating_margin_pct": 12.55,
+  "trailing_pe": 34.085453,
+  "forward_pe": 22.372421,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +7.3% but operating income -27.7%"
+  ],
+  "net_to_operating": 0.89,
+  "revenue_yoy_pct": 7.3,
+  "operating_income_yoy_pct": -27.7
+ },
+ "COALINDIA.NS": {
+  "symbol": "COALINDIA.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   46254.8,
+   46490.0,
+   30818.2,
+   42919.2,
+   43961.6
+  ],
+  "operating_income_cr": [
+   9765.9,
+   9726.5,
+   7112.9,
+   10281.1,
+   9203.7
+  ],
+  "net_income_cr": [
+   8852.1,
+   10839.2,
+   7157.4,
+   8797.0,
+   9751.6
+  ],
+  "operating_margin_pct_series": [
+   21.11,
+   20.92,
+   23.08,
+   23.95,
+   20.94
+  ],
+  "operating_margin_pct": 21.11,
+  "trailing_pe": 7.911392,
+  "forward_pe": 7.061816,
+  "flags": [],
+  "net_to_operating": 0.91,
+  "revenue_yoy_pct": 5.2,
+  "operating_income_yoy_pct": 6.1
+ },
+ "COFORGE.NS": {
+  "symbol": "COFORGE.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   5527.7,
+   4450.4,
+   4188.1,
+   3704.4,
+   3422.2
+  ],
+  "operating_income_cr": [
+   882.2,
+   736.8,
+   559.4,
+   437.9,
+   418.3
+  ],
+  "net_income_cr": [
+   518.6,
+   612.3,
+   250.2,
+   317.4,
+   261.2
+  ],
+  "operating_margin_pct_series": [
+   15.96,
+   16.56,
+   13.36,
+   11.82,
+   12.22
+  ],
+  "operating_margin_pct": 15.96,
+  "trailing_pe": 39.21237,
+  "forward_pe": 26.624363,
+  "flags": [],
+  "net_to_operating": 0.59,
+  "revenue_yoy_pct": 61.5,
+  "operating_income_yoy_pct": 110.9
+ },
+ "CUMMINSIND.NS": {
+  "symbol": "CUMMINSIND.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   3374.9,
+   2963.2,
+   3006.2,
+   2858.7,
+   2428.1
+  ],
+  "operating_income_cr": [
+   563.6,
+   591.1,
+   584.1,
+   575.6,
+   478.7
+  ],
+  "net_income_cr": [
+   609.3,
+   649.5,
+   486.1,
+   603.9,
+   529.5
+  ],
+  "operating_margin_pct_series": [
+   16.7,
+   19.95,
+   19.43,
+   20.13,
+   19.72
+  ],
+  "operating_margin_pct": 16.7,
+  "trailing_pe": 60.85835,
+  "forward_pe": 43.966595,
+  "flags": [],
+  "net_to_operating": 1.08,
+  "revenue_yoy_pct": 39.0,
+  "operating_income_yoy_pct": 17.7
+ },
+ "DIVISLAB.NS": {
+  "symbol": "DIVISLAB.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31",
+   "2024-12-31"
+  ],
+  "revenue_cr": [
+   2831.0,
+   2604.0,
+   2410.0,
+   2585.0,
+   2319.0
+  ],
+  "operating_income_cr": [
+   814.0,
+   772.0,
+   617.0,
+   779.0,
+   644.0
+  ],
+  "net_income_cr": [
+   751.0,
+   583.0,
+   545.0,
+   662.0,
+   589.0
+  ],
+  "operating_margin_pct_series": [
+   28.75,
+   29.65,
+   25.6,
+   30.14,
+   27.77
+  ],
+  "operating_margin_pct": 28.75,
+  "trailing_pe": 93.34432,
+  "forward_pe": 60.209743,
+  "flags": [],
+  "net_to_operating": 0.92,
+  "revenue_yoy_pct": 22.1,
+  "operating_income_yoy_pct": 26.4
+ },
+ "DMART.NS": {
+  "symbol": "DMART.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   18794.5,
+   17683.9,
+   18100.9,
+   16359.7,
+   14871.9
+  ],
+  "operating_income_cr": [
+   1211.6,
+   927.0,
+   1195.1,
+   1067.3,
+   714.2
+  ],
+  "net_income_cr": [
+   860.6,
+   656.6,
+   855.9,
+   773.0,
+   550.9
+  ],
+  "operating_margin_pct_series": [
+   6.45,
+   5.24,
+   6.6,
+   6.52,
+   4.8
+  ],
+  "operating_margin_pct": 6.45,
+  "trailing_pe": 81.73784,
+  "forward_pe": 55.83303,
+  "flags": [],
+  "net_to_operating": 0.71,
+  "revenue_yoy_pct": 26.4,
+  "operating_income_yoy_pct": 69.6
+ },
+ "DRREDDY.NS": {
+  "symbol": "DRREDDY.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   8070.5,
+   7516.2,
+   8726.8,
+   8805.1,
+   8545.2
+  ],
+  "operating_income_cr": [
+   303.3,
+   82.9,
+   1433.0,
+   1786.7,
+   1684.2
+  ],
+  "net_income_cr": [
+   443.5,
+   220.9,
+   1209.8,
+   1437.2,
+   1417.8
+  ],
+  "operating_margin_pct_series": [
+   3.76,
+   1.1,
+   16.42,
+   20.29,
+   19.71
+  ],
+  "operating_margin_pct": 3.76,
+  "trailing_pe": 29.632425,
+  "forward_pe": 19.817347,
+  "flags": [
+   "BELOW_THE_LINE net income 1.46x operating income"
+  ],
+  "net_to_operating": 1.46,
+  "revenue_yoy_pct": -5.6,
+  "operating_income_yoy_pct": -82.0
+ },
+ "EICHERMOT.NS": {
+  "symbol": "EICHERMOT.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   6488.7,
+   5960.9,
+   5999.8,
+   6071.2,
+   4945.6
+  ],
+  "operating_income_cr": [
+   1313.1,
+   1282.0,
+   1345.6,
+   1312.3,
+   1004.7
+  ],
+  "net_income_cr": [
+   1462.5,
+   1520.0,
+   1420.6,
+   1369.5,
+   1205.2
+  ],
+  "operating_margin_pct_series": [
+   20.24,
+   21.51,
+   22.43,
+   21.62,
+   20.32
+  ],
+  "operating_margin_pct": 20.24,
+  "trailing_pe": 38.527397,
+  "forward_pe": 29.819248,
+  "flags": [],
+  "net_to_operating": 1.11,
+  "revenue_yoy_pct": 31.2,
+  "operating_income_yoy_pct": 30.7
+ },
+ "ETERNAL.NS": {
+  "symbol": "ETERNAL.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   20211.0,
+   17292.0,
+   16315.0,
+   7167.0,
+   5833.0
+  ],
+  "operating_income_cr": [
+   48.0,
+   18.0,
+   -71.0,
+   -199.0,
+   -215.0
+  ],
+  "net_income_cr": [
+   92.0,
+   174.0,
+   102.0,
+   25.0,
+   39.0
+  ],
+  "operating_margin_pct_series": [
+   0.24,
+   0.1,
+   -0.44,
+   -2.78,
+   -3.69
+  ],
+  "operating_margin_pct": 0.24,
+  "trailing_pe": 714.13043,
+  "forward_pe": 88.49009,
+  "flags": [
+   "BELOW_THE_LINE net income 1.92x operating income",
+   "OPERATING_DELEVERAGE revenue +246.5% but operating income -122.3%"
+  ],
+  "net_to_operating": 1.92,
+  "revenue_yoy_pct": 246.5,
+  "operating_income_yoy_pct": -122.3
+ },
+ "GRASIM.NS": {
+  "symbol": "GRASIM.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31",
+   "2024-12-31"
+  ],
+  "revenue_cr": [
+   51101.1,
+   44312.0,
+   40118.1,
+   44267.3,
+   35378.3
+  ],
+  "operating_income_cr": [
+   5741.4,
+   3974.3,
+   4277.4,
+   4332.9,
+   2699.1
+  ],
+  "net_income_cr": [
+   1957.7,
+   1036.6,
+   1418.7,
+   1495.9,
+   820.1
+  ],
+  "operating_margin_pct_series": [
+   11.24,
+   8.97,
+   10.66,
+   9.79,
+   7.63
+  ],
+  "operating_margin_pct": 11.24,
+  "trailing_pe": 38.869003,
+  "forward_pe": 21.572311,
+  "flags": [],
+  "net_to_operating": 0.34,
+  "revenue_yoy_pct": 44.4,
+  "operating_income_yoy_pct": 112.7
+ },
+ "HAL.NS": {
+  "symbol": "HAL.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   13942.4,
+   7698.8,
+   6628.6,
+   4819.0,
+   13699.9
+  ],
+  "operating_income_cr": [
+   4429.0,
+   1564.6,
+   1334.2,
+   1099.5,
+   4568.3
+  ],
+  "net_income_cr": [
+   4196.1,
+   1866.7,
+   1669.1,
+   1383.8,
+   3976.7
+  ],
+  "operating_margin_pct_series": [
+   31.77,
+   20.32,
+   20.13,
+   22.82,
+   33.35
+  ],
+  "operating_margin_pct": 31.77,
+  "trailing_pe": 35.45376,
+  "forward_pe": 28.485018,
+  "flags": [],
+  "net_to_operating": 0.95,
+  "revenue_yoy_pct": 1.8,
+  "operating_income_yoy_pct": -3.0
+ },
+ "HCLTECH.NS": {
+  "symbol": "HCLTECH.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   34579.0,
+   33981.0,
+   33872.0,
+   30349.0,
+   30246.0
+  ],
+  "operating_income_cr": [
+   10939.0,
+   10654.0,
+   11060.0,
+   9977.0,
+   9080.0
+  ],
+  "net_income_cr": [
+   4624.0,
+   4488.0,
+   4076.0,
+   3843.0,
+   4307.0
+  ],
+  "operating_margin_pct_series": [
+   31.63,
+   31.35,
+   32.65,
+   32.87,
+   30.02
+  ],
+  "operating_margin_pct": 31.63,
+  "trailing_pe": 19.943995,
+  "forward_pe": 16.004719,
+  "flags": [],
+  "net_to_operating": 0.42,
+  "revenue_yoy_pct": 14.3,
+  "operating_income_yoy_pct": 20.5
+ },
+ "HEROMOTOCO.NS": {
+  "symbol": "HEROMOTOCO.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   13126.4,
+   12978.3,
+   12486.8,
+   12218.4,
+   9727.8
+  ],
+  "operating_income_cr": [
+   1526.3,
+   1701.5,
+   1627.6,
+   1653.8,
+   1207.3
+  ],
+  "net_income_cr": [
+   1412.4,
+   1460.0,
+   1267.5,
+   1308.9,
+   1705.3
+  ],
+  "operating_margin_pct_series": [
+   11.63,
+   13.11,
+   13.03,
+   13.54,
+   12.41
+  ],
+  "operating_margin_pct": 11.63,
+  "trailing_pe": 20.410414,
+  "forward_pe": 17.044348,
+  "flags": [],
+  "net_to_operating": 0.93,
+  "revenue_yoy_pct": 34.9,
+  "operating_income_yoy_pct": 26.4
+ },
+ "HINDALCO.NS": {
+  "symbol": "HINDALCO.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   84825.0,
+   78133.0,
+   66521.0,
+   66058.0,
+   64232.0
+  ],
+  "operating_income_cr": [
+   11635.0,
+   7801.0,
+   5755.0,
+   6821.0,
+   5995.0
+  ],
+  "net_income_cr": [
+   7013.0,
+   2597.0,
+   2049.0,
+   4741.0,
+   4004.0
+  ],
+  "operating_margin_pct_series": [
+   13.72,
+   9.98,
+   8.65,
+   10.33,
+   9.33
+  ],
+  "operating_margin_pct": 13.72,
+  "trailing_pe": 13.892281,
+  "forward_pe": 9.213348,
+  "flags": [],
+  "net_to_operating": 0.6,
+  "revenue_yoy_pct": 32.1,
+  "operating_income_yoy_pct": 94.1
+ },
+ "HINDUNILVR.NS": {
+  "symbol": "HINDUNILVR.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   17184.0,
+   16207.0,
+   16235.0,
+   15579.0,
+   14985.0
+  ],
+  "operating_income_cr": [
+   3594.0,
+   3493.0,
+   3451.0,
+   3314.0,
+   3301.0
+  ],
+  "net_income_cr": [
+   2673.0,
+   2992.0,
+   6607.0,
+   2756.0,
+   2464.0
+  ],
+  "operating_margin_pct_series": [
+   20.91,
+   21.55,
+   21.26,
+   21.27,
+   22.03
+  ],
+  "operating_margin_pct": 20.91,
+  "trailing_pe": 44.575108,
+  "forward_pe": 37.740025,
+  "flags": [],
+  "net_to_operating": 0.74,
+  "revenue_yoy_pct": 14.7,
+  "operating_income_yoy_pct": 8.9
+ },
+ "INDIGO.NS": {
+  "symbol": "INDIGO.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   24584.1,
+   22438.4,
+   23471.9,
+   20496.3,
+   22151.9
+  ],
+  "operating_income_cr": [
+   379.4,
+   2813.4,
+   3698.6,
+   2807.8,
+   3461.4
+  ],
+  "net_income_cr": [
+   -237.6,
+   -2536.3,
+   549.8,
+   2176.3,
+   3067.5
+  ],
+  "operating_margin_pct_series": [
+   1.54,
+   12.54,
+   15.76,
+   13.7,
+   15.63
+  ],
+  "operating_margin_pct": 1.54,
+  "trailing_pe": null,
+  "forward_pe": 22.308514,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +11.0% but operating income -89.0%"
+  ],
+  "net_to_operating": -0.63,
+  "revenue_yoy_pct": 11.0,
+  "operating_income_yoy_pct": -89.0
+ },
+ "IOC.NS": {
+  "symbol": "IOC.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   266407.3,
+   208289.3,
+   205157.4,
+   192340.6,
+   195270.3
+  ],
+  "operating_income_cr": [
+   -277.6,
+   19909.9,
+   18751.6,
+   9089.3,
+   10866.1
+  ],
+  "net_income_cr": [
+   -1630.7,
+   14458.1,
+   13006.9,
+   6813.7,
+   8123.6
+  ],
+  "operating_margin_pct_series": [
+   -0.1,
+   9.56,
+   9.14,
+   4.73,
+   5.56
+  ],
+  "operating_margin_pct": -0.1,
+  "trailing_pe": 5.628887,
+  "forward_pe": 7.337161,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +36.4% but operating income -102.6%",
+   "CONSENSUS_DECLINE forward PE 7.3 > trailing 5.6, implies EPS -23%"
+  ],
+  "revenue_yoy_pct": 36.4,
+  "operating_income_yoy_pct": -102.6
+ },
+ "IRFC.NS": {
+  "symbol": "IRFC.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   8242.0,
+   7335.8,
+   6657.1,
+   6901.1,
+   6718.7
+  ],
+  "operating_income_cr": [
+   1795.9,
+   1746.2,
+   1803.2,
+   1742.8,
+   1684.3
+  ],
+  "net_income_cr": [
+   1927.2,
+   1684.3,
+   1802.2,
+   1745.7,
+   1681.9
+  ],
+  "operating_margin_pct_series": [
+   21.79,
+   23.8,
+   27.09,
+   25.25,
+   25.07
+  ],
+  "operating_margin_pct": 21.79,
+  "trailing_pe": 15.418944,
+  "forward_pe": 11.59589,
+  "flags": [],
+  "net_to_operating": 1.07,
+  "revenue_yoy_pct": 22.7,
+  "operating_income_yoy_pct": 6.6
+ },
+ "ITC.NS": {
+  "symbol": "ITC.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   19000.9,
+   17628.9,
+   19918.2,
+   21372.9,
+   19918.2
+  ],
+  "operating_income_cr": [
+   4753.1,
+   6502.3,
+   6451.7,
+   6393.5,
+   6451.7
+  ],
+  "net_income_cr": [
+   4394.1,
+   5388.0,
+   4931.2,
+   5244.2,
+   4931.2
+  ],
+  "operating_margin_pct_series": [
+   25.02,
+   36.88,
+   32.39,
+   29.91,
+   32.39
+  ],
+  "operating_margin_pct": 25.02,
+  "trailing_pe": 16.982323,
+  "forward_pe": 16.063002,
+  "flags": [],
+  "net_to_operating": 0.92,
+  "revenue_yoy_pct": -4.6,
+  "operating_income_yoy_pct": -26.3
+ },
+ "JIOFIN.NS": {
+  "symbol": "JIOFIN.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   1794.7,
+   863.9,
+   686.4,
+   416.4,
+   315.2
+  ],
+  "operating_income_cr": [
+   1407.0,
+   596.6,
+   547.4,
+   450.8,
+   332.2
+  ],
+  "net_income_cr": [
+   830.2,
+   272.2,
+   269.0,
+   324.7,
+   316.1
+  ],
+  "operating_margin_pct_series": [
+   78.4,
+   69.06,
+   79.75,
+   108.24,
+   105.41
+  ],
+  "operating_margin_pct": 78.4,
+  "trailing_pe": 74.874214,
+  "forward_pe": 53.38565,
+  "flags": [],
+  "net_to_operating": 0.59,
+  "revenue_yoy_pct": 469.4,
+  "operating_income_yoy_pct": 323.5
+ },
+ "JSWENERGY.NS": {
+  "symbol": "JSWENERGY.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   5207.1,
+   4498.6,
+   4081.8,
+   5143.4,
+   3189.4
+  ],
+  "operating_income_cr": [
+   1983.5,
+   1440.8,
+   1200.9,
+   2050.1,
+   722.6
+  ],
+  "net_income_cr": [
+   471.0,
+   371.6,
+   419.9,
+   743.1,
+   408.1
+  ],
+  "operating_margin_pct_series": [
+   38.09,
+   32.03,
+   29.42,
+   39.86,
+   22.66
+  ],
+  "operating_margin_pct": 38.09,
+  "trailing_pe": 42.61792,
+  "forward_pe": 31.906685,
+  "flags": [],
+  "net_to_operating": 0.24,
+  "revenue_yoy_pct": 63.3,
+  "operating_income_yoy_pct": 174.5
+ },
+ "JSWSTEEL.NS": {
+  "symbol": "JSWSTEEL.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   46662.0,
+   49798.0,
+   45219.0,
+   42460.0,
+   44341.0
+  ],
+  "operating_income_cr": [
+   7246.0,
+   6486.0,
+   4134.0,
+   5039.0,
+   3881.0
+  ],
+  "net_income_cr": [
+   4651.0,
+   16370.0,
+   2139.0,
+   2184.0,
+   1503.0
+  ],
+  "operating_margin_pct_series": [
+   15.53,
+   13.02,
+   9.14,
+   11.87,
+   8.75
+  ],
+  "operating_margin_pct": 15.53,
+  "trailing_pe": 13.192938,
+  "forward_pe": 18.357615,
+  "flags": [
+   "CONSENSUS_DECLINE forward PE 18.4 > trailing 13.2, implies EPS -28%"
+  ],
+  "net_to_operating": 0.64,
+  "revenue_yoy_pct": 5.2,
+  "operating_income_yoy_pct": 86.7
+ },
+ "KAYNES.NS": {
+  "symbol": "KAYNES.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   946.0,
+   1242.6,
+   804.0,
+   673.5,
+   984.5
+  ],
+  "operating_income_cr": [
+   110.6,
+   139.3,
+   98.9,
+   97.4,
+   150.9
+  ],
+  "net_income_cr": [
+   56.4,
+   91.2,
+   76.6,
+   74.6,
+   116.2
+  ],
+  "operating_margin_pct_series": [
+   11.69,
+   11.21,
+   12.3,
+   14.47,
+   15.33
+  ],
+  "operating_margin_pct": 11.69,
+  "trailing_pe": 78.47686,
+  "forward_pe": 44.708958,
+  "flags": [],
+  "net_to_operating": 0.51,
+  "revenue_yoy_pct": -3.9,
+  "operating_income_yoy_pct": -26.7
+ },
+ "LODHA.NS": {
+  "symbol": "LODHA.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   4996.7,
+   4713.5,
+   4672.5,
+   3491.7,
+   4224.3
+  ],
+  "operating_income_cr": [
+   1853.2,
+   1302.0,
+   1317.6,
+   918.5,
+   1142.9
+  ],
+  "net_income_cr": [
+   1372.1,
+   1007.9,
+   956.9,
+   674.7,
+   921.7
+  ],
+  "operating_margin_pct_series": [
+   37.09,
+   27.62,
+   28.2,
+   26.31,
+   27.06
+  ],
+  "operating_margin_pct": 37.09,
+  "trailing_pe": 30.22066,
+  "forward_pe": 25.665728,
+  "flags": [],
+  "net_to_operating": 0.74,
+  "revenue_yoy_pct": 18.3,
+  "operating_income_yoy_pct": 62.1
+ },
+ "M&M.NS": {
+  "symbol": "M&M.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   57533.4,
+   54891.6,
+   51579.9,
+   45435.9,
+   42585.7
+  ],
+  "operating_income_cr": [
+   8412.5,
+   8093.6,
+   7477.7,
+   6771.6,
+   5899.4
+  ],
+  "net_income_cr": [
+   5454.5,
+   4667.6,
+   4674.6,
+   4083.3,
+   3295.2
+  ],
+  "operating_margin_pct_series": [
+   14.62,
+   14.74,
+   14.5,
+   14.9,
+   13.85
+  ],
+  "operating_margin_pct": 14.62,
+  "trailing_pe": 20.246853,
+  "forward_pe": 21.137714,
+  "flags": [],
+  "net_to_operating": 0.65,
+  "revenue_yoy_pct": 35.1,
+  "operating_income_yoy_pct": 42.6
+ },
+ "MARUTI.NS": {
+  "symbol": "MARUTI.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   51708.2,
+   51567.5,
+   47537.2,
+   37988.9,
+   40320.4
+  ],
+  "operating_income_cr": [
+   2533.0,
+   4410.2,
+   3838.5,
+   3066.6,
+   3382.2
+  ],
+  "net_income_cr": [
+   3446.9,
+   3659.0,
+   3879.1,
+   3792.4,
+   3911.1
+  ],
+  "operating_margin_pct_series": [
+   4.9,
+   8.55,
+   8.07,
+   8.07,
+   8.39
+  ],
+  "operating_margin_pct": 4.9,
+  "trailing_pe": 29.852072,
+  "forward_pe": 22.183268,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +28.2% but operating income -25.1%"
+  ],
+  "net_to_operating": 1.36,
+  "revenue_yoy_pct": 28.2,
+  "operating_income_yoy_pct": -25.1
+ },
+ "MAXHEALTH.NS": {
+  "symbol": "MAXHEALTH.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   2142.9,
+   2067.5,
+   2135.5,
+   2027.6,
+   1909.7
+  ],
+  "operating_income_cr": [
+   483.4,
+   427.1,
+   467.1,
+   418.8,
+   410.8
+  ],
+  "net_income_cr": [
+   342.2,
+   300.9,
+   491.3,
+   308.0,
+   319.0
+  ],
+  "operating_margin_pct_series": [
+   22.56,
+   20.66,
+   21.87,
+   20.65,
+   21.51
+  ],
+  "operating_margin_pct": 22.56,
+  "trailing_pe": 68.31415,
+  "forward_pe": 43.20228,
+  "flags": [],
+  "net_to_operating": 0.71,
+  "revenue_yoy_pct": 12.2,
+  "operating_income_yoy_pct": 17.7
+ },
+ "MAZDOCK.NS": {
+  "symbol": "MAZDOCK.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   2942.7,
+   3850.4,
+   3601.1,
+   2625.6,
+   3174.4
+  ],
+  "operating_income_cr": [
+   417.6,
+   520.0,
+   863.8,
+   278.6,
+   90.7
+  ],
+  "net_income_cr": [
+   549.4,
+   679.2,
+   879.8,
+   452.1,
+   325.3
+  ],
+  "operating_margin_pct_series": [
+   14.19,
+   13.51,
+   23.99,
+   10.61,
+   2.86
+  ],
+  "operating_margin_pct": 14.19,
+  "trailing_pe": 38.97003,
+  "forward_pe": 32.61612,
+  "flags": [],
+  "net_to_operating": 1.32,
+  "revenue_yoy_pct": -7.3,
+  "operating_income_yoy_pct": 360.2
+ },
+ "NESTLEIND.NS": {
+  "symbol": "NESTLEIND.NS",
+  "quarters": [
+   "2026-06-30",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31",
+   "2024-12-31"
+  ],
+  "revenue_cr": [
+   6363.3,
+   5643.5,
+   5074.0,
+   5447.6,
+   4762.1
+  ],
+  "operating_income_cr": [
+   1350.3,
+   1027.7,
+   943.2,
+   1249.8,
+   952.4
+  ],
+  "net_income_cr": [
+   958.7,
+   998.4,
+   646.6,
+   873.5,
+   688.0
+  ],
+  "operating_margin_pct_series": [
+   21.22,
+   18.21,
+   18.59,
+   22.94,
+   20.0
+  ],
+  "operating_margin_pct": 21.22,
+  "trailing_pe": 74.550125,
+  "forward_pe": 58.406437,
+  "flags": [],
+  "net_to_operating": 0.71,
+  "revenue_yoy_pct": 33.6,
+  "operating_income_yoy_pct": 41.8
+ },
+ "NHPC.NS": {
+  "symbol": "NHPC.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   3808.3,
+   2815.5,
+   2220.7,
+   3213.8,
+   2347.0
+  ],
+  "operating_income_cr": [
+   1752.5,
+   553.9,
+   -245.0,
+   1365.7,
+   890.1
+  ],
+  "net_income_cr": [
+   1095.9,
+   1460.2,
+   219.1,
+   1065.0,
+   853.6
+  ],
+  "operating_margin_pct_series": [
+   46.02,
+   19.67,
+   -11.03,
+   42.5,
+   37.93
+  ],
+  "operating_margin_pct": 46.02,
+  "trailing_pe": 28.247232,
+  "forward_pe": 11.9609375,
+  "flags": [],
+  "net_to_operating": 0.63,
+  "revenue_yoy_pct": 62.3,
+  "operating_income_yoy_pct": 96.9
+ },
+ "PERSISTENT.NS": {
+  "symbol": "PERSISTENT.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   4303.2,
+   4055.9,
+   3778.2,
+   3333.6,
+   3242.1
+  ],
+  "operating_income_cr": [
+   581.6,
+   659.2,
+   632.5,
+   517.8,
+   505.3
+  ],
+  "net_income_cr": [
+   483.0,
+   529.3,
+   439.5,
+   424.9,
+   395.8
+  ],
+  "operating_margin_pct_series": [
+   13.52,
+   16.25,
+   16.74,
+   15.53,
+   15.59
+  ],
+  "operating_margin_pct": 13.52,
+  "trailing_pe": 46.18149,
+  "forward_pe": 31.999279,
+  "flags": [],
+  "net_to_operating": 0.83,
+  "revenue_yoy_pct": 32.7,
+  "operating_income_yoy_pct": 15.1
+ },
+ "PIIND.NS": {
+  "symbol": "PIIND.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   1565.2,
+   1375.7,
+   1872.3,
+   1900.5,
+   1787.1
+  ],
+  "operating_income_cr": [
+   238.5,
+   205.4,
+   450.6,
+   431.1,
+   377.7
+  ],
+  "net_income_cr": [
+   200.2,
+   311.3,
+   409.3,
+   400.0,
+   330.5
+  ],
+  "operating_margin_pct_series": [
+   15.24,
+   14.93,
+   24.07,
+   22.68,
+   21.13
+  ],
+  "operating_margin_pct": 15.24,
+  "trailing_pe": 32.143322,
+  "forward_pe": 23.229755,
+  "flags": [],
+  "net_to_operating": 0.84,
+  "revenue_yoy_pct": -12.4,
+  "operating_income_yoy_pct": -36.9
+ },
+ "POLYCAB.NS": {
+  "symbol": "POLYCAB.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   8209.7,
+   8864.5,
+   7474.9,
+   5906.0,
+   6985.8
+  ],
+  "operating_income_cr": [
+   1033.3,
+   1063.5,
+   865.8,
+   771.9,
+   945.0
+  ],
+  "net_income_cr": [
+   784.3,
+   772.8,
+   621.7,
+   592.1,
+   726.7
+  ],
+  "operating_margin_pct_series": [
+   12.59,
+   12.0,
+   11.58,
+   13.07,
+   13.53
+  ],
+  "operating_margin_pct": 12.59,
+  "trailing_pe": 47.948242,
+  "forward_pe": 35.66082,
+  "flags": [],
+  "net_to_operating": 0.76,
+  "revenue_yoy_pct": 17.5,
+  "operating_income_yoy_pct": 9.3
+ },
+ "POWERGRID.NS": {
+  "symbol": "POWERGRID.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   11496.7,
+   11665.6,
+   12395.1,
+   11196.2,
+   12275.4
+  ],
+  "operating_income_cr": [
+   6408.0,
+   5771.0,
+   7271.5,
+   6016.3,
+   7028.1
+  ],
+  "net_income_cr": [
+   3598.4,
+   4546.3,
+   4185.0,
+   3630.6,
+   4142.9
+  ],
+  "operating_margin_pct_series": [
+   55.74,
+   49.47,
+   58.66,
+   53.73,
+   57.25
+  ],
+  "operating_margin_pct": 55.74,
+  "trailing_pe": 12.972575,
+  "forward_pe": 13.55868,
+  "flags": [],
+  "net_to_operating": 0.56,
+  "revenue_yoy_pct": -6.3,
+  "operating_income_yoy_pct": -8.8
+ },
+ "SIEMENS.NS": {
+  "symbol": "SIEMENS.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   4617.5,
+   3830.7,
+   5171.2,
+   4346.8,
+   4029.2
+  ],
+  "operating_income_cr": [
+   370.1,
+   350.5,
+   545.5,
+   450.3,
+   378.9
+  ],
+  "net_income_cr": [
+   370.1,
+   277.3,
+   484.9,
+   422.9,
+   582.0
+  ],
+  "operating_margin_pct_series": [
+   8.02,
+   9.15,
+   10.55,
+   10.36,
+   9.4
+  ],
+  "operating_margin_pct": 8.02,
+  "trailing_pe": 86.57506,
+  "forward_pe": 60.440907,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +14.6% but operating income -2.3%"
+  ],
+  "net_to_operating": 1.0,
+  "revenue_yoy_pct": 14.6,
+  "operating_income_yoy_pct": -2.3
+ },
+ "SOLARINDS.NS": {
+  "symbol": "SOLARINDS.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   3052.8,
+   2548.3,
+   2082.2,
+   2154.4,
+   2166.6
+  ],
+  "operating_income_cr": [
+   754.5,
+   645.4,
+   492.2,
+   478.9,
+   489.2
+  ],
+  "net_income_cr": [
+   547.6,
+   446.2,
+   345.0,
+   338.7,
+   322.2
+  ],
+  "operating_margin_pct_series": [
+   24.72,
+   25.32,
+   23.64,
+   22.23,
+   22.58
+  ],
+  "operating_margin_pct": 24.72,
+  "trailing_pe": 93.09268,
+  "forward_pe": 58.45716,
+  "flags": [],
+  "net_to_operating": 0.73,
+  "revenue_yoy_pct": 40.9,
+  "operating_income_yoy_pct": 54.2
+ },
+ "SRF.NS": {
+  "symbol": "SRF.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   4939.2,
+   4531.8,
+   3611.5,
+   3738.6,
+   4215.2
+  ],
+  "operating_income_cr": [
+   1115.8,
+   932.1,
+   603.3,
+   617.9,
+   807.4
+  ],
+  "net_income_cr": [
+   758.9,
+   582.0,
+   432.7,
+   432.3,
+   526.1
+  ],
+  "operating_margin_pct_series": [
+   22.59,
+   20.57,
+   16.7,
+   16.53,
+   19.15
+  ],
+  "operating_margin_pct": 22.59,
+  "trailing_pe": 35.763317,
+  "forward_pe": 28.812014,
+  "flags": [],
+  "net_to_operating": 0.68,
+  "revenue_yoy_pct": 17.2,
+  "operating_income_yoy_pct": 38.2
+ },
+ "SUNPHARMA.NS": {
+  "symbol": "SUNPHARMA.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   15183.5,
+   14559.8,
+   15469.1,
+   13786.1,
+   12815.6
+  ],
+  "operating_income_cr": [
+   3557.0,
+   2752.0,
+   4062.2,
+   3372.1,
+   2761.1
+  ],
+  "net_income_cr": [
+   2894.8,
+   2714.0,
+   3368.8,
+   2278.6,
+   2149.9
+  ],
+  "operating_margin_pct_series": [
+   23.43,
+   18.9,
+   26.26,
+   24.46,
+   21.54
+  ],
+  "operating_margin_pct": 23.43,
+  "trailing_pe": 38.00755,
+  "forward_pe": 29.648458,
+  "flags": [],
+  "net_to_operating": 0.81,
+  "revenue_yoy_pct": 18.5,
+  "operating_income_yoy_pct": 28.8
+ },
+ "TATAPOWER.NS": {
+  "symbol": "TATAPOWER.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   19051.3,
+   14900.2,
+   13948.4,
+   15544.9,
+   18035.1
+  ],
+  "operating_income_cr": [
+   2753.4,
+   1319.0,
+   1847.0,
+   2139.9,
+   2978.1
+  ],
+  "net_income_cr": [
+   1175.9,
+   995.9,
+   772.0,
+   919.4,
+   1059.9
+  ],
+  "operating_margin_pct_series": [
+   14.45,
+   8.85,
+   13.24,
+   13.77,
+   16.51
+  ],
+  "operating_margin_pct": 14.45,
+  "trailing_pe": 29.139072,
+  "forward_pe": 21.01219,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +5.6% but operating income -7.5%"
+  ],
+  "net_to_operating": 0.43,
+  "revenue_yoy_pct": 5.6,
+  "operating_income_yoy_pct": -7.5
+ },
+ "TATASTEEL.NS": {
+  "symbol": "TATASTEEL.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   60411.8,
+   62687.3,
+   56646.1,
+   58216.0,
+   52744.1
+  ],
+  "operating_income_cr": [
+   5624.7,
+   6560.3,
+   5150.9,
+   6003.5,
+   4683.2
+  ],
+  "net_income_cr": [
+   2318.3,
+   2925.7,
+   2688.7,
+   3101.8,
+   2077.7
+  ],
+  "operating_margin_pct_series": [
+   9.31,
+   10.47,
+   9.09,
+   10.31,
+   8.88
+  ],
+  "operating_margin_pct": 9.31,
+  "trailing_pe": 21.012373,
+  "forward_pe": 10.435755,
+  "flags": [],
+  "net_to_operating": 0.41,
+  "revenue_yoy_pct": 14.5,
+  "operating_income_yoy_pct": 20.1
+ },
+ "TCS.NS": {
+  "symbol": "TCS.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   72275.0,
+   70698.0,
+   67087.0,
+   63437.0,
+   64479.0
+  ],
+  "operating_income_cr": [
+   17317.0,
+   17870.0,
+   16926.0,
+   15514.0,
+   15601.0
+  ],
+  "net_income_cr": [
+   13349.0,
+   13718.0,
+   10657.0,
+   12760.0,
+   12224.0
+  ],
+  "operating_margin_pct_series": [
+   23.96,
+   25.28,
+   25.23,
+   24.46,
+   24.2
+  ],
+  "operating_margin_pct": 23.96,
+  "trailing_pe": 16.536,
+  "forward_pe": 13.836384,
+  "flags": [],
+  "net_to_operating": 0.77,
+  "revenue_yoy_pct": 12.1,
+  "operating_income_yoy_pct": 11.0
+ },
+ "TECHM.NS": {
+  "symbol": "TECHM.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   15711.9,
+   15076.1,
+   14393.2,
+   13351.2,
+   13384.0
+  ],
+  "operating_income_cr": [
+   2263.9,
+   2084.2,
+   1891.9,
+   1477.1,
+   1405.3
+  ],
+  "net_income_cr": [
+   1465.1,
+   1353.8,
+   1122.0,
+   1140.6,
+   1166.7
+  ],
+  "operating_margin_pct_series": [
+   14.41,
+   13.82,
+   13.14,
+   11.06,
+   10.5
+  ],
+  "operating_margin_pct": 14.41,
+  "trailing_pe": 27.4174,
+  "forward_pe": 18.224169,
+  "flags": [],
+  "net_to_operating": 0.65,
+  "revenue_yoy_pct": 17.4,
+  "operating_income_yoy_pct": 61.1
+ },
+ "TITAN.NS": {
+  "symbol": "TITAN.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   20787.0,
+   20607.0,
+   24915.0,
+   14814.0,
+   13897.0
+  ],
+  "operating_income_cr": [
+   2634.0,
+   1691.0,
+   2506.0,
+   1646.0,
+   1354.0
+  ],
+  "net_income_cr": [
+   1777.0,
+   1179.0,
+   1684.0,
+   1091.0,
+   871.0
+  ],
+  "operating_margin_pct_series": [
+   12.67,
+   8.21,
+   10.06,
+   11.11,
+   9.74
+  ],
+  "operating_margin_pct": 12.67,
+  "trailing_pe": 79.346924,
+  "forward_pe": 57.82861,
+  "flags": [],
+  "net_to_operating": 0.67,
+  "revenue_yoy_pct": 49.6,
+  "operating_income_yoy_pct": 94.5
+ },
+ "TMPV.NS": {
+  "symbol": "TMPV.NS",
+  "quarters": [
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   104923.0,
+   69605.0,
+   71714.0,
+   103792.0,
+   97863.0
+  ],
+  "operating_income_cr": [
+   -1375.0,
+   -11869.0,
+   -13510.0,
+   -3327.0,
+   2138.0
+  ],
+  "net_income_cr": [
+   5783.0,
+   -3486.0,
+   76170.0,
+   3924.0,
+   8470.0
+  ],
+  "operating_margin_pct_series": [
+   -1.31,
+   -17.05,
+   -18.84,
+   -3.21,
+   2.18
+  ],
+  "operating_margin_pct": -1.31,
+  "trailing_pe": null,
+  "forward_pe": 6.606653,
+  "flags": [
+   "OPERATING_DELEVERAGE revenue +7.2% but operating income -164.3%"
+  ],
+  "revenue_yoy_pct": 7.2,
+  "operating_income_yoy_pct": -164.3
+ },
+ "TRENT.NS": {
+  "symbol": "TRENT.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   5754.7,
+   5028.0,
+   5345.1,
+   4817.7,
+   4883.5
+  ],
+  "operating_income_cr": [
+   718.7,
+   550.8,
+   714.3,
+   492.1,
+   554.9
+  ],
+  "net_income_cr": [
+   519.0,
+   400.3,
+   512.8,
+   376.9,
+   429.7
+  ],
+  "operating_margin_pct_series": [
+   12.49,
+   10.95,
+   13.36,
+   10.22,
+   11.36
+  ],
+  "operating_margin_pct": 12.49,
+  "trailing_pe": 84.587135,
+  "forward_pe": 56.498184,
+  "flags": [],
+  "net_to_operating": 0.72,
+  "revenue_yoy_pct": 17.8,
+  "operating_income_yoy_pct": 29.5
+ },
+ "TVSMOTOR.NS": {
+  "symbol": "TVSMOTOR.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   16295.5,
+   15052.7,
+   14755.5,
+   12210.0,
+   11542.0
+  ],
+  "operating_income_cr": [
+   2003.5,
+   1872.4,
+   1947.4,
+   1499.0,
+   1627.9
+  ],
+  "net_income_cr": [
+   1019.4,
+   771.5,
+   841.3,
+   610.0,
+   648.2
+  ],
+  "operating_margin_pct_series": [
+   12.29,
+   12.44,
+   13.2,
+   12.28,
+   14.1
+  ],
+  "operating_margin_pct": 12.29,
+  "trailing_pe": 60.976215,
+  "forward_pe": 38.589344,
+  "flags": [],
+  "net_to_operating": 0.51,
+  "revenue_yoy_pct": 41.2,
+  "operating_income_yoy_pct": 23.1
+ },
+ "ULTRACEMCO.NS": {
+  "symbol": "ULTRACEMCO.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-06-30",
+   "2025-03-31"
+  ],
+  "revenue_cr": [
+   24648.2,
+   25799.5,
+   21829.7,
+   21275.5,
+   23063.3
+  ],
+  "operating_income_cr": [
+   3814.9,
+   4392.2,
+   2733.3,
+   3303.6,
+   3493.9
+  ],
+  "net_income_cr": [
+   2599.3,
+   2982.8,
+   1725.4,
+   2225.9,
+   2482.0
+  ],
+  "operating_margin_pct_series": [
+   15.48,
+   17.02,
+   12.52,
+   15.53,
+   15.15
+  ],
+  "operating_margin_pct": 15.48,
+  "trailing_pe": 39.84019,
+  "forward_pe": 27.114714,
+  "flags": [],
+  "net_to_operating": 0.68,
+  "revenue_yoy_pct": 6.9,
+  "operating_income_yoy_pct": 9.2
+ },
+ "WIPRO.NS": {
+  "symbol": "WIPRO.NS",
+  "quarters": [
+   "2026-06-30",
+   "2026-03-31",
+   "2025-12-31",
+   "2025-09-30",
+   "2025-06-30"
+  ],
+  "revenue_cr": [
+   24478.6,
+   24236.3,
+   23555.8,
+   22697.3,
+   22134.6
+  ],
+  "operating_income_cr": [
+   3842.7,
+   4136.6,
+   3494.7,
+   3727.1,
+   3554.2
+  ],
+  "net_income_cr": [
+   3352.0,
+   3501.8,
+   3119.0,
+   3246.2,
+   3330.4
+  ],
+  "operating_margin_pct_series": [
+   15.7,
+   17.07,
+   14.84,
+   16.42,
+   16.06
+  ],
+  "operating_margin_pct": 15.7,
+  "trailing_pe": 14.011119,
+  "forward_pe": 12.6911955,
+  "flags": [],
+  "net_to_operating": 0.87,
+  "revenue_yoy_pct": 10.6,
+  "operating_income_yoy_pct": 8.1
+ }
+}

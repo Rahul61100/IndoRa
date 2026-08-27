@@ -159,6 +159,15 @@
    "why_load_bearing": "Closed the position. Settles the dixon-pat conflict: neither the -36% screen figure nor our +119% TTM figure described what was happening.",
    "source": "yfinance quarterly financials",
    "note": "Sep 2025 quarter missing from the series; does not affect the like-for-like comparison. NOT checked against a company filing."
+  },
+  {
+   "id": "aggregate-vs-median",
+   "claim": "Q1 FY27, 62 large Indian names: revenue-weighted operating income +1.6% and margin -207bps, but ex three operationally negative names (IOC, BPCL, TMPV) operating income +15.4% and margin -32bps; median company +20.3%, breadth 44/62",
+   "status": "verified",
+   "obtained": "own computation from yfinance quarterly financials",
+   "why_load_bearing": "Overturns a bearish economy-wide margin-collapse read that the aggregate alone supports. Establishes the standing rule that an Indian aggregate is never reported without its median and breadth.",
+   "source": "own computation",
+   "note": "Three loss-makers are 26.6% of sample revenue with a combined operating loss of Rs7,776cr. Not comparable to the FY26 4.5% net figure -- different period, different measure, different universe."
   }
  ],
  "unresolved_conflicts": [
