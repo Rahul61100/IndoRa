@@ -96,12 +96,12 @@
   },
   {
    "id": "rbi-reserves",
-   "claim": "RBI FX reserves are rising, not depleting",
-   "status": "contested",
+   "claim": "Reserves $716,907mn on 2026-08-14, near the year high, BUT RBI net-sold $53,132mn of dollars in FY2025-26 (highest ever) and the net forward book was SHORT $103,064mn at 2026-03-31, short in every maturity bucket, having widened $25.4bn in one month. Reserves fell $54bn (7.5%) from the Feb 27 peak to the Jul 3 trough then rebounded $43bn.",
+   "status": "verified",
    "obtained": "agent research against the WSS series",
-   "why_load_bearing": "I had assumed depletion. Reserves rising removes one leg of the currency-crisis framing.",
-   "source": "RBI Weekly Statistical Supplement",
-   "note": "News figures and the WSS series disagree on the SAME date. Use WSS."
+   "why_load_bearing": "Settles the contested reserves claim and supplies the mechanism behind the rupee's peer-relative weakness found independently from price. A headline stock near its high funded by record intervention is a managed currency, not a strong one.",
+   "source": "RBI Weekly Statistical Supplement (dated press releases); RBI Bulletin Table 4 / 4A",
+   "note": "No forward-book figure newer than 2026-03-31 obtainable -- RBI's document host is behind bot detection. One unverified secondary point says the short was trimmed to $72.5bn. Next WSS was due 2026-08-28. CHECK IT."
   },
   {
    "id": "us-remittance-share",
@@ -195,6 +195,31 @@
    "why_load_bearing": "India is carrying the Senate-sanctions tail risk -- a 100% tariff threat that passed the Senate 86-11 -- for a discount that no longer exists. The strategic cost is being paid and the economic benefit is gone.",
    "source": "Reuters 2026-03-06; Marine News 2026-08-21",
    "note": "No source gives a current $/bbl premium figure. Unresolved."
+  },
+  {
+   "id": "kospi-concentration",
+   "claim": "Samsung Electronics + SK Hynix are 55.5% of KOSPI market cap, up from 22% at end-2023. Ex those two, KOSPI forward P/E was 12x (UBS, May 2026). KOSPI blended P/E is at its lowest since 2008 despite the index doubling, because those two companies' earnings grew faster than their prices.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Buying 'Korea' is buying two memory stocks. And a blended P/E at a 2008 low on doubled prices is the arithmetic of a cyclical peak stated as a valuation virtue.",
+   "source": "UBS via agent research; multiple outlets"
+  },
+  {
+   "id": "skhynix-print-reaction",
+   "claim": "SK Hynix Q2 2026: revenue KRW79.3tn (+257% YoY), operating profit ~KRW60.5tn (+557% YoY), 76% operating margin -- and the stock FELL ~10% on the print (Reuters, 2026-07-29, 'record profit misses forecasts')",
+   "status": "verified",
+   "obtained": "agent research, cross-checked against own income-statement pull",
+   "why_load_bearing": "A 557% profit print that loses a tenth of the company's value in a day is the cleanest available evidence that expectations have outrun even spectacular delivery. Confirms the cyclical-top read.",
+   "source": "Reuters 2026-07-29; own yfinance quarterly financials"
+  },
+  {
+   "id": "yen-carry-setup",
+   "claim": "BOJ raised to 1.0% on 2026-06-16 (31-year high), yen short positioning hit a nine-year high around that decision, and Japan and the US executed a rare JOINT FX intervention to support the yen on 2026-08-02/03. Foreign ownership of Japanese equities at a record above one third, $60bn bought in H1 2026.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "A hiking central bank plus a nine-year-high short base plus joint intervention are the three ingredients of a carry unwind, which does not stay in Japan. India is not insulated by being uninvolved.",
+   "source": "Reuters/CNBC/Al Jazeera on the intervention; CoinDesk on positioning",
+   "note": "Intervention size not reconciled: Y5tn / $36.58bn / $46.9bn."
   }
  ],
  "unresolved_conflicts": [
