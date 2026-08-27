@@ -81,15 +81,59 @@ stamps frontmatter, regenerates the hubs and reports broken links and orphans.
 
 ## Load-bearing facts (full list in `knowledge/INDEX.md`)
 
+**Read the first two first — they reframe everything below them.**
+
+- **The India premise fails its own base rate** — for a *rupee-spender*, the S&P-in-INR beat the
+  Nifty in **97% of rolling 10-year windows** (92% of 5-year, 72% of 3-year), mean gap ~4.5pp/yr,
+  across every calendar sub-period since 2008. Equal-weight S&P does *better* than cap-weight, so
+  it is not a Magnificent-7 artefact. Nuance that matters: India **beat** EM and roughly tied
+  developed-ex-US — **it lost only to the US.** The default is a global allocation and an India
+  book is what must justify itself; this workspace had that backwards because the framing of the
+  original question was never audited. [`the-india-premise-fails-its-own-base-rate`](knowledge/the-india-premise-fails-its-own-base-rate.md)
+- **Rupee depreciation is a RETURN on foreign assets, not a cost** — for someone who earns and
+  spends in rupees. A USD performance table counts the rupee's fall as India's loss when it is
+  exactly what makes the foreign asset worth more. Real after-tax Nifty return is **~3.95%**
+  (10.46% nominal, 5% CPI, LTCG) — and the 4%-vs-7% CPI assumption is worth 2.98pp, more than most
+  of the stock-picking edge this process is trying to establish. `scripts/real_return.py`
+- **Never report an Indian aggregate without its median and breadth** — revenue-weighted, Q1 FY27
+  reads as an economy-wide margin collapse (operating income +1.6%, −207bps). Excluding three
+  operationally negative names it reads +15.4% and −32bps, median company +20.3%, breadth 71%.
+  Those three are 26.6% of sample revenue. [`india-aggregate-earnings-are-three-companies`](knowledge/india-aggregate-earnings-are-three-companies.md)
+- **Yahoo's FX daily bars are wrong often enough to be unusable** — three pairs affected. USDINR
+  2026-08-26 closed at 93.546 on a session that never traded below 95.402, rendering the next day
+  as +2.1% when it was +0.12%. The bad bar is *internally self-consistent*, so both a tolerance
+  check and an OHLC check pass on it. **Prefer a source that cannot be wrong over a check that
+  decides whether a source is wrong.** `scripts/fx.py` derives closes from intraday prints.
+  [`yahoo-fx-daily-bars-are-unreliable`](knowledge/yahoo-fx-daily-bars-are-unreliable.md)
+- **Profit is not the same as operating profit** — Dixon reported revenue +21.1% with operating
+  income −8.6% and net income +194.8%, at 1.86× operating income. Four flags now screen for it
+  (`scripts/fetch_fundamentals.py`). And: a thesis that needs **three caps** has already been
+  falsified and is being kept alive with qualifiers. [`dixon-profit-is-not-operating`](knowledge/dixon-profit-is-not-operating.md)
+- **Korea is real and that is why it is dangerous** — SK Hynix's 76% operating margin is confirmed
+  from five quarters of income statement, monotonic from 42.2%. It trades at a **forward P/E of
+  3.7**. Peak earnings at a trough multiple is a cyclical top, not cheapness. KOSPI is 24% off its
+  high with three days above +10% in two years. **The trade already happened.**
+  [`india-vs-north-asia-the-trade-already-happened`](knowledge/india-vs-north-asia-the-trade-already-happened.md)
+- **An oil shock is only bad for India if it is a SUPPLY shock** — unconditionally, Indian equities
+  *rise* with oil (6-month beta +0.17), because oil proxies global demand. Split by copper: in
+  demand-driven oil-up months the Nifty averages +1.98%, in supply-driven ones −0.16%. In the four
+  large supply shocks in ten years the Nifty fell **every time** (mean −3.91%, worst −12.0%) and
+  IndiGo averaged −8.5%. **ONGC does not reliably hedge it** — 50% hit rate, median +0.55%, because
+  the windfall levy taxes away the gain precisely when it would matter. `scripts/oil_india.py`
 - **Yahoo's NSE sector indices are broken** — 40-day history gaps produce fake one-day moves of
-  5-9%. Sector rotation is computed from constituents instead. [`yahoo-nse-sector-indices-have-gaps`](knowledge/yahoo-nse-sector-indices-have-gaps.md)
+  5-9%. Sector rotation is computed from constituents instead. Related trap: one all-NaN column
+  turns `dropna(how="any")` into an empty frame and prints a *blank table* rather than erroring.
+  [`yahoo-nse-sector-indices-have-gaps`](knowledge/yahoo-nse-sector-indices-have-gaps.md)
 - **Demerged tickers show fake collapses** — TMPV shows -54% over a year that is a corporate
   action, not a drawdown. [`corporate-actions-fake-price-history`](knowledge/corporate-actions-fake-price-history.md)
 - **Value and momentum have split hard in India right now** — nearly every cheap large cap is in
   a confirmed downtrend and nearly every uptrend is in something already expensive. Picking on
   valuation alone has been losing. [`value-and-momentum-are-split`](knowledge/value-and-momentum-are-split.md)
-- **India is de-rating while earnings accelerate** — Nifty down on the year with profits up 18%.
-  That is a flows and multiple problem, not an earnings problem. [`india-is-derating-not-missing-earnings`](knowledge/india-is-derating-not-missing-earnings.md)
+- ~~**India is de-rating while earnings accelerate** — profits up 18%~~ **RETRACTED.** The 18% was
+  one quarter with 60% of the growth from five stocks. **FY26 actually grew 4.5%** against 12–15%
+  expected, the ninth straight year of misses, and index reconstitution flatters even that (4.5%
+  actual vs 6.9% reconstituted). It is an earnings problem as well as a multiple problem.
+  [`india-is-derating-not-missing-earnings`](knowledge/india-is-derating-not-missing-earnings.md)
 - **Proximity to power is a pricing factor, especially in India** — who wins the licence, order,
   subsidy or forbearance is knowable from the public record and is absent from every financial
   statement. [`political-economy-layer`](playbooks/political-economy-layer.md)
