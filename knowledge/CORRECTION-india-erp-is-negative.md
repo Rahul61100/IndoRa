@@ -9,6 +9,12 @@ updated: 2026-08-27
 
 # CORRECTION: India's equity risk premium is NEGATIVE — the G-sec beats the earnings yield
 
+> **AMENDED 2026-08-27 — this note overstates the case.** The −1.96% figure below is a **pre-tax**
+> comparison. G-sec interest is taxed at slab with the full surcharge ladder; equity LTCG is 12.5%
+> with surcharge capped at 15%. After tax the premium is between **−0.53% and +0.28%** depending on
+> income band — roughly zero, not −2%. See [[india-erp-after-tax-is-roughly-zero]]. The direction
+> of this note stands; **the magnitude does not.**
+
 **This is the most important correction in the workspace and it undermines the central claim I
 made on 2026-08-25.** I said Indian large caps were cheap at 20.4x, "12.6% below their 10-year
 average". That is a statement about India versus **its own past**. It is not a statement about

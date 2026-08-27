@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 09:58 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 10:28 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 78 notes
+## Knowledge base: 79 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,8 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+b2539be Redesign the research fleet: seven archetypes, not fourteen collectors
+feddddc Governance screen lands: HAL closes, ICICI capped, 8 of 9 AMBER
 8f96702 FIIs are short the index and long single stocks -- cash flow alone was misleading me
 69b8e45 Short-horizon trades now need a 10-12% tax edge to earn their place
 734dd90 Shriram Finance work-up, owed three times, now done against primary filings
@@ -104,8 +106,6 @@ Remote: `git@github-personal:Rahul61100/IndoRa.git`
 066f6a1 Fix a fabricated 2% rupee move in the intraday monitor
 806d41b Add session continuity, Obsidian vault tooling, and the live market-hours loop
 61a85d5 India policy calendar: windfall tax is back, 2026 state elections already done
-1208afb US policy map: two shutdowns, a tariff-refund fiscal hole, and a Fed weighing a hike
-be68ccc Positioning data partly reverses this morning's HDFC Bank cut
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
