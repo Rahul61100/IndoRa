@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 11:04 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 11:19 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 84 notes
+## Knowledge base: 85 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,7 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+09cb148 Build the derivatives collector -- and the series says more than the snapshot did
 f3f8f57 BUILD.md: the harness implementation plan, written from the failure modes
 5f3ed0d The adversarial verdict on India -- and the freeze lifts for medium and long
 2a88681 The bear case that survives: capex, not the risk premium
@@ -105,7 +106,6 @@ feddddc Governance screen lands: HAL closes, ICICI capped, 8 of 9 AMBER
 8f96702 FIIs are short the index and long single stocks -- cash flow alone was misleading me
 69b8e45 Short-horizon trades now need a 10-12% tax edge to earn their place
 734dd90 Shriram Finance work-up, owed three times, now done against primary filings
-90679fa Build the estimate-revisions collector -- the gap that cost the Infosys call
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
