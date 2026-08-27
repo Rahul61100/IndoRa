@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 13:36 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 14:02 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 99 notes
+## Knowledge base: 105 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,21 +94,21 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+391e977 Reject the gold-loan NBFC idea, and name the pattern behind two failures
+c6a377f Correct a live cap built on a fight that was already over
+105d5dc The hedge for the 10 November catalyst is not purchasable
+f6b4560 The monsoon trade, and a spread monitor that graded my own research
+a4ffde2 The vault was laundering confidence: 85 of 92 notes stamped verified
+67717c8 Argue the other side hard: the mean-reversion case for India fails three tests
+2634d0a Vault integrity: 99 notes, 320 wikilinks, 0 broken, 0 orphans
 8c84c1d Book revision: the frame was wrong, not just three positions
 847052c The rupee is held up, not holding up -- and North Asia's structure
 096a348 Resolve the India tariff to Federal Register citations, and three things change
 fe2463c CLAUDE.md: lead with the base rate, retract the stale +18% earnings claim
 f90df49 Benchmark-relative scoring, and fix a stdlib shadowing bug I introduced today
-41d27e7 Ran the obvious rebuttal to my own finding; it failed and sharpened the result
-8067fe6 The premise check: for a rupee-spender the S&P beat the Nifty in 97% of 10-year windows
-599191e India vs North Asia in common currency, and why the Korea trade already happened
-f5e9a79 FX from intraday prints, never from Yahoo daily bars
-c26d765 Earnings-quality screen, and the aggregate error it caught in the opposite direction
-8618746 Close Dixon: profit growth is not operating, and a written invalidation had already triggered
-9b04b1a Wire the scorecard and calendar into the daily refresh
 ```
 
-Working tree: **UNCOMMITTED CHANGES PRESENT**
+Working tree: clean
 
 ## The one thing to hold on to
 
