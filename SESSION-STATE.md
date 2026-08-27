@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-26 18:10 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 09:08 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -35,10 +35,10 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | us | 2026-08-26 | 119 tickers | 0 quality flags |
 | crypto | 2026-08-26 | 46 tickers | 4 quality flags |
 | India FII/DII | 2026-08-26 | 1 rows | flows ledger |
-| Stablecoin supply | 2026-08-26 | 3193 rows | flows ledger |
-| DeFi TVL | 2026-08-26 | 3118 rows | flows ledger |
+| Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
+| DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 69 notes
+## Knowledge base: 70 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -87,24 +87,16 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 
 ## Questions carried forward
 
-1. **Q1 FY27 GDP prints 31 August.** Consensus 6.9-8.0%. A sub-7 print with the monsoon deficit
-   would put the RBI's 6.7% FY27 forecast under pressure.
-2. **Why is capital goods at 100% breadth while infrastructure is flat?** Order intake is
-   confirmed (Siemens +32.6%, ABB +25%) but the downstream infra names are not participating.
-   Something is separating the equipment makers from the builders.
-3. **BHEL +90.1% over a year and +58.7% over six.** Not researched at all. A state-owned heavy
-   engineering firm nearly doubling needs an explanation before it is either bought or dismissed.
-4. **Shriram Finance +81.5%** — same question, NBFC sector otherwise at -1.8%.
-5. **Kotak Bank RSI 71, +8.2% over a month** while its sector sits at 50% breadth. Idiosyncratic
-   news not yet identified.
-6. **Fundamentals coverage is thin** — `data/fundamentals/` holds hand-captured screener values
-   for ~25 names. Needs either a scraper or a weekly manual refresh discipline.
+- (none recorded in the latest journal)
 
 ## Repo
 
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+03bde90 Add vault Home note and one-command refresh
+066f6a1 Fix a fabricated 2% rupee move in the intraday monitor
+806d41b Add session continuity, Obsidian vault tooling, and the live market-hours loop
 61a85d5 India policy calendar: windfall tax is back, 2026 state elections already done
 1208afb US policy map: two shutdowns, a tariff-refund fiscal hole, and a Fed weighing a hike
 be68ccc Positioning data partly reverses this morning's HDFC Bank cut
@@ -114,9 +106,6 @@ c32d522 US fundamentals: estimates rising 15% while India's were cut 9%
 89c4348 Add the political economy layer to the daily loop
 c998beb Add eight-sector India coverage and the NSE IPO supply event
 e89e065 Gold beat the Nifty on every horizon; India's capex is Delhi's and front-loaded
-0ea2eff Crypto: the bounce was a short squeeze, DATs are now forced sellers, ETH is inflationary
-d00b01b India's EM flow competitor is North Asia semis, not China
-a1e4ff0 Major corrections: India ERP is negative, FY26 EPS grew 4.5% not 18%
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
