@@ -37,6 +37,15 @@ production**.
 **And it has already killed Indian citizens.** Twelve of them, in one incident, in June. I have
 written thirty-odd notes on India and this is the first time that appears in any of them.
 
+## Remittances — CORRECTED THE SAME DAY, see below
+
+> **AMENDED within hours by an adversarial verifier.** The **$145bn figure below is UNVERIFIABLE**
+> — single-outlet, no PIB or RBI corroboration across five queries, with an implausibly compressed
+> publication timeline. And the Gulf framing is materially weakened: **RBI's own FY24 survey shows
+> the GCC share had already fallen from 46.7% to 37.9% before the war, while the US rose to 27.7%
+> and became the largest single source.** The exposure did not disappear — **it moved to
+> Washington.** See [[india-diversification-concentrated-on-washington]].
+
 ## Remittances — the number, and the tension in it
 
 - **FY26 remittances: a record $145bn**, with the government explicitly claiming "no impact of West

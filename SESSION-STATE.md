@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 11:38 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 12:24 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 90 notes
+## Knowledge base: 91 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,7 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+3760b9d CORRECTION: the 18% tariff is stale, is ~10% today, and may never have been collected
 b2ebe76 The external gap: Ras Laffan, 12 dead Indians, and value-add stuck at 18%
 7dbe413 India's external position is a three-body problem and I analysed one body
 17a436a Capex contradiction resolved: real in large caps, absent at the base
@@ -105,7 +106,6 @@ f3f8f57 BUILD.md: the harness implementation plan, written from the failure mode
 88c9421 Retract the ERP frame: the metric has an R-squared of 0.5%
 64c19f3 First-principles agent catches four of my errors, using zero tools
 9cea303 The negative ERP is a pre-tax artifact -- after tax it is roughly zero
-b2539be Redesign the research fleet: seven archetypes, not fourteen collectors
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
