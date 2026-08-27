@@ -81,15 +81,53 @@ It does **not** say "do not invest in India." It says something more uncomfortab
    inflation is 2.98pp of real return — larger than most of the edge this entire research process
    is trying to establish.
 
+## The obvious rebuttal, run — and it fails
+
+The standard objection is that this is a Magnificent-7 artefact: US mega-cap concentration at a
+record index share, which will revert. **Tested against the equal-weight S&P, and it is not.**
+
+18.2 years, CAGR in rupees, common window from June 2008:
+
+| index | CAGR in INR | vs Nifty | 5y rolling win rate vs Nifty |
+|---|---|---|---|
+| **S&P equal-weight** | **+16.39%** | **+6.11pp** | **90%** (mean +5.76pp) |
+| S&P cap-weight | +15.27% | +4.99pp | 92% (mean +4.76pp) |
+| Total world (VT) | +13.81% | +3.53pp | 77% (mean +2.74pp) |
+| MSCI ACWI | +13.61% | +3.33pp | 77% (mean +2.68pp) |
+| Developed ex-US | +10.33% | +0.06pp | **38%** (mean −0.98pp) |
+| **Nifty** | +10.28% | — | — |
+| Emerging markets | +9.01% | −1.27pp | **24%** (mean −3.97pp) |
+
+Equal-weight beat cap-weight, by 1.12pp a year and with a *higher* mean rolling gap. Removing the
+mega-caps makes the case against India **stronger**, not weaker. That disposes of the rebuttal.
+
+## But it sharpens what the finding actually is
+
+The table above says something more precise than "India underperforms the world":
+
+- **India beat emerging markets** — EM won only 24% of 5-year windows, mean −3.97pp. India is a
+  *good* EM.
+- **India roughly tied developed ex-US** — 38% win rate, mean −0.98pp. Europe and Japan are not
+  the answer.
+- **India lost decisively to the United States, and only to the United States** — 90–92% of
+  windows.
+- Global cap-weighted indices beat India 77% of the time, but they are ~65% US. The US is doing
+  the work.
+
+**So the choice is not India versus foreign. It is India versus the US.** That is a far more
+tractable question, and it is the one that should be argued — including the case that US
+exceptionalism is itself the thing at a record and due to revert. What cannot be argued any more
+is that the gap is a concentration artefact.
+
 ## Honest limits
 
-- The 2023–2026 gap of +15.23pp is extreme and driven by US mega-cap concentration at a record
-  share of the index. Reversion there would compress the gap materially.
-- 19 years is one sample of one historical path. A base rate is not a forecast.
+- 19 years is one sample of one historical path. A base rate is not a forecast, and the entire
+  window sits inside a single regime of falling and then low global rates.
 - Rupee depreciation continuing at 3.5% is an assumption, not a law. If India's external position
   improved durably, the largest single component of the gap shrinks.
-- Nothing here is tested against an *equal-weight* or *ex-mega-cap* S&P, which is the obvious
-  first challenge to it and has not been run.
+- The ETF proxies (RSP, ACWI, EFA, EEM, VT) carry fees and tracking differences the Nifty index
+  does not; the comparison is index-to-ETF, which flatters the Nifty slightly, not the reverse.
+- 2023–2026's +15.23pp gap is extreme by the standards of the rest of the sample.
 
 ## What would change this
 
