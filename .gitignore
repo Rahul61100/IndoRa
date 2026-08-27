@@ -5,8 +5,23 @@ __pycache__/
 .obsidian/workspace-mobile.json
 .trash/
 
-# Prediction engine: derived and rebuildable. The odds JSONL under data/odds/
-# IS committed -- historical odds cannot be re-fetched.
+# Prediction engine.
+#
+# predict.db is derived and rebuildable -- always ignored.
+#
+# data/odds/*.jsonl.gz is the IRREPLACEABLE half: raw venue payloads that cannot
+# be re-fetched once a market moves or closes. It is NOT committed, and that is a
+# deliberate correction to the original design, which asserted it was.
+#
+# The arithmetic: ~3 MB gzipped per nightly run is ~90 MB/month and ~1 GB/year of
+# incompressible blobs in git. A retention rule nobody can sustain is worse than an
+# honest local-only one -- the first time it hurt, someone would delete the history
+# wholesale, which is precisely the loss the rule existed to prevent.
+#
+# PHASE 2 MUST DECIDE a durable backup that is not git (object storage, or a
+# retention window that prunes raw payloads past N days and keeps the normalised
+# odds series, which is small). Until then this data lives on one disk and that is
+# a known, recorded risk -- not an oversight.
 data/predict.db
 data/predict.db-journal
 data/predict.db-wal
