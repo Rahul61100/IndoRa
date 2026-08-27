@@ -4,3 +4,9 @@ __pycache__/
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .trash/
+
+# Prediction engine: derived and rebuildable. The odds JSONL under data/odds/
+# IS committed -- historical odds cannot be re-fetched.
+data/predict.db
+data/predict.db-journal
+data/predict.db-wal
