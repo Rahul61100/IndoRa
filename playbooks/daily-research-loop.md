@@ -42,8 +42,12 @@ Write the answer in the scorecard even when nothing changed. Especially when not
 
 In this order, because each frames the next:
 
-1. **Flows** — India FII/DII net, stablecoin supply, DeFi TVL. Read these *first*. Flows have
-   explained more of what happened in all three markets than any valuation metric.
+1. **Flows — cash AND derivatives together.** India FII/DII cash net, **plus the FII index-futures
+   net position and long-short ratio**, stablecoin supply, DeFi TVL. Read these *first*.
+   **Never read FII cash flow without the derivatives book beside it** — on 2026-08-27 FIIs were
+   net cash buyers while running a ~1:8.25 short in index futures against a large single-stock
+   long. That is a dispersion trade, not bullishness, and cash flow alone said the opposite.
+   [[fii-are-short-the-index-long-the-stocks]]
 2. **The political economy layer** — promoter pledging and stake changes, bulk and block deals,
    regulatory or judicial actions on held names, policy and appointment news, and the next dated
    political catalyst. See `political-economy-layer.md`. In India this moves stocks harder and
