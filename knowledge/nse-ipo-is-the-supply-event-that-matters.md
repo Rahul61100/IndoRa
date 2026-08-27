@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: verified
 tags: [india, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # The NSE IPO is India's largest ever and it prices in September — bigger than Jio

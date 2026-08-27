@@ -4,7 +4,7 @@ market: us
 type: regime
 confidence: verified
 tags: [us, regime, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # The Fed's next move may be up, and the long end is already there

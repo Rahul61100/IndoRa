@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: verified
 tags: [us, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Moody's has downgraded the US, and the term premium is up 108bp this year

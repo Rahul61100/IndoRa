@@ -4,7 +4,7 @@ market: crypto
 type: finding
 confidence: verified
 tags: [crypto, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # The digital-asset treasury companies have flipped from marginal buyer to latent forced seller

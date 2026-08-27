@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: verified
 tags: [india, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # HDFC Bank's margin problem is post-merger structure, not the rate cycle

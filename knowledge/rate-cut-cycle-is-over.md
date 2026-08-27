@@ -4,7 +4,7 @@ market: general
 type: regime
 confidence: verified
 tags: [general, regime, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # India's rate-cut cycle is over — nothing may be bought on a "cuts are coming" thesis

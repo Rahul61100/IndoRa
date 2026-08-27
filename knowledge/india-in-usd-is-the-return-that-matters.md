@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: verified
 tags: [india, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # In dollars, India has lost money for two years — and that is what the FII sees

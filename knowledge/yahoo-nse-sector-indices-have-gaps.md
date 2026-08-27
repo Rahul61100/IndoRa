@@ -4,7 +4,7 @@ market: india
 type: method
 confidence: verified
 tags: [india, method, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Yahoo's NSE sector indices have multi-week history gaps

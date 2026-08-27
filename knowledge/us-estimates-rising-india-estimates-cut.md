@@ -4,7 +4,7 @@ market: us
 type: flows
 confidence: verified
 tags: [us, flows, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # US earnings estimates are being revised UP sharply while India's are cut — the cleanest contrast

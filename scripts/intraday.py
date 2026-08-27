@@ -57,6 +57,25 @@ def session_progress(cfg: dict, now_local: datetime) -> float:
     return (now_local - o).total_seconds() / (c - o).total_seconds()
 
 
+def _prev_close(intraday_today, intraday_all, daily, last_day) -> float:
+    """Prior close, derived from the intraday series rather than Yahoo's daily bar.
+
+    Yahoo intermittently publishes a corrupted daily bar. On 2026-08-26 USDINR came back
+    with Close 93.546 against a High of 95.412 and a true rate near 95.5, which rendered
+    as a fabricated +2.1% overnight move -- large enough to look like news.
+
+    The 5-minute series covers two sessions, so the last bar of the PRIOR session is the
+    real prior close and needs no sanity check. The daily bar is only a fallback for
+    tickers where the intraday history does not reach back a full session.
+    """
+    prior = intraday_all[intraday_all.index.map(lambda x: x.date() != last_day)]
+    if len(prior):
+        return float(prior["Close"].iloc[-1])
+    closes = daily["Close"]
+    idx = -2 if daily.index[-1].date() == last_day else -1
+    return float(closes.iloc[idx])
+
+
 def pull(tickers: list[str]) -> dict[str, dict]:
     """5-minute bars for today plus daily bars for the reference levels."""
     intr = yf.download(tickers, period="2d", interval="5m", group_by="ticker",
@@ -76,7 +95,7 @@ def pull(tickers: list[str]) -> dict[str, dict]:
         today = i[i.index.map(lambda x: x.date() == last_day)]
         if today.empty:
             continue
-        prev_close = float(d["Close"].iloc[-2]) if d.index[-1].date() == last_day else float(d["Close"].iloc[-1])
+        prev_close = _prev_close(today, i, d, last_day)
         cur = float(today["Close"].iloc[-1])
         out[t] = {
             "price": cur,

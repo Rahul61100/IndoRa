@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: verified
 tags: [general, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Indian large caps are cheap and small/mid caps are expensive — the reverse of the usual advice

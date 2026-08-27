@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: verified
 tags: [us, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # China's rare-earth suspension expires 10 November 2026 — a week after the US midterms

@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: verified
 tags: [general, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Sector leadership as of August 2026 — capital goods broadest, FMCG and oil/gas worst

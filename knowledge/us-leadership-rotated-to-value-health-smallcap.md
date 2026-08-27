@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: verified
 tags: [us, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # US leadership has rotated out of megacap AI into healthcare, financials and small caps

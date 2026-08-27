@@ -4,7 +4,7 @@ market: general
 type: method
 confidence: verified
 tags: [general, method, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # A backtest of names you already picked measures hindsight, not process

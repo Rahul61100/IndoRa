@@ -2,7 +2,7 @@
 title: "Cross-market — where one market previews another"
 type: moc
 tags: [moc, cross]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Cross-market — where one market previews another

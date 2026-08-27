@@ -2,7 +2,7 @@
 title: "India — every durable fact"
 type: moc
 tags: [moc, india]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # India — every durable fact

@@ -4,7 +4,7 @@ market: cross
 type: finding
 confidence: verified
 tags: [cross, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # The reason to run multiple markets is lead-lag, not diversification

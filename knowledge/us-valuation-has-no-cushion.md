@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: verified
 tags: [us, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # US valuation offers almost no cushion, and the crowding is institutional not retail

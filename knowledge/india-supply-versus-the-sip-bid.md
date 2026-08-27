@@ -4,7 +4,7 @@ market: us
 type: flows
 confidence: verified
 tags: [us, flows, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # India's domestic bid is enormous, and so is the supply arriving to meet it

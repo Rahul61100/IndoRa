@@ -2,7 +2,7 @@
 title: "Portfolio construction — sizing, correlation, risk"
 type: moc
 tags: [moc, position]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Portfolio construction — sizing, correlation, risk

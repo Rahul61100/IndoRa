@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: verified
 tags: [india, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # India sector map — the eight sectors I had never looked at

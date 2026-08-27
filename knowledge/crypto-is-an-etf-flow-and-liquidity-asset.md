@@ -4,7 +4,7 @@ market: crypto
 type: flows
 confidence: verified
 tags: [crypto, flows, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Crypto now trades as an ETF-flow and liquidity asset, not an independent one

@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: degraded
 tags: [us, finding, degraded]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # The US had two shutdowns in 2026 — one 76 days, the longest ever — and tariff refunds blew a hole in the deficit

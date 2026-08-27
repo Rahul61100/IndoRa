@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: verified
 tags: [general, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # In India right now, nearly every cheap large cap is in a downtrend

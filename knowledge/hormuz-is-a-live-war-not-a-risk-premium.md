@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: verified
 tags: [general, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Hormuz is an active war with two failed ceasefires, not a risk premium

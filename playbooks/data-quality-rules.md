@@ -40,3 +40,21 @@ standalone vs consolidated and free-float treatment. Always name the source and 
 
 The fetcher is the only thing that produces prices. If a number appears in a note without a
 matching row in that day's snapshot, it should not be there.
+
+**8. Derive the prior close from the intraday series, never from Yahoo's daily bar.**
+On 2026-08-27 the intraday monitor reported USDINR up **2.13% overnight** — a move that would
+have been genuine news. It was fabricated. Yahoo's 26 August daily bar for USDINR carried
+`Close 93.546` against a `High` of 95.412, with the true rate near 95.5. The bad close became
+the reference point and manufactured a 2% gap.
+
+A first fix — reject a prior close deviating more than 8% from the trailing median — **failed**,
+because the corruption was only 2.25% off. Small enough to pass a tolerance check, large enough
+to look like a story. That is the dangerous size.
+
+The working fix: the 5-minute series spans two sessions, so **the last bar of the prior session
+is the real prior close** and needs no sanity check at all. The daily bar is now only a fallback
+for tickers whose intraday history does not reach back a session.
+
+**The general lesson: prefer a source that cannot be wrong over a check that decides whether a
+source is wrong.** Validation thresholds always have a gap, and the errors that fit through it
+are exactly the plausible-looking ones.

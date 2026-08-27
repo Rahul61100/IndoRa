@@ -4,7 +4,7 @@ market: crypto
 type: flows
 confidence: verified
 tags: [crypto, flows, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Stablecoin supply peaked in May 2026 and is shrinking while BTC rallies

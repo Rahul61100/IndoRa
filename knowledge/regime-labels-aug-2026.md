@@ -4,7 +4,7 @@ market: india
 type: regime
 confidence: verified
 tags: [india, regime, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Regime labels: India SPLIT, US BROADENING, crypto SPLIT

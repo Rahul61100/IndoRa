@@ -4,7 +4,7 @@ market: general
 type: position
 confidence: verified
 tags: [general, position, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Ten positions, 5.4 effective bets — and I never checked before opening them

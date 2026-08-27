@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: verified
 tags: [india, finding, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # CORRECTION: India's equity risk premium is NEGATIVE — the G-sec beats the earnings yield

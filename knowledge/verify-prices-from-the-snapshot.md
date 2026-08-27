@@ -4,7 +4,7 @@ market: general
 type: method
 confidence: verified
 tags: [general, method, verified]
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Never state a price, multiple or return without pulling it that session
