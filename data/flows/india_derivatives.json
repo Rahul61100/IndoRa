@@ -1,0 +1,425 @@
+[
+ {
+  "date": "2026-08-14",
+  "Client": {
+   "fut_index_long": 211638,
+   "fut_index_short": 55956,
+   "fut_index_net": 155682,
+   "fut_index_ls_ratio": 3.782,
+   "fut_stock_long": 3275125,
+   "fut_stock_short": 261974,
+   "fut_stock_net": 3013151,
+   "total_long": 13152111,
+   "total_short": 9490438
+  },
+  "DII": {
+   "fut_index_long": 50830,
+   "fut_index_short": 20040,
+   "fut_index_net": 30790,
+   "fut_index_ls_ratio": 2.536,
+   "fut_stock_long": 329392,
+   "fut_stock_short": 4402412,
+   "fut_stock_net": -4073020,
+   "total_long": 479918,
+   "total_short": 4794479
+  },
+  "FII": {
+   "fut_index_long": 25537,
+   "fut_index_short": 202235,
+   "fut_index_net": -176698,
+   "fut_index_ls_ratio": 0.126,
+   "fut_stock_long": 3535257,
+   "fut_stock_short": 2910988,
+   "fut_stock_net": 624269,
+   "total_long": 5668106,
+   "total_short": 5031758
+  },
+  "Pro": {
+   "fut_index_long": 36280,
+   "fut_index_short": 46054,
+   "fut_index_net": -9774,
+   "fut_index_ls_ratio": 0.788,
+   "fut_stock_long": 918232,
+   "fut_stock_short": 482632,
+   "fut_stock_net": 435600,
+   "total_long": 5218139,
+   "total_short": 5201599
+  }
+ },
+ {
+  "date": "2026-08-17",
+  "Client": {
+   "fut_index_long": 215653,
+   "fut_index_short": 55062,
+   "fut_index_net": 160591,
+   "fut_index_ls_ratio": 3.917,
+   "fut_stock_long": 3294002,
+   "fut_stock_short": 262390,
+   "fut_stock_net": 3031612,
+   "total_long": 13783641,
+   "total_short": 10182767
+  },
+  "DII": {
+   "fut_index_long": 50815,
+   "fut_index_short": 19776,
+   "fut_index_net": 31039,
+   "fut_index_ls_ratio": 2.57,
+   "fut_stock_long": 334344,
+   "fut_stock_short": 4429649,
+   "fut_stock_net": -4095305,
+   "total_long": 485777,
+   "total_short": 4825121
+  },
+  "FII": {
+   "fut_index_long": 25299,
+   "fut_index_short": 206886,
+   "fut_index_net": -181587,
+   "fut_index_ls_ratio": 0.122,
+   "fut_stock_long": 3547694,
+   "fut_stock_short": 2919718,
+   "fut_stock_net": 627976,
+   "total_long": 5809602,
+   "total_short": 5129533
+  },
+  "Pro": {
+   "fut_index_long": 34053,
+   "fut_index_short": 44096,
+   "fut_index_net": -10043,
+   "fut_index_ls_ratio": 0.772,
+   "fut_stock_long": 935593,
+   "fut_stock_short": 499876,
+   "fut_stock_net": 435717,
+   "total_long": 5377287,
+   "total_short": 5318886
+  }
+ },
+ {
+  "date": "2026-08-18",
+  "Client": {
+   "fut_index_long": 226578,
+   "fut_index_short": 52782,
+   "fut_index_net": 173796,
+   "fut_index_ls_ratio": 4.293,
+   "fut_stock_long": 3331486,
+   "fut_stock_short": 268369,
+   "fut_stock_net": 3063117,
+   "total_long": 11847252,
+   "total_short": 8030077
+  },
+  "DII": {
+   "fut_index_long": 50874,
+   "fut_index_short": 19801,
+   "fut_index_net": 31073,
+   "fut_index_ls_ratio": 2.569,
+   "fut_stock_long": 339009,
+   "fut_stock_short": 4432841,
+   "fut_stock_net": -4093832,
+   "total_long": 492727,
+   "total_short": 4840909
+  },
+  "FII": {
+   "fut_index_long": 25502,
+   "fut_index_short": 219660,
+   "fut_index_net": -194158,
+   "fut_index_ls_ratio": 0.116,
+   "fut_stock_long": 3554988,
+   "fut_stock_short": 2949625,
+   "fut_stock_net": 605363,
+   "total_long": 5585685,
+   "total_short": 4849780
+  },
+  "Pro": {
+   "fut_index_long": 35523,
+   "fut_index_short": 46234,
+   "fut_index_net": -10711,
+   "fut_index_ls_ratio": 0.768,
+   "fut_stock_long": 963739,
+   "fut_stock_short": 538387,
+   "fut_stock_net": 425352,
+   "total_long": 4617940,
+   "total_short": 4822839
+  }
+ },
+ {
+  "date": "2026-08-19",
+  "Client": {
+   "fut_index_long": 237939,
+   "fut_index_short": 52531,
+   "fut_index_net": 185408,
+   "fut_index_ls_ratio": 4.529,
+   "fut_stock_long": 3354294,
+   "fut_stock_short": 282605,
+   "fut_stock_net": 3071689,
+   "total_long": 12823426,
+   "total_short": 9056130
+  },
+  "DII": {
+   "fut_index_long": 47420,
+   "fut_index_short": 19851,
+   "fut_index_net": 27569,
+   "fut_index_ls_ratio": 2.389,
+   "fut_stock_long": 345371,
+   "fut_stock_short": 4450101,
+   "fut_stock_net": -4104730,
+   "total_long": 492986,
+   "total_short": 4862127
+  },
+  "FII": {
+   "fut_index_long": 24870,
+   "fut_index_short": 234677,
+   "fut_index_net": -209807,
+   "fut_index_ls_ratio": 0.106,
+   "fut_stock_long": 3580969,
+   "fut_stock_short": 2963832,
+   "fut_stock_net": 617137,
+   "total_long": 5765160,
+   "total_short": 5169526
+  },
+  "Pro": {
+   "fut_index_long": 38025,
+   "fut_index_short": 41195,
+   "fut_index_net": -3170,
+   "fut_index_ls_ratio": 0.923,
+   "fut_stock_long": 999703,
+   "fut_stock_short": 583799,
+   "fut_stock_net": 415904,
+   "total_long": 5099803,
+   "total_short": 5093591
+  }
+ },
+ {
+  "date": "2026-08-20",
+  "Client": {
+   "fut_index_long": 230698,
+   "fut_index_short": 57393,
+   "fut_index_net": 173305,
+   "fut_index_ls_ratio": 4.02,
+   "fut_stock_long": 3321427,
+   "fut_stock_short": 261692,
+   "fut_stock_net": 3059735,
+   "total_long": 12805851,
+   "total_short": 9304887
+  },
+  "DII": {
+   "fut_index_long": 47113,
+   "fut_index_short": 19835,
+   "fut_index_net": 27278,
+   "fut_index_ls_ratio": 2.375,
+   "fut_stock_long": 351385,
+   "fut_stock_short": 4467747,
+   "fut_stock_net": -4116362,
+   "total_long": 500085,
+   "total_short": 4874466
+  },
+  "FII": {
+   "fut_index_long": 24335,
+   "fut_index_short": 236448,
+   "fut_index_net": -212113,
+   "fut_index_ls_ratio": 0.103,
+   "fut_stock_long": 3630708,
+   "fut_stock_short": 2964410,
+   "fut_stock_net": 666298,
+   "total_long": 5825671,
+   "total_short": 5196810
+  },
+  "Pro": {
+   "fut_index_long": 49571,
+   "fut_index_short": 38041,
+   "fut_index_net": 11530,
+   "fut_index_ls_ratio": 1.303,
+   "fut_stock_long": 914851,
+   "fut_stock_short": 524522,
+   "fut_stock_net": 390329,
+   "total_long": 5306097,
+   "total_short": 5061540
+  }
+ },
+ {
+  "date": "2026-08-21",
+  "Client": {
+   "fut_index_long": 228719,
+   "fut_index_short": 57703,
+   "fut_index_net": 171016,
+   "fut_index_ls_ratio": 3.964,
+   "fut_stock_long": 3342459,
+   "fut_stock_short": 266272,
+   "fut_stock_net": 3076187,
+   "total_long": 13182329,
+   "total_short": 9794597
+  },
+  "DII": {
+   "fut_index_long": 47906,
+   "fut_index_short": 19791,
+   "fut_index_net": 28115,
+   "fut_index_ls_ratio": 2.421,
+   "fut_stock_long": 366957,
+   "fut_stock_short": 4485936,
+   "fut_stock_net": -4118979,
+   "total_long": 516723,
+   "total_short": 4894170
+  },
+  "FII": {
+   "fut_index_long": 26060,
+   "fut_index_short": 235915,
+   "fut_index_net": -209855,
+   "fut_index_ls_ratio": 0.11,
+   "fut_stock_long": 3655491,
+   "fut_stock_short": 2973732,
+   "fut_stock_net": 681759,
+   "total_long": 5928107,
+   "total_short": 5280923
+  },
+  "Pro": {
+   "fut_index_long": 50287,
+   "fut_index_short": 39563,
+   "fut_index_net": 10724,
+   "fut_index_ls_ratio": 1.271,
+   "fut_stock_long": 881221,
+   "fut_stock_short": 520188,
+   "fut_stock_net": 361033,
+   "total_long": 5514316,
+   "total_short": 5171785
+  }
+ },
+ {
+  "date": "2026-08-24",
+  "Client": {
+   "fut_index_long": 236736,
+   "fut_index_short": 55580,
+   "fut_index_net": 181156,
+   "fut_index_ls_ratio": 4.259,
+   "fut_stock_long": 3332483,
+   "fut_stock_short": 252308,
+   "fut_stock_net": 3080175,
+   "total_long": 13793276,
+   "total_short": 10474469
+  },
+  "DII": {
+   "fut_index_long": 44784,
+   "fut_index_short": 19764,
+   "fut_index_net": 25020,
+   "fut_index_ls_ratio": 2.266,
+   "fut_stock_long": 382167,
+   "fut_stock_short": 4498002,
+   "fut_stock_net": -4115835,
+   "total_long": 552074,
+   "total_short": 4912549
+  },
+  "FII": {
+   "fut_index_long": 27079,
+   "fut_index_short": 246462,
+   "fut_index_net": -219383,
+   "fut_index_ls_ratio": 0.11,
+   "fut_stock_long": 3628809,
+   "fut_stock_short": 2944993,
+   "fut_stock_net": 683816,
+   "total_long": 6144139,
+   "total_short": 5382706
+  },
+  "Pro": {
+   "fut_index_long": 51987,
+   "fut_index_short": 38780,
+   "fut_index_net": 13207,
+   "fut_index_ls_ratio": 1.341,
+   "fut_stock_long": 850473,
+   "fut_stock_short": 498629,
+   "fut_stock_net": 351844,
+   "total_long": 5547914,
+   "total_short": 5267680
+  }
+ },
+ {
+  "date": "2026-08-25",
+  "Client": {
+   "fut_index_long": 218413,
+   "fut_index_short": 60777,
+   "fut_index_net": 157636,
+   "fut_index_ls_ratio": 3.594,
+   "fut_stock_long": 3232366,
+   "fut_stock_short": 183211,
+   "fut_stock_net": 3049155,
+   "total_long": 8119415,
+   "total_short": 5351642
+  },
+  "DII": {
+   "fut_index_long": 37106,
+   "fut_index_short": 19764,
+   "fut_index_net": 17342,
+   "fut_index_ls_ratio": 1.877,
+   "fut_stock_long": 262916,
+   "fut_stock_short": 4363222,
+   "fut_stock_net": -4100306,
+   "total_long": 368063,
+   "total_short": 4498898
+  },
+  "FII": {
+   "fut_index_long": 23857,
+   "fut_index_short": 208084,
+   "fut_index_net": -184227,
+   "fut_index_ls_ratio": 0.115,
+   "fut_stock_long": 3435001,
+   "fut_stock_short": 2834383,
+   "fut_stock_net": 600618,
+   "total_long": 4745490,
+   "total_short": 3980723
+  },
+  "Pro": {
+   "fut_index_long": 32516,
+   "fut_index_short": 23267,
+   "fut_index_net": 9249,
+   "fut_index_ls_ratio": 1.398,
+   "fut_stock_long": 754573,
+   "fut_stock_short": 304040,
+   "fut_stock_net": 450533,
+   "total_long": 2965627,
+   "total_short": 2367331
+  }
+ },
+ {
+  "date": "2026-08-26",
+  "Client": {
+   "fut_index_long": 223646,
+   "fut_index_short": 63363,
+   "fut_index_net": 160283,
+   "fut_index_ls_ratio": 3.53,
+   "fut_stock_long": 3309656,
+   "fut_stock_short": 194625,
+   "fut_stock_net": 3115031,
+   "total_long": 9693715,
+   "total_short": 6767978
+  },
+  "DII": {
+   "fut_index_long": 37353,
+   "fut_index_short": 19764,
+   "fut_index_net": 17589,
+   "fut_index_ls_ratio": 1.89,
+   "fut_stock_long": 272637,
+   "fut_stock_short": 4396969,
+   "fut_stock_net": -4124332,
+   "total_long": 389053,
+   "total_short": 4580936
+  },
+  "FII": {
+   "fut_index_long": 25651,
+   "fut_index_short": 211711,
+   "fut_index_net": -186060,
+   "fut_index_ls_ratio": 0.121,
+   "fut_stock_long": 3425528,
+   "fut_stock_short": 2857765,
+   "fut_stock_net": 567763,
+   "total_long": 4928078,
+   "total_short": 4244538
+  },
+  "Pro": {
+   "fut_index_long": 38116,
+   "fut_index_short": 29928,
+   "fut_index_net": 8188,
+   "fut_index_ls_ratio": 1.274,
+   "fut_stock_long": 779206,
+   "fut_stock_short": 337668,
+   "fut_stock_net": 441538,
+   "total_long": 3533123,
+   "total_short": 2950518
+  }
+ }
+]

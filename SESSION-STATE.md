@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 10:37 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 11:04 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 83 notes
+## Knowledge base: 84 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,8 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+f3f8f57 BUILD.md: the harness implementation plan, written from the failure modes
+5f3ed0d The adversarial verdict on India -- and the freeze lifts for medium and long
 2a88681 The bear case that survives: capex, not the risk premium
 88c9421 Retract the ERP frame: the metric has an R-squared of 0.5%
 64c19f3 First-principles agent catches four of my errors, using zero tools
@@ -104,8 +106,6 @@ feddddc Governance screen lands: HAL closes, ICICI capped, 8 of 9 AMBER
 69b8e45 Short-horizon trades now need a 10-12% tax edge to earn their place
 734dd90 Shriram Finance work-up, owed three times, now done against primary filings
 90679fa Build the estimate-revisions collector -- the gap that cost the Infosys call
-2882f30 Close HDFC Bank: the driver was governance, not NIM
-94babf9 Q1 FY27 GDP preview, and flag a figure I have been quoting wrong
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**

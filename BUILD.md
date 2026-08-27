@@ -69,7 +69,7 @@ Scripts are for facts. Conflating them is how a data error becomes a belief.
 | `tools/refresh.sh` — one-command full refresh | ✅ |
 | Obsidian vault | ✅ |
 | **Scheduling** | ❌ manual |
-| **Derivatives flows collector** | ❌ niftytrader scrape, not built |
+| **Derivatives flows collector** | ✅ built 2026-08-27 — NSE **primary** CSV, 9-session history |
 | **Corporate actions / filings watcher** | ❌ |
 | **Fundamentals collector** | ❌ hand-captured, ~25 names |
 | **Trigger layer** | ❌ |
@@ -83,10 +83,12 @@ Scripts are for facts. Conflating them is how a data error becomes a belief.
 
 ### Phase A — close the collection gaps (highest value per hour)
 
-**A1. Derivatives flows.** FII index-futures net and long-short ratio, PCR, max pain.
-niftytrader.in serves NSE data without cookies; NSE's own CSV needs a browser session.
-**Why first:** reading FII cash flow without the derivatives book was actively misleading me
-([[fii-are-short-the-index-long-the-stocks]]).
+**A1. Derivatives flows.** ✅ **DONE 2026-08-27.** `fetch_derivatives.py` reads NSE's own
+participant-OI CSV — the primary source, not an aggregator — with a cookie handshake and Referer
+header. WebFetch cannot retrieve it; a normal session can. It immediately produced a finding the
+single-snapshot version could not: **FIIs cut their stock-futures long ~17% in two sessions while
+holding the index short**, moving the book from dispersion toward outright bearish
+([[fii-are-unwinding-the-long-leg]]). **Still to add: PCR, max pain, option-chain OI.**
 
 **A2. Fundamentals collector.** P/E, P/B, RoE, growth, debt for the full universe, dated, cached.
 **Never trust an aggregator ratio after a corporate action** — the Shriram P/B was 3.18x at

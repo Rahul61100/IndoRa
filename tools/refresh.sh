@@ -4,8 +4,11 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
-echo "=== flows (MUST run daily -- NSE serves only the latest session) ==="
+echo "=== flows: cash (MUST run daily -- NSE serves only the latest session) ==="
 uv run --quiet scripts/fetch_flows.py
+
+echo "=== flows: derivatives (never read cash flow without this) ==="
+uv run --quiet scripts/fetch_derivatives.py --days 7 | tail -14
 
 for m in india us crypto; do
   echo "=== $m ==="
