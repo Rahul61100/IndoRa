@@ -4,7 +4,12 @@ One row per live thesis. **A thesis with no invalidation condition is an opinion
 belong here.** Prices are the close from the snapshot named in the row; refresh before acting.
 
 Horizons are fixed and do not blur:
-- **SHORT** — months. Needs a dated catalyst *and* a trend *and* a stop.
+- **SHORT** — months. Needs a dated catalyst *and* a trend *and* a stop — **and, from 2026-08-27,
+  an expected gross edge of at least 10-12% over the best long-horizon alternative.** Indian STCG
+  at 20% against LTCG at 12.5%, plus a ₹1.25L annual LTCG exemption that STCG does not get, means
+  a sub-12-month trade must out-earn a >12-month hold by ~9.85% gross (≈11.8% at high income) just
+  to break even after tax. **A modest edge held briefly is worse than the same idea held long.**
+  [[short-horizon-needs-a-10-12-percent-tax-edge]]
 - **MEDIUM** — 2-3 years. Staggered entry, no stop, reviewed on earnings.
 - **LONG** — decades. Entry price matters, trend does not.
 
@@ -394,5 +399,7 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-27 | HDFC Bank | close confirmed independently | 7 up / 23 down, EPS −4.35%, target 41.9% above price — value-trap signature |
 | 2026-08-27 | ICICI Bank | corroborated | 28 up / 4 down, target +20% — estimates and price agree |
 | 2026-08-27 | **Reliance** | **tension flagged** | Promoter bought ~₹9,000cr in July; FY+1 EPS cut 5.23% in 30 days |
+| 2026-08-27 | **SHORT bucket** | **hurdle raised** | Needs 10-12% gross edge over a long hold, after tax — never applied before |
+| 2026-08-27 | Buyback names | stale note corrected | Budget 2026 restored capital-gains treatment for non-promoters |
 | 2026-08-27 | SBI | supply fact logged | Largest selling shareholder in the NSE IPO |
 | 2026-08-26 | ONGC (closed) | **invalidation had already fired** | Windfall levy was reintroduced in March 2026 — I wrote the condition against a false premise |
