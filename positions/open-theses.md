@@ -17,6 +17,52 @@ Horizons are fixed and do not blur:
 
 ## Revision log
 
+### 2026-08-27 (second pass) — the frame itself was wrong
+
+The morning's governance pass changed three positions. This pass changed the **question**.
+
+**The premise failed its own base rate.** For a rupee-spender, the S&P-in-INR beat the Nifty in
+**97% of 108 rolling ten-year windows**, 92% of five-year and 72% of three-year, mean gap ~4.5pp/yr,
+in every calendar sub-period since 2008. Equal-weight S&P beats cap-weight, so it is not a
+Magnificent-7 artefact. India **beat** EM and roughly tied developed-ex-US — it lost only to the US.
+
+Consequence for this file: **beating the Nifty is not the job.** Every thesis here now carries a
+hurdle of roughly 4.5pp/yr against a passive foreign alternative, and `tools/score.py` prints
+each position against both the Nifty and the S&P-in-INR from today. With **4 theses scored against
+30 needed**, there is no evidence yet that this book clears it.
+
+| Pick | Was | Now | Why |
+|---|---|---|---|
+| **Dixon** | MEDIUM, capped ×3 | **CLOSED** | Q1 FY27 revenue +21.1%, **operating income −8.6%**, net income +194.8% at **1.86× operating income** — the profit is below the line. Operating margin **2.29%**, down five straight quarters, and the thesis's own written invalidation was "margin below ~3%", which had already triggered **two quarters** before anything looked. Forward P/E 52.2 above trailing 43.2 means consensus expects EPS −17%. *A thesis that needs three caps has already been falsified and is being kept alive with qualifiers.* |
+| **NTPC** | LONG, open | LONG, **flagged** | Only book position carrying an earnings-quality flag: forward P/E 11.7 above trailing 10.1, implying EPS −13%. Does not invalidate a 2032 capacity thesis, but the entry is not as cheap as the trailing multiple suggests. |
+| **Infosys** | bench | bench, **risk re-framed** | Pharma-style trade risk was mis-specified. IT's US exposure is H-1B and the HIRE Act, not the Section 301 tariff — and the 301 action is a **60-country forced-labour programme**, not a bilateral India dispute, so it will not be resolved by a deal. |
+
+**Three corrections to things stated earlier in this workspace, all in the same direction —
+I had the mechanism wrong, not just the number:**
+
+1. **The tariff.** In force is **Section 301(b)/304(a)**, 91 FR 47318, effective ~2026-07-24, at
+   **10%** — but **~45% of India's US-bound exports (~$87bn) are exempt** under Annex I/II, so the
+   effective rate across the basket is far below 10%. And India sits in a tier with Bangladesh,
+   Cambodia, Indonesia, Malaysia and Pakistan: it was never targeted.
+   [[india-us-tariff-the-actual-legal-instruments]]
+2. **Generic pharma is 0% until August 2028**, then 100%, then 200% — Section 232, which the IEEPA
+   ruling does not touch. Near-term risk zero, structural risk worse.
+3. **Oil.** Indian equities *rise* with oil unconditionally, because oil proxies global demand.
+   Only **supply** shocks hurt: in the four large ones in ten years the Nifty fell **every time**
+   (mean −3.91%, worst −12.0%). **ONGC does not hedge them** — 50% hit rate, median +0.55%, because
+   the windfall levy takes the gain exactly when it would matter. The ONGC close was right, but for
+   a reason I had not identified.
+
+**And the currency risk is larger than assumed.** Reserves near their high at $716.9bn conceal
+record net dollar sales of **$53.1bn** in FY26 and a net forward book **short $103.1bn** at 31 March,
+short in every maturity, widened $25.4bn in one month. The rupee is **10th of 12** EM currencies
+since 1 July, weakening while the dollar fell 2.1%. The ~3.5%/yr depreciation in the base-rate work
+is what was realised *during a record defence*, not a conservative assumption.
+[[the-rupee-is-held-up-not-holding-up]]
+
+**Open action for tomorrow:** the RBI Weekly Statistical Supplement was due **28 Aug 2026**. The
+forward book is the number to read, not the reserve headline.
+
 ### 2026-08-26 — first technical pass, three theses changed
 
 The 2026-08-25 note was built on valuation and macro only. Pulling actual price data the next
