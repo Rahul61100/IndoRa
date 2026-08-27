@@ -76,6 +76,11 @@ def accept_view(conn, view_id: int, market_id: int, direction: str,
                      (market_id,)).fetchone()
     if o is None:
         raise ValueError("no odds recorded for this market")
+    if o["best_bid"] is None or o["best_ask"] is None:
+        # Refuse rather than fall back to an older row that happens to have
+        # prices -- a position's entry price must be the price actually
+        # available at accept time, not a stale one.
+        raise ValueError("no tradeable price for this market's latest odds")
 
     e = edge(v["our_prob"], o["best_bid"], o["best_ask"], direction)
     cur = conn.execute(

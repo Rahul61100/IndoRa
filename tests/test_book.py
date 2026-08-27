@@ -41,8 +41,43 @@ def test_accept_snapshots_entry_prices_at_accept_time(tmp_path):
     posid = accept_view(c, vid, 1, "yes")
     row = c.execute("SELECT * FROM positions WHERE id=?", (posid,)).fetchone()
     assert row["bid_at_entry"] == 0.29 and row["ask_at_entry"] == 0.31
+    assert row["liquidity_at_entry"] == 5000.0
+    assert row["market_prob_at_entry"] == pytest.approx(0.30)
     assert row["edge"] == pytest.approx(0.14)
     assert c.execute("SELECT status FROM views WHERE id=?", (vid,)).fetchone()[0] == "accepted"
+
+
+def test_accept_raises_when_the_view_does_not_exist(tmp_path):
+    c, pid = setup(tmp_path)
+    with pytest.raises(ValueError):
+        accept_view(c, 9999, 1, "yes")
+
+
+def test_accept_raises_when_the_market_does_not_exist(tmp_path):
+    c, pid = setup(tmp_path)
+    vid = create_view(c, pid, 0.45, "medium")
+    with pytest.raises(ValueError):
+        accept_view(c, vid, 9999, "yes")
+
+
+def test_accept_raises_when_no_odds_row_exists_for_the_market(tmp_path):
+    c, pid = setup(tmp_path)
+    m2 = RawMarket(venue="polymarket", venue_market_id="2", question="q2",
+                   prob_yes=0.5, best_bid=0.4, best_ask=0.6, liquidity=1000.0)
+    upsert_markets(c, [m2])  # no append_odds for this market
+    market_id = c.execute(
+        "SELECT id FROM markets WHERE venue_market_id=?", ("2",)).fetchone()[0]
+    map_market(c, market_id, pid)
+    vid = create_view(c, pid, 0.45, "medium")
+    with pytest.raises(ValueError):
+        accept_view(c, vid, market_id, "yes")
+
+
+def test_accept_refuses_a_null_bid_or_ask_instead_of_using_a_stale_row(tmp_path):
+    c, pid = setup(tmp_path, bid=None, ask=None)
+    vid = create_view(c, pid, 0.45, "medium")
+    with pytest.raises(ValueError, match="no tradeable price"):
+        accept_view(c, vid, 1, "yes")
 
 
 def test_accepting_a_market_not_mapped_to_the_view_is_refused(tmp_path):
