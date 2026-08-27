@@ -25,3 +25,4 @@ __pycache__/
 data/predict.db
 data/predict.db-journal
 data/predict.db-wal
+data/odds/
