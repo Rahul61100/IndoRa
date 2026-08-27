@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 11:21 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 11:36 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 86 notes
+## Knowledge base: 89 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,8 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+7dbe413 India's external position is a three-body problem and I analysed one body
+17a436a Capex contradiction resolved: real in large caps, absent at the base
 f94f6bc Why Indian consensus misses every year -- three causes, one a measurement artifact
 09cb148 Build the derivatives collector -- and the series says more than the snapshot did
 f3f8f57 BUILD.md: the harness implementation plan, written from the failure modes
@@ -104,8 +106,6 @@ f3f8f57 BUILD.md: the harness implementation plan, written from the failure mode
 9cea303 The negative ERP is a pre-tax artifact -- after tax it is roughly zero
 b2539be Redesign the research fleet: seven archetypes, not fourteen collectors
 feddddc Governance screen lands: HAL closes, ICICI capped, 8 of 9 AMBER
-8f96702 FIIs are short the index and long single stocks -- cash flow alone was misleading me
-69b8e45 Short-horizon trades now need a 10-12% tax edge to earn their place
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
