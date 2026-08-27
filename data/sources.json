@@ -220,6 +220,15 @@
    "why_load_bearing": "A hiking central bank plus a nine-year-high short base plus joint intervention are the three ingredients of a carry unwind, which does not stay in Japan. India is not insulated by being uninvolved.",
    "source": "Reuters/CNBC/Al Jazeera on the intervention; CoinDesk on positioning",
    "note": "Intervention size not reconciled: Y5tn / $36.58bn / $46.9bn."
+  },
+  {
+   "id": "obbba-remittance-tax",
+   "claim": "OBBBA imposes a 1% excise tax on remittances effective 2026-01-01, with carve-outs for bank-account-funded transfers, crypto, military transfers and sub-$15 transfers",
+   "status": "reported",
+   "obtained": "peer agent research; ONE non-primary source (Wikipedia). India-specific application, wire-vs-cash scope, visa-status distinctions and enforcement status as of Aug 2026 all NOT FOUND.",
+   "why_load_bearing": "The US is India's largest remittance source at 27.7%, and remittances are the largest stabilising inflow India has. But the bank-account-funded carve-out is the channel most India remittances actually use, so this may DEFUSE rather than confirm the risk flagged in the Washington-concentration note.",
+   "source": "needs_primary",
+   "note": "LOW CONFIDENCE. Single secondary source. Do not act on this without the statutory text. The carve-out scope is the whole question and it is unverified."
   }
  ],
  "unresolved_conflicts": [

@@ -5,7 +5,7 @@
    "date": "2026-11-10",
    "type": "trade",
    "title": "US-China rare-earth truce expiry",
-   "so_what": "The single largest dated risk in the book. Dixon, auto, and every magnet-dependent manufacturer reprice on the outcome. India is a price-taker here with no seat at the table.",
+   "so_what": "The single largest dated risk in the book. Dixon, auto, and every magnet-dependent manufacturer reprice on the outcome. India is a price-taker here with no seat at the table. HEDGING NOTE 2026-08-27: index put protection at this tenor is NOT PURCHASABLE -- the 23-Nov chain lists no strike near 10% OTM and the lowest listed (22,450) has zero open interest and no bid. Size down or reduce the specific exposure; do not plan on puts. Re-check the November chain in early October.",
    "affects": [
     "DIXON.NS",
     "auto",
