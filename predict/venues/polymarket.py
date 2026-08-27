@@ -9,6 +9,9 @@ Two traps verified live on 2026-08-27:
 from __future__ import annotations
 
 import json
+import time
+
+import requests
 
 from .base import RawMarket
 
@@ -71,3 +74,41 @@ def parse_market(raw: dict) -> RawMarket | None:
         untradeable=untradeable,
         raw=raw,
     )
+
+
+GAMMA = "https://gamma-api.polymarket.com/markets"
+UA = {"User-Agent": "market-intel/1.0 (research)"}
+
+
+def fetch_open(session=None, max_pages: int = 21, page_size: int = 100,
+               sleep_s: float = 0.25) -> list[RawMarket]:
+    """Page the open+active feed, newest-volume first.
+
+    Stops on a short page or a non-200. A 422 is the documented end of the
+    window (~2,100 rows) -- it means "no more rows here", never "those
+    markets resolved".
+    """
+    s = session or requests.Session()
+    if session is None:
+        s.headers.update(UA)
+    out, offset = [], 0
+    for _ in range(max_pages):
+        r = s.get(GAMMA, params={"limit": page_size, "offset": offset,
+                                 "closed": "false", "active": "true",
+                                 "order": "volumeNum", "ascending": "false"},
+                  timeout=40)
+        if r.status_code != 200:
+            break
+        batch = r.json()
+        if not batch:
+            break
+        for row in batch:
+            m = parse_market(row)
+            if m is not None:
+                out.append(m)
+        offset += page_size
+        if len(batch) < page_size:
+            break
+        if sleep_s:
+            time.sleep(sleep_s)
+    return out
