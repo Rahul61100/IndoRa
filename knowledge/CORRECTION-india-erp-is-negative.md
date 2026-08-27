@@ -14,6 +14,12 @@ updated: 2026-08-27
 > with surcharge capped at 15%. After tax the premium is between **−0.53% and +0.28%** depending on
 > income band — roughly zero, not −2%. See [[india-erp-after-tax-is-roughly-zero]]. The direction
 > of this note stands; **the magnitude does not.**
+>
+> **FURTHER AMENDED, same day — the metric itself is near-worthless.** The Fed model has an R² of
+> **0.5%** for forward 10-year returns against 56.3% for plain P/E, adding the bond term *reduces*
+> predictive power, and Damodaran's rigorous ERP series shows **no negative years at all** since
+> 1960. The negative sign is a construction artifact. **This note should carry almost no weight.**
+> See [[the-fed-model-has-no-predictive-power]].
 
 **This is the most important correction in the workspace and it undermines the central claim I
 made on 2026-08-25.** I said Indian large caps were cheap at 20.4x, "12.6% below their 10-year

@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 10:31 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 10:33 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 80 notes
+## Knowledge base: 81 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,7 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+64c19f3 First-principles agent catches four of my errors, using zero tools
 9cea303 The negative ERP is a pre-tax artifact -- after tax it is roughly zero
 b2539be Redesign the research fleet: seven archetypes, not fourteen collectors
 feddddc Governance screen lands: HAL closes, ICICI capped, 8 of 9 AMBER
@@ -105,7 +106,6 @@ feddddc Governance screen lands: HAL closes, ICICI capped, 8 of 9 AMBER
 94babf9 Q1 FY27 GDP preview, and flag a figure I have been quoting wrong
 03bde90 Add vault Home note and one-command refresh
 066f6a1 Fix a fabricated 2% rupee move in the intraday monitor
-806d41b Add session continuity, Obsidian vault tooling, and the live market-hours loop
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
