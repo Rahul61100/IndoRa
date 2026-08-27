@@ -1,0 +1,57 @@
+[
+ {
+  "date": "2026-08-27",
+  "positions": [
+   {
+    "id": "icici-2026-08-26",
+    "pnl_pct": 1.28,
+    "status": "open_capped",
+    "triggered": []
+   },
+   {
+    "id": "sbi-2026-08-25",
+    "pnl_pct": -0.37,
+    "status": "open",
+    "triggered": []
+   },
+   {
+    "id": "dixon-2026-08-26",
+    "pnl_pct": 0.2,
+    "status": "open_capped",
+    "triggered": []
+   },
+   {
+    "id": "ntpc-2026-08-25",
+    "pnl_pct": -3.37,
+    "status": "open",
+    "triggered": []
+   },
+   {
+    "id": "reliance-2026-08-25",
+    "pnl_pct": -2.02,
+    "status": "open",
+    "triggered": []
+   },
+   {
+    "id": "bharti-2026-08-26",
+    "pnl_pct": -0.83,
+    "status": "exit_on_strength",
+    "triggered": [
+     "TRIGGERED 2026-08-26"
+    ]
+   },
+   {
+    "id": "lt-2026-08-25",
+    "pnl_pct": -1.73,
+    "status": "benched",
+    "triggered": []
+   },
+   {
+    "id": "infosys-2026-08-26",
+    "pnl_pct": -3.15,
+    "status": "benched",
+    "triggered": []
+   }
+  ]
+ }
+]

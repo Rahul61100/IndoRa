@@ -1,0 +1,131 @@
+{
+  "_comment": "Machine-checkable thesis registry. The prose lives in open-theses.md; this is the part a script can score. Every thesis needs an invalidation condition expressed as a CHECK a script can evaluate. A thesis whose invalidation cannot be mechanised is a thesis whose invalidation will never actually be checked.",
+  "_check_types": {
+    "price_below": "closes below level",
+    "price_above": "closes above level",
+    "below_sma": "closes below the named SMA (50 or 200)",
+    "diffusion_below": "FY+1 revision diffusion below level",
+    "diffusion_above": "FY+1 revision diffusion above level",
+    "date_passed": "catalyst date passed without the catalyst",
+    "manual": "requires human judgement — script flags for review, does not decide"
+  },
+  "theses": [
+    {
+      "id": "icici-2026-08-26",
+      "symbol": "ICICIBANK.NS",
+      "horizon": "short",
+      "opened": "2026-08-26",
+      "entry_price": 1430.0,
+      "thesis": "The private bank that works while HDFC Bank falls. Uptrend, RSI 54, 91st percentile, revision diffusion +0.75, target +20%.",
+      "invalidation": [
+        {"check": "below_sma", "sma": 200, "note": "loses its 200 DMA"},
+        {"check": "diffusion_below", "level": 0.0, "note": "revision breadth turns net negative"},
+        {"check": "manual", "note": "Q2 FY27 NIM compression alongside slowing advances; or the CEO reappointment thread escalates to an RBI action"}
+      ],
+      "status": "open_capped",
+      "notes": "Capped 2026-08-27 on governance: six GST notices >Rs1,350cr in six months, CEO reappointment contested to RBI, escalated 24 Aug."
+    },
+    {
+      "id": "sbi-2026-08-25",
+      "symbol": "SBIN.NS",
+      "horizon": "medium",
+      "opened": "2026-08-25",
+      "entry_price": 1048.0,
+      "thesis": "Cheapest large exposure to the credit cycle. 11.5x P/E, 1.56x book, 15.4% RoE. PSU banks outpacing private in this cycle.",
+      "invalidation": [
+        {"check": "below_sma", "sma": 200, "note": "loses its 200 DMA"},
+        {"check": "manual", "note": "system credit growth decelerating below ~12%, or a corporate slippage cycle"}
+      ],
+      "status": "open"
+    },
+    {
+      "id": "dixon-2026-08-26",
+      "symbol": "DIXON.NS",
+      "horizon": "medium",
+      "opened": "2026-08-26",
+      "entry_price": 14735.0,
+      "thesis": "EMS at 100% breadth, +27.9% over three months, Rs1.9 lakh crore policy push behind it.",
+      "invalidation": [
+        {"check": "below_sma", "sma": 200, "note": "loses its 200 DMA"},
+        {"check": "diffusion_below", "level": 0.0, "note": "revision breadth turns negative"},
+        {"check": "manual", "note": "loss of a major customer programme; margin below ~3%; or a China input restriction after 10 Nov"}
+      ],
+      "status": "open_capped",
+      "notes": "Capped THREE times: memory BOM shock, Mobile PLI 2.0 disbursed nothing, and the moat IS the China dependency. Half position, no adds."
+    },
+    {
+      "id": "ntpc-2026-08-25",
+      "symbol": "NTPC.NS",
+      "horizon": "long",
+      "opened": "2026-08-25",
+      "entry_price": 340.0,
+      "thesis": "91 GW to ~150 GW by FY32, regulated ~15% RoE compounding book value with a 2.65% yield. Electricity demand is a multi-decade certainty.",
+      "invalidation": [
+        {"check": "manual", "note": "regulated RoE framework changed; or the CBI Ramagundam FIR names NTPC personnel formally; or the CMD vacancy persists past Jan 2027"}
+      ],
+      "status": "open",
+      "notes": "Decades horizon — no stop. Trend is negative and the sector has 20% breadth; that is an entry consideration, not an invalidation."
+    },
+    {
+      "id": "reliance-2026-08-25",
+      "symbol": "RELIANCE.NS",
+      "horizon": "long",
+      "opened": "2026-08-25",
+      "entry_price": 1317.0,
+      "thesis": "Sum-of-parts: Jio alone is valued at $130-180bn against a ~$186bn market cap. The listing forces the market to price the parts.",
+      "invalidation": [
+        {"check": "date_passed", "date": "2026-12-31", "note": "Jio IPO does not list by year-end"},
+        {"check": "manual", "note": "the promoter reverses course and sells; or the FY+1 EPS cuts continue past two more quarters"}
+      ],
+      "status": "open",
+      "notes": "TENSION UNRESOLVED: promoter bought ~Rs9,000cr in July while FY+1 EPS was cut 5.23% in 30 days."
+    },
+    {
+      "id": "bharti-2026-08-26",
+      "symbol": "BHARTIARTL.NS",
+      "horizon": "short",
+      "opened": "2026-08-26",
+      "entry_price": 1902.0,
+      "thesis": "Pure event trade on the Jio listing lifting telecom index weight 4-5% to 7-8% and clearing the way for tariff hikes.",
+      "invalidation": [
+        {"check": "below_sma", "sma": 50, "note": "TRIGGERED 2026-08-26"},
+        {"check": "date_passed", "date": "2026-12-31", "note": "Jio listing slips past December"}
+      ],
+      "status": "exit_on_strength",
+      "notes": "Downgraded 2026-08-27. Jio stalled at SEBI: no observation letter, no price band, no date. Mittal+Singtel sold >$4bn across 2025. Closed below 50 DMA."
+    },
+    {
+      "id": "lt-2026-08-25",
+      "symbol": "LT.NS",
+      "horizon": "medium",
+      "opened": "2026-08-25",
+      "entry_price": 4119.0,
+      "thesis": "India capex proxy. Verified 2026-08-27: the capex cycle IS real for large capital-intensive corporates above ~75% utilisation, and L&T-type names are the correct expression.",
+      "invalidation": [
+        {"check": "diffusion_below", "level": -0.4, "note": "revision breadth deteriorates further from the current -0.29"},
+        {"check": "manual", "note": "Indian order inflow share of the book keeps falling versus European"}
+      ],
+      "status": "benched",
+      "notes": "Benched on contract mix (European offshore wind, not Indian NIP) and 5 up / 9 down revision breadth — NOT on the thesis, which verified."
+    },
+    {
+      "id": "infosys-2026-08-26",
+      "symbol": "INFY.NS",
+      "horizon": "medium",
+      "opened": "2026-08-26",
+      "entry_price": 1144.0,
+      "thesis": "14.9x, 4.2% yield, RoE 31.9%, AI already 8.2% of revenue, positioning emptied out with FII IT holdings at a 4-year low.",
+      "invalidation": [
+        {"check": "diffusion_above", "level": 0.0, "note": "ENTRY signal, not exit — buy when revision breadth turns positive"},
+        {"check": "manual", "note": "a guidance RAISE. Also now: H-1B rule finalisation or HIRE Act revival"}
+      ],
+      "status": "benched",
+      "notes": "4 up / 30 down. Entry is a guidance raise, never a cheap multiple. Now also carries US trade-policy risk I had framed purely as AI risk."
+    }
+  ],
+  "closed": [
+    {"id": "hdfcbank-medium", "symbol": "HDFCBANK.NS", "opened": "2026-08-25", "closed": "2026-08-27", "entry_price": 727.0, "exit_price": 714.2, "reason": "Governance: MSRDC Rs45cr differential-interest payment, RBI query into the board's own Rs1 lakh penalty on its CEO, US securities class action. Three consecutive 52-week lows.", "lesson": "The governance screen never ran because it hit a concurrency cap and I never re-queued it."},
+    {"id": "hal-short", "symbol": "HAL.NS", "opened": "2026-08-26", "closed": "2026-08-27", "entry_price": 4865.0, "exit_price": 4890.0, "reason": "199 forged Tejas supplier test certificates found by HAL's own audit, a fatal crash, a fleet grounding, zero Mk-1A delivered, MoD weighing penalties.", "lesson": "I bought trend plus a budget number and never asked whether the flagship programme delivers."},
+    {"id": "ongc-short", "symbol": "ONGC.NS", "opened": "2026-08-25", "closed": "2026-08-26", "entry_price": 234.0, "exit_price": 232.2, "reason": "Oil and gas had 0% of members above their 200 DMA; Brent was 27% below its high with the EIA modelling $69 for 2027.", "lesson": "Anchored on a spot price without checking its trend. The driver was already reversing when I wrote the thesis. And the windfall levy — my stated invalidation — had already been reintroduced in March 2026."}
+  ]
+}
