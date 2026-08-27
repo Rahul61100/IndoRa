@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 09:46 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 09:58 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 77 notes
+## Knowledge base: 78 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -72,16 +72,16 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 
 | Date | Thesis | Status | Note |
 |---|---|---|---|
-| 2026-08-27 | **HDFC Bank** | **MEDIUM CLOSED; LONG suspended** | Governance: MSRDC ₹45cr payment, RBI query into the board's own penalty, US class action |
-| 2026-08-27 | **Process** | **failure recorded** | The governance agent never launched — and that is exactly where the loss was |
-| 2026-08-27 | Infosys | bench confirmed with data | 4 up / 30 down, FY+1 EPS −2.51% over 90d |
-| 2026-08-27 | HDFC Bank | close confirmed independently | 7 up / 23 down, EPS −4.35%, target 41.9% above price — value-trap signature |
-| 2026-08-27 | ICICI Bank | corroborated | 28 up / 4 down, target +20% — estimates and price agree |
 | 2026-08-27 | **Reliance** | **tension flagged** | Promoter bought ~₹9,000cr in July; FY+1 EPS cut 5.23% in 30 days |
 | 2026-08-27 | **SHORT bucket** | **hurdle raised** | Needs 10-12% gross edge over a long hold, after tax — never applied before |
 | 2026-08-27 | Buyback names | stale note corrected | Budget 2026 restored capital-gains treatment for non-promoters |
 | 2026-08-27 | **SBI, NTPC** | **short build-up flagged** | Both showing F&O short build-up; SBI flipped from long in a day — tentative |
 | 2026-08-27 | Flow reading | **method corrected** | FIIs net cash buyers while ~1:8.25 short index futures — cash alone was misleading |
+| 2026-08-27 | **HAL** | **CLOSED** | 199 forged test certificates, fatal crash, fleet grounding, zero Mk-1A delivered |
+| 2026-08-27 | **ICICI Bank** | **capped, CEO thread tracked** | 6 GST notices >₹1,350cr; reappointment contested to RBI, escalated 24 Aug |
+| 2026-08-27 | Bharti | exit confirmed independently | Mittal + Singtel sold >$4bn across 2025 |
+| 2026-08-27 | Dixon | **data conflict — resolve** | Screen says PAT −36% YoY; our pull says TTM +119% |
+| 2026-08-27 | SBI | false positive avoided | RCom fraud headlines are SBI *detecting* fraud, not committing it |
 | 2026-08-27 | SBI | supply fact logged | Largest selling shareholder in the NSE IPO |
 | 2026-08-26 | ONGC (closed) | **invalidation had already fired** | Windfall levy was reintroduced in March 2026 — I wrote the condition against a false premise |
 
@@ -94,6 +94,7 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+8f96702 FIIs are short the index and long single stocks -- cash flow alone was misleading me
 69b8e45 Short-horizon trades now need a 10-12% tax edge to earn their place
 734dd90 Shriram Finance work-up, owed three times, now done against primary filings
 90679fa Build the estimate-revisions collector -- the gap that cost the Infosys call
@@ -105,7 +106,6 @@ Remote: `git@github-personal:Rahul61100/IndoRa.git`
 61a85d5 India policy calendar: windfall tax is back, 2026 state elections already done
 1208afb US policy map: two shutdowns, a tariff-refund fiscal hole, and a Fed weighing a hike
 be68ccc Positioning data partly reverses this morning's HDFC Bank cut
-40292f3 Political economy layer hits three open positions
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**

@@ -248,6 +248,51 @@ letter was still pending on 23 August. **No change.**
 Tata Steel a top gainer — on the Commerce Minister backing the safeguard duty on 24 August. Not
 earnings. **The political-economy layer paid off within one session of being added to the loop.**
 
+### 2026-08-27 (late) — the governance screen lands; HAL closes
+
+**HAL — CLOSED.** I bought it on trend plus a rising defence budget and logged the 7% revenue CAGR
+as the known weakness. The screen shows why that CAGR persists, and it is not execution drift:
+**a fatal Tejas crash at the Dubai Airshow in November 2025, a second incident grounding the fleet
+in February, zero Mk-1A jets delivered by June, MoD weighing penalties — and 199 forged supplier
+test certificates found by HAL's own audit, with an FIR filed.**
+
+**Forged test certificates on a fighter aircraft is a quality-control governance failure, not a
+schedule problem.** Three separate reasons now point the same way: the governance chain, the
+already-logged 35.2x multiple on a 7% ten-year revenue CAGR, and the **new 10-12% after-tax hurdle
+on the SHORT bucket** ([[short-horizon-needs-a-10-12-percent-tax-edge]]) which a name with this
+overhang cannot credibly clear. **Closed.** [[governance-screen-aug-2026]]
+
+**ICICI Bank — HELD, but capped and flagged.** The screen calls it the closest structural analog to
+the HDFC pattern: **six GST notices in six months totalling over ₹1,350 crore**, a SEBI warning on
+FPI repatriation, an RBI penalty, and **a CEO reappointment publicly contested to the RBI, with the
+activist escalating again on 24 August — three days ago, still open.**
+
+Against that: revision breadth is the best in the book (28 up / 4 down, target +20%), price action
+is the strongest in the sector, and F&O shows long build-up. **The thesis stands. But this is now a
+capped position — no adds — and the CEO thread is a tracked item, not background.** Buying the
+"clean alternative to HDFC Bank" only works while it stays clean.
+
+**NTPC and Reliance — flagged on the long theses, no action.** NTPC carries a **live CBI FIR at
+Ramagundam naming unnamed NTPC personnel** and a **CMD vacancy running 20+ months through two
+failed selection rounds.** Reliance had a **Reliance SVP arrested by the CBI** in an April 2026
+DGCA bribery probe and a **SEBI administrative warning** on employee insider trading. Neither is
+disqualifying for a decades horizon, both are now on the record rather than absent from it.
+
+**Bharti — the exit call is confirmed.** The screen finds **the heaviest promoter selling of the
+nine: Mittal and Singtel sold over $4bn across 2025.** Already downgraded to exit-on-strength this
+morning on the stalled Jio catalyst; this is a second, independent reason.
+
+**Dixon — a data conflict to resolve.** The screen reports a **36% year-on-year net-profit drop**;
+our own revision pull shows **TTM profit +119% and FY+1 EPS revised +10.07%**. Both cannot be right.
+**Resolve before any sizing decision.** Also: JV partner **Vivo India is under an active ED/SFIO
+money-laundering probe.**
+
+**SBI — a false positive avoided.** SBI generates heavy CBI and ED headline volume from the Anil
+Ambani / RCom fraud, **but SBI detected and classified that fraud and every ruling has upheld it.**
+That is fraud control working. A keyword screen would have flagged it wrongly. **No change.**
+
+**L&T — the only CLEAN name of the nine.**
+
 ---
 
 ## SHORT horizon (months)
@@ -403,5 +448,10 @@ exactly at its 52-week high, 35.1% above its 200 DMA. **Wait for a pullback towa
 | 2026-08-27 | Buyback names | stale note corrected | Budget 2026 restored capital-gains treatment for non-promoters |
 | 2026-08-27 | **SBI, NTPC** | **short build-up flagged** | Both showing F&O short build-up; SBI flipped from long in a day — tentative |
 | 2026-08-27 | Flow reading | **method corrected** | FIIs net cash buyers while ~1:8.25 short index futures — cash alone was misleading |
+| 2026-08-27 | **HAL** | **CLOSED** | 199 forged test certificates, fatal crash, fleet grounding, zero Mk-1A delivered |
+| 2026-08-27 | **ICICI Bank** | **capped, CEO thread tracked** | 6 GST notices >₹1,350cr; reappointment contested to RBI, escalated 24 Aug |
+| 2026-08-27 | Bharti | exit confirmed independently | Mittal + Singtel sold >$4bn across 2025 |
+| 2026-08-27 | Dixon | **data conflict — resolve** | Screen says PAT −36% YoY; our pull says TTM +119% |
+| 2026-08-27 | SBI | false positive avoided | RCom fraud headlines are SBI *detecting* fraud, not committing it |
 | 2026-08-27 | SBI | supply fact logged | Largest selling shareholder in the NSE IPO |
 | 2026-08-26 | ONGC (closed) | **invalidation had already fired** | Windfall levy was reintroduced in March 2026 — I wrote the condition against a false premise |
