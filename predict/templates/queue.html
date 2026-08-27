@@ -3,53 +3,95 @@
 
 {% if not rows %}
   <!-- An empty screen is an invitation to act, not a shrug. -->
-  <p class="empty">Nothing waiting. Pull fresh markets with
-    <code class="num">uv run scripts/predict_ingest.py</code>,
-    then map one to a proposition.</p>
+  <div class="empty">
+    <div class="empty-mark">◇</div>
+    <h2>Nothing to judge yet</h2>
+    <p>Pull fresh markets, then map one to a proposition worth having a view on.</p>
+    <code class="num">uv run scripts/predict_ingest.py</code>
+  </div>
 {% endif %}
 
 {% for r in rows %}
-<article class="card">
+{% set ey = r.edge_yes * 100 %}
+{% set en = r.edge_no * 100 %}
+{# The badge shows the edge you can actually TAKE. This screen enters YES
+   only, so headlining best-of(yes,no) would advertise a number the button
+   cannot reach -- the exact flattery this app exists to avoid. Both sides
+   stay visible in the legend below. #}
+<article class="card{% if not r.acceptable %} card--blocked{% endif %}">
 
-  <!-- 1. What am I judging? Prose about the world, so: serif. -->
-  <h2 class="stmt">{{ r.statement }}</h2>
-  <p class="meta num">{{ r.venue }}{% if r.topic %} · {{ r.topic }}{% endif %}
-     {%- if r.resolves_by %} · resolves {{ r.resolves_by }}{% endif %}
-     · ${{ '{:,.0f}'.format(r.liquidity) }} liquidity</p>
+  <!-- 1. What am I judging? -->
+  <header class="card-top">
+    <div>
+      <h2 class="stmt">{{ r.statement }}</h2>
+      <p class="meta num">{{ r.venue }}{% if r.topic %} · {{ r.topic }}{% endif %}
+        {%- if r.resolves_by %} · resolves {{ r.resolves_by }}{% endif %}
+        · ${{ '{:,.0f}'.format(r.liquidity) }}</p>
+    </div>
+    <div class="edge-badge{{ ' is-live' if ey > 0 else ' is-dull' }}">
+      <span class="edge-num num">{{ '%+.0f'|format(ey) }}</span>
+      <span class="edge-unit">pts<br>on yes</span>
+    </div>
+  </header>
 
-  <!-- 2. THE RAIL. Bid-ask is a band because a spread is a range, never a point.
-          Our view is a marker. The distance between them is the edge you can
-          actually trade -- which is why the mid is nowhere on this page. -->
+  <!-- 2. THE RAIL — the hero.
+       Bid-ask is a BAND because a spread is a range, never a point. The
+       market is cold, your view is warm, and the charged span between them
+       is the only thing on this page worth acting on. The mid appears
+       nowhere: you cannot trade it. -->
   <div class="rail" role="img"
        aria-label="Market {{ '%.3f'|format(r.best_bid) }} to {{ '%.3f'|format(r.best_ask) }}, our view {{ '%.2f'|format(r.our_prob) }}">
-    <div class="band" style="left:{{ (r.best_bid*100)|round(2) }}%;
-                             width:{{ ((r.best_ask-r.best_bid)*100)|round(2) }}%"></div>
-    <div class="ours{{ ' good' if r.edge_yes > 0 else '' }}"
-         style="left:{{ (r.our_prob*100)|round(2) }}%"></div>
-    <span class="tick" style="left:0">0</span>
-    <span class="tick" style="left:50%">·5</span>
-    <span class="tick" style="left:100%">1</span>
+    <div class="rail-track"></div>
+
+    {% if r.our_prob > r.best_ask %}
+    <div class="rail-gap" style="left:{{ (r.best_ask*100)|round(2) }}%;
+                                 width:{{ ((r.our_prob-r.best_ask)*100)|round(2) }}%"></div>
+    {% elif r.our_prob < r.best_bid %}
+    <div class="rail-gap" style="left:{{ (r.our_prob*100)|round(2) }}%;
+                                 width:{{ ((r.best_bid-r.our_prob)*100)|round(2) }}%"></div>
+    {% endif %}
+
+    <div class="rail-band" style="left:{{ (r.best_bid*100)|round(2) }}%;
+                                  width:{{ ((r.best_ask-r.best_bid)*100)|round(2) }}%"></div>
+
+    <div class="rail-you" style="left:{{ (r.our_prob*100)|round(2) }}%">
+      <span class="rail-you-dot"></span>
+      <span class="rail-you-tag num">{{ '%.2f'|format(r.our_prob) }}</span>
+    </div>
+
+    <span class="rail-tick num" style="left:0">0</span>
+    <span class="rail-tick num" style="left:25%">.25</span>
+    <span class="rail-tick num" style="left:50%">.50</span>
+    <span class="rail-tick num" style="left:75%">.75</span>
+    <span class="rail-tick num" style="left:100%">1</span>
   </div>
 
-  <p class="reads num">
-    <span>market <b>{{ '%.3f'|format(r.best_bid) }}–{{ '%.3f'|format(r.best_ask) }}</b></span>
-    <span>ours <b>{{ '%.2f'|format(r.our_prob) }}</b> ({{ r.confidence }})</span>
-    <span class="{{ 'good' if r.edge_yes > 0 else 'dull' }}">yes {{ '%+.1f'|format(r.edge_yes*100) }}</span>
-    <span class="{{ 'good' if r.edge_no > 0 else 'dull' }}">no {{ '%+.1f'|format(r.edge_no*100) }}</span>
-    {% if r.untradeable %}<span class="flag">spread too wide to price</span>{% endif %}
-  </p>
+  <div class="legend">
+    <span class="leg leg--cold"><i></i>market
+      <b class="num">{{ '%.3f'|format(r.best_bid) }}–{{ '%.3f'|format(r.best_ask) }}</b></span>
+    <span class="leg leg--warm"><i></i>you
+      <b class="num">{{ '%.2f'|format(r.our_prob) }}</b>
+      <em>{{ r.confidence }}</em></span>
+    <span class="leg leg--side">yes <b class="num {{ 'up' if ey > 0 else 'down' }}">{{ '%+.1f'|format(ey) }}</b></span>
+    <span class="leg leg--side">no <b class="num {{ 'up' if en > 0 else 'down' }}">{{ '%+.1f'|format(en) }}</b></span>
+  </div>
 
-  <!-- 3. Why do I think that? Tier is visible, because hiding it launders it. -->
-  {% if r.rationale %}<p class="why">{{ r.rationale }}</p>{% endif %}
-  <p class="claims">
-    {% for c in r.claim_ids %}<span class="chip {{ c.tier }}">{{ c.id }}</span>{% endfor %}
-    {% if not r.claim_ids %}<span class="chip none">no claim attached</span>{% endif %}
-  </p>
+  {% if r.untradeable %}
+  <p class="notice notice--block">Spread wider than 25% — no price here you could actually trade.
+     You can still record a rejection.</p>
+  {% endif %}
 
   {% if r.drift is not none and r.drift|abs > 0.005 %}
-  <p class="drift num">Odds moved {{ '%+.3f'|format(r.drift) }} since this view was formed.
-     The edge above is the current one.</p>
+  <p class="notice notice--drift num">Odds moved {{ '%+.3f'|format(r.drift) }} since you formed this view.
+     The edge shown is the current one.</p>
   {% endif %}
+
+  <!-- 3. Why do I think that? The tier is looked up, never assumed. -->
+  {% if r.rationale %}<p class="why">{{ r.rationale }}</p>{% endif %}
+  <p class="claims">
+    {% for c in r.claim_ids %}<span class="chip chip--{{ c.tier }}">{{ c.id }}<i>{{ c.tier }}</i></span>{% endfor %}
+    {% if not r.claim_ids %}<span class="chip chip--none">no claim attached</span>{% endif %}
+  </p>
 
   <!-- 4. Decide. -->
   <div class="acts">
@@ -57,76 +99,192 @@
       <input type="hidden" name="market_id" value="{{ r.market_id }}">
       <input type="hidden" name="direction" value="yes">
       <input type="hidden" name="odds_ts" value="{{ r.odds_ts }}">
-      <button class="go" type="submit"{% if not r.acceptable %} disabled{% endif %}>Accept yes</button>
+      <button class="btn btn--go" type="submit"{% if not r.acceptable %} disabled{% endif %}>
+        Take yes<span class="btn-sub num">{{ '%.3f'|format(r.best_ask) }}</span>
+      </button>
     </form>
-    <form method="post" action="/views/{{ r.view_id }}/reject">
-      <label class="sr">Reason</label>
-      <select name="reason">
+    <form method="post" action="/views/{{ r.view_id }}/reject" class="reject">
+      <label class="sr" for="reason-{{ r.view_id }}">Reason</label>
+      <select name="reason" id="reason-{{ r.view_id }}">
         <option>market is right</option><option>claim too weak</option>
         <option>horizon too long</option><option>illiquid</option>
         <option>don&#39;t understand it</option><option>other</option>
       </select>
-      <button type="submit">Reject</button>
+      <button class="btn" type="submit">Pass</button>
     </form>
   </div>
 </article>
 {% endfor %}
 
 <style>
-.empty{color:var(--muted);border:1px dashed var(--rule);padding:1.5rem;border-radius:6px;text-align:center}
-.empty code{background:var(--card);padding:.15rem .4rem;border-radius:3px;font-size:13px}
+/* ── empty state ──────────────────────────────────────────────────── */
+.empty{
+  text-align:center;padding:4.5rem 2rem;border:1px dashed var(--line-2);
+  border-radius:22px;background:color-mix(in srgb,var(--card) 55%,transparent);
+}
+.empty-mark{font-size:2rem;color:var(--warm);margin-bottom:.6rem;
+            text-shadow:0 0 26px var(--warm-glow)}
+.empty h2{font-size:1.15rem;font-weight:700;letter-spacing:-.02em;margin:0 0 .35rem}
+.empty p{color:var(--ink-2);margin:0 0 1.1rem;font-size:.9rem}
+.empty code{
+  font-size:.78rem;padding:.5rem .8rem;border-radius:9px;
+  background:var(--card-2);border:1px solid var(--line);color:var(--ink-2);
+}
 
-.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;
-      padding:1.4rem 1.5rem;margin-bottom:1.1rem}
-/* Prose about the world gets the serif; every number stays monospace. */
-.stmt{font:400 1.32rem/1.35 ui-serif,"New York",Georgia,serif;margin:0 0 .35rem;
-      letter-spacing:-.01em}
-.meta{color:var(--muted);font-size:12px;margin:0 0 1.4rem}
+/* ── card ─────────────────────────────────────────────────────────── */
+.card{
+  position:relative;margin-bottom:1.35rem;padding:1.6rem 1.7rem 1.35rem;
+  border:1px solid var(--line);border-radius:20px;
+  background:linear-gradient(165deg,var(--card-2),var(--card));
+  box-shadow:var(--shadow);
+  transition:transform .22s cubic-bezier(.2,.8,.3,1),box-shadow .22s,border-color .22s;
+}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);border-color:var(--line-2)}
+.card--blocked{opacity:.82}
 
-.rail{position:relative;height:30px;margin:0 0 .7rem;
-      border-bottom:1px solid var(--rule)}
-.band{position:absolute;top:6px;height:12px;min-width:2px;background:var(--band);
-      border-radius:2px}
-.ours{position:absolute;top:1px;width:2px;height:22px;background:var(--muted)}
-.ours.good{background:var(--signal);width:3px}
-.ours::after{content:"";position:absolute;top:-4px;left:50%;translate:-50% 0;
-             width:7px;height:7px;rotate:45deg;background:inherit}
-.tick{position:absolute;top:20px;translate:-50% 0;font-size:10px;color:var(--muted);
-      font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-.tick:first-of-type{translate:0 0}
+.card-top{display:flex;gap:1.25rem;align-items:flex-start;margin-bottom:1.5rem}
+.card-top > div:first-child{flex:1;min-width:0}
+.stmt{
+  font-size:1.42rem;font-weight:700;line-height:1.24;letter-spacing:-.028em;
+  margin:0 0 .4rem;text-wrap:balance;
+}
+.meta{color:var(--ink-3);font-size:.74rem;margin:0;letter-spacing:0}
 
-.reads{display:flex;flex-wrap:wrap;gap:1.1rem;font-size:13px;margin:0 0 1rem}
-.reads b{font-weight:600}
-/* Positive edge is quietly marked. Negative simply recedes -- a tool built on
-   skepticism should not celebrate. */
-.good{color:var(--signal)} .dull{color:var(--muted)}
-.flag{color:var(--caution)}
+/* the headline number: how far you are from the market, in points */
+.edge-badge{
+  flex:none;display:flex;align-items:baseline;gap:.3rem;padding:.5rem .8rem;
+  border-radius:13px;border:1px solid var(--line);background:var(--bg);
+}
+.edge-badge.is-live{
+  border-color:color-mix(in srgb,var(--warm) 45%,transparent);
+  background:var(--warm-soft);
+  box-shadow:0 0 0 1px var(--warm-glow),0 6px 20px -10px var(--warm-glow);
+}
+.edge-num{font-size:1.42rem;font-weight:700;line-height:1;letter-spacing:-.04em}
+.is-live .edge-num{color:var(--warm)}
+.is-dull .edge-num{color:var(--ink-3)}
+.edge-unit{font-size:.54rem;line-height:1.05;color:var(--ink-3);
+           text-transform:uppercase;letter-spacing:.08em;font-weight:500}
 
-.why{color:var(--muted);font-size:13.5px;margin:0 0 .7rem}
-.claims{margin:0 0 1rem;display:flex;flex-wrap:wrap;gap:.4rem}
-.chip{font-size:11.5px;padding:.2rem .5rem;border-radius:3px;
-      font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-.chip.verified{color:var(--verified);border:1px solid var(--verified)}
-.chip.reported{color:var(--reported);border:1px solid var(--reported)}
-.chip.contested{color:var(--caution);border:1px solid var(--caution)}
-/* No evidence gets no colour -- same dashed-outline treatment as .chip.none,
-   because an unlooked-up claim has no evidence behind it either. */
-.chip.none,.chip.unknown{color:var(--muted);border:1px dashed var(--rule)}
+/* ── the rail ─────────────────────────────────────────────────────── */
+.rail{position:relative;height:74px;margin:0 .25rem 1.15rem}
+.rail-track{
+  position:absolute;top:30px;left:0;right:0;height:6px;border-radius:99px;
+  background:var(--bg-2);border:1px solid var(--line);
+}
+/* the charged span between the market and you — this is the edge */
+.rail-gap{
+  position:absolute;top:30px;height:6px;
+  background:linear-gradient(90deg,var(--cold-glow),var(--warm));
+  opacity:.5;border-radius:99px;
+}
+.rail-band{
+  position:absolute;top:26px;height:14px;min-width:4px;border-radius:99px;
+  background:linear-gradient(180deg,var(--cold),color-mix(in srgb,var(--cold) 72%,black));
+  box-shadow:0 0 0 4px var(--cold-glow),0 4px 12px -4px var(--cold-glow);
+}
+.rail-you{position:absolute;top:14px;height:38px;width:0}
+.rail-you::before{
+  content:"";position:absolute;left:-1.5px;top:8px;width:3px;height:30px;
+  border-radius:99px;background:var(--warm);
+  box-shadow:0 0 14px var(--warm-glow);
+}
+.rail-you-dot{
+  position:absolute;left:-6px;top:0;width:12px;height:12px;border-radius:50%;
+  background:var(--warm);border:2px solid var(--card-2);
+  box-shadow:0 0 0 3px var(--warm-glow);
+}
+.rail-you-tag{
+  position:absolute;top:-19px;left:50%;translate:-50% 0;white-space:nowrap;
+  font-size:.66rem;font-weight:700;color:var(--warm);
+}
+.rail-tick{
+  position:absolute;top:46px;translate:-50% 0;font-size:.6rem;color:var(--ink-3);
+}
+.rail-tick:first-of-type{translate:0 0}
+.rail-tick:last-of-type{translate:-100% 0}
 
-.drift{color:var(--caution);font-size:12.5px;margin:0 0 1rem;
-       padding-left:.7rem;border-left:2px solid var(--caution)}
+/* ── legend ───────────────────────────────────────────────────────── */
+.legend{display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:center;
+        font-size:.76rem;color:var(--ink-2);margin-bottom:1rem}
+.leg{display:inline-flex;align-items:center;gap:.34rem}
+.leg i{width:9px;height:9px;border-radius:3px;flex:none}
+.leg--cold i{background:var(--cold);box-shadow:0 0 0 2.5px var(--cold-glow)}
+.leg--warm i{background:var(--warm);box-shadow:0 0 0 2.5px var(--warm-glow)}
+.leg b{color:var(--ink);font-weight:600}
+.leg em{font-style:normal;color:var(--ink-3);font-size:.7rem}
+.leg--side{margin-left:.1rem;color:var(--ink-3)}
+/* A positive edge is marked. A negative one simply recedes — a tool built
+   on scepticism does not celebrate. */
+.up{color:var(--warm);font-weight:700}
+.down{color:var(--ink-3);font-weight:500}
 
+/* ── notices ──────────────────────────────────────────────────────── */
+.notice{font-size:.76rem;line-height:1.5;margin:0 0 .85rem;padding:.6rem .8rem;
+        border-radius:11px;border:1px solid var(--line)}
+.notice--block{color:var(--hot);border-color:color-mix(in srgb,var(--hot) 32%,transparent);
+               background:color-mix(in srgb,var(--hot) 7%,transparent)}
+.notice--drift{color:var(--ink-2);background:var(--bg)}
+
+/* ── reasoning + claim provenance ─────────────────────────────────── */
+.why{color:var(--ink-2);font-size:.88rem;line-height:1.55;margin:0 0 .85rem}
+.claims{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1.25rem}
+.chip{
+  display:inline-flex;align-items:center;gap:.4rem;font-size:.7rem;
+  padding:.26rem .5rem .26rem .6rem;border-radius:8px;border:1px solid var(--line-2);
+  font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;color:var(--ink-2);
+}
+.chip i{font-style:normal;font-size:.56rem;text-transform:uppercase;letter-spacing:.06em;
+        padding:.1rem .3rem;border-radius:4px;background:var(--bg-2);color:var(--ink-3)}
+.chip--verified{color:#1B8A5A;border-color:#1B8A5A66}
+.chip--verified i{background:#1B8A5A1F;color:#1B8A5A}
+.chip--reported{color:var(--warm);border-color:color-mix(in srgb,var(--warm) 40%,transparent)}
+.chip--reported i{background:var(--warm-soft);color:var(--warm)}
+.chip--contested,.chip--UNVERIFIABLE{color:var(--hot);
+  border-color:color-mix(in srgb,var(--hot) 38%,transparent)}
+.chip--contested i,.chip--UNVERIFIABLE i{background:color-mix(in srgb,var(--hot) 12%,transparent);
+  color:var(--hot)}
+/* No evidence found gets no colour — absence should look like absence. */
+.chip--unknown,.chip--none{color:var(--ink-3);border-style:dashed;border-color:var(--line-2)}
+
+/* ── actions ──────────────────────────────────────────────────────── */
 .acts{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;
-      border-top:1px solid var(--rule);padding-top:1rem}
-.acts form{display:flex;gap:.4rem}
-button,select{font:inherit;font-size:13px;padding:.4rem .8rem;border-radius:5px;
-              border:1px solid var(--rule);background:var(--card);color:var(--ink);
-              cursor:pointer;transition:border-color .12s,color .12s}
-button:hover,select:hover{border-color:var(--muted)}
-.go{border-color:var(--signal);color:var(--signal);font-weight:600}
-.go:hover{background:var(--signal);color:var(--card);border-color:var(--signal)}
+      padding-top:1.15rem;border-top:1px solid var(--line)}
+.acts form{display:flex;gap:.45rem;align-items:center}
+.btn{
+  font:inherit;font-size:.82rem;font-weight:600;padding:.55rem 1rem;border-radius:11px;
+  border:1px solid var(--line-2);background:var(--card-2);color:var(--ink);cursor:pointer;
+  display:inline-flex;align-items:center;gap:.45rem;
+  transition:transform .16s cubic-bezier(.34,1.56,.64,1),border-color .16s,
+             background .16s,color .16s,box-shadow .16s;
+}
+.btn:hover:not(:disabled){transform:translateY(-1px);border-color:var(--ink-3)}
+.btn:active:not(:disabled){transform:translateY(0)}
+.btn--go{
+  border-color:color-mix(in srgb,var(--warm) 55%,transparent);color:var(--warm);
+  background:var(--warm-soft);
+}
+.btn--go:hover:not(:disabled){
+  background:var(--warm);color:var(--card-2);border-color:var(--warm);
+  box-shadow:0 8px 22px -8px var(--warm-glow);
+}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn-sub{font-size:.7rem;font-weight:500;opacity:.75}
+select{
+  font:inherit;font-size:.8rem;padding:.55rem .7rem;border-radius:11px;
+  border:1px solid var(--line);background:var(--card-2);color:var(--ink-2);cursor:pointer;
+}
+select:hover{border-color:var(--line-2);color:var(--ink)}
+.reject{margin-left:auto}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-@media (max-width:520px){ .acts{flex-direction:column;align-items:stretch}
-                          .acts form{width:100%} .acts button{flex:1} }
+
+@media (max-width:560px){
+  .card{padding:1.3rem 1.1rem 1.1rem;border-radius:16px}
+  .stmt{font-size:1.18rem}
+  .card-top{gap:.8rem}
+  .acts{flex-direction:column;align-items:stretch}
+  .acts form{width:100%}.reject{margin-left:0}
+  .btn{flex:1;justify-content:center}
+}
 </style>
 {% endblock %}

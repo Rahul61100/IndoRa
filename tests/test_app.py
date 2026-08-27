@@ -37,7 +37,11 @@ def test_queue_page_shows_claim_provenance(tmp_path):
     client = TestClient(create_app(seeded(tmp_path)))
     text = client.get("/").text
     assert "fed-may-hike-next" in text
-    assert 'class="chip unknown"' in text
+    # Assert the rendered CHIP, not the document -- the stylesheet in this
+    # page legitimately names every tier, so a bare substring check would
+    # pass on CSS and prove nothing about what was rendered.
+    assert '<span class="chip chip--unknown">fed-may-hike-next' in text
+    assert '<span class="chip chip--reported">fed-may-hike-next' not in text
 
 
 def test_accept_creates_a_position_and_clears_the_queue(tmp_path):
