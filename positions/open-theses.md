@@ -378,7 +378,14 @@ that threatens tractor and rural demand, but already at the 95th percentile of i
   schedule slips.
 - **Price at open:** ₹727 (2026-08-26)
 
-**Bench:** L&T — right sector, wrong horse. Capital goods is the broadest uptrend in the market
+**Bench — but the reason has narrowed (2026-08-27).** The capex contradiction is resolved
+([[india-capex-the-conversion-rate-collapsed]]): a real, executed capex cycle IS running in large,
+capital-intensive corporates above the ~75% utilisation threshold — and **L&T-type names are the
+correct investable expression of it, while a broad capex basket is not.** My doubt was about
+*which contracts* (European offshore wind rather than Indian NIP), which is a separate question
+from whether the cycle exists. **The vehicle was right.** Stays benched only on the contract-mix
+question and negative revision breadth (5 up / 9 down), not on the thesis. Original note follows —
+L&T — right sector, wrong horse. Capital goods is the broadest uptrend in the market
 (100% breadth, +30.2% 1y) but L&T at +12.3% is the sector's *laggard*; ABB +50.3% and Siemens
 +26.4% are the momentum expressions. Hold the thesis, consider switching the vehicle.
 
