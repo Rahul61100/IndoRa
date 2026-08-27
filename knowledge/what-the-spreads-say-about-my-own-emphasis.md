@@ -74,4 +74,4 @@ That distinction is why this file prints the direction rather than the level.
 single name can carry a group. Baskets are my own construction and are the obvious place this could
 be wrong — a theme is only as good as the names chosen to express it.
 
-Related: [[the-hedge-i-was-planning-is-not-purchasable]] · [[the-monsoon-is-the-trade-i-missed]] · [[india-us-tariff-the-actual-legal-instruments]] · [[value-and-momentum-are-split]]
+Related: [[i-capped-icici-on-a-fight-that-was-already-over]] · [[the-hedge-i-was-planning-is-not-purchasable]] · [[the-monsoon-is-the-trade-i-missed]] · [[india-us-tariff-the-actual-legal-instruments]] · [[value-and-momentum-are-split]]

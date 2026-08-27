@@ -30,11 +30,15 @@
     },
     {
      "check": "manual",
-     "note": "Q2 FY27 NIM compression alongside slowing advances; or the CEO reappointment thread escalates to an RBI action"
+     "note": "CORRECTED 2026-08-27: the CEO-reappointment framing was WRONG. RBI approved Bakhshi to 2028 on 22-23 May 2026 and the stock rallied 2%. The live item is a SEPARATE 24 Aug Bhushan letter on employee governance, multi-bank not ICICI-specific, SUBSTANCE UNKNOWN. Resolve that before sizing."
+    },
+    {
+     "check": "manual",
+     "note": "GST notices ~Rs1,320-1,420cr over six months are real but immaterial -- roughly one quarter of other expenses against Rs45,000cr+ annual net profit, and Indian GST demands are routinely cut 50%+ on appeal. This is margin noise, NOT governance. Do not bundle the two again."
     }
    ],
    "status": "open_capped",
-   "notes": "Capped 2026-08-27 on governance: six GST notices >Rs1,350cr in six months, CEO reappointment contested to RBI, escalated 24 Aug."
+   "notes": "CAP REASON CORRECTED 2026-08-27. The original cap bundled a governance question that was already resolved in ICICI's favour with routine tax friction -- the exact conflation error this workspace had flagged as a past mistake, running in the opposite direction. Position stays capped pending the 24 Aug letter's substance, NOT upgraded: an unresolved factual question is a reason to wait, not a reason to add."
   },
   {
    "id": "sbi-2026-08-25",
@@ -66,11 +70,19 @@
    "invalidation": [
     {
      "check": "manual",
-     "note": "regulated RoE framework changed; or the CBI Ramagundam FIR names NTPC personnel formally; or the CMD vacancy persists past Jan 2027"
+     "note": "CMD Gurdeep Singh is on a SECOND extension to Jan 2027 after 18 shortlisted candidates were interviewed and no successor was chosen; the search dates to at least Oct 2024. A selection process that has failed twice is worse than a vacancy. A THIRD extension without a permanent appointment closes this."
+    },
+    {
+     "check": "manual",
+     "note": "CBI Ramagundam FIR is Rs35cr at a single plant against >Rs1.8 lakh crore revenue -- IMMATERIAL. Do not carry it as a cap reason. Only FIR scope WIDENING beyond Ramagundam matters."
+    },
+    {
+     "check": "manual",
+     "note": "regulated RoE framework changed"
     }
    ],
    "status": "open",
-   "notes": "Decades horizon \u2014 no stop. Trend is negative and the sector has 20% breadth; that is an entry consideration, not an invalidation."
+   "notes": "Re-specified 2026-08-27. Was over-weighting a Rs35cr FIR and under-specifying the real issue: a decades thesis at ~11.5x needs a CMD with a full mandate to commit multi-decade capex, and the government has run a full selection twice without making one. Also carries an earnings-quality flag: forward PE 11.7 above trailing 10.1, implying EPS -13%."
   },
   {
    "id": "reliance-2026-08-25",
@@ -91,7 +103,7 @@
     }
    ],
    "status": "open",
-   "notes": "TENSION UNRESOLVED: promoter bought ~Rs9,000cr in July while FY+1 EPS was cut 5.23% in 30 days."
+   "notes": "TENSION UNRESOLVED. Promoter buying to 50.48% is VERIFIED (Jul 2026, ~Rs8,500-9,000cr). But the 'FY+1 EPS cut 5.23% in 30 days' figure is UNVERIFIABLE -- a targeted search could not retrieve it anywhere. Same shape as the ERP R-squared error: a specific, confident-sounding statistic with no locatable source. Do not lean on it in either direction. Jio DRHP filed 19 Jun 2026, still in SEBI review with no listing date as of 24 Aug; reported issue sizes span roughly 2x ($3.8bn to Rs75,000cr), which is an error bar, not a valuation."
   },
   {
    "id": "bharti-2026-08-26",
@@ -134,7 +146,7 @@
     }
    ],
    "status": "benched",
-   "notes": "Benched on contract mix (European offshore wind, not Indian NIP) and 5 up / 9 down revision breadth \u2014 NOT on the thesis, which verified."
+   "notes": "Bench REASON SHARPENED 2026-08-27. A second mega international order (Middle East BESS, 25 Aug) atop the TenneT European offshore-wind deal pushed the order book past Rs8 lakh crore. That is not a delayed domestic thesis -- it is a different company: a global energy-transition EPC contractor headquartered in India. Using it as the expression of an India-utilisation thesis is a category error, not a timing question, and 5up/9down breadth may be structural dilution rather than a cycle waiting to turn. Meanwhile the capex-over-consumption SPREAD is +19.8pp and widening -- so the theme works and this vehicle may be the wrong way to hold it."
   },
   {
    "id": "infosys-2026-08-26",
