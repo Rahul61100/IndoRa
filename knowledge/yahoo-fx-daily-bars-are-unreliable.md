@@ -1,9 +1,10 @@
 ---
-market: global
-type: methodology
-confidence: high
-date: 2026-08-27
-tags: [data-quality, fx, tooling]
+title: "Yahoo's FX daily bars are wrong often enough to be unusable"
+market: general
+type: method
+confidence: verified
+tags: [general, method, verified]
+updated: 2026-08-27
 ---
 
 # Yahoo's FX daily bars are wrong often enough to be unusable

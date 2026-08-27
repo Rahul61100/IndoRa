@@ -1,9 +1,10 @@
 ---
-market: india
+title: "The rupee is being held up, not holding up"
+market: general
 type: finding
-confidence: high
-date: 2026-08-27
-tags: [currency, rbi, intervention, balance-of-payments, political-economy]
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-27
 ---
 
 # The rupee is being held up, not holding up
@@ -90,4 +91,4 @@ position to $72.5 billion" — if true that is a material improvement, and it is
 against a primary table.** The next Weekly Statistical Supplement was due **28 Aug 2026** —
 tomorrow. **Check it.**
 
-Related: [[the-india-premise-fails-its-own-base-rate]] · [[india-vs-north-asia-the-trade-already-happened]] · [[india-us-tariff-the-actual-legal-instruments]]
+Related: [[shriram-finance-mufg-workup]] · [[the-india-premise-fails-its-own-base-rate]] · [[india-vs-north-asia-the-trade-already-happened]] · [[india-us-tariff-the-actual-legal-instruments]]

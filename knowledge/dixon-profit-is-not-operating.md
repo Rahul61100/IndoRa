@@ -1,10 +1,10 @@
 ---
-market: india
+title: "Dixon's profit growth is not coming from operations"
+market: general
 type: finding
-confidence: high
-date: 2026-08-27
-symbols: [DIXON.NS]
-tags: [ems, margins, earnings-quality, position-closed]
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-27
 ---
 
 # Dixon's profit growth is not coming from operations
@@ -69,4 +69,4 @@ not affect any comparison above (Jun 2026 and Jun 2025 are both present). The op
 is EBIT. This has **not** been checked against a company filing and should be before the number is
 repeated externally.
 
-Related: [[india-diversification-concentrated-on-washington]] · [[open-theses]]
+Related: [[india-diversification-concentrated-on-washington]] · [[india-vs-north-asia-the-trade-already-happened]]

@@ -1,9 +1,10 @@
 ---
-market: india
+title: "The India tariff: which instrument is actually in force, with citations"
+market: us
 type: finding
-confidence: high
-date: 2026-08-27
-tags: [trade-policy, tariffs, political-economy, legal, pharma]
+confidence: verified
+tags: [us, finding, verified]
+updated: 2026-08-27
 ---
 
 # The India tariff: which instrument is actually in force, with citations
@@ -94,4 +95,4 @@ own share is reported as **>$1bn / $7bn / $10–12bn / $12bn** across four outle
 with no Commerce Ministry or DGFT confirmation. "Total owed" and "total paid" are being conflated
 across the coverage. **Do not quote a refund number.**
 
-Related: [[india-diversification-concentrated-on-washington]] · [[the-india-premise-fails-its-own-base-rate]]
+Related: [[CORRECTION-the-18-percent-tariff-may-never-have-existed]] · [[india-diversification-concentrated-on-washington]] · [[the-india-premise-fails-its-own-base-rate]]

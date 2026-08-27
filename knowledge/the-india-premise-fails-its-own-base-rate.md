@@ -1,9 +1,10 @@
 ---
+title: "For a rupee-spender, the S&P beat the Nifty in 97% of ten-year windows"
 market: india
 type: finding
-confidence: high
-date: 2026-08-27
-tags: [allocation, base-rate, currency, tax, premise-check]
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-27
 ---
 
 # For a rupee-spender, the S&P beat the Nifty in 97% of ten-year windows

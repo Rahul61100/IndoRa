@@ -1,9 +1,10 @@
 ---
-market: global
+title: "North Asia: the KOSPI is two stocks, and Japan is a carry unwind waiting"
+market: general
 type: finding
-confidence: high
-date: 2026-08-27
-tags: [korea, japan, semiconductors, concentration, carry-trade, risk]
+confidence: verified
+tags: [general, finding, verified]
+updated: 2026-08-27
 ---
 
 # North Asia: the KOSPI is two stocks, and Japan is a carry unwind waiting

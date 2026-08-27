@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 12:24 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-27 13:36 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 91 notes
+## Knowledge base: 99 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,18 +94,18 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
-3760b9d CORRECTION: the 18% tariff is stale, is ~10% today, and may never have been collected
-b2ebe76 The external gap: Ras Laffan, 12 dead Indians, and value-add stuck at 18%
-7dbe413 India's external position is a three-body problem and I analysed one body
-17a436a Capex contradiction resolved: real in large caps, absent at the base
-f94f6bc Why Indian consensus misses every year -- three causes, one a measurement artifact
-09cb148 Build the derivatives collector -- and the series says more than the snapshot did
-f3f8f57 BUILD.md: the harness implementation plan, written from the failure modes
-5f3ed0d The adversarial verdict on India -- and the freeze lifts for medium and long
-2a88681 The bear case that survives: capex, not the risk premium
-88c9421 Retract the ERP frame: the metric has an R-squared of 0.5%
-64c19f3 First-principles agent catches four of my errors, using zero tools
-9cea303 The negative ERP is a pre-tax artifact -- after tax it is roughly zero
+8c84c1d Book revision: the frame was wrong, not just three positions
+847052c The rupee is held up, not holding up -- and North Asia's structure
+096a348 Resolve the India tariff to Federal Register citations, and three things change
+fe2463c CLAUDE.md: lead with the base rate, retract the stale +18% earnings claim
+f90df49 Benchmark-relative scoring, and fix a stdlib shadowing bug I introduced today
+41d27e7 Ran the obvious rebuttal to my own finding; it failed and sharpened the result
+8067fe6 The premise check: for a rupee-spender the S&P beat the Nifty in 97% of 10-year windows
+599191e India vs North Asia in common currency, and why the Korea trade already happened
+f5e9a79 FX from intraday prints, never from Yahoo daily bars
+c26d765 Earnings-quality screen, and the aggregate error it caught in the opposite direction
+8618746 Close Dixon: profit growth is not operating, and a written invalidation had already triggered
+9b04b1a Wire the scorecard and calendar into the daily refresh
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**

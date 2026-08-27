@@ -1,9 +1,10 @@
 ---
+title: "India's aggregate earnings number is mostly three companies"
 market: india
 type: finding
-confidence: high
-date: 2026-08-27
-tags: [earnings, aggregation, methodology, margins]
+confidence: verified
+tags: [india, finding, verified]
+updated: 2026-08-27
 ---
 
 # India's aggregate earnings number is mostly three companies
