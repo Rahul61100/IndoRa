@@ -5,6 +5,14 @@
 **Repo:** `market-intel` (`IndoRa`, personal GitHub only)
 **Supersedes:** the venue-bound first draft of this file (Polymarket-only, markets as the primary entity)
 
+> **STATUS 2026-08-29 — the UI is removed and is not coming back in this form.**
+> Sections 8 (Review UI) and the review-queue parts of §5/§7 describe a web app
+> that was built, disliked, and deleted. What survives and is still running is the
+> **collection layer**: venue adapters, ingestion, the odds log, the proposition /
+> view / position schema, and the claim-tier lookup. This repo is a knowledge base
+> that collects; how a human eventually reviews any of it is an open question, not
+> a settled design. Read §§1–4, 6, 9 as live and §8 as history.
+
 ## Why this exists
 
 The knowledge base has a measurement problem it cannot solve alone. `tools/score.py` reads:
