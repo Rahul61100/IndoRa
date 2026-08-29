@@ -62,11 +62,12 @@
   },
   {
    "id": "senate-russia-bill",
-   "claim": "Senate Russia sanctions bill with a 100% tariff threat on India passed 86-11; House pending",
+   "claim": "The 'Lindsey O. Graham Sanctioning Russia and Iran Act of 2026' passed the Senate 86-11 on Friday 7 Aug 2026. NO confirmed House floor vote is scheduled; co-sponsor Blumenthal said on 26 Aug he expects a September vote. The bill grants the President broad waiver authority -- sanctions and tariffs waivable on certification to Congress of national interest.",
    "status": "reported",
    "obtained": "agent research",
-   "why_load_bearing": "Largest undated tail risk in the book. The 86-11 margin is the part that matters -- it is veto-proof in that chamber.",
-   "source": "needs_primary"
+   "why_load_bearing": "Still the largest tail risk to an Indian book, but SMALLER than recorded. The waiver authority means passage creates an authority rather than an outcome, so the path from a House vote to 100% tariffs on Indian crude buyers runs through a presidential decision, not automatically.",
+   "source": "needs_primary",
+   "note": "CORRECTED 2026-08-29. I had logged a 31 Aug House vote as a dated T+2 catalyst on three-week-old reporting. It is not scheduled. Returned to the undated watch."
   },
   {
    "id": "sip-dii-doublecount",

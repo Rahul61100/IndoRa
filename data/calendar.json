@@ -85,17 +85,6 @@
    ],
    "confidence": "legislated",
    "source": "Finance Act"
-  },
-  {
-   "date": "2026-08-31",
-   "type": "legal",
-   "title": "US House vote on the Russia/Iran sanctions bill (reported schedule)",
-   "so_what": "The largest undated tail risk in this book may acquire a date in TWO DAYS. The Senate passed it 86-11 authorising up to 100% tariffs on buyers of Russian energy, India named, and Russia is >50% of India's crude. WARNING: the 31 Aug date comes from roughly three-week-old reporting and a Trump Iran-tariff amendment was flagged as a delay risk. Confirm the schedule before treating the date as real.",
-   "affects": [
-    "all"
-   ],
-   "confidence": "reported_stale",
-   "source": "needs_primary"
   }
  ],
  "watching_undated": [
@@ -124,6 +113,11 @@
    "type": "legal",
    "title": "CBI Ramagundam FIR \u2014 whether NTPC personnel are formally named",
    "so_what": "Manual review condition on the decades thesis."
+  },
+  {
+   "type": "legal",
+   "title": "House vote on the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026 (Senate passed 86-11, 7 Aug)",
+   "so_what": "CORRECTED 2026-08-29: I had logged a 31 Aug House vote as a T+2 dated catalyst. It does not survive fresher sourcing. Co-sponsor Blumenthal, speaking 26 Aug -- three days ago -- expects a vote in SEPTEMBER, not 31 Aug. The House does return to session on 31 Aug but the bill is not on the announced floor schedule. Back to undated.\nAND THE TAIL IS SMALLER THAN I THOUGHT: the bill grants the President BROAD WAIVER AUTHORITY -- sanctions and tariffs can be waived on certification to Congress that it is in the national interest. So House passage does NOT mechanically mean 100% tariffs on India; it creates an authority, not an outcome. A House companion introduced 10-11 Aug by McCaul and Hoyer is described even by The Hill as symbolic rather than the vehicle."
   }
  ]
 }
