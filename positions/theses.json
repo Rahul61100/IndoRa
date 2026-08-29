@@ -30,7 +30,7 @@
     },
     {
      "check": "manual",
-     "note": "CORRECTED 2026-08-27: the CEO-reappointment framing was WRONG. RBI approved Bakhshi to 2028 on 22-23 May 2026 and the stock rallied 2%. The live item is a SEPARATE 24 Aug Bhushan letter on employee governance, multi-bank not ICICI-specific, SUBSTANCE UNKNOWN. Resolve that before sizing."
+     "note": "CAP RE-SPECIFIED 2026-08-29. The 22 Aug Bhushan representation is NOT the low-substance complaint that would have lifted the cap: it cites specific statutory sections, names individual cases, routes to seven regulators/ministries, and carries a checkable headline number (~782 ICICI employees listed before labour authorities as having 'stopped reporting'). But there is ZERO RBI acknowledgement, zero bank statement, and coverage confined to one small outlet five days on. Substance without traction. DATED RECHECK 5-8 SEP 2026: if still silent, loosen the cap; any RBI acknowledgement closes the position."
     },
     {
      "check": "manual",
@@ -95,15 +95,15 @@
     {
      "check": "date_passed",
      "date": "2026-12-31",
-     "note": "Jio IPO does not list by year-end"
+     "note": "Jio does not list by year-end. SEBI cleared the DRHP 28 Aug 2026; a price band and date are still outstanding."
     },
     {
      "check": "manual",
-     "note": "the promoter reverses course and sells; or the FY+1 EPS cuts continue past two more quarters"
+     "note": "The promoter reverses course and sells. NOTE: the old 'EPS cuts continue' half of this condition is RETIRED -- it rested on a figure that does not exist."
     }
    ],
    "status": "open",
-   "notes": "TENSION UNRESOLVED. Promoter buying to 50.48% is VERIFIED (Jul 2026, ~Rs8,500-9,000cr). But the 'FY+1 EPS cut 5.23% in 30 days' figure is UNVERIFIABLE -- a targeted search could not retrieve it anywhere. Same shape as the ERP R-squared error: a specific, confident-sounding statistic with no locatable source. Do not lean on it in either direction. Jio DRHP filed 19 Jun 2026, still in SEBI review with no listing date as of 24 Aug; reported issue sizes span roughly 2x ($3.8bn to Rs75,000cr), which is an error bar, not a valuation."
+   "notes": "TENSION RESOLVED 2026-08-29, and it resolves toward the thesis. The 'FY+1 EPS cut 5.23% in 30 days' does not exist -- re-searched across sell-side, data vendors and press and NOT FOUND, and the actual 2026 trend runs the other way: FY27 EPS UPGRADED 7.4% (Rs56 -> Rs60). So the stated tension (promoter buying into falling estimates) was built on a number I could never source. Promoter buying to 50.48% is verified and now stands unopposed. SEPARATELY: SEBI CLEARED the Jio Platforms DRHP on 28 Aug -- reported size Rs35,000-37,700cr (~$3.8-4bn), still no listing date. The written invalidation (no listing by year-end) is materially de-risked but NOT met."
   },
   {
    "id": "bharti-2026-08-26",

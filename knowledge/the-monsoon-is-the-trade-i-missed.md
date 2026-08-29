@@ -88,4 +88,4 @@ odds and district counts are **reported** via agent research against secondary o
 **not** verified against an IMD primary release — that check is outstanding and the number is
 load-bearing enough to deserve it.
 
-Related: [[what-the-spreads-say-about-my-own-emphasis]] · [[rate-cut-cycle-is-over]] · [[the-india-premise-fails-its-own-base-rate]] · [[india-aggregate-earnings-are-three-companies]]
+Related: [[the-monsoon-headline-and-the-ground-have-decoupled]] · [[what-the-spreads-say-about-my-own-emphasis]] · [[rate-cut-cycle-is-over]] · [[the-india-premise-fails-its-own-base-rate]] · [[india-aggregate-earnings-are-three-companies]]

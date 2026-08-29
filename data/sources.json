@@ -273,6 +273,39 @@
    "why_load_bearing": "This is the sole remaining reason the ICICI position is capped. It is NOT the low-substance complaint that would have lifted the cap -- it carries specific statutory sections and a checkable headline number.",
    "source": "needs_primary",
    "note": "NO RBI response, acknowledgement or enforcement step found. Media pickup confined to one small outlet five days on, while mainstream press covered the earlier reappointment matter heavily. Substance without traction, so far."
+  },
+  {
+   "id": "jio-drhp-cleared",
+   "claim": "SEBI cleared the Jio Platforms DRHP on 2026-08-28; reported size Rs35,000-37,700cr (~$3.8-4bn). No listing date or price band yet.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Materially de-risks the catalyst path for the Reliance SOTP thesis, whose written invalidation is a year-end listing deadline.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "reliance-eps-upgraded",
+   "claim": "Reliance FY27 EPS was UPGRADED 7.4% (Rs56 -> Rs60) in recent sell-side notes; no evidence of any 5.23%/30-day cut",
+   "status": "reported",
+   "obtained": "agent research across sell-side, data vendors and press",
+   "why_load_bearing": "Removes the stated tension in the Reliance thesis. The 'promoter buying into falling estimates' framing rested on a figure that does not exist and the actual trend runs the other way.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "rbi-leadership-turnover",
+   "claim": "RBI leadership refreshed in one window: DG Rohit Jain appointed 25 Aug (succeeding T. Rabi Sankar, 3-yr term); DG Swaminathan Janakiraman reappointed for 2 years on 26 Aug; the Central Board turned over 5+ seats between 21-23 Aug",
+   "status": "reported",
+   "obtained": "political-economy watch",
+   "why_load_bearing": "Who holds the levers is a standing question in this base. A concentrated leadership refresh at the regulator that sets rates, runs the FX defence and rules on bank CEO appointments is a governance signal in its own right.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "monsoon-decoupling",
+   "claim": "National rainfall deficit flat at 13-15% since late July, but deficient districts rose 69 -> 412 while kharif sowing recovered to 96% of normal and reservoirs sit above 60%. Regional concentration severe: AP -51%, Meghalaya -58%, Punjab -34%, Karnataka -31%",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Undercuts the national-binary framing of the rural trade. The headline aggregate and the ground indicators are moving independently.",
+   "source": "needs_primary",
+   "note": "The 69->412 district jump rests on an unverified base figure. 'Weakest since 2009' remains an open question in the outlets that raised it, not settled."
   }
  ],
  "unresolved_conflicts": [

@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-29 12:26 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-29 12:53 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 105 notes
+## Knowledge base: 108 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,8 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+3a324af Resolve the forward book, and correct a claim I wrongly buried
+d9d8c31 Collect 2026-08-29: second market snapshot, FX, spreads, scorecard
 99290cb Merge collection layer: prediction-market ingestion for the knowledge base
 8a07125 Remove the web review UI
 e95977d Rebuild the palette from colour theory, not taste
@@ -104,8 +106,6 @@ f7058fb Correct .gitignore's claim about the odds log, and say why
 b19744c fix(predict): six whole-branch review findings before real-money gates matter
 283acb2 feat(predict): review queue with render-time drift
 0f25a68 fix(predict): cover snapshot/error paths, refuse untradeable odds
-6f19496 feat(predict): views, positions, and spread-crossing edge
-c1bc8d6 feat(predict): ingest with JSONL-before-interpretation
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**
