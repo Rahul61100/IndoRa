@@ -4,7 +4,7 @@ market: us
 type: flows
 confidence: reported
 tags: [us, flows, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # India's domestic bid is enormous, and so is the supply arriving to meet it

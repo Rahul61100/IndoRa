@@ -4,7 +4,7 @@ market: general
 type: regime
 confidence: reported
 tags: [general, regime, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # This regime is a splice of three, and the breadth signature is what says "not yet a top"

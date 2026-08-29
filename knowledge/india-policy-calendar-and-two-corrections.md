@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: degraded
 tags: [india, finding, degraded]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # India policy: the windfall tax is back, the 2026 state elections are already over

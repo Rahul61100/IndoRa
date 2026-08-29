@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: reported
 tags: [general, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Shriram Finance: the MUFG capital is real, the re-rating case is not yet proven

@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: reported
 tags: [us, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Nobody is cutting AI capex — and they are extending depreciation schedules to absorb it

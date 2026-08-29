@@ -4,7 +4,7 @@ market: crypto
 type: flows
 confidence: reported
 tags: [crypto, flows, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Crypto now trades as an ETF-flow and liquidity asset, not an independent one

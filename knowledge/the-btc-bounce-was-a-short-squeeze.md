@@ -4,7 +4,7 @@ market: crypto
 type: finding
 confidence: reported
 tags: [crypto, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The August bitcoin bounce was a $3bn short squeeze, not fresh demand

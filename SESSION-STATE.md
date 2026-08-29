@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-27 14:02 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-29 12:26 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -31,7 +31,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 
 | Series | Last updated | Size | Notes |
 |---|---|---|---|
-| india | 2026-08-27 | 88 tickers | 0 quality flags |
+| india | 2026-08-29 | 98 tickers | 11 quality flags |
 | us | 2026-08-27 | 119 tickers | 0 quality flags |
 | crypto | 2026-08-27 | 46 tickers | 4 quality flags |
 | India FII/DII | 2026-08-26 | 1 rows | flows ledger |
@@ -94,21 +94,21 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
-391e977 Reject the gold-loan NBFC idea, and name the pattern behind two failures
-c6a377f Correct a live cap built on a fight that was already over
-105d5dc The hedge for the 10 November catalyst is not purchasable
-f6b4560 The monsoon trade, and a spread monitor that graded my own research
-a4ffde2 The vault was laundering confidence: 85 of 92 notes stamped verified
-67717c8 Argue the other side hard: the mean-reversion case for India fails three tests
-2634d0a Vault integrity: 99 notes, 320 wikilinks, 0 broken, 0 orphans
-8c84c1d Book revision: the frame was wrong, not just three positions
-847052c The rupee is held up, not holding up -- and North Asia's structure
-096a348 Resolve the India tariff to Federal Register citations, and three things change
-fe2463c CLAUDE.md: lead with the base rate, retract the stale +18% earnings claim
-f90df49 Benchmark-relative scoring, and fix a stdlib shadowing bug I introduced today
+99290cb Merge collection layer: prediction-market ingestion for the knowledge base
+8a07125 Remove the web review UI
+e95977d Rebuild the palette from colour theory, not taste
+ffc6e39 INDORA: full-bleed layout, keyboard control, and motion
+63e8655 Redesign the review screen: the market is cold, you are warm
+a357f3b Enforce the odds-log rule instead of only stating it
+f7058fb Correct .gitignore's claim about the odds log, and say why
+b19744c fix(predict): six whole-branch review findings before real-money gates matter
+283acb2 feat(predict): review queue with render-time drift
+0f25a68 fix(predict): cover snapshot/error paths, refuse untradeable odds
+6f19496 feat(predict): views, positions, and spread-crossing edge
+c1bc8d6 feat(predict): ingest with JSONL-before-interpretation
 ```
 
-Working tree: clean
+Working tree: **UNCOMMITTED CHANGES PRESENT**
 
 ## The one thing to hold on to
 

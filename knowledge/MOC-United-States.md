@@ -2,7 +2,7 @@
 title: "United States — every durable fact"
 type: moc
 tags: [moc, us]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # United States — every durable fact

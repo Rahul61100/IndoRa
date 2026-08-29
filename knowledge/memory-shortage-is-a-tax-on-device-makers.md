@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: reported
 tags: [us, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The memory supercycle has a victim side — and it lands on Indian phone assembly

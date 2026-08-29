@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: reported
 tags: [general, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Governance screen: 8 of 9 AMBER, 1 CLEAN, 0 RED — and HAL is the one to act on

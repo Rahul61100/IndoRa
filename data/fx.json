@@ -40,5 +40,47 @@
    "chg_pct": 0.048,
    "source": "intraday_last_print"
   }
+ },
+ "2026-08-29": {
+  "USDINR": {
+   "close": 95.36,
+   "date": "2026-08-28",
+   "prev": 95.53,
+   "prev_date": "2026-08-27",
+   "chg_pct": -0.178,
+   "source": "intraday_last_print"
+  },
+  "EURUSD": {
+   "close": 1.1587,
+   "date": "2026-08-28",
+   "prev": 1.1658,
+   "prev_date": "2026-08-27",
+   "chg_pct": -0.603,
+   "source": "intraday_last_print"
+  },
+  "USDJPY": {
+   "close": 160.038,
+   "date": "2026-08-28",
+   "prev": 159.351,
+   "prev_date": "2026-08-27",
+   "chg_pct": 0.431,
+   "source": "intraday_last_print"
+  },
+  "USDCNY": {
+   "close": 6.7255,
+   "date": "2026-08-28",
+   "prev": 6.7108,
+   "prev_date": "2026-08-27",
+   "chg_pct": 0.219,
+   "source": "intraday_last_print"
+  },
+  "DXY": {
+   "close": 99.677,
+   "date": "2026-08-28",
+   "prev": 99.174,
+   "prev_date": "2026-08-27",
+   "chg_pct": 0.507,
+   "source": "intraday_last_print"
+  }
  }
 }

@@ -2,7 +2,7 @@
 title: "Corrections — every claim this workspace got wrong"
 type: moc
 tags: [moc, correction]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Corrections — every claim this workspace got wrong

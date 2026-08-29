@@ -4,7 +4,7 @@ market: crypto
 type: finding
 confidence: reported
 tags: [crypto, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Ethereum has flipped back to net inflationary — the L2s took the fees

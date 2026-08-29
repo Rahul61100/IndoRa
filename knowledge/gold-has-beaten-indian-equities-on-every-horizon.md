@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: reported
 tags: [india, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Gold has beaten the Nifty over 1, 3 AND 5 years — in rupees

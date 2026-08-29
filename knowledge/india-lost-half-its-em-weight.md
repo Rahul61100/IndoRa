@@ -4,7 +4,7 @@ market: india
 type: flows
 confidence: reported
 tags: [india, flows, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # India's MSCI EM weight has roughly halved, and it now trails EM by 42 points in a year

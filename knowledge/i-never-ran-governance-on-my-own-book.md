@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: reported
 tags: [general, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The governance agent never launched, and that is exactly where the loss was

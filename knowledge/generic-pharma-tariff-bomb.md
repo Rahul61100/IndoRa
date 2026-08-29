@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: reported
 tags: [general, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # US generics face 100% tariffs in 2028 and 200% in 2029 — CDMO does not

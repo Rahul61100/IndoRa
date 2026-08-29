@@ -4,7 +4,7 @@ market: general
 type: method
 confidence: reported
 tags: [general, method, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Demergers make long-window returns meaningless, and Yahoo does not adjust them

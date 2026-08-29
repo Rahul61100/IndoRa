@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: high
 tags: [general, finding, high]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # I capped ICICI on a governance fight that had already been resolved in its favour

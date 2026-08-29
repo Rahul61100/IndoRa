@@ -4,7 +4,7 @@ market: general
 type: position
 confidence: reported
 tags: [general, position, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Ten positions, 5.4 effective bets — and I never checked before opening them

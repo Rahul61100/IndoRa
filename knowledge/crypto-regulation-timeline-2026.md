@@ -4,7 +4,7 @@ market: crypto
 type: finding
 confidence: reported
 tags: [crypto, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # US crypto regulation: the laws passed in 2025, the rules land late 2026 into 2027

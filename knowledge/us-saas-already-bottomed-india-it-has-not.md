@@ -4,7 +4,7 @@ market: cross
 type: finding
 confidence: reported
 tags: [cross, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The SaaSpocalypse already reversed in the US; Indian IT is still trading the fear

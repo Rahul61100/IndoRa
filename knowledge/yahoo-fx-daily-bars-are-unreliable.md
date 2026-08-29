@@ -4,7 +4,7 @@ market: general
 type: method
 confidence: verified
 tags: [general, method, verified]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Yahoo's FX daily bars are wrong often enough to be unusable

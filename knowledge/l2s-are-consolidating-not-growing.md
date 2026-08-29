@@ -4,7 +4,7 @@ market: crypto
 type: finding
 confidence: reported
 tags: [crypto, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Ethereum's L2s are consolidating to three winners; the rest are being wound down

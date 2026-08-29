@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: reported
 tags: [us, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The AI trade has split — chips still work, the debt-funded buildout does not

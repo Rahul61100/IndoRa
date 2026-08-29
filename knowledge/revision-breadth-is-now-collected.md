@@ -4,7 +4,7 @@ market: general
 type: regime
 confidence: reported
 tags: [general, regime, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Estimate revisions are now collected — and they settle three open calls

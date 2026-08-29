@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: reported
 tags: [general, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # CORRECTION: the 18% tariff is stale, is probably 10% today, and may never have been collected

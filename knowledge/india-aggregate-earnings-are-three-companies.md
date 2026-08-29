@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: verified
 tags: [india, finding, verified]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # India's aggregate earnings number is mostly three companies

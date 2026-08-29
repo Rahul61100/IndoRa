@@ -4,7 +4,7 @@ market: cross
 type: method
 confidence: reported
 tags: [cross, method, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Same-day correlation across timezones is a measurement artifact

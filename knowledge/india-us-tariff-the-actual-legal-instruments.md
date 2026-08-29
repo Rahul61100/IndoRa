@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: verified
 tags: [us, finding, verified]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The India tariff: which instrument is actually in force, with citations

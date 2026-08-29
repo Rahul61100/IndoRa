@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: reported
 tags: [india, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # India's small-cap premium is more than two standard deviations wide, and the misses are rising

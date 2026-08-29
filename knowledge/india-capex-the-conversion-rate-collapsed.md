@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: reported
 tags: [india, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # India's capex contradiction resolved: real in large caps, absent in the base — and the conversion rate has collapsed

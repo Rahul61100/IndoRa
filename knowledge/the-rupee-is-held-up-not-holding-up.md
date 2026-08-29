@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: verified
 tags: [general, finding, verified]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The rupee is being held up, not holding up

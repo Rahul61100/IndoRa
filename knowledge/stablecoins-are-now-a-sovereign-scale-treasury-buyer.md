@@ -4,7 +4,7 @@ market: crypto
 type: finding
 confidence: reported
 tags: [crypto, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Stablecoin issuers are now a top-20 foreign holder of US Treasuries

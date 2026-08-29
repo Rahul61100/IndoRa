@@ -4,7 +4,7 @@ market: general
 type: regime
 confidence: reported
 tags: [general, regime, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Breadth is split almost exactly down the middle — this is a selection market

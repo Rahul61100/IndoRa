@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: reported
 tags: [india, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The Hormuz war has already hit India physically — Ras Laffan, 12 dead Indians, 93% LNG collapse

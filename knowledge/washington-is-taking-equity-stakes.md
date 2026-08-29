@@ -4,7 +4,7 @@ market: us
 type: finding
 confidence: degraded
 tags: [us, finding, degraded]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Washington is taking equity stakes in companies — this is state capitalism, and it is a factor

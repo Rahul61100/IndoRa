@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: degraded
 tags: [india, finding, degraded]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Q1 FY27 GDP prints 31 August — consensus 7.2-7.3%, and the RBI's own path implies deceleration

@@ -4,7 +4,7 @@ market: india
 type: flows
 confidence: degraded
 tags: [india, flows, degraded]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Who is actually buying India — and the HDFC Bank de-rating was one quarter of FII selling

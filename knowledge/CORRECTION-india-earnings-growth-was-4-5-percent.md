@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: reported
 tags: [india, finding, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # CORRECTION: India's FY26 earnings grew 4.5%, not 18% — and 60% of Q1 came from five stocks

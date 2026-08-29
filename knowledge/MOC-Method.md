@@ -2,7 +2,7 @@
 title: "Method — the rules that stop us fooling ourselves"
 type: moc
 tags: [moc, method]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Method — the rules that stop us fooling ourselves

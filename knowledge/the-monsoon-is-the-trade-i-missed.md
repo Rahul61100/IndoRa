@@ -4,7 +4,7 @@ market: general
 type: finding
 confidence: high
 tags: [general, finding, high]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The monsoon is the biggest India trade of the last six months and my book has no position on it

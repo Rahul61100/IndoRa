@@ -4,7 +4,7 @@ market: us
 type: regime
 confidence: reported
 tags: [us, regime, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # The Fed is not "on hold" — it is actively weighing a hike, and 15 September is the date

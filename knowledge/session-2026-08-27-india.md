@@ -4,7 +4,7 @@ market: india
 type: finding
 confidence: degraded
 tags: [india, finding, degraded]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # 27 August: HDFC Bank breaks to new lows alone, steel rallies on a political statement

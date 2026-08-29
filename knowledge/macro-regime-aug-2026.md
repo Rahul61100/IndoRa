@@ -4,7 +4,7 @@ market: general
 type: regime
 confidence: reported
 tags: [general, regime, reported]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Macro regime as of August 2026 — oil deflating, rupee weak, gold in a rebound not a breakout

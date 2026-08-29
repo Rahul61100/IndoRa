@@ -2,7 +2,7 @@
 title: "Crypto — every durable fact"
 type: moc
 tags: [moc, crypto]
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Crypto — every durable fact
