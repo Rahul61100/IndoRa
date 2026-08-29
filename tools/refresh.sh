@@ -28,6 +28,12 @@ uv run --quiet scripts/spreads.py
 echo "=== regime ==="
 uv run --quiet scripts/regime.py | sed -n '/REGIME/,/BOOK STRESS/p'
 
+echo "=== prediction-market ingest (the odds log cannot be re-fetched later) ==="
+uv run --quiet scripts/predict_ingest.py
+
+echo "=== odds moves (a sharp move on a topic we hold a view on is a RESEARCH GAP) ==="
+uv run --quiet scripts/odds_moves.py
+
 echo "=== catalyst calendar (a past date here is a bug, not an entry) ==="
 uv run --quiet tools/catalysts.py --horizon 120
 
