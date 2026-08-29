@@ -355,6 +355,40 @@
    "obtained": "agent research",
    "why_load_bearing": "Withdraws a weak inference linking the decline to the Bhushan governance letter.",
    "source": "needs_primary"
+  },
+  {
+   "id": "india-repo-and-liquidity",
+   "claim": "India repo rate 5.25%, held for a 4th straight MPC (Apr/Jun/Aug 2026, unanimous, neutral stance); last actual move was the 6 Dec 2025 cut. Next MPC 7 Oct 2026. System liquidity is in SURPLUS -- RBI ran ~Rs3.4-4.0 lakh crore of VRRR absorptions across four auctions with a further Rs3 lakh crore scheduled 31 Aug. 10y G-sec at a two-month high ~6.85-6.91%.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "This base has leaned on the G-sec yield for its ERP work and on a rate view, without ever recording the actual repo rate, the liquidity stance or the curve. VRRR absorption means surplus, not deficit -- easy to invert.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "india-credit-funding-gap",
+   "claim": "System non-food credit growth 15.8-20% across 2026 readings, but deposit growth 14.7% and decelerating faster -- a 4-5pp gap, credit-deposit ratio at a record ~83% (March), system NIM compressing 5bp YoY to 3.21% (June). Asset quality improving: system GNPA 2.1%, a multi-decadal low; SBI GNPA 2.13%->1.47%, NNPA 0.53%->0.38% since Sep 2024. Fastest-growing retail book is gold-loan-heavy, 42.4% CAGR since Mar 2024, and RBI's own FSR flags gold-price volatility as a risk.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Re-specifies the SBI invalidation. The risk was written as deceleration toward 12%; the actual live risk is a funding gap at a record CD ratio with NIM compressing. Different trigger, different watch.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "india-activity-softening",
+   "claim": "IIP decelerated to +6.7% YoY in July from a revised +8.8% in June; manufacturing PMI flash 52.9 in August, the weakest improvement since Aug 2021, with manufacturing EMPLOYMENT contracting for the first time in 2.5 years; e-way bill volume growth +6% YoY in July against +14.5% in June while GST value growth accelerated to +15.4%",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Sits against the capex-over-consumption spread that has been widening for six months. If real activity is softening while the capex trade works, the spread is a rotation and not a cycle -- which is the exact question this base said it could not answer.",
+   "source": "needs_primary",
+   "note": "The GST acceleration is confounded by GST 2.0 base effects and should not be read as a clean demand signal. The volume-vs-value divergence is the more honest read."
+  },
+  {
+   "id": "capex-evidence-splits",
+   "claim": "IIP July use-based headline says capital goods surge while consumer non-durables contract, and Q2 peak power demand hit a record 270.8 GW (+12% YoY) -- but the power record is attributed to heatwave AC load not industrial, and Manufacturing PMI flash is 52.9, weakest since Aug 2021, with manufacturing employment contracting for the first time in 2.5 years",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "The capex-over-consumption spread has widened for six months and this base could not say whether it was a cycle or a rotation. The evidence splits along lagging-index versus forward-survey, which is a real distinction and not noise to be averaged.",
+   "source": "needs_primary",
+   "note": "The actual IIP capital-goods percentage was never retrieved -- only the headline phrase. That single number would settle it."
   }
  ],
  "unresolved_conflicts": [

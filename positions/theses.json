@@ -55,10 +55,19 @@
     },
     {
      "check": "manual",
-     "note": "system credit growth decelerating below ~12%, or a corporate slippage cycle"
+     "note": "RE-SPECIFIED 2026-08-29. The old condition said 'system credit growth decelerating below ~12%'. That was the WRONG SERIES. System credit runs 15.8-20% and is nowhere near 12% -- but SBI's OWN FY27 guidance from its chairman is 14-15%, at or just under the bar the thesis needs. Watch SBI's book, not the system aggregate."
+    },
+    {
+     "check": "manual",
+     "note": "THE REAL STRESS IS FUNDING, NOT DECELERATION. Deposit growth 14.7% and decelerating faster than credit, a 4-5pp gap, credit-deposit ratio at a record ~83%, and system NIM compressing 5bp YoY to 3.21%. A bank cannot outgrow its deposits indefinitely. Watch the CD ratio and NIM; a further leg in either is the invalidation."
+    },
+    {
+     "check": "manual",
+     "note": "Asset quality is IMPROVING and is not currently a risk: system GNPA at a multi-decadal low of 2.1%, SBI GNPA 2.13% -> 1.47% and NNPA 0.53% -> 0.38% since Sep 2024. Do not carry asset quality as a cap reason without new evidence."
     }
    ],
-   "status": "open"
+   "status": "open",
+   "notes": "Thesis holds on the numbers. Q1 FY27 net profit Rs21,121cr, +10.2% YoY. The load-bearing assumption was checked independently for the first time on 2026-08-29 and survived at the system level, but the invalidation had been written against the wrong series -- see conditions."
   },
   {
    "id": "ntpc-2026-08-25",
