@@ -1,6 +1,6 @@
 # SESSION STATE — read this first
 
-_Generated 2026-08-29 14:09 UTC by `tools/session_state.py`. Regenerate at the end of every session._
+_Generated 2026-08-29 17:26 UTC by `tools/session_state.py`. Regenerate at the end of every session._
 
 ## Start here, in this order
 
@@ -38,7 +38,7 @@ uv run tools/kb.py all             # frontmatter, MOCs, link check
 | Stablecoin supply | 2026-08-27 | 3194 rows | flows ledger |
 | DeFi TVL | 2026-08-27 | 3119 rows | flows ledger |
 
-## Knowledge base: 111 notes
+## Knowledge base: 113 notes
 
 Load-bearing corrections — **these overturn things earlier sessions asserted**:
 
@@ -94,6 +94,9 @@ Load-bearing corrections — **these overturn things earlier sessions asserted**
 Remote: `git@github-personal:Rahul61100/IndoRa.git`
 
 ```
+bcdcf71 Measure what is actually blocked, and correct myself mid-investigation
+478faf0 Link the capex note into the spreads finding it answers
+a252e23 Re-specify the SBI invalidation, and hold the capex question open
 a183c19 Correct a dated catalyst I created this morning, and shrink the tail
 1ab0dd5 The Fed contradiction resolves, and every input points the same way
 223c7d5 Wire prediction-market ingest and odds-moves into the daily loop
@@ -103,9 +106,6 @@ d761529 Read the odds log as a series, and it settled the Fed contradiction
 d9d8c31 Collect 2026-08-29: second market snapshot, FX, spreads, scorecard
 99290cb Merge collection layer: prediction-market ingestion for the knowledge base
 8a07125 Remove the web review UI
-e95977d Rebuild the palette from colour theory, not taste
-ffc6e39 INDORA: full-bleed layout, keyboard control, and motion
-63e8655 Redesign the review screen: the market is cold, you are warm
 ```
 
 Working tree: **UNCOMMITTED CHANGES PRESENT**

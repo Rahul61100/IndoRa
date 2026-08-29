@@ -399,6 +399,39 @@
    "why_load_bearing": "Agent reports repeatedly tiered Indian macro figures as `reported` on the grounds that primary sources were unreachable. For the HTML pages that was wrong, and a whole category of verifiable data was being downgraded for no reason. But the document host IS genuinely challenge-protected, which is what actually blocks the Bulletin's statistical tables.",
    "source": "own measurement",
    "note": "'The site is blocked' and 'this host is blocked' are different claims. Collapsing them cost a real capability -- and an agent that said rbidocs specifically was TSPD-protected on 2026-08-27 was exactly right."
+  },
+  {
+   "id": "nine-years-misses-retired",
+   "claim": "'Indian consensus earnings missed for nine consecutive years' -- NO SOURCE FOUND after 15+ targeted searches including exact phrases and named analysts (Kotak's Prasad, Motilal Oswal, Marcellus, Chris Wood)",
+   "status": "not_found",
+   "obtained": "dedicated agent search",
+   "why_load_bearing": "This base asserted it as settled fact in its load-bearing list, position notes and earnings framing. RETIRED means stop repeating it -- not disproved, per this base's own rule that not_found is a statement about the search.",
+   "source": "NOT FOUND",
+   "note": "Replaced by the narrower dated version: a ~9% cumulative FY27 EPS downgrade cycle hitting 62-66% of Nifty constituents through spring 2026, now turned."
+  },
+  {
+   "id": "stablecoin-supply-held",
+   "claim": "Stablecoin supply $311.3bn on 2026-08-29, +1.3% YTD and +10.3% YoY, growing MONOTONICALLY through an Oct 2025 - Jun 2026 crash that took BTC -53% and ETH -67% peak-to-trough. BTC $77,949 (-11% YTD), ETH $2,444.50 (-17.7% YTD). DeFi TVL -42.5% YoY, moving in lockstep with price.",
+   "status": "verified",
+   "obtained": "CoinGecko and DefiLlama APIs fetched directly",
+   "why_load_bearing": "Evidences a framing this base asserted without support -- stablecoin supply as a real-capital proxy versus price. The two series decoupled across a 53-67% drawdown, so the crash was a de-rating rather than capital flight. Also establishes that DeFi TVL is mark-to-market and NOT a flow signal.",
+   "source": "CoinGecko /simple/price and market_chart; DefiLlama stablecoins and TVL endpoints"
+  },
+  {
+   "id": "jio-has-no-public-valuation",
+   "claim": "Only an ISSUE SIZE is public for the Jio Platforms IPO (Rs35,000-38,000cr / ~$3.8-4.1bn). No implied equity valuation is company- or filing-confirmed. The single circulating valuation ($128bn) is a pre-filing June brokerage estimate with unknown methodology and unnamed banks -- and it sits BELOW this base's prior $130-180bn SOTP range.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "The Reliance SOTP thesis is anchored to this listing and has NO public equity-value peg. The one number that exists points the wrong way for the thesis. A price band typically lands 1-3 weeks pre-listing; until then the anchor does not exist.",
+   "source": "needs_primary"
+  },
+  {
+   "id": "smallcap-breadth-8yr-low",
+   "claim": "July 2026 AMFI: small-cap funds took the single largest equity inflow of any category (Rs7,767cr) while large-cap funds were in OUTFLOW (-Rs1,321cr). But only 37% of Smallcap 250 names beat the index over the past year -- an 8-year low -- even as the index sits near highs. Liquidity is NOT stressed: stress tests show 11 days to liquidate half a book, improved from 15-18 days a year ago. Q1 FY27 PAT growth accelerates down the cap curve: large +18-21%, mid +23%, small +31-38%.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "This base held that SIP flows are a structural bid most fragile in small caps. The flow-concentration half is confirmed; the fragility half rests on the WRONG mechanism -- liquidity is improving, not deteriorating. The real tell is narrowing breadth at an 8-year low.",
+   "source": "AMFI July 2026 data via agent research"
   }
  ],
  "unresolved_conflicts": [

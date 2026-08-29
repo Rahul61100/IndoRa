@@ -77,4 +77,4 @@ quarter's aggregate as a recovery signal will be making the mirror error again.
 
 **Source:** own computation across 62 names, `scripts/fetch_fundamentals.py`. Aggregate, median and breadth all computed here from the same pull.
 
-Related: [[dixon-profit-is-not-operating]] · [[india-diversification-concentrated-on-washington]]
+Related: [[retiring-the-nine-years-claim]] · [[dixon-profit-is-not-operating]] · [[india-diversification-concentrated-on-washington]]
