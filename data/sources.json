@@ -306,6 +306,22 @@
    "why_load_bearing": "Undercuts the national-binary framing of the rural trade. The headline aggregate and the ground indicators are moving independently.",
    "source": "needs_primary",
    "note": "The 69->412 district jump rests on an unverified base figure. 'Weakest since 2009' remains an open question in the outlets that raised it, not settled."
+  },
+  {
+   "id": "fed-repricing-aug29",
+   "claim": "Six independent Polymarket Fed contracts repriced toward a hike between 2026-08-27 and 2026-08-29: hike-by-October 0.445->0.595, hike-by-September 0.305->0.445, no-change-after-September 0.675->0.545, +25bp 0.305->0.435, and hike-in-2026 0.565->0.665",
+   "status": "verified",
+   "obtained": "own computation from two Polymarket snapshots stored by this repo",
+   "why_load_bearing": "Settles the FedWatch-vs-Jackson-Hole contradiction from 28 Aug -- the hawkishness IS in the price at ~44.5% for September, up from 30.5%. Also confirms this base's contrarian rate-cycle-turned view, which is rarer than a correction and deserves the same scepticism.",
+   "source": "data/predict.db odds table, snapshots 2026-08-27T17:53 and 2026-08-29T12:23"
+  },
+  {
+   "id": "iran-blockade-persistence",
+   "claim": "Every Polymarket 'Iran blockade ends by X' contract fell across every tenor between 27 and 29 Aug (Sep 7 0.115->0.045 through Dec 31 0.706->0.664); Hormuz-normalisation odds fell with them",
+   "status": "verified",
+   "obtained": "own computation from stored snapshots",
+   "why_load_bearing": "The market is pricing the disruption as more persistent. This base holds that only SUPPLY shocks hurt India -- the Nifty fell in all four large ones of the last decade. But WTI fell 3.95% the same week, so rising blockade-persistence against falling crude is an unresolved tension, not a confirmation.",
+   "source": "data/predict.db odds table"
   }
  ],
  "unresolved_conflicts": [
