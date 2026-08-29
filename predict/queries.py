@@ -1,4 +1,9 @@
-"""Read helpers for the UI. No writes here."""
+"""Read helpers over the collected data. No writes here.
+
+The web review UI was removed on 2026-08-29; this module survives it
+because claim_tiers() and drift() are collection-layer facts, and
+queue_rows() is the shape any future report or CLI would want.
+"""
 from __future__ import annotations
 
 import json
