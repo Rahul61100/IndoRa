@@ -4,6 +4,9 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
+echo "=== India primary sources (policy corridor straight from rbi.org.in) ==="
+uv run --quiet scripts/fetch_india_primary.py | head -12
+
 echo "=== FX (intraday-derived; Yahoo daily FX bars are known-bad) ==="
 uv run --quiet scripts/fx.py
 

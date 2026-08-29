@@ -358,11 +358,12 @@
   },
   {
    "id": "india-repo-and-liquidity",
-   "claim": "India repo rate 5.25%, held for a 4th straight MPC (Apr/Jun/Aug 2026, unanimous, neutral stance); last actual move was the 6 Dec 2025 cut. Next MPC 7 Oct 2026. System liquidity is in SURPLUS -- RBI ran ~Rs3.4-4.0 lakh crore of VRRR absorptions across four auctions with a further Rs3 lakh crore scheduled 31 Aug. 10y G-sec at a two-month high ~6.85-6.91%.",
-   "status": "reported",
+   "claim": "India repo rate 5.25% (VERIFIED from rbi.org.in directly), bank rate 5.50%, CRR 3.00%, SLR 18.00%. Held four straight MPC meetings; last move the 6 Dec 2025 cut; next MPC 7 Oct 2026. System liquidity in SURPLUS -- RBI ran ~Rs3.4-4.0 lakh crore of VRRR absorptions with a further Rs3 lakh crore scheduled 31 Aug. 10y G-sec at a two-month high ~6.85-6.91%.",
+   "status": "verified",
    "obtained": "agent research",
    "why_load_bearing": "This base has leaned on the G-sec yield for its ERP work and on a rate view, without ever recording the actual repo rate, the liquidity stance or the curve. VRRR absorption means surplus, not deficit -- easy to invert.",
-   "source": "needs_primary"
+   "source": "rbi.org.in front page, fetched directly 2026-08-29 (rates); remainder agent-reported",
+   "note": "The policy corridor is now VERIFIED from RBI's own site via scripts/fetch_india_primary.py. The liquidity, MPC-history and G-sec figures remain REPORTED -- they live in Bulletin tables on rbidocs.rbi.org.in, which serves a TSPD JavaScript challenge and cannot be fetched without a JS-executing browser."
   },
   {
    "id": "india-credit-funding-gap",
@@ -389,6 +390,15 @@
    "why_load_bearing": "The capex-over-consumption spread has widened for six months and this base could not say whether it was a cycle or a rotation. The evidence splits along lagging-index versus forward-survey, which is a real distinction and not noise to be averaged.",
    "source": "needs_primary",
    "note": "The actual IIP capital-goods percentage was never retrieved -- only the headline phrase. That single number would settle it."
+  },
+  {
+   "id": "primary-source-reachability",
+   "claim": "Measured 2026-08-29: www.rbi.org.in, www.mospi.gov.in, eaindustry.nic.in, www.fbil.org.in, www.nsdl.co.in and data.rbi.org.in all return HTTP 200 to a request with a browser User-Agent. rbidocs.rbi.org.in (the document host) serves an Imperva/TSPD JavaScript challenge for every PDF/DOC. www.cmegroup.com returns 403.",
+   "status": "verified",
+   "obtained": "own probe with curl",
+   "why_load_bearing": "Agent reports repeatedly tiered Indian macro figures as `reported` on the grounds that primary sources were unreachable. For the HTML pages that was wrong, and a whole category of verifiable data was being downgraded for no reason. But the document host IS genuinely challenge-protected, which is what actually blocks the Bulletin's statistical tables.",
+   "source": "own measurement",
+   "note": "'The site is blocked' and 'this host is blocked' are different claims. Collapsing them cost a real capability -- and an agent that said rbidocs specifically was TSPD-protected on 2026-08-27 was exactly right."
   }
  ],
  "unresolved_conflicts": [
