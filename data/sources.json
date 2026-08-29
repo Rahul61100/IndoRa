@@ -322,6 +322,38 @@
    "obtained": "own computation from stored snapshots",
    "why_load_bearing": "The market is pricing the disruption as more persistent. This base holds that only SUPPLY shocks hurt India -- the Nifty fell in all four large ones of the last decade. But WTI fell 3.95% the same week, so rising blockade-persistence against falling crude is an unresolved tension, not a confirmation.",
    "source": "data/predict.db odds table"
+  },
+  {
+   "id": "warsh-is-fed-chair",
+   "claim": "Kevin Warsh is the sitting Chair of the Federal Reserve, chairing the FOMC as a permanent voting member; reportedly confirmed to the Board 51-45 on 2026-05-12",
+   "status": "verified",
+   "obtained": "agent research against Fed materials",
+   "why_load_bearing": "Decides whether his 28 Aug Jackson Hole hawkishness is policy signal or commentary. It is the Chair, so it is signal -- and that is the piece that makes the whole Fed picture cohere.",
+   "source": "Federal Reserve materials",
+   "note": "The 51-45 confirmation vote is reported and not independently cross-checked."
+  },
+  {
+   "id": "fed-target-range",
+   "claim": "Federal funds target range is 3.50-3.75%, per the July 28-29 2026 FOMC statement. The 3.75-4.00% figure in circulation had no live source.",
+   "status": "verified",
+   "obtained": "FOMC statement text",
+   "source": "FOMC statement 2026-07-29"
+  },
+  {
+   "id": "fed-july-dissents",
+   "claim": "July 28-29 2026 FOMC voted 9-3 to hold. Dissenters: Beth Hammack (Cleveland), Neel Kashkari (Minneapolis), Lorie Logan (Dallas). PCE at 3.7%, well above the 2% target; Warsh called inflation the Committee's predominant focus.",
+   "status": "verified",
+   "obtained": "FOMC statement and Jackson Hole remarks",
+   "why_load_bearing": "Sources a claim this base had been asserting. Combined with the odds repricing, every Fed input now points the same way.",
+   "source": "FOMC statement 2026-07-29; Jackson Hole 2026-08-28"
+  },
+  {
+   "id": "icici-28aug-explained",
+   "claim": "ICICIBANK's -1.23% on 2026-08-28 has a multiply-sourced same-day explanation: bond pricing and an ESOP allotment. Neither is a negative story.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "Withdraws a weak inference linking the decline to the Bhushan governance letter.",
+   "source": "needs_primary"
   }
  ],
  "unresolved_conflicts": [
