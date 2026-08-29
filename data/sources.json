@@ -96,21 +96,21 @@
   },
   {
    "id": "rbi-reserves",
-   "claim": "Reserves $716,907mn on 2026-08-14, near the year high, BUT RBI net-sold $53,132mn of dollars in FY2025-26 (highest ever) and the net forward book was SHORT $103,064mn at 2026-03-31, short in every maturity bucket, having widened $25.4bn in one month. Reserves fell $54bn (7.5%) from the Feb 27 peak to the Jul 3 trough then rebounded $43bn.",
+   "claim": "Forward book NET SHORT $103.33bn at 30 June 2026 -- essentially flat vs $103.06bn at 31 March, after widening to $106.7bn in May. Reserves hit an all-time record $729.33bn for the week ended 21 Aug 2026, +$12.42bn w/w. RBI net SOLD ~$8.9bn in April and $6.10bn in May, then net BOUGHT $561mn in June -- the first net-buying month.",
    "status": "verified",
    "obtained": "agent research against the WSS series",
    "why_load_bearing": "Settles the contested reserves claim and supplies the mechanism behind the rupee's peer-relative weakness found independently from price. A headline stock near its high funded by record intervention is a managed currency, not a strong one.",
-   "source": "RBI Weekly Statistical Supplement (dated press releases); RBI Bulletin Table 4 / 4A",
-   "note": "No forward-book figure newer than 2026-03-31 obtainable -- RBI's document host is behind bot detection. One unverified secondary point says the short was trimmed to $72.5bn. Next WSS was due 2026-08-28. CHECK IT."
+   "source": "RBI Bulletin Table 4/4A; RBI Weekly Statistical Supplement, week ended 2026-08-21",
+   "note": "RESOLVED 2026-08-29 -- this was the single most important dark number. The secondary claim that RBI 'trims short forward dollar position to $72.5 billion' is REFUTED against the primary table. The finding that matters: reserves grew roughly $47bn to a fresh record WHILE the forward book stayed pinned near $103bn short. The reserve build did NOT come from unwinding the forward defence, so the headline number still is not evidence the defence ended."
   },
   {
    "id": "us-remittance-share",
    "claim": "The US is now India's largest remittance source at 27.7%",
-   "status": "UNVERIFIABLE",
-   "obtained": "agent research",
+   "status": "verified",
+   "obtained": "primary RBI table fetched directly",
    "why_load_bearing": "A core strand of the Washington-concentration finding. Remittances were the channel I had assumed was diversified away from the US.",
-   "source": "NOT FOUND",
-   "note": "Five separate targeted searches failed to retrieve the 27.7% figure anywhere. What IS supported: an RBI survey published ~Mar 2025 covering FY2023-24 established the US overtook the UAE as India's largest remittance-source country. That is a RANKING, not a share, and it describes data 2-2.5 years old. DO NOT PUBLISH 27.7% without opening the RBI survey table. Same failure mode as the ERP R-squared and the 18% tariff."
+   "source": "RBI Bulletin, 'Changing Dynamics of India's Remittances -- Sixth Round' (survey covering FY2023-24)",
+   "note": "CORRECTED 2026-08-29. I had demoted this to UNVERIFIABLE after five failed searches. It is REAL and sits in the RBI's own Bulletin verbatim, with a clean multi-round series: 22.9% (2016-17) -> 23.4% -> 27.7% (FY2023-24). The searches failed because the figure lives inside a specifically-titled Bulletin article, not under generic remittance terms. This is the opposite of the failure mode I was guarding against -- a FALSE NEGATIVE, where I buried a true claim because my search strategy was wrong. 'Not found' means not found, not false."
   },
   {
    "id": "fpi-outflow",
@@ -238,7 +238,7 @@
    "obtained": "origin unknown -- appeared in this workspace without a source",
    "why_load_bearing": "It is half of the stated tension in the Reliance thesis (promoter buying against falling estimates). If it is not real, the tension is not real either.",
    "source": "NOT FOUND",
-   "note": "Targeted search could not retrieve it. General downgrade headlines exist (Jan 2026 post-Q3, Jul 2026 post-Q1) but no matching percentage. Same shape as the ERP R-squared error: a specific, confident-sounding statistic with no locatable source. Do not lean on it in either direction."
+   "note": "Targeted search could not retrieve it. General downgrade headlines exist (Jan 2026 post-Q3, Jul 2026 post-Q1) but no matching percentage. Same shape as the ERP R-squared error: a specific, confident-sounding statistic with no locatable source. Do not lean on it in either direction. CONFIRMED NOT FOUND 2026-08-29 against sell-side, data-vendor and press sources. Real Reliance revisions exist (brokers cut FY25-27 EPS 3.3-9.5% in Oct 2024) but nothing matches 5.23%/30 days. Stays buried."
   },
   {
    "id": "icici-ceo-resolved",
@@ -256,6 +256,23 @@
    "obtained": "red-team agent research",
    "why_load_bearing": "Re-specifies the NTPC risk. A selection process that has failed twice over ~22 months is a governance signal; the Rs35cr Ramagundam FIR I had been carrying is immaterial against >Rs1.8 lakh crore revenue.",
    "source": "IndianMandarins 2026-07-28"
+  },
+  {
+   "id": "india-remittances-total",
+   "claim": "India remittance inflows FY2024-25: US$135.46bn, a record, +14% YoY over FY2023-24's $118.7bn",
+   "status": "reported",
+   "obtained": "provisional RBI data via multiple outlets",
+   "why_load_bearing": "Sizes the largest single stabilising inflow India has, and settles the $145bn figure this base could not previously reconcile.",
+   "source": "RBI provisional data"
+  },
+  {
+   "id": "icici-bhushan-letter",
+   "claim": "Prashant Bhushan representation to the RBI Governor dated 22 Aug 2026 alleging employee-governance failures at ICICI and Axis -- coercive resignations, and ~782 ICICI employees listed before labour authorities as having 'stopped reporting'. Copied to MoF, MCA, Labour Ministry, Chief Labour Commissioner, NHRC, PAC and SEBI.",
+   "status": "reported",
+   "obtained": "agent research",
+   "why_load_bearing": "This is the sole remaining reason the ICICI position is capped. It is NOT the low-substance complaint that would have lifted the cap -- it carries specific statutory sections and a checkable headline number.",
+   "source": "needs_primary",
+   "note": "NO RBI response, acknowledgement or enforcement step found. Media pickup confined to one small outlet five days on, while mainstream press covered the earlier reappointment matter heavily. Substance without traction, so far."
   }
  ],
  "unresolved_conflicts": [
